@@ -291,22 +291,22 @@
               <div class="form__wrapper form__wrapper--modal">
                 <h2 class="form__title form__title--modal">Получить предложение</h2>
                 <div class="form__form">
-                  <form autocomplete="on" id="form-offer-modal" onsubmit="event.preventDefault();emailSendOffer('ru',true,'download');">
+                  <form class="gform" autocomplete="on" id="form-offer-modal" action="https://script.google.com/macros/s/AKfycbxhh5W3ekTa3C_WkO2iw3H9Z5IsiAOZ6QfQb97OfIjmHoxNy8s/exec" method="POST" data-email="secretkto@gmail.com">
                     <div class="form__input-text-wrap">
                       <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1 form__form-field--modal">
-                        <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
+                        <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" requireda="requireda"/>
                         <label for="name-2">Ваше имя</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3 form__form-field--modal">
-                        <input type="email" id="email-2" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
+                        <input type="email" id="email-2" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" requireda="requireda"/>
                         <label for="email-2">Ваша эл.почта</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2 form__form-field--modal">
-                        <input type="tel" id="phone-2" name="phone" placeholder="Телефон" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" required="required"/>
+                        <input type="tel" id="phone-2" name="phone" placeholder="Телефон" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" requireda="requireda"/>
                         <label for="phone-2">Телефон</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--s form__form-field--4 form__form-field--modal">
-                        <input type="text" id="company-2" name="company" placeholder="Название компании" required="required"/>
+                        <input type="text" id="company-2" name="company" placeholder="Название компании" requireda="requireda"/>
                         <label for="company-2">Название компании</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--select form__form-field--5 form__form-field--modal">
@@ -321,12 +321,18 @@
                     </div>
                     <div class="form__checkbox-wrap">
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
-                        <input class="visually-hidden" type="checkbox" id="accept-2" name="terms" required="required" checked="checked"/>
-                        <label for="accept-2">Я согласен на обработку данных</label>
+                        <input class="visually-hidden" type="checkbox" id="terms-2" name="terms" requireda="requireda"/>
+                        <label for="terms-2">Я согласен на обработку данных</label>
                       </div>
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
                         <input class="visually-hidden" type="checkbox" id="subscribe-2" name="subscribe"/>
                         <label for="subscribe-2">Подписаться на новостную рассылку</label>
+                      </div>
+                      <div class="form__data">
+                        <input type="domain" id="domain-2" name="domain" value="https://dlg.im/ru/download" hidden="hidden"/>
+                        <input type="ismodal" id="ismodal-2" name="ismodal" value="modal" hidden="hidden"/>
+                        <input type="lang" id="lang-2" name="lang" value="ru" hidden="hidden"/>
+                        <input type="type" id="type-2" name="type" value="career" hidden="hidden"/>
                       </div>
                     </div>
                     <div class="wrap wrap--ac">
@@ -342,6 +348,7 @@
       </div>
       <script src="/js/vendor.min.js"></script>
       <script src="/js/index.min.js"></script>
+      <script type="text/javascript" src="/js/form-handle.js"></script>
     </div>
   </body>
 </html>

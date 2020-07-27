@@ -6,9 +6,12 @@ mixin form-offer (isModal, idNumber, formId, pageName)
       h2.form__title(class=(isModal ? 'form__title--modal' : null))=t.form.request_title
       .form__form
         form(
+          class="gform"
           autocomplete="on"
           id!=formId
-          onsubmit=`event.preventDefault();emailSendOffer('${lang}',${isModal},'${pageName}');`
+          action='https://script.google.com/macros/s/AKfycbxhh5W3ekTa3C_WkO2iw3H9Z5IsiAOZ6QfQb97OfIjmHoxNy8s/exec'
+          method='POST'
+          data-email="secretkto@gmail.com"
         )
           .form__input-text-wrap
             .form__form-field.form__form-field--text.form__form-field--m.form__form-field--1(class=(isModal ? 'form__form-field--modal' : null))
@@ -19,7 +22,7 @@ mixin form-offer (isModal, idNumber, formId, pageName)
                 pattern="([A-Za-zА-ЯЁа-яё-]{2,}\\s?)+"
                 placeholder=t.form.name
                 title="Имя может состоять только из букв, пробелов и дефиса"
-                required
+                requireda
               )
               label(for=`name-${idNumber}`)=t.form.name
             .form__form-field.form__form-field--text.form__form-field--m.form__form-field--3(class=(isModal ? 'form__form-field--modal' : null))
@@ -30,7 +33,7 @@ mixin form-offer (isModal, idNumber, formId, pageName)
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
                 placeholder=t.form.email
                 title="Email адрес должен быть типа: user@mail.com"
-                required
+                requireda
               )
               label(for=`email-${idNumber}`)=t.form.email
             .form__form-field.form__form-field--text.form__form-field--s.form__form-field--2(class=(isModal ? 'form__form-field--modal' : null))
@@ -41,7 +44,7 @@ mixin form-offer (isModal, idNumber, formId, pageName)
                 placeholder=t.form.phone
                 title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр"
                 pattern="\\+7[0-9]{10}"
-                required
+                requireda
               )
               label(for=`phone-${idNumber}`)=t.form.phone
             .form__form-field.form__form-field--text.form__form-field--s.form__form-field--4(class=(isModal ? 'form__form-field--modal' : null))
@@ -50,7 +53,7 @@ mixin form-offer (isModal, idNumber, formId, pageName)
                 id=`company-${idNumber}`
                 name="company"
                 placeholder=t.form.company
-                required
+                requireda
               )
               label(for=`company-${idNumber}`)=t.form.company
             .form__form-field.form__form-field--text.form__form-field--select.form__form-field--5(class=(isModal ? 'form__form-field--modal' : null))
@@ -67,12 +70,11 @@ mixin form-offer (isModal, idNumber, formId, pageName)
             .form__form-field.form__form-field--checkbox(class=(isModal ? 'form__form-field--modal' : null))
               input.visually-hidden(
                 type="checkbox"
-                id=`accept-${idNumber}`
+                id=`terms-${idNumber}`
                 name="terms"
-                required
-                checked
+                requireda
               )
-              label(for=`accept-${idNumber}`)=t.form.agree
+              label(for=`terms-${idNumber}`)=t.form.agree
             .form__form-field.form__form-field--checkbox(class=(isModal ? 'form__form-field--modal' : null))
               input.visually-hidden(
                 type="checkbox"
@@ -80,6 +82,35 @@ mixin form-offer (isModal, idNumber, formId, pageName)
                 name="subscribe"
               )
               label(for=`subscribe-${idNumber}`)=t.form.news
+            .form__data
+              input(
+                type="domain"
+                id=`domain-${idNumber}`
+                name="domain"
+                value=(`https://dlg.im/${lang}/${pageName}`)
+                hidden
+              )
+              input(
+                type='ismodal'
+                id=`ismodal-${idNumber}`
+                name='ismodal'
+                value=(isModal ? 'modal' : 'page')
+                hidden
+              )
+              input(
+                type="lang"
+                id=`lang-${idNumber}`
+                name="lang"
+                value=lang
+                hidden
+              )
+              input(
+                type="type"
+                id=`type-${idNumber}`
+                name="type"
+                value="career"
+                hidden
+              )
           .wrap.wrap--ac
             button(
               class="button--accent button button--form"

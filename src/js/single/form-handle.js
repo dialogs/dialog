@@ -3,7 +3,18 @@
   let isFile = false;
   let fileDom = document.querySelector('#file');
   let dataDiv = document.querySelector('#data');
+  let checkbox = document.querySelectorAll("[type='checkbox']");
   let formCareer = document.getElementById(`form-career`);
+
+  if (checkbox) {
+    checkbox.forEach(function (el) {
+      el.value = el.checked;
+      el.addEventListener('change', function () {
+        el.value = el.checked;
+      });
+    });
+  }
+
 
   // get all data in form and return object
   function getFormData(form) {
@@ -62,7 +73,7 @@
     disableAllButtons(form);
     var url = form.action;
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
+    xhr.open('POST', url, true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
@@ -101,7 +112,6 @@
   }
 
   function disableAllInputs(form) {
-    let checkbox = form.querySelector(".accept-1");
     let inputs = form.querySelectorAll("input, select, textarea");
     for (var i = 0; i < inputs.length; i++) {
       inputs[i].disabled = true;

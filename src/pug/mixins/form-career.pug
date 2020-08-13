@@ -1,7 +1,7 @@
 include ./button
 include ../mixins/field-textarea
 
-mixin form-career (idNumber, formId)
+mixin form-career (idNumber, formId, formType)
   .form.form--main.form--career.box.box--white
     .form__wrapper
       h2.form__title=t.form.career_title
@@ -11,9 +11,9 @@ mixin form-career (idNumber, formId)
           class="gform"
           autocomplete="on"
           id!=formId
-          action='https://script.google.com/macros/s/AKfycbwtke5Mze3EP3jLpWPES22nldT99ejv5ZPStus16l5cxkOvOI8/exec'
+          action='https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec'
           method='POST'
-          data-email="artyponomarty@gmail.com"
+          data-email="site-srv@dlg.im"
         )
           #data
           .form__input-text-wrap
@@ -25,7 +25,7 @@ mixin form-career (idNumber, formId)
                 pattern="([A-Za-zА-ЯЁа-яё-]{2,}\\s?)+"
                 placeholder=t.form.name
                 title="Имя может состоять только из букв, пробелов и дефиса"
-                requireda
+                required
               )
               label(for=`name-${idNumber}`)=t.form.name
 
@@ -37,7 +37,7 @@ mixin form-career (idNumber, formId)
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
                 placeholder=t.form.email
                 title="Email адрес должен быть типа: user@mail.com"
-                requireda
+                required
               )
               label(for=`email-${idNumber}`)=t.form.email
 
@@ -49,7 +49,7 @@ mixin form-career (idNumber, formId)
                 placeholder=t.form.phone
                 title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр"
                 pattern="\\+7[0-9]{10}"
-                requireda
+                required
               )
               label(for=`phone-${idNumber}`)=t.form.phone
 
@@ -57,7 +57,7 @@ mixin form-career (idNumber, formId)
               select(
                 id=`city-${idNumber}`
                 name="city"
-                requireda
+                required
               )
                 option(value="undefined" selected)=t.form.select_work
                 option(value="Москва")=t.form.select_work_o_1
@@ -68,7 +68,7 @@ mixin form-career (idNumber, formId)
               +field-textarea({
                 name: 'message',
                 label: t.form.about,
-                isrequireda: true
+                isrequired: true
               })
 
           .form__checkbox-wrap
@@ -90,8 +90,6 @@ mixin form-career (idNumber, formId)
                 type="checkbox"
                 id=`terms-${idNumber}`
                 name="terms"
-                requireda
-                checked
               )
               label(for=`terms-${idNumber}`)=t.form.agree
 
@@ -114,7 +112,7 @@ mixin form-career (idNumber, formId)
               type="type"
               id=`type-${idNumber}`
               name="type"
-              value="career"
+              value=formType
               hidden
             )
 

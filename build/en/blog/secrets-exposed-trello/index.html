@@ -69,9 +69,9 @@
               <div class="box--post"></div>
             </div>
             <div class="post__content"><!--kg-card-begin: markdown--><p>Trello – a popular collaboration tool – allows users to create public boards but users expectedly don't care about interface warnings:</p>
-<img src="https://georgetokmakov.ghost.io/content/images/2019/06/Screen-Shot-2017-08-24-at-4.18.54-PM-1.png" width=40%>
+<img src="https://georgetokmakov.ghost.io/content/images/2019/06/Screen-Shot-2017-08-24-at-4.18.54-PM-1.png" class="md" alt="interface image">
 <p>This leads to undesirable consequences like passwords leaks. Just check it by yourself, paste <code>site:trello.com/b/ password</code> and you will find lots of boards which are used as password storage. Even more you will find if you google <code>site:trello.com/c/ login password</code> which exposes tasks only:</p>
-<img src="https://georgetokmakov.ghost.io/content/images/2019/06/Screen-Shot-2017-08-24-at-4.22.59-PM-3.png" width=80%>
+<img src="https://georgetokmakov.ghost.io/content/images/2019/06/Screen-Shot-2017-08-24-at-4.22.59-PM-3.png" class="lg" alt="interface image">
 <p>Cloud definitely has lots of advantages but privacy is not one of them. There is always much more risk that data will be exposed to a third-party in cloud services than in on-premise solution hidden from the outside world in virtual private network.</p>
 <!--kg-card-end: markdown--></div>
           </div>
@@ -123,7 +123,7 @@
             <div class="cta cta--form">
               <div class="form form--cta">
                 <div class="form__wrapper">
-                  <form class="form__content" autocomplete="on" id="form-blog" onsubmit="event.preventDefault();emailSendBlog('en','secrets-exposed-trello');">
+                  <form class="gform" autocomplete="on" id="form-blog" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST" data-email="site-srv@dlg.im">
                     <h3 class="form__title">Subscribe for a fresh newsletter!</h3>
                     <div class="form__row">
                       <div class="form__input-text-wrap">
@@ -131,6 +131,11 @@
                           <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Work e-mail" title="Email адрес должен быть типа: user@mail.com" required="required"/>
                           <label for="email-1">Work e-mail</label>
                         </div>
+                      </div>
+                      <div class="form__data">
+                        <input type="domain" id="domain-1" name="domain" value="https://dlg.im/en/secrets-exposed-trello" hidden="hidden"/>
+                        <input type="lang" id="lang-1" name="lang" value="en" hidden="hidden"/>
+                        <input type="type" id="type-1" name="type" value="post" hidden="hidden"/>
                       </div>
                       <div class="wrap wrap--ac wrap--message">
                         <button class="button--accent button button--form" type="submit"><span>Subscribe</span></button><img class="submit__icon submit__icon--light submit__icon--absolute" src="/img/loader.gif" alt="Animated loading"/>
@@ -212,7 +217,7 @@
               <div class="form__wrapper form__wrapper--modal">
                 <h2 class="form__title form__title--modal">Get a request</h2>
                 <div class="form__form">
-                  <form autocomplete="on" id="form-offer-modal" onsubmit="event.preventDefault();emailSendOffer('en',true,'post');">
+                  <form class="gform" autocomplete="on" id="form-offer-modal" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST" data-email="site-srv@dlg.im">
                     <div class="form__input-text-wrap">
                       <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1 form__form-field--modal">
                         <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="How to address you" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
@@ -231,7 +236,7 @@
                         <label for="company-2">Company name</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--select form__form-field--5 form__form-field--modal">
-                        <select id="quantity-2" name="quantity-users">
+                        <select id="quantity-2" name="quantity">
                           <option value="1-100">1-100</option>
                           <option value="101-500">101-500</option>
                           <option value="501-1000">501-1000</option>
@@ -242,12 +247,18 @@
                     </div>
                     <div class="form__checkbox-wrap">
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
-                        <input class="visually-hidden" type="checkbox" id="accept-2" name="terms" required="required" checked="checked"/>
-                        <label for="accept-2">I agree with personal data processing</label>
+                        <input class="visually-hidden" type="checkbox" id="terms-2" name="terms" required="required"/>
+                        <label for="terms-2">I agree with personal data processing</label>
                       </div>
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
                         <input class="visually-hidden" type="checkbox" id="subscribe-2" name="subscribe"/>
                         <label for="subscribe-2">Subscribe for news</label>
+                      </div>
+                      <div class="form__data">
+                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/en/post" hidden="hidden"/>
+                        <input type="text" id="isModal-2" name="isModal" value="modal" hidden="hidden"/>
+                        <input type="text" id="lang-2" name="lang" value="en" hidden="hidden"/>
+                        <input type="text" id="type-2" name="type" value="offer" hidden="hidden"/>
                       </div>
                     </div>
                     <div class="wrap wrap--ac">
@@ -263,6 +274,7 @@
       </div>
       <script src="/js/vendor.min.js"></script>
       <script src="/js/index.min.js"></script>
+      <script type="text/javascript" src="/js/form-handle.js"></script>
     </div>
   </body>
 </html>

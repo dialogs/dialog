@@ -560,6 +560,7 @@ gulp.task('server', function () {
     `${SOURCE_PATH}docs/*.*`,
     `${SOURCE_PATH}video/*.*`,
     `${SOURCE_PATH}robots.txt`,
+    `${SOURCE_PATH}sitemap.xml`,
     `${SOURCE_PATH}sw.js`,
     `${SOURCE_PATH}js/single/*.*`,
     `${SOURCE_PATH}fonts/**/*.{woff,woff2}`,
@@ -594,14 +595,9 @@ gulp.task('copy:videos', function () {
     .src('src/video/*.*').pipe(gulp.dest('build/video/'));
 });
 
-gulp.task('copy:robots', function () {
+gulp.task('copy:meta', function () {
   return gulp
-    .src('src/robots.txt').pipe(gulp.dest('build/'));
-});
-
-gulp.task('copy:sw', function () {
-  return gulp
-    .src('src/sw.js').pipe(gulp.dest('build/'));
+    .src(['src/robots.txt', 'src/sitemap.xml', 'src/sw.js']).pipe(gulp.dest('build/'));
 });
 
 gulp.task('copy:sripts', function () {
@@ -615,7 +611,7 @@ gulp.task('js', gulp.series('js:module', 'js:vendor'));
 gulp.task('html', gulp.series('html:ru', 'html:en'));
 gulp.task('home', gulp.series('home:ru', 'home:en'));
 gulp.task('index', gulp.series('index:redirect', 'index:404'));
-gulp.task('copy', gulp.series('copy:fonts', 'copy:docs', 'copy:videos', 'copy:robots', 'copy:sw', 'copy:sripts'));
+gulp.task('copy', gulp.series('copy:fonts', 'copy:docs', 'copy:videos', 'copy:meta'));
 gulp.task('blog', gulp.series('blog:ru', 'blog:en', 'posts:ru', 'posts:en', 'json'));
 
 gulp.task('minify', gulp.series('images:minify'));

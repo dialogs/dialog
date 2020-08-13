@@ -15,7 +15,6 @@ const api = new GhostContentAPI({
   key: 'bb27b3397d940f48695ea2e978',
   version: "v3"
 });
-const gulpData = require('gulp-data');
 const fs = require('fs');
 const streamArray = require('stream-array');
 const File = require('vinyl');
@@ -135,7 +134,7 @@ function removeProp(obj, propToDelete, propToFlatten) {
 }
 
 const pathBuilder = (path) => {
-  if ('index' !== path.basename) {
+  if (path.basename !== 'index') {
     path.dirname = path.basename.split('_').join('/');
     path.basename = 'index';
   }
@@ -152,7 +151,7 @@ gulp.task('json', async function () {
     include: "tags,authors",
     limit: "all"
   }).catch(err => {
-    console.error("error getting data");
+    console.error(err);
   });
   const file = new File({
     path: `posts.json`,
@@ -170,7 +169,7 @@ gulp.task('posts:ru', async function () {
     limit: "all",
     filter: "tags.name:#ru"
   }).catch(err => {
-    console.error("error getting data");
+    console.error(err);
   }).then((posts) => {
     posts.forEach((post, index) => {
       const {slug} = post;
@@ -201,7 +200,7 @@ gulp.task('posts:en', async function () {
     limit: "all",
     filter: "tags.name:#en"
   }).catch(err => {
-    console.error("error getting data");
+    console.error(err);
   }).then((posts) => {
     posts.forEach((post, index) => {
       const {slug} = post;
@@ -233,7 +232,7 @@ gulp.task('blog:ru', async function () {
     limit: "all",
     filter: "tags.name:#ru",
   }).catch(err => {
-    console.error("error getting data");
+    console.error(err);
   }).then((posts) => {
     return gulp
       .src(`${SOURCE_PATH}pug/pages/blog.pug`)
@@ -250,7 +249,6 @@ gulp.task('blog:ru', async function () {
       .pipe(rename(`index.html`))
       .pipe(gulp.dest(Paths.blog.ru));
   });
-
 });
 
 gulp.task('blog:en', async function () {
@@ -262,7 +260,7 @@ gulp.task('blog:en', async function () {
     filter: "tags.name:#en",
     order: "published_at DESC"
   }).catch(err => {
-    console.error("error getting data");
+    console.error(err);
   }).then((posts) => {
     return gulp
       .src(Paths.blog.src)
@@ -479,7 +477,7 @@ gulp.task('js:module', function () {
   return gulp
     .src([Paths.scripts.inputFile])
     .pipe(plumber())
-    // .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(
       rollup(
         {
@@ -496,7 +494,7 @@ gulp.task('js:module', function () {
       )
     )
     .pipe(rename(Paths.scripts.outputFileName))
-    // .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(Paths.scripts.dest));
 });
 
@@ -506,7 +504,7 @@ gulp.task('js:vendor', function () {
     .pipe(sourcemaps.init())
     .pipe(terser())
     .pipe(concat(Paths.scripts.vendor.outputFileName))
-    // .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(Paths.scripts.dest));
 });
 
@@ -533,7 +531,7 @@ gulp.task('css', function () {
     )
     .pipe(cleanCSS())
     .pipe(rename(Paths.styles.minifyFileName))
-    // .pipe(sourcemaps.write(''))
+    .pipe(sourcemaps.write(''))
     .pipe(gulp.dest(Paths.styles.dest))
     .pipe(server.stream());
 });

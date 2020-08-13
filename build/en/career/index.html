@@ -217,7 +217,8 @@
             <h2 class="form__title">Submit a resume</h2>
             <p class="form__sub">If you have not found a vacancy you are interested in, do not despair - fill out the form and submit it to us. We will definitely consider your resume.</p>
             <div class="form__form">
-              <form autocomplete="on" id="form-career" onsubmit="event.preventDefault();emailSendCV('en');">
+              <form class="gform" autocomplete="on" id="form-career" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST" data-email="site-srv@dlg.im">
+                <div id="data"></div>
                 <div class="form__input-text-wrap">
                   <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
                     <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="How to address you" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
@@ -242,7 +243,7 @@
                   <div class="form__form-field--5 form__form-field--fw">
                     <div class="field-textarea">
                       <label>
-                        <textarea name="message" required="required"></textarea><span>About you</span>
+                        <textarea name="message"></textarea><span>About you</span>
                       </label>
                     </div>
                   </div>
@@ -258,13 +259,18 @@
                           <use xlink:href="/img/sprite.svg#icon-upload"></use>
                         </svg>
                       </div>
-                      <input class="visually-hidden" type="file" id="file" name="file" onchange="fileResend()"/><span class="file-send">Attach resume</span><span class="file-name"></span>
+                      <input class="visually-hidden" type="file" id="file" name="file" accept=".rtf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/><span class="file-send">Attach resume</span><span class="file-name"></span>
                     </label>
                   </div>
                   <div class="form__form-field form__form-field--checkbox">
-                    <input class="visually-hidden" type="checkbox" id="terms-1" name="terms" required="required" checked="checked"/>
+                    <input class="visually-hidden" type="checkbox" id="terms-1" name="terms"/>
                     <label for="terms-1">I agree with personal data processing</label>
                   </div>
+                </div>
+                <div class="form__data">
+                  <input type="domain" id="domain-1" name="domain" value="https://dlg.im/en/career" hidden="hidden"/>
+                  <input type="lang" id="lang-1" name="lang" value="en" hidden="hidden"/>
+                  <input type="type" id="type-1" name="type" hidden="hidden"/>
                 </div>
                 <div class="wrap wrap--ac">
                   <button class="button--accent button button--form" type="submit"><span>Send request</span></button><img class="submit__icon" src="/img/loader.gif" alt="Animated loading"/>
@@ -343,7 +349,7 @@
               <div class="form__wrapper form__wrapper--modal">
                 <h2 class="form__title form__title--modal">Get a request</h2>
                 <div class="form__form">
-                  <form autocomplete="on" id="form-offer-modal" onsubmit="event.preventDefault();emailSendOffer('en',true,'career');">
+                  <form class="gform" autocomplete="on" id="form-offer-modal" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST" data-email="site-srv@dlg.im">
                     <div class="form__input-text-wrap">
                       <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1 form__form-field--modal">
                         <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="How to address you" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
@@ -362,7 +368,7 @@
                         <label for="company-2">Company name</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--select form__form-field--5 form__form-field--modal">
-                        <select id="quantity-2" name="quantity-users">
+                        <select id="quantity-2" name="quantity">
                           <option value="1-100">1-100</option>
                           <option value="101-500">101-500</option>
                           <option value="501-1000">501-1000</option>
@@ -373,12 +379,18 @@
                     </div>
                     <div class="form__checkbox-wrap">
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
-                        <input class="visually-hidden" type="checkbox" id="accept-2" name="terms" required="required" checked="checked"/>
-                        <label for="accept-2">I agree with personal data processing</label>
+                        <input class="visually-hidden" type="checkbox" id="terms-2" name="terms" required="required"/>
+                        <label for="terms-2">I agree with personal data processing</label>
                       </div>
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
                         <input class="visually-hidden" type="checkbox" id="subscribe-2" name="subscribe"/>
                         <label for="subscribe-2">Subscribe for news</label>
+                      </div>
+                      <div class="form__data">
+                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/en/career" hidden="hidden"/>
+                        <input type="text" id="isModal-2" name="isModal" value="modal" hidden="hidden"/>
+                        <input type="text" id="lang-2" name="lang" value="en" hidden="hidden"/>
+                        <input type="text" id="type-2" name="type" value="offer" hidden="hidden"/>
                       </div>
                     </div>
                     <div class="wrap wrap--ac">
@@ -394,6 +406,7 @@
       </div>
       <script src="/js/vendor.min.js"></script>
       <script src="/js/index.min.js"></script>
+      <script type="text/javascript" src="/js/form-handle.js"></script>
     </div>
   </body>
 </html>

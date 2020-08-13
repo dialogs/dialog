@@ -1,6 +1,6 @@
 include ./button
 
-mixin form-offer (isModal, idNumber, formId, pageName, formType)
+mixin form-offer (isModal, idNumber, formId, pageName, emailName)
   .form.form--main(class=(isModal ? 'form--modal' : null)).box.box--white
     .form__wrapper(class=(isModal ? 'form__wrapper--modal' : null))
       h2.form__title(class=(isModal ? 'form__title--modal' : null))=t.form.request_title
@@ -107,7 +107,7 @@ mixin form-offer (isModal, idNumber, formId, pageName, formType)
                 type="text"
                 id=`type-${idNumber}`
                 name="type"
-                value=formType
+                value=emailName
                 hidden
               )
           .wrap.wrap--ac

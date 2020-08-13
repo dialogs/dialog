@@ -1,6 +1,6 @@
 include ./button
 
-mixin form-blog (idNumber,formId,pageName,formType)
+mixin form-blog (idNumber,formId,pageName,emailName)
   .form.form--cta
     .form__wrapper
       form(
@@ -43,7 +43,7 @@ mixin form-blog (idNumber,formId,pageName,formType)
               type="type"
               id=`type-${idNumber}`
               name="type"
-              value=formType
+              value=emailName
               hidden
             )
           .wrap.wrap--ac.wrap--message

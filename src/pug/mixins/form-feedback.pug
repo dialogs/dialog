@@ -1,7 +1,7 @@
 include ./button
 include ./field-textarea
 
-mixin form-feedback (isModal, idNumber, formId, pageName, formType)
+mixin form-feedback (isModal, idNumber, formId, pageName, emailName)
   .form.form--main.form--feedback.box.box--white(class=(isModal ? 'form--modal' : null))
     .form__wrapper
       form(
@@ -72,7 +72,7 @@ mixin form-feedback (isModal, idNumber, formId, pageName, formType)
             type="type"
             id=`type-${idNumber}`
             name="type"
-            value=formType
+            value=emailName
             hidden
           )
 

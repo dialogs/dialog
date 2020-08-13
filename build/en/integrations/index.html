@@ -232,7 +232,7 @@
               <div class="form__wrapper form__wrapper--modal">
                 <h2 class="form__title form__title--modal">Get a request</h2>
                 <div class="form__form">
-                  <form autocomplete="on" id="form-offer-modal" onsubmit="event.preventDefault();emailSendOffer('en',true,'integrations');">
+                  <form class="gform" autocomplete="on" id="form-offer-modal" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
                     <div class="form__input-text-wrap">
                       <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1 form__form-field--modal">
                         <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="How to address you" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
@@ -251,7 +251,7 @@
                         <label for="company-2">Company name</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--select form__form-field--5 form__form-field--modal">
-                        <select id="quantity-2" name="quantity-users">
+                        <select id="quantity-2" name="quantity">
                           <option value="1-100">1-100</option>
                           <option value="101-500">101-500</option>
                           <option value="501-1000">501-1000</option>
@@ -262,12 +262,18 @@
                     </div>
                     <div class="form__checkbox-wrap">
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
-                        <input class="visually-hidden" type="checkbox" id="accept-2" name="terms" required="required" checked="checked"/>
-                        <label for="accept-2">I agree with personal data processing</label>
+                        <input class="visually-hidden" type="checkbox" id="terms-2" name="terms" required="required"/>
+                        <label for="terms-2">I agree with personal data processing</label>
                       </div>
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
                         <input class="visually-hidden" type="checkbox" id="subscribe-2" name="subscribe"/>
                         <label for="subscribe-2">Subscribe for news</label>
+                      </div>
+                      <div class="form__data">
+                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/en/integrations" hidden="hidden"/>
+                        <input type="text" id="isModal-2" name="isModal" value="modal" hidden="hidden"/>
+                        <input type="text" id="lang-2" name="lang" value="en" hidden="hidden"/>
+                        <input type="text" id="type-2" name="type" value="offer" hidden="hidden"/>
                       </div>
                     </div>
                     <div class="wrap wrap--ac">
@@ -283,6 +289,7 @@
       </div>
       <script src="/js/vendor.min.js"></script>
       <script src="/js/index.min.js"></script>
+      <script type="text/javascript" src="/js/form-handle.js"></script>
     </div>
   </body>
 </html>

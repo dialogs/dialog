@@ -1,14 +1,16 @@
 include ./button
 
-mixin form-offer (isModal, idNumber, formId, pageName)
+mixin form-offer (isModal, idNumber, formId, pageName, emailName)
   .form.form--main(class=(isModal ? 'form--modal' : null)).box.box--white
     .form__wrapper(class=(isModal ? 'form__wrapper--modal' : null))
       h2.form__title(class=(isModal ? 'form__title--modal' : null))=t.form.request_title
       .form__form
         form(
+          class="gform"
           autocomplete="on"
           id!=formId
-          onsubmit=`event.preventDefault();emailSendOffer('${lang}',${isModal},'${pageName}');`
+          action='https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec'
+          method='POST'
         )
           .form__input-text-wrap
             .form__form-field.form__form-field--text.form__form-field--m.form__form-field--1(class=(isModal ? 'form__form-field--modal' : null))
@@ -56,7 +58,7 @@ mixin form-offer (isModal, idNumber, formId, pageName)
             .form__form-field.form__form-field--text.form__form-field--select.form__form-field--5(class=(isModal ? 'form__form-field--modal' : null))
               select(
                 id=`quantity-${idNumber}`
-                name="quantity-users"
+                name="quantity"
               )
                 option(value="1-100") 1-100
                 option(value="101-500") 101-500
@@ -67,12 +69,11 @@ mixin form-offer (isModal, idNumber, formId, pageName)
             .form__form-field.form__form-field--checkbox(class=(isModal ? 'form__form-field--modal' : null))
               input.visually-hidden(
                 type="checkbox"
-                id=`accept-${idNumber}`
+                id=`terms-${idNumber}`
                 name="terms"
                 required
-                checked
               )
-              label(for=`accept-${idNumber}`)=t.form.agree
+              label(for=`terms-${idNumber}`)=t.form.agree
             .form__form-field.form__form-field--checkbox(class=(isModal ? 'form__form-field--modal' : null))
               input.visually-hidden(
                 type="checkbox"
@@ -80,6 +81,35 @@ mixin form-offer (isModal, idNumber, formId, pageName)
                 name="subscribe"
               )
               label(for=`subscribe-${idNumber}`)=t.form.news
+            .form__data
+              input(
+                type="text"
+                id=`domain-${idNumber}`
+                name="domain"
+                value=(`https://dlg.im/${lang}/${pageName}`)
+                hidden
+              )
+              input(
+                type="text"
+                id=`isModal-${idNumber}`
+                name='isModal'
+                value=(isModal ? 'modal' : 'page')
+                hidden
+              )
+              input(
+                type="text"
+                id=`lang-${idNumber}`
+                name="lang"
+                value=lang
+                hidden
+              )
+              input(
+                type="text"
+                id=`type-${idNumber}`
+                name="type"
+                value=emailName
+                hidden
+              )
           .wrap.wrap--ac
             button(
               class="button--accent button button--form"

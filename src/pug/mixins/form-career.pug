@@ -89,23 +89,28 @@ mixin form-career (idNumber, formId, emailName)
                 type="checkbox"
                 id=`terms-${idNumber}`
                 name="terms"
+                checked
+                required
               )
               label(for=`terms-${idNumber}`)=t.form.agree
 
           .form__data
             input(
+              type="text"
               id=`domain-${idNumber}`
               name="domain"
               value=(`https://dlg.im/${lang}/${pageName}`)
               hidden
             )
             input(
+              type="text"
               id=`lang-${idNumber}`
               name="lang"
               value=lang
               hidden
             )
             input(
+              type="text"
               id=`type-${idNumber}`
               name="type"
               value=emailName

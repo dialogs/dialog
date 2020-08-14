@@ -55,21 +55,21 @@ mixin form-feedback (isModal, idNumber, formId, pageName, emailName)
             label(for=`terms-${idNumber}`)=t.form.agree
         .form__data
           input(
-            type="domain"
+            type="text"
             id=`domain-${idNumber}`
             name="domain"
             value=(`https://dlg.im/${lang}/${pageName}`)
             hidden
           )
           input(
-            type="lang"
+            type="text"
             id=`lang-${idNumber}`
             name="lang"
             value=lang
             hidden
           )
           input(
-            type="type"
+            type="text"
             id=`type-${idNumber}`
             name="type"
             value=emailName

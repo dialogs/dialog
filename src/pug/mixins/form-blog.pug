@@ -26,21 +26,21 @@ mixin form-blog (idNumber,formId,pageName,emailName)
               label(for=`email-${idNumber}`)=t.form.email
           .form__data
             input(
-              type="domain"
+              type="text"
               id=`domain-${idNumber}`
               name="domain"
               value=(`https://dlg.im/${lang}/${pageName}`)
               hidden
             )
             input(
-              type="lang"
+              type="text"
               id=`lang-${idNumber}`
               name="lang"
               value=lang
               hidden
             )
             input(
-              type="type"
+              type="text"
               id=`type-${idNumber}`
               name="type"
               value=emailName

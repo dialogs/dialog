@@ -29,11 +29,11 @@ mixin header(pageName, lang)
   header.header.js-header
     .header__wrapper
       a(href=`${lang === "ru" ? "/ru" : "/en"}`).header__logo
-        img(src=`/img/library/logo-dialog.svg` alt=t.alt.logo)
+        img(src=`/img/library/logo-dialog.svg` alt=t.alt.logo loading="lazy")
       .header__content-box
         .header__top-panel
           a(href="/").header__nav-logo
-            img(src=`/img/library/logo-dialog.svg` alt=t.alt.logo)
+            img(src=`/img/library/logo-dialog.svg` alt=t.alt.logo loading="lazy")
           button(aria-label='Закрыть меню' type="button").header__close-button
         nav.header__nav-container.main-nav
           ul.main-nav__top-links

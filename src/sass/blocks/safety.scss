@@ -25,26 +25,63 @@
       position: static;
     }
   }
+
+  h2 {
+    @include typography-h2;
+    margin-bottom: 40px;
+    letter-spacing: -0.005em;
+
+    @include laptop {
+      margin-bottom: 53px;
+    }
+
+    @include tablet {
+      margin-bottom: 35px;
+    }
+  }
+  h3 {
+    @include typography-h3;
+    margin-bottom: 40px;
+    letter-spacing: -0.005em;
+
+    @include laptop {
+      margin-bottom: 53px;
+    }
+
+    @include tablet {
+      margin-bottom: 35px;
+    }
+  }
+
+  h4 {
+    @include typography-h5;
+
+    @include laptop {
+      margin-left: 20px;
+    }
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+
+  p {
+    @include typography-txt;
+
+    @include laptop {
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
+    }
+  }
+
 }
 
 .safety__wrapper {
   @include make-block-wrapper;
   padding-left: var(--indent);
   padding-right: var(--indent);
-}
-
-.safety__title {
-  @include typography-h2;
-  margin-bottom: 40px;
-  letter-spacing: -0.005em;
-
-  @include laptop {
-    margin-bottom: 53px;
-  }
-
-  @include tablet {
-    margin-bottom: 35px;
-  }
 }
 
 .safety__list {
@@ -73,6 +110,18 @@
   box-shadow: 0 2px 20px rgba(152, 136, 196, 0.16);
   padding: 35px 20px 20px 130px;
 
+  &:nth-child(odd) {
+    margin-right: auto;
+
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--big {
+    width: calc(100% / 1 - 12px);
+  }
+
   @include laptop {
     padding-left: 30px;
   }
@@ -80,7 +129,6 @@
     width: 100%;
     padding-left: 30px;
   }
-
   @include mobile-md {
     padding: 35px 20px 20px 20px;
     background: none;
@@ -92,44 +140,10 @@
     }
   }
 
-
-  &:nth-child(odd) {
-    margin-right: auto;
-
-    @include tablet {
-      margin-bottom: 25px;
-    }
-  }
-
-
-  h3 {
-    @include typography-h5;
-
-    @include laptop {
-      margin-left: 20px;
-    }
-
-    @include tablet {
-      font-size: 24px;
-      line-height: 31px;
-    }
-  }
-
   .wrap {
     margin-bottom: 15px;
   }
-
-  p {
-    @include typography-txt;
-
-    @include laptop {
-      &:not(:last-child) {
-        margin-bottom: 22px;
-      }
-    }
-  }
 }
-
 
 .safety__listbox {
   @include no-list;

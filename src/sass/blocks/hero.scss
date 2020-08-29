@@ -304,8 +304,16 @@
     }
   }
 
+  &--gov {
+    .button {
+      margin-top: 30px;
+    }
+  }
+
   &--security,
   &--career,
+  &--gov,
+  &--about,
   &--integrations {
     overflow: hidden;
     padding-top: 75px;

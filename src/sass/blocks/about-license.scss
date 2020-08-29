@@ -1,0 +1,41 @@
+.about-license {
+  .wrapper {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .wrap {
+    align-items: center;
+  }
+
+  .col {
+    margin-top: 0 !important;
+    &--images {
+      min-width: 350px;
+      width: 350px;
+    }
+  }
+
+  h2 {
+    @include typography-h2;
+    margin-top: 0;
+
+    @include mobile-xs {
+      font-size: 32px;
+    }
+  }
+
+  &__description {
+    @include typography-subhead;
+    font-weight: 400;
+    margin-top: 40px;
+  }
+
+  &__link {
+    margin-top: 40px;
+  }
+
+  &__images {
+    width: 100%;
+  }
+}

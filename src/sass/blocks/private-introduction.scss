@@ -1,0 +1,42 @@
+.private-introduction {
+  .wrapper {
+    padding-top: 65px;
+    padding-bottom: 85px;
+  }
+
+  h2 {
+    @include typography-h2;
+    margin-top: 25px;
+
+    @include mobile-xs {
+      font-size: 32px;
+    }
+  }
+
+  h6 {
+    @include typography-h6;
+    font-weight: 500;
+  }
+
+  p {
+    @include typography-subhead;
+    font-weight: 400;
+    margin-top: 40px;
+  }
+
+  .col {
+    @include col-4;
+  }
+
+  .number {
+    margin-right: 15px;
+    color: $color-accent;
+    font-size: 50px;
+    line-height: 0.8;
+  }
+
+  .text {
+    margin-top: 10px;
+  }
+
+}

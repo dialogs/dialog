@@ -9,22 +9,17 @@
 
   &--white {
     background-color: $color-contrast;
-    border: 1px solid $color-accent-light;
     transition: box-shadow $transition-props;
-    box-shadow: $shadow-card;
-    border-top: 3px solid $color-accent-mid;
-    padding: 30px;
+    box-shadow: 0px 2px 20px rgba(152, 136, 196, 0.16);;
+    padding: 25px;
+  }
 
-    img {
-      position: absolute;
-      top: 16px;
-      right: 20px;
-      width: 60px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
+  &--line {
+    background-color: $color-contrast;
+    border-top: 3px solid $color-accent;
+    transition: box-shadow $transition-props;
+    box-shadow: 0px 2px 20px rgba(152, 136, 196, 0.06);
+    padding: 25px;
   }
 
   &--outline {
@@ -96,7 +91,7 @@
       margin-bottom: 20px;
     }
 
-    .link{
+    .link {
       margin-top: 35px;
     }
   }

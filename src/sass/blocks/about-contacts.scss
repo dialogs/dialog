@@ -1,0 +1,80 @@
+.about-contacts {
+  h2 {
+    @include typography-h2;
+    margin-top: 0;
+    padding-right: 25%;
+
+    @include mobile-xs {
+      font-size: 32px;
+    }
+  }
+
+  .wrapper {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .wrap {
+    &--main {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--contact {
+      margin-top: 45px;
+      margin-bottom: 20px;
+    }
+
+    &--address {
+      flex-wrap: wrap;
+      padding: 20px 25px 25px;
+      background: $color-contrast;
+    }
+  }
+
+  .col {
+    margin-top: 0 !important;
+    @include col-6;
+
+    &--images {
+      min-width: 350px;
+      width: 350px;
+    }
+
+  }
+
+  .link {
+    @include typography-txt-big;
+    margin-right: 40px;
+
+  }
+
+  .phone {
+    @include typography-txt-big;
+    font-weight: 500;
+  }
+
+  .card {
+    box-shadow: $shadow-card;
+    overflow: hidden;
+    border-radius: 8px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    span {
+      display: block;
+      width: 100%;
+
+      &.city {
+        font-weight: bold;
+      }
+
+      &.address {
+        margin-top: 10px;
+      }
+    }
+  }
+}

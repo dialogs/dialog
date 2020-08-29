@@ -1,0 +1,13 @@
+mixin section-tripple-images(title, desc, img1, img2, img3)
+  section.tripple-images
+    .wrapper.wrapper--main
+      .wrap.wrap--gap-md
+        .col.col--images
+          .tripple-images__images
+            +picture(img3, 'jpg', t.alt.people, 270)
+            +picture(img2, 'jpg', t.alt.people, 270)
+            +picture(img1, 'jpg', t.alt.people, 270)
+        .col.col--content
+          .tripple-images__content
+            h3.tripple-images__title=title
+            p.tripple-images__description=desc

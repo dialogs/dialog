@@ -1,0 +1,77 @@
+extends ../global/layout
+include ../mixins/svg
+include ../mixins/button
+include ../mixins/button-play
+include ../mixins/picture
+include ../mixins/form-career
+
+block variables
+  -
+    const title = t.meta.oem_title;
+    const desc = t.meta.main_desc;
+    const routeClass = "js-route-main";
+    const pageName = "about";
+
+block content
+  section.hero.hero--main.hero--career
+    .hero__wrapper
+      .hero__left
+        h1.hero__title=t.career.title
+        p.hero__text=t.career.sub
+        +button(
+          t.button.vacancy_open,
+          {
+            styleType: 'accent',
+            isLink: true,
+            href:"https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
+            blank: true,
+            additionalClassName: 'button--hero button--link'
+          })
+          +svg('arrow-right', 16, 15)
+      .hero__right
+        .hero__img
+          +picture('/img/pages/career/hero', 'png', t.alt.people, 682)
+  section.mission.box.box--lilac
+    .wrapper.wrapper--main
+      .wrap.wrap--mission
+        .mission__left
+          h3.mission__title=t.career.create_title
+          p.mission__description=t.career.create_sub_1
+          p.mission__description=t.career.create_sub_2
+        .mission__right
+          .mission__count
+            span.mission__text.mission__tick
+            span.mission__text.mission__text--big >120
+            span.mission__text.mission__text--small=t.career.create_text_1
+            br
+            span.mission__text.mission__text--big 2
+            span.mission__text.mission__text--small=t.career.create_text_2
+  section.gallery.box.box--lilac
+    .wrap.wrap--images
+      each val, index in Array(15)
+        .col
+          .gallery__img-wrapper
+            +picture(`/img/gallery/gallery${index + 1}`, 'png', t.alt.pm, 333)
+  section.box.box--lilac
+    .wrapper.wrapper--main
+      .cta.cta--purple
+        .wrap.wrap--c.wrap--w
+          .wrap.wrap--c.wrap--s
+            h2.cta__title=t.cta.vacancy_title
+          .wrap.wrap--c.wrap--s
+            p.cta__sub=t.cta.vacancy_sub
+        .wrap.wrap--c
+          +button(
+            t.button.vacancy_all,
+            {
+              styleType: 'accent',
+              isLink: true,
+              href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
+              blank: true,
+              additionalClassName: 'button--link'
+            })
+            +svg('arrow-right', 16, 15)
+
+  +form-career(1, 'form-career','career')
+
+

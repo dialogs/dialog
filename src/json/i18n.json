@@ -489,8 +489,15 @@
     "vacancy_sub": {
       "ru": "Узнайте больше об открытых вакансиях и работе в компании",
       "en": "Learn more about open vacancies and work in the company."
+    },
+    "about_title": {
+      "ru": "Хотите работать в современной и перспективной IT-компании?",
+      "en": "Learn more about open vacancies and work in the company."
+    },
+    "about_slogan": {
+      "ru": "Карьера в Dialog \uD83D\uDE80",
+      "en": "Learn more about open vacancies and work in the company."
     }
-
   },
 
   "p404": {
@@ -694,6 +701,391 @@
     }
   },
 
+  "about": {
+    "title": {
+      "ru": "О компании",
+      "en": "Want to fulfill your talents?"
+    },
+    "sub_1": {
+      "ru": "ООО Диалог – российский разработчик коммуникационной платформы для совместной работы и организации единого рабочего пространства. ",
+      "en": "Join the Dialog Team"
+    },
+    "sub_2": {
+      "ru": "Основана в 2016 году. Входит в состав группы компании ПАО Сбербанк с 2018 года.",
+      "en": "Join the Dialog Team"
+    },
+    "team_title": {
+      "ru": "Наша команда",
+      "en": "We create Dialog"
+    },
+    "team_sub": {
+      "ru": "Dialog объединяет специалистов в области IT-коммуникаций, безопасности данных, real-time распределенных систем, Big Data и других смежных с месседжингом областей. В офисах компании Диалог», работает более 100 человек.",
+      "en": "We create Dialog"
+    },
+    "number_1": {
+      "ru": "год основания компании",
+      "en": "We create Dialog"
+    },
+    "number_2": {
+      "ru": "количество сотрудников",
+      "en": "We create Dialog"
+    },
+    "number_3": {
+      "ru": "города, офис в Москве и Санкт-Петербурге ",
+      "en": "We create Dialog"
+    },
+    "history_title": {
+      "ru": "История Компании",
+      "en": "We create Dialog"
+    },
+    "history_1": {
+      "ru": "Начало разработки мессенджера. Выпуск совместного решения с «Фактор связи». Состав команды 16 человек.",
+      "en": "We create Dialog"
+    },
+    "history_2": {
+      "ru": "Выпуск совместного решения с «ИнфоТеКС». Интеграция Dialog Enterprise с ViPNet VPN. Состав команды 19 человек.",
+      "en": "We create Dialog"
+    },
+    "history_3": {
+      "ru": "Диалог становится ДЗО Сбербанка. Интеграция с облачными продуктами «МойОфис Частное Облако» и «МойОфис Профессиональный». Состав команды 70 человек.",
+      "en": "We create Dialog"
+    },
+    "history_4": {
+      "ru": "Компанию возглавила Марина Настасенко. Представление концепции digital workplace на базе dialog. Открытие офиса в Санкт-Петербурге. Выпуск второй версии СберЧата. Состав команды 131 человек.",
+      "en": "We create Dialog"
+    },
+    "history_5": {
+      "ru": "Коммерческое и технологическое партнерство с участниками Экосистемы Сбербанка. Развитие функционала видеоконференцсвязи корпоративного уровня. Выпуск продукта Dialog OEM для развития бизнеса наших партнеров и выхода на новые рынки. Дальнейший рост команды.",
+      "en": "We create Dialog"
+    },
+    "leaders_title": {
+      "ru": "Руководство",
+      "en": "We create Dialog"
+    },
+    "license_title": {
+      "ru": "Свидетельства и лицензии",
+      "en": "We create Dialog"
+    },
+    "license_sub": {
+      "ru": "Dialog обеспечивает надежную и безопасную коммуникацию в государственных структурах. Мессенджер включен в Реестр российского ПО и разрабатывается в соответствии с требованиями Импортозамещения. Разработчик продукта имеет лицензии ФСТЭК и ФСБ России.",
+      "en": "We create Dialog"
+    },
+    "it_title": {
+      "ru": "Dialog участвует в развитии ИТ-отрасли в России",
+      "en": "We create Dialog"
+    },
+    "it_li_1": {
+      "ru": "Резидент инновационного центра «Сколково»",
+      "en": "We create Dialog"
+    },
+    "it_li_2": {
+      "ru": "Членство в Ассоциации Разработчиков Программных Продуктов «Отечественный софт»",
+      "en": "We create Dialog"
+    },
+    "contact_title": {
+      "ru": "Контакты",
+      "en": "We create Dialog"
+    },
+    "contact_address_city_1": {
+      "ru": "Москва",
+      "en": "We create Dialog"
+    },
+    "contact_address_1": {
+      "ru": "121170, ул. Поклонная, д. 3, корп. 2, этаж 11",
+      "en": "We create Dialog"
+    },
+    "contact_address_city_2": {
+      "ru": "Санкт-Петербург",
+      "en": "We create Dialog"
+    },
+    "contact_address_2": {
+      "ru": "191186, Невский проспект, д. 19",
+      "en": "We create Dialog"
+    }
+  },
+
+  "private": {
+    "title": {
+      "ru": "Dialog для коммерческих организаций",
+      "en": "Want to fulfill your talents?"
+    },
+    "sub": {
+      "ru": "Единая среда коммуникаций для бизнеса",
+      "en": "Join the Dialog Team"
+    },
+    "adv_title_1": {
+      "ru": "Сокращение расходов на коммуникации ",
+      "en": "We create Dialog"
+    },
+    "adv_sub_1": {
+      "ru": "Dialog объединяет инструменты коммуникации в одной платформе и сокращает расходы на связь.",
+      "en": "We create Dialog"
+    },
+    "adv_title_2": {
+      "ru": "Безопасность без ограничения свободы",
+      "en": "We create Dialog"
+    },
+    "adv_sub_2": {
+      "ru": "Централизуйте управление правами и доступами к информации и обеспечьте прозрачность.",
+      "en": "We create Dialog"
+    },
+    "adv_title_3": {
+      "ru": "Эффективная совместная работа в любом масштабе",
+      "en": "We create Dialog"
+    },
+    "adv_sub_3": {
+      "ru": "Организуйте работу любого количества распределенных команд.",
+      "en": "We create Dialog"
+    },
+    "grow_title": {
+      "ru": "Ускорьте рост бизнес-показателей компании",
+      "en": "We create Dialog"
+    },
+    "grow_desc": {
+      "ru": "Оптимизируйте работу по ключевым направлениям бизнеса – используйте Bot SDK и API для создания интеграций. Боты создают новый интерфейс для работы с информацией, позволяя сотрудникам делать работу быстрее и качественнее.",
+      "en": "We create Dialog"
+    },
+    "grow_sub": {
+      "ru": "Примеры оптимизации процессов",
+      "en": "We create Dialog"
+    },
+    "grow_card_title_1": {
+      "ru": "Выводите новых сотрудников быстрее",
+      "en": "We create Dialog"
+    },
+    "grow_card_sub_1": {
+      "ru": "Найм сотрудников",
+      "en": "We create Dialog"
+    },
+    "grow_card_text_1": {
+      "ru": "Новые сотрудники вовлекаются в работу раньше, когда на их вопросы быстро отвечают чатботы.",
+      "en": "We create Dialog"
+    },
+    "grow_card_link_1": {
+      "ru": "Dialog для HR",
+      "en": "We create Dialog"
+    },
+    "grow_card_title_2": {
+      "ru": "Ускорьте разработку",
+      "en": "We create Dialog"
+    },
+    "grow_card_sub_2": {
+      "ru": "IT и разработка",
+      "en": "We create Dialog"
+    },
+    "grow_card_text_2": {
+      "ru": "Разработчики с помощью интеграций объединяют рабочие сервисы и автоматизируют процессы в чатах (ChatOps).",
+      "en": "We create Dialog"
+    },
+    "grow_card_link_2": {
+      "ru": "Dialog для Разработчиков",
+      "en": "We create Dialog"
+    },
+    "grow_card_title_3": {
+      "ru": "Заключайте больше сделок",
+      "en": "We create Dialog"
+    },
+    "grow_card_sub_3": {
+      "ru": "Продажи",
+      "en": "We create Dialog"
+    },
+    "grow_card_text_3": {
+      "ru": "Организуйте работу с воронкой продаж в Dialog. Смотрите детали сделок из CRM в чатах, увеличьте доступ к информации для сотрудников.",
+      "en": "We create Dialog"
+    },
+    "grow_card_link_3": {
+      "ru": "Dialog для Коммерческого отдела",
+      "en": "We create Dialog"
+    },
+    "grow_card_title_4": {
+      "ru": "Следите за брендом онлайн",
+      "en": "We create Dialog"
+    },
+    "grow_card_sub_4": {
+      "ru": "Маркетинг и PR",
+      "en": "We create Dialog"
+    },
+    "grow_card_text_4": {
+      "ru": "Получайте упоминания вашего бренда в социальных сетях и публикациях онлайн-изданий в мессенджере для оперативной реакции.",
+      "en": "We create Dialog"
+    },
+    "grow_card_link_4": {
+      "ru": "Dialog для Маркетинга",
+      "en": "We create Dialog"
+    },
+    "grow_card_title_5": {
+      "ru": "Сократите время обработки обращений",
+      "en": "We create Dialog"
+    },
+    "grow_card_sub_5": {
+      "ru": "Обслуживание клиентов и поддержка",
+      "en": "We create Dialog"
+    },
+    "grow_card_text_5": {
+      "ru": "Объедините запросы от клиентов в группах Dialog и решайте проблемы быстрее.",
+      "en": "We create Dialog"
+    },
+    "grow_card_link_5": {
+      "ru": "Dialog для Техподдержки",
+      "en": "We create Dialog"
+    },
+    "corp_title": {
+      "ru": "Корпоративные функции",
+      "en": "We create Dialog"
+    },
+    "corp_title_1": {
+      "ru": "Установка на инфраструктуру компании",
+      "en": "We create Dialog"
+    },
+    "corp_title_2": {
+      "ru": "Корпоративные учетные данные",
+      "en": "We create Dialog"
+    },
+    "corp_text_2": {
+      "ru": "Интеграция с адресной книгой и OpenID",
+      "en": "We create Dialog"
+    },
+    "corp_title_3": {
+      "ru": "Аудио- /видеосвязь",
+      "en": "We create Dialog"
+    },
+    "corp_text_3": {
+      "ru": "Интеграция с системами АКС/ВКС, АТС",
+      "en": "We create Dialog"
+    },
+    "corp_title_4": {
+      "ru": "Интеграция с системами безопасности",
+      "en": "We create Dialog"
+    },
+    "corp_title_5": {
+      "ru": "Таргетированное оповещение",
+      "en": "We create Dialog"
+    },
+    "corp_text_5": {
+      "ru": "Рассылки для определенных групп пользователей в каналах",
+      "en": "We create Dialog"
+    },
+    "corp_title_6": {
+      "ru": "Возможность подключения и разработки ботов и чат-ботов",
+      "en": "We create Dialog"
+    },
+    "safety_title": {
+      "ru": "Защита информации",
+      "en": "We create Dialog"
+    },
+    "access_title": {
+      "ru": "Контроль доступа к информации",
+      "en": "We create Dialog"
+    },
+    "access_sub": {
+      "ru": "Панель администратора",
+      "en": "We create Dialog"
+    },
+    "access_text": {
+      "ru": "Со временем в вашей компании могут появляться новые сотрудники, в то время как другие будут уходить. С Панелью администратора вы можете управлять рабочим пространством и осуществлять мониторинг.",
+      "en": "We create Dialog"
+    },
+    "expenses_title": {
+      "ru": "Сокращение расходов на коммуникацию",
+      "en": "We create Dialog"
+    },
+    "expenses_sub": {
+      "ru": "Dialog объединяет множество инструментов на одной платформе",
+      "en": "We create Dialog"
+    },
+    "expenses_title_1": {
+      "ru": "Телефония",
+      "en": "We create Dialog"
+    },
+    "expenses_text_1": {
+      "ru": "Затраты на стационарные телефоны, сопровождение и поддержку, звонки через АТС на мобильные номера",
+      "en": "We create Dialog"
+    },
+    "expenses_title_2": {
+      "ru": "Видеосвязь",
+      "en": "We create Dialog"
+    },
+    "expenses_text_2": {
+      "ru": "Лицензионные платежи за программы для видеосвязи",
+      "en": "We create Dialog"
+    },
+    "expenses_title_3": {
+      "ru": "Виртуальное хранилище",
+      "en": "We create Dialog"
+    },
+    "expenses_text_3": {
+      "ru": "Подписки и лицензии на облачное хранилище",
+      "en": "We create Dialog"
+    },
+    "introduction_title": {
+      "ru": "Готов к масштабному внедрению",
+      "en": "We create Dialog"
+    },
+    "introduction_title_1": {
+      "ru": "Быстрое развертывание",
+      "en": "We create Dialog"
+    },
+    "introduction_text_1": {
+      "ru": "Встраивается в структуру компании от одного дня",
+      "en": "We create Dialog"
+    },
+    "introduction_title_2": {
+      "ru": "Высокая доступность",
+      "en": "We create Dialog"
+    },
+    "introduction_text_2": {
+      "ru": "Бесперебойная работа при базе активных пользователей 250+ тысяч в рамках организации",
+      "en": "We create Dialog"
+    },
+    "introduction_title_3": {
+      "ru": "Отзывчивый сервис",
+      "en": "We create Dialog"
+    },
+    "introduction_text_3": {
+      "ru": "Оперативная поддержка и документация на русском языке",
+      "en": "We create Dialog"
+    }
+  },
+
+  "gov": {
+    "title": {
+      "ru": "Dialog для государственных организаций",
+      "en": "Want to fulfill your talents?"
+    },
+    "license_title": {
+      "ru": "Свидетельства и лицензии",
+      "en": "Want to fulfill your talents?"
+    },
+    "quote_title": {
+      "ru": "Dialog в Сбербанке",
+      "en": "Want to fulfill your talents?"
+    },
+    "about_title": {
+      "ru": "О компании",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_title": {
+      "ru": "Dialog для современных госорганизаций",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_sub_1": {
+      "ru": "Сделайте общение безопасным",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_sub_2": {
+      "ru": "Улучшите качество оказания государственных услуг",
+      "en": "Want to fulfill your talents?"
+    },
+    "about_sub_1": {
+      "ru": "ООО Диалог – российский разработчик коммуникационной платформы для совместной работы и организации единого рабочего пространства.",
+      "en": "Want to fulfill your talents?"
+    },
+    "about_sub_2": {
+      "ru": "Основана в 2016 году. Входит в состав группы компании ПАО Сбербанк с 2018 года.",
+      "en": "Want to fulfill your talents?"
+    }
+  },
+
   "download": {
     "for": {
       "ru": "для",
@@ -803,8 +1195,16 @@
   },
 
   "button": {
+    "private": {
+      "ru": "Заявка для компании",
+      "en": "Submit a request"
+    },
     "leave": {
       "ru": "Оставить заявку",
+      "en": "Submit a request"
+    },
+    "government": {
+      "ru": "Заявка для гос. организаций",
       "en": "Submit a request"
     },
     "learn": {
@@ -841,6 +1241,10 @@
     },
     "vacancy_open": {
       "ru": "Открытые вакансии",
+      "en": "Open vacancies"
+    },
+    "vacancy_know": {
+      "ru": "Узнайте об открытых вакансиях",
       "en": "Open vacancies"
     },
     "vacancy_all": {
@@ -1032,6 +1436,38 @@
     "career_title": {
       "ru": "Карьера | Dialog",
       "en": "Career | Dialog"
+    },
+    "about_title": {
+      "ru": "О Нас | Dialog",
+      "en": "About | Dialog"
+    },
+    "private_title": {
+      "ru": "Частным организациям | Dialog",
+      "en": "Private organizations | Dialog"
+    },
+    "gov_title": {
+      "ru": "Госучреждениям | Dialog",
+      "en": "State institutions | Dialog"
+    },
+    "tech_title": {
+      "ru": "Dialog для Технической поддержки | Dialog",
+      "en": "Dialog for Technical support | Dialog"
+    },
+    "hr_title": {
+      "ru": "Dialog для HR | Dialog",
+      "en": "Dialog for HR | Dialog"
+    },
+    "commercial_title": {
+      "ru": "Dialog для Коммерческого отдела | Dialog",
+      "en": "Dialog for the Commercial Department | Dialog"
+    },
+    "finance_title": {
+      "ru": "Dialog для Финансового отдела | Dialog",
+      "en": "Dialog for the Finance Department | Dialog"
+    },
+    "oem_title": {
+      "ru": "OEM | Dialog",
+      "en": "OEM | Dialog"
     },
     "download_title": {
       "ru": "Скачать | Dialog",

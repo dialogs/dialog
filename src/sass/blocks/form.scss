@@ -399,7 +399,7 @@
       border: none;
       border-radius: 0;
       border-bottom: 1px solid $color-gray-light;
-      background-color: $color-contrast;
+      background-color: transparent;
       appearance: none;
       transition: border-bottom $transition-props;
 
@@ -428,7 +428,7 @@
       line-height: 27px;
       letter-spacing: 0.275px;
       color: $color-gray-dark;
-      background-color: $color-contrast;
+      background-color: transparent;
       background-image: url("../img/library/arrow-select.svg");
       background-repeat: no-repeat;
       background-position: right 5px center;
@@ -544,7 +544,7 @@
         transform: translateY(-50%);
         width: 30px;
         height: 30px;
-        background-color: $color-contrast;
+        background-color: transparent;
         border: 1px solid $color-gray-light;
         border-radius: 2px;
       }

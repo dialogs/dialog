@@ -552,7 +552,7 @@ gulp.task('server', function () {
     });
   });
   gulp.watch(`${SOURCE_PATH}sass/**/*.scss`, gulp.series('css'));
-  gulp.watch(`${SOURCE_PATH}pug/**/*.pug`, gulp.series('main', 'refresh'));
+  gulp.watch([`${SOURCE_PATH}pug/**/*.pug`,`${SOURCE_PATH}json/**/*.json`], gulp.series('main', 'refresh'));
   gulp.watch(`${SOURCE_PATH}img/**/*.{png,jpg,gif,svg}`, gulp.series('graphic', 'refresh'));
   gulp.watch([
     `${SOURCE_PATH}docs/*.*`,

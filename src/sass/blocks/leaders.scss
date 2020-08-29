@@ -1,0 +1,35 @@
+.leaders {
+  padding-top: 60px;
+  padding-bottom: 111px;
+
+  .wrap {
+    &--main {
+      flex-wrap: wrap;
+    }
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h4 {
+    @include typography-h6;
+  }
+
+  h2 {
+    @include typography-h2;
+  }
+
+  p {
+    @include typography-txt;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .col {
+    @include col-3;
+    position: relative;
+  }
+}

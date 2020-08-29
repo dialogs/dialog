@@ -1,0 +1,86 @@
+.growth {
+  h2 {
+    @include typography-h2;
+    margin-top: 0;
+    max-width: 850px;
+
+    @include mobile-xs {
+      font-size: 32px;
+    }
+  }
+
+  h4 {
+    @include typography-h4;
+    margin-top: 60px;
+    font-weight: 500;
+  }
+
+  h6 {
+    @include typography-h6;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  .wrapper {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .wrap {
+
+    &--main {
+      flex-wrap: wrap;
+    }
+
+    &--sub {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      align-items: center;
+
+      svg {
+        fill: none;
+        margin-right: 10px;
+      }
+
+    }
+
+    &--content {
+      flex-wrap: wrap;
+    }
+  }
+
+  .col {
+    @include col-4;
+    @include tablet {
+      @include col-6;
+    }
+    @include mobile-sm {
+      @include col-12;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .sub {
+    @include typography-txt-sm;
+  }
+
+  .text {
+    margin-top: 10px;
+  }
+
+  .description {
+    @include typography-subhead;
+    font-weight: 400;
+    margin-top: 40px;
+    max-width: 900px;
+  }
+
+  .link {
+    @include typography-txt-sm;
+    margin-top: 10px;
+  }
+}

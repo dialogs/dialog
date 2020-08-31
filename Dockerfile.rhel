@@ -7,7 +7,7 @@ ARG NPM_REGISTRY
 
 ENV PATH="/opt/node/bin:${PATH}"
 
-RUN yum install -y openssl && microdnf clean all && rm -rf /var/cache/yum
+RUN yum install -y openssl && yum clean all && rm -rf /var/cache/yum
 RUN rpm -Uvh --nodeps http://nginx.org/packages/centos/7/x86_64/RPMS/nginx-1.18.0-1.el7.ngx.x86_64.rpm
 
 WORKDIR /opt/

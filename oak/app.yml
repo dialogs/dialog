@@ -44,7 +44,7 @@ services:
             command:
               - nginx
       ingress:
-        cached-http:
+        http-api:
           port: 3001
           container: nginx
           controllers:
@@ -53,5 +53,5 @@ services:
               host: ${project.endpoints.site}
               options:
                 ssl_verify_client: ${project.router.mutual-tls.enabled}
-        http-api:
+        http:
           port: 3000

@@ -17,8 +17,6 @@ COPY . .
 # copy nginx configuration
 COPY src/conf/nginx.conf /etc/nginx/nginx.conf
 
-# copy start script
-COPY ./etc/start.sh /opt/start.sh
 
 RUN chmod 777 /var/www/html && \
     chmod 777 /var/www/html/* && \

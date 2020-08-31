@@ -15,7 +15,7 @@ RUN rm -rf src/
 COPY . .
 
 # copy nginx configuration
-COPY ./etc/nginx.conf /etc/nginx/nginx.conf
+COPY src/conf/nginx.conf /etc/nginx/nginx.conf
 
 # copy start script
 COPY ./etc/start.sh /opt/start.sh

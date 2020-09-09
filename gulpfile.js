@@ -302,7 +302,7 @@ gulp.task('images:webp', function () {
     .src(Paths.images.webpSrc)
     .pipe(
       webp({
-        quality: 90,
+        quality: 70,
       })
     )
     .pipe(gulp.dest(Paths.images.dest));

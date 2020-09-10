@@ -39,13 +39,9 @@ html(lang=lang class=routeClass)
     link(rel="preload" href="/fonts/Euclid-CircularA-Regular.woff2" as="font" crossorigin="anonymous")
     link(rel="stylesheet" href=`/css/style.min.css`)
     link(rel="shortcut icon" href=`/img/favicon.png`)
-    iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6' height='0' width='0' style='display:none;visibility:hidden')
-
-
-    
 
   body
-    
+    iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6' height='0' width='0' style='display:none;visibility:hidden')
 
     .page
       +header(pageName, lang)
@@ -56,4 +52,3 @@ html(lang=lang class=routeClass)
       +form-modal(pageName)
       script(src=`/js/vendor.min.js`)
       script(src=`/js/index.min.js`)
-      script(type='text/javascript' src='/js/form-handle.js')

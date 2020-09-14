@@ -58,9 +58,7 @@ block content
     {name: 'Михаил Шапкин', text: 'Финансовый директор'},
     ];
 
-
-
-  section.hero.hero--main.hero--about
+  section.hero.hero--main.hero--about.hero--secondary.hero--next-no-bg
     .hero__wrapper
       .hero__left
         h1.hero__title=t.about.title
@@ -70,8 +68,7 @@ block content
         .hero__img
           +picture('/img/pages/about/hero', 'jpg', t.alt.people, 682)
 
-  +section-tripple-images(t.about.team_title,t.about.team_sub,'/img/pages/about/team1','/img/pages/about/team2','/img/pages/about/team3')
-
+  +section-image-collage(t.about.team_title,t.about.team_sub,'/img/pages/about/team1','/img/pages/about/team2','/img/pages/about/team3','about')
   section.numbers
     .wrapper.wrapper--main
       .wrap
@@ -85,14 +82,14 @@ block content
           span.numbers__text.numbers__text--big 2
           span.numbers__text.numbers__text--small=t.about.number_3
 
-  section.box.box--purple
+  section.box.box--accent.box--squares
     .wrapper.wrapper--main
-      .cta.cta--purple
+      .cta.cta--about.cta--center.cta--md
         .wrap.wrap--c.wrap--w
           .wrap.wrap--c.wrap--s
-            p.cta__sub=t.cta.about_slogan
+            p.text=t.cta.about_slogan
           .wrap.wrap--c.wrap--s
-            h2.cta__title=t.cta.about_title
+            h2.title=t.cta.about_title
         .wrap.wrap--c
           +button(
             t.button.vacancy_know,
@@ -121,7 +118,7 @@ block content
   section.leaders
     .wrapper.wrapper--main
       h2.leaders__title=t.about.leaders_title
-      .wrap.wrap--main.wrap--gap-md
+      .wrap.wrap--main.wrap--gap-sm
         each item, index in leaders
           .col
             .item

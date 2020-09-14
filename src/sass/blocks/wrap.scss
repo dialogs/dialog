@@ -49,6 +49,12 @@
     @include gap-lg;
   }
 
+  &--col-2 {
+    .col {
+      @include col-6;
+    }
+  }
+
   &--col-3 {
     .col {
       @include col-3;

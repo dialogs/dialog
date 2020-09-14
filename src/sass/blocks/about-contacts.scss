@@ -12,17 +12,24 @@
   .wrapper {
     padding-top: 85px;
     padding-bottom: 85px;
+    @include mobile-md {
+      padding-top: 45px;
+      padding-bottom: 65px;
+    }
   }
 
   .wrap {
     &--main {
       align-items: center;
       justify-content: space-between;
+
+      @include mobile-md {
+        flex-wrap: wrap;
+      }
     }
 
     &--contact {
       margin-top: 45px;
-      margin-bottom: 20px;
     }
 
     &--address {
@@ -33,19 +40,17 @@
   }
 
   .col {
-    margin-top: 0 !important;
     @include col-6;
 
-    &--images {
-      min-width: 350px;
-      width: 350px;
+    @include mobile-md {
+      @include col-12;
     }
-
   }
 
   .link {
     @include typography-txt-big;
     margin-right: 40px;
+    margin-bottom: 0 !important;
 
   }
 

@@ -16,25 +16,25 @@ block content
   -
     const advantages = [
     {
-    iconPath: "icon-hands",
-    iconWidth: 47,
-    iconHeight: 41,
-    title: t.main.adv_title_1,
-    text: t.main.adv_sub_1
+    iconPath: "white-shield-circle",
+    iconWidth: 43,
+    iconHeight: 43,
+    title: t.gov.adv_title_1,
+    text: t.gov.adv_sub_1
     },
     {
-    iconPath: "icon-purse",
-    iconWidth: 38,
-    iconHeight: 35,
-    title: t.main.adv_title_2,
-    text: t.main.adv_sub_2
+    iconPath: "white-sheet-dots",
+    iconWidth: 43,
+    iconHeight: 43,
+    title: t.gov.adv_title_2,
+    text: t.gov.adv_sub_2
     },
     {
-    iconPath: "icon-lock",
-    iconWidth: 49,
-    iconHeight: 49,
-    title: t.main.adv_title_3,
-    text: t.main.adv_sub_3
+    iconPath: "white-display-gear",
+    iconWidth: 50,
+    iconHeight: 50,
+    title: t.gov.adv_title_3,
+    text: t.gov.adv_sub_3
     }
     ];
     const licenseImages = {
@@ -63,7 +63,9 @@ block content
     }
     ]
     };
-  section.hero.hero--main.hero--gov
+
+
+  section.hero.hero--main.hero--secondary.hero--next-no-bg
     .hero__wrapper
       .hero__left
         h1.hero__title=t.gov.title
@@ -81,7 +83,7 @@ block content
         .hero__img
           +picture('/img/pages/government/hero', 'jpg', t.alt.people, 682)
 
-  section.advantages.box.box--white
+  section.advantages.advantages--next-bg.box.box--white
     .advantages__wrapper
       h2.visually-hidden Преимущества приложения Dialog
       ul.advantages__list
@@ -90,15 +92,15 @@ block content
             div.pseudo--1
             div.pseudo--2
             div.pseudo--3
-            .icon.icon--round.icon--accent.icon--md
+            .icon.icon--round.icon--accent.icon--md.icon--nofill
               +svg(item.iconPath, item.iconWidth, item.iconHeight)
             h2= item.title
             p= item.text
 
   section.safety.safety--gov.box.box--lilac
     .safety__wrapper
-      h2.safety__title=t.gov.safety_title
-      h3.safety__title=t.gov.safety_sub_1
+      h2=t.gov.safety_title
+      h3=t.gov.safety_sub_1
       ul.safety__list
         li.safety__item.safety__item--safe
           .wrap.wrap--ac.wrap--icon
@@ -123,7 +125,7 @@ block content
           .wrap.wrap--ac.wrap--icon
             .icon.icon--accent.icon--lg.icon--round
               +svg('icon-cloud', 48, 52)
-            h3=t.main.sec_title_2
+            h4=t.main.sec_title_2
           p=t.main.sec_sub_2
           ul.safety__listbox
             li
@@ -137,7 +139,7 @@ block content
                 | !{t.main.sec_li_2_2}
                 img(src=`/img/sber-cloud.svg`, width="108" height="22" alt=t.alt.sbercloud)
 
-      h3.safety__title=t.gov.safety_sub_2
+      h3.mt=t.gov.safety_sub_2
       ul.safety__list
         li.safety__item.safety__item--big
           .wrap.wrap--ac.wrap--icon

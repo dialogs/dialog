@@ -3,7 +3,7 @@ include ../mixins/page-title
 include ../mixins/svg
 include ../mixins/button
 include ../mixins/picture
-include ../mixins/form-blog
+include ../mixins/form-cta
 
 block variables
   -
@@ -58,7 +58,6 @@ block content
       .wrap.wrap--c
         +button(t.button.view, {styleType: 'dark', type: 'button', additionalClassName: 'show-posts'})
 
-  section.box.box--lilac
+  section.box.box--lilac.cta.cta--xl
     .wrapper.wrapper--main
-      .cta.cta--form.cta--lilac
-        +form-blog(1,'form-blog', pageName, "blog")
+        +form-cta(t.cta.form_blog_title,'',1,'form-cta', pageName, 'blog','cta-blog')

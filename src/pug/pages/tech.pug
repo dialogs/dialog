@@ -3,75 +3,103 @@ include ../mixins/svg
 include ../mixins/button
 include ../mixins/button-play
 include ../mixins/picture
+include ../mixins/form-cta
 include ../mixins/form-career
+include ../mixins/sections
 
 block variables
   -
     const title = t.meta.tech_title;
     const desc = t.meta.main_desc;
     const routeClass = "js-route-main";
-    const pageName = "about";
+    const pageName = "tech";
 
 block content
-  section.hero.hero--main.hero--career
+  section.hero.hero--main.hero--secondary.hero--next-bg.hero--tech
     .hero__wrapper
       .hero__left
-        h1.hero__title=t.career.title
-        p.hero__text=t.career.sub
+        h1.hero__title=t.tech.title
         +button(
-          t.button.vacancy_open,
+          t.button.leave,
           {
             styleType: 'accent',
             isLink: true,
-            href:"https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
+            href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
             blank: true,
-            additionalClassName: 'button--hero button--link'
+            additionalClassName: 'hero__button button--link'
           })
           +svg('arrow-right', 16, 15)
       .hero__right
         .hero__img
-          +picture('/img/pages/career/hero', 'png', t.alt.people, 682)
-  section.mission.box.box--lilac
+          +picture('/img/pages/tech/hero', 'jpg', t.alt.people, 682)
+
+
+  section.box.box--gray.cta.cta--nav.cta--sm
     .wrapper.wrapper--main
-      .wrap.wrap--mission
-        .mission__left
-          h3.mission__title=t.career.create_title
-          p.mission__description=t.career.create_sub_1
-          p.mission__description=t.career.create_sub_2
-        .mission__right
-          .mission__count
-            span.mission__text.mission__tick
-            span.mission__text.mission__text--big >120
-            span.mission__text.mission__text--small=t.career.create_text_1
-            br
-            span.mission__text.mission__text--big 2
-            span.mission__text.mission__text--small=t.career.create_text_2
-  section.gallery.box.box--lilac
-    .wrap.wrap--images
-      each val, index in Array(15)
+      .wrap.wrap--s
+        h4.title=t.cta.tech_info_title
+      .wrap.wrap--s.wrap--links
+        a.link.link--accent(href='/')=t.cta.tech_info_link_1
+        a.link.link--accent(href='/')=t.cta.tech_info_link_2
+        a.link.link--accent(href='/')=t.cta.tech_info_link_3
+
+
+
+  section.department
+    .wrapper.wrapper--main
+      .sub=t.tech.sub_1
+      h2.title=t.tech.title_1
+      .wrap.wrap--gap-md.wrap--row.wrap--sb
+        .col.col--text
+          .links
+            | !{t.tech.links_1}
+          +card-description(t.tech.title_card_1_1,t.tech.count_card_1_1,"white-city",t.tech.text_1_1, 33, 27, 'w-sm')
+          +card-description(t.tech.title_card_1_2,t.tech.count_card_1_2,"white-circle",t.tech.text_1_2, 40, 40, 'w-sm')
+        .col.col--image.col--bg
+          +picture(`/img/pages/tech/department11`, 'png', t.alt.people, 590)
+
+
+
+  section.department
+    .wrapper.wrapper--main
+      .wrap.wrap--gap-sm.wrap--sb.wrap--ac.wrap--row-info
         .col
-          .gallery__img-wrapper
-            +picture(`/img/gallery/gallery${index + 1}`, 'png', t.alt.pm, 333)
-  section.box.box--lilac
+          .sub=t.tech.sub_2
+          .wrap.wrap--s
+            h2.title=t.tech.title_2
+        .col.col--info
+          .info.card.card--white.card--xs
+            | !{t.tech.info}
+      .wrap.wrap--gap-md.wrap--row.wrap--sb
+        .col.col--image.col--bg
+          +picture(`/img/pages/tech/department12`, 'png', t.alt.people, 590)
+        .col.col--text
+          .links
+            | !{t.tech.links_2}
+          +card-description(t.tech.title_card_2_1,t.tech.count_card_2_1,"white-settings",t.tech.text_2_1, 33, 27, 'w-sm')
+          +card-description(t.tech.title_card_2_2,t.tech.count_card_2_2,"white-shout",t.tech.text_2_2, 24, 24, 'w-sm')
+
+
+  section.department
+    .wrapper.wrapper--main.wrapper--pb
+      .sub=t.tech.sub_3
+      h2.title=t.tech.title_3
+      .wrap.wrap--gap-md.wrap--row.wrap--sb
+        .col.col--text
+          .links
+            | !{t.tech.links_3}
+          +card-description(t.tech.title_card_3_1,t.tech.count_card_3_1,"white-bot",t.tech.text_3_1, 33, 27, 'w-sm')
+          +card-description(t.tech.title_card_3_2,t.tech.count_card_3_2,"white-sheet",t.tech.text_3_2, 40, 40, 'w-sm')
+        .col.col--image.col--bg
+          +picture(`/img/pages/tech/department13`, 'png', t.alt.people, 590)
+
+
+
+
+  section.box.box--sand
     .wrapper.wrapper--main
-      .cta.cta--purple
-        .wrap.wrap--c.wrap--w
-          .wrap.wrap--c.wrap--s
-            h2.cta__title=t.cta.vacancy_title
-          .wrap.wrap--c.wrap--s
-            p.cta__sub=t.cta.vacancy_sub
-        .wrap.wrap--c
-          +button(
-            t.button.vacancy_all,
-            {
-              styleType: 'accent',
-              isLink: true,
-              href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
-              blank: true,
-              additionalClassName: 'button--link'
-            })
-            +svg('arrow-right', 16, 15)
+      .cta.cta--md
+        +form-cta(t.cta.tech_form_info_title,t.cta.tech_form_info_text,1,'form-cta', pageName,pageName,'cta-left')
 
-  +form-career(1, 'form-career','career')
-
-
+  section
+    +form-offer(false, 1, 'form-offer', pageName, "offer")

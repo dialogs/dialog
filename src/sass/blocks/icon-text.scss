@@ -1,0 +1,94 @@
+.icon-text {
+  h2 {
+    @include typography-h2;
+    margin-top: 0;
+
+    @include mobile-xs {
+      font-size: 32px;
+    }
+  }
+
+  h6 {
+    @include typography-h6;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+
+  .wrapper {
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    @include mobile-md {
+      padding-top: 45px;
+      padding-bottom: 50px;
+    }
+
+    &--np {
+      padding-top: 45px;
+      @include mobile-sm {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .wrap {
+    &--main {
+      flex-wrap: wrap;
+    }
+  }
+
+  .icon {
+    svg {
+      fill: none
+    }
+  }
+
+  .text {
+    margin-top: 10px;
+    display: block;
+  }
+
+  .sub {
+    @include typography-subhead;
+    margin-top: 40px;
+  }
+
+  &.icon-text--3 {
+    .text, h6 {
+      max-width: 90%;
+      display: block;
+      @include laptop {
+        max-width: 100%;
+      }
+    }
+
+    .col {
+      @include col-4;
+      @include tablet {
+        @include col-6;
+      }
+      @include mobile-sm {
+        @include col-12;
+      }
+    }
+  }
+
+  &.icon-text--4 {
+    .col {
+      @include col-3;
+      margin-top: 40px !important;
+
+      @include tablet {
+        @include col-4;
+      }
+
+      @include mobile-md {
+        @include col-6;
+      }
+
+      @include mobile-sm {
+        @include col-12;
+      }
+    }
+  }
+}

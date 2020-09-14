@@ -72,45 +72,22 @@
       display: none;
     }
   }
+
+  .form__list {
+    @include no-list;
+    margin-bottom: 30px;
+
+    li {
+      @include typography-list-compact;
+
+      &:before {
+        background-image: url("../img/library/check-round-accent.svg");
+      }
+    }
+  }
 }
 
 .form--cta {
-  width: 600px;
-  margin: auto;
-
-  @include mobile-md {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .form__content {
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-  }
-
-  .form__button {
-    min-width: 170px;
-    @include mobile-sm {
-      margin-top: 50px;
-      width: 100%;
-    }
-  }
-
-  .form__row {
-    display: flex;
-    width: 100%;
-    align-items: flex-end;
-    @include mobile-sm {
-      flex-wrap: wrap;
-    }
-  }
-
-  .form__input-text-wrap {
-    width: 100%;
-  }
-
   .form__field {
     flex-direction: column-reverse;
     display: flex;
@@ -173,6 +150,94 @@
       color: transparent;
     }
   }
+
+  .form__input-text-wrap {
+    width: 100%;
+  }
+
+  .form__row {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    @include mobile-sm {
+      flex-wrap: wrap;
+    }
+  }
+
+  .form__text {
+    @include typography-subhead;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+    @include mobile-md {
+      margin-bottom: 20px;
+    }
+  }
+
+  .button {
+    @include mobile-sm {
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+}
+
+.form--cta-blog {
+  width: 600px;
+  margin: auto;
+
+  .button {
+    min-width: 220px;
+  }
+
+  @include mobile-md {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+.form--cta-left {
+  margin-left: 0;
+  width: 880px;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  .button {
+    min-width: 180px;
+  }
+
+  .form__title {
+    @include typography-h3;
+    margin-bottom: 40px;
+    width: 600px;
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include mobile-md {
+      margin-bottom: 25px;
+    }
+  }
+
+  .form__row {
+    width: 600px;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  .wrap--message{
+    @include mobile-md{
+      margin-top: 0;
+    }
+  }
+
 }
 
 .form--main, .form--feedback {
@@ -717,7 +782,6 @@
   }
 
   .form__checkbox-wrap {
-    flex-wrap: nowrap;
     white-space: nowrap;
     @include mobile-md {
       flex-wrap: wrap;
@@ -730,7 +794,7 @@
   }
 
   .form__form-field--checkbox {
-    @include laptop {
+    @include mobile-md {
       width: 100%;
     }
   }
@@ -831,3 +895,4 @@
     }
   }
 }
+

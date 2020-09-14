@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="js-route-main" lang="ru">
   <script>
+    var fired = false;
+    window.addEventListener('scroll', () => {
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -13,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000)}});
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,13 +26,13 @@
   <link rel="preload" href="/fonts/Euclid-CircularA-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.min.css">
   <link rel="shortcut icon" href="/img/favicon.png">
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <body>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="page">
       <header class="header js-header">
-        <div class="header__wrapper"><a class="header__logo" href="/ru"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог"/></a>
+        <div class="header__wrapper"><a class="header__logo" href="/ru"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог" loading="lazy"/></a>
           <div class="header__content-box">
-            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог"/></a>
+            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог" loading="lazy"/></a>
               <button class="header__close-button" aria-label="Закрыть меню" type="button"></button>
             </div>
             <nav class="header__nav-container main-nav">
@@ -43,7 +45,7 @@
               </ul>
               <div class="main-nav__user-actions">
                 <button class="button button--accent button--small main-nav__action-btn js-open-modal" type="button"><span>Получить предложение</span>
-                </button><a class="main-nav__link main-nav__link--no-padding" href="/en/about
+                </button><a class="main-nav__link main-nav__link--no-padding" href="/en/tech
             "><span class="header__lang">en</span><span>In English</span></a>
               </div>
             </nav>
@@ -52,11 +54,10 @@
         </div>
       </header>
       <main class="page__content">
-        <section class="hero hero--main hero--career">
+        <section class="hero hero--main hero--secondary hero--next-bg hero--tech">
           <div class="hero__wrapper">
             <div class="hero__left">
-              <h1 class="hero__title">Хочешь реализовать свои таланты?</h1>
-              <p class="hero__text">Присоединяйся к команде Dialog</p><a class="button button--accent button--hero button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>Открытые вакансии</span>
+              <h1 class="hero__title">Техническая поддержка работает эффективнее в Dialog</h1><a class="button button--accent hero__button button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>Оставить заявку</span>
                 <svg width="16" height="15" aria-hidden="true">
                   <use xlink:href="/img/sprite.svg#arrow-right"></use>
                 </svg></a>
@@ -64,227 +65,255 @@
             <div class="hero__right">
               <div class="hero__img">
                 <picture>
-                  <source type="image/webp" srcset="/img/pages/career/hero@1x.webp 1x, /img/pages/career/hero@2x.webp 2x"/><img src="/img/pages/career/hero@1x.png" srcset="/img/pages/career/hero@2x.png 2x" alt="Изображение людей" width="682" loading="lazy"/>
+                  <source type="image/webp" srcset="/img/pages/tech/hero@1x.webp 1x, /img/pages/tech/hero@2x.webp 2x"/><img src="/img/pages/tech/hero@1x.jpg" srcset="/img/pages/tech/hero@2x.jpg 2x" alt="Изображение людей" width="682" loading="lazy"/>
                 </picture>
               </div>
             </div>
           </div>
         </section>
-        <section class="mission box box--lilac">
+        <section class="box box--gray cta cta--nav cta--sm">
           <div class="wrapper wrapper--main">
-            <div class="wrap wrap--mission">
-              <div class="mission__left">
-                <h3 class="mission__title">Мы создаем Dialog</h3>
-                <p class="mission__description">Компания занимается разработкой корпоративного мессенджера Dialog более 4 лет. Dialog объединяет специалистов в области IT-коммуникаций, безопасности данных, real-time распределенных систем, Big Data и других смежных с месседжингом областей.</p>
-                <p class="mission__description">На данный момент в Dialog работает более 120 человек, которые в разное время занимались разработкой продуктов для крупнейших компаний, лидирующих в области систем безопасности и хранения данных.</p>
-              </div>
-              <div class="mission__right">
-                <div class="mission__count"><span class="mission__text mission__tick"></span><span class="mission__text mission__text--big">>120</span><span class="mission__text mission__text--small">человек в команде</span><br><span class="mission__text mission__text--big">2</span><span class="mission__text mission__text--small">города, офис в Москве и Санкт-Петербурге</span></div>
-              </div>
+            <div class="wrap wrap--s">
+              <h4 class="title">Узнайте, как команды технической поддержки используют Dialog</h4>
             </div>
+            <div class="wrap wrap--s wrap--links"><a class="link link--accent" href="/">Совместная работа</a><a class="link link--accent" href="/">Автоматизация</a><a class="link link--accent" href="/">Обучение</a></div>
           </div>
         </section>
-        <section class="gallery box box--lilac">
-          <div class="wrap wrap--images">
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery1@1x.webp 1x, /img/gallery/gallery1@2x.webp 2x"/><img src="/img/gallery/gallery1@1x.png" srcset="/img/gallery/gallery1@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery2@1x.webp 1x, /img/gallery/gallery2@2x.webp 2x"/><img src="/img/gallery/gallery2@1x.png" srcset="/img/gallery/gallery2@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery3@1x.webp 1x, /img/gallery/gallery3@2x.webp 2x"/><img src="/img/gallery/gallery3@1x.png" srcset="/img/gallery/gallery3@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery4@1x.webp 1x, /img/gallery/gallery4@2x.webp 2x"/><img src="/img/gallery/gallery4@1x.png" srcset="/img/gallery/gallery4@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery5@1x.webp 1x, /img/gallery/gallery5@2x.webp 2x"/><img src="/img/gallery/gallery5@1x.png" srcset="/img/gallery/gallery5@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery6@1x.webp 1x, /img/gallery/gallery6@2x.webp 2x"/><img src="/img/gallery/gallery6@1x.png" srcset="/img/gallery/gallery6@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery7@1x.webp 1x, /img/gallery/gallery7@2x.webp 2x"/><img src="/img/gallery/gallery7@1x.png" srcset="/img/gallery/gallery7@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery8@1x.webp 1x, /img/gallery/gallery8@2x.webp 2x"/><img src="/img/gallery/gallery8@1x.png" srcset="/img/gallery/gallery8@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery9@1x.webp 1x, /img/gallery/gallery9@2x.webp 2x"/><img src="/img/gallery/gallery9@1x.png" srcset="/img/gallery/gallery9@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery10@1x.webp 1x, /img/gallery/gallery10@2x.webp 2x"/><img src="/img/gallery/gallery10@1x.png" srcset="/img/gallery/gallery10@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery11@1x.webp 1x, /img/gallery/gallery11@2x.webp 2x"/><img src="/img/gallery/gallery11@1x.png" srcset="/img/gallery/gallery11@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery12@1x.webp 1x, /img/gallery/gallery12@2x.webp 2x"/><img src="/img/gallery/gallery12@1x.png" srcset="/img/gallery/gallery12@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery13@1x.webp 1x, /img/gallery/gallery13@2x.webp 2x"/><img src="/img/gallery/gallery13@1x.png" srcset="/img/gallery/gallery13@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery14@1x.webp 1x, /img/gallery/gallery14@2x.webp 2x"/><img src="/img/gallery/gallery14@1x.png" srcset="/img/gallery/gallery14@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery15@1x.webp 1x, /img/gallery/gallery15@2x.webp 2x"/><img src="/img/gallery/gallery15@1x.png" srcset="/img/gallery/gallery15@2x.png 2x" alt="Изображение ноутбука или мобильного телефона" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="box box--lilac">
+        <section class="department">
           <div class="wrapper wrapper--main">
-            <div class="cta cta--purple">
-              <div class="wrap wrap--c wrap--w">
-                <div class="wrap wrap--c wrap--s">
-                  <h2 class="cta__title">В нашу быстрорастущую команду требуется много талантов</h2>
-                </div>
-                <div class="wrap wrap--c wrap--s">
-                  <p class="cta__sub">Узнайте больше об открытых вакансиях и работе в компании</p>
-                </div>
-              </div>
-              <div class="wrap wrap--c"><a class="button button--accent button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>Смотреть все вакансии</span>
-                  <svg width="16" height="15" aria-hidden="true">
-                    <use xlink:href="/img/sprite.svg#arrow-right"></use>
-                  </svg></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="form form--main form--career box box--white">
-          <div class="form__wrapper">
-            <h2 class="form__title">Отправить резюме</h2>
-            <p class="form__sub">Если вы не нашли интересующую вакансию, не отчаивайтесь — заполните форму и отправьте нам. Мы обязательно рассмотрим ваше резюме.</p>
-            <div class="form__form">
-              <form class="gform" autocomplete="on" id="form-career" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
-                <div id="data"></div>
-                <div class="form__input-text-wrap">
-                  <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
-                    <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
-                    <label for="name-1">Ваше имя</label>
-                  </div>
-                  <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3">
-                    <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
-                    <label for="email-1">Ваша эл.почта</label>
-                  </div>
-                  <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2">
-                    <input type="tel" id="phone-1" name="phone" placeholder="Телефон" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" required="required"/>
-                    <label for="phone-1">Телефон</label>
-                  </div>
-                  <div class="form__form-field form__form-field--select form__form-field--text form__form-field--s form__form-field--4">
-                    <select id="city-1" name="city" required="required">
-                      <option value="undefined" selected="selected">В каком городе хотите работать</option>
-                      <option value="Москва">Москва</option>
-                      <option value="Санкт-Петербург">Санкт-Петербург</option>
-                    </select>
-                    <label for="city-1">В каком городе хотите работать</label>
-                  </div>
-                  <div class="form__form-field--5 form__form-field--fw">
-                    <div class="field-textarea">
-                      <label>
-                        <textarea name="message"></textarea><span>О себе</span>
-                      </label>
+            <div class="sub">Совместная работа</div>
+            <h2 class="title">Отслеживайте и разрешайте инциденты быстрее</h2>
+            <div class="wrap wrap--gap-md wrap--row wrap--sb">
+              <div class="col col--text">
+                <div class="links">Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a></div>
+                <div class="card card--icon card--white card--w-sm">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="33" height="27" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-city"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Техподдержка-офис</div>
+                      <div class="count">26 участников</div>
                     </div>
                   </div>
                 </div>
-                <div class="form__checkbox-wrap">
-                  <div class="form__form-field--file">
-                    <label for="file">
-                      <div class="icon">
-                        <svg class="close" width="22" height="22" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-reupload"></use>
-                        </svg>
-                        <svg class="upload" width="37" height="37" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-upload"></use>
-                        </svg>
-                      </div>
-                      <input class="visually-hidden" type="file" id="file" name="file" accept=".rtf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/><span class="file-send">Прикрепить резюме</span><span class="file-name"></span>
-                    </label>
-                  </div>
-                  <div class="form__form-field form__form-field--checkbox">
-                    <input class="visually-hidden" type="checkbox" id="terms-1" name="terms" required="required"/>
-                    <label for="terms-1">Я согласен на обработку данных</label>
+                <div class="text">Часто в поддержке работают разные группы, которые выполняют схожие функции: системное администрирование, поддержка рабочих мест или пользователей. Первый шаг по использованию Dialog — рабочий чат со своим подразделением. В нем вы можете обсуждать задачи и быстро решать проблемы. Группы заменят массивные переписки по email и долгие встречи.</div>
+                <div class="card card--icon card--white card--w-sm">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="40" height="40" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Обновления</div>
+                      <div class="count">348 участников</div>
+                    </div>
                   </div>
                 </div>
-                <div class="form__data">
-                  <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/about" hidden="hidden"/>
-                  <input type="text" id="lang-1" name="lang" value="ru" hidden="hidden"/>
-                  <input type="text" id="type-1" name="type" value="career" hidden="hidden"/>
-                </div>
-                <div class="wrap wrap--ac">
-                  <button class="button--accent button button--form" type="submit"><span>Отправить заявку</span></button><img class="submit__icon" src="/img/loader.gif" alt="Анимирование изображение загрузки"/>
-                  <div class="submit__message"><span>Спасибо за заявку</span></div>
-                </div>
-              </form>
+                <div class="text">В канале для обновлений сотрудники смогут быстро узнать о новых сервисах, изменениях и плановых работах вашей IT-службы. Сотрудники будут понимать, что происходит с инфраструктурой и приложениями, например, во время плановых технических работ, и смогут планировать свою работу.</div>
+              </div>
+              <div class="col col--image col--bg">
+                <picture>
+                  <source type="image/webp" srcset="/img/pages/tech/department11@1x.webp 1x, /img/pages/tech/department11@2x.webp 2x"/><img src="/img/pages/tech/department11@1x.png" srcset="/img/pages/tech/department11@2x.png 2x" alt="Изображение людей" width="590" loading="lazy"/>
+                </picture>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="department">
+          <div class="wrapper wrapper--main">
+            <div class="wrap wrap--gap-sm wrap--sb wrap--ac wrap--row-info">
+              <div class="col">
+                <div class="sub">Автоматизация</div>
+                <div class="wrap wrap--s">
+                  <h2 class="title">Упростите процессы</h2>
+                </div>
+              </div>
+              <div class="col col--info">
+                <div class="info card card--white card--xs"><b>Канал</b> – это чат, где только владелец может отправлять сообщения. Анонсируйте события из жизни компании или транслируйте тематические сообщения.</div>
+              </div>
+            </div>
+            <div class="wrap wrap--gap-md wrap--row wrap--sb">
+              <div class="col col--image col--bg">
+                <picture>
+                  <source type="image/webp" srcset="/img/pages/tech/department12@1x.webp 1x, /img/pages/tech/department12@2x.webp 2x"/><img src="/img/pages/tech/department12@1x.png" srcset="/img/pages/tech/department12@2x.png 2x" alt="Изображение людей" width="590" loading="lazy"/>
+                </picture>
+              </div>
+              <div class="col col--text">
+                <div class="links">Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a></div>
+                <div class="card card--icon card--white card--w-sm">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="33" height="27" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-settings"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Поддержка–запросы</div>
+                      <div class="count">14 участников</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Создайте канал и добавьте операторов первой линии поддержки. Настройте уведомления в этот канал из своей ITSM-системы о поступающих обращениях, например, с помощью бота. Даже если у пользователя нет доступа к корпоративному окружению, например, в командировке, он всегда сможет связаться с вашей службой поддержки и решить свою проблему.</div>
+                <div class="card card--icon card--white card--w-sm">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-shout"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">IT Мониторинг</div>
+                      <div class="count">115 участников</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Настройте оповещения от систем мониторинга в канале Dialog: вы не пропустите уведомления, снизите число инцидентов и повысите доступность ваших сервисов. Например, если резервная копия не закончена в срок или завершилась ошибкой, вы оперативно узнаете об этом и сможете предотвратить потерю данных.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="department">
+          <div class="wrapper wrapper--main wrapper--pb">
+            <div class="sub">Обучение</div>
+            <h2 class="title">Помогите пользователям находить ответы</h2>
+            <div class="wrap wrap--gap-md wrap--row wrap--sb">
+              <div class="col col--text">
+                <div class="links">Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a></div>
+                <div class="card card--icon card--white card--w-sm">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="33" height="27" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-bot"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Support Bot</div>
+                      <div class="count">Бот</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Обычно, повторяющиеся вопросы и проблемы добавляют в базу знаний. Если у вас такая есть, создайте бота с Dialog Bot SDK, который сможет отвечать на частые вопросы из базы знаний. Ваши пользователи смогут найти ответ самостоятельно вместо заведения тикетов.</div>
+                <div class="card card--icon card--white card--w-sm">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="40" height="40" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-sheet"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Инструкции</div>
+                      <div class="count">115 участников</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Делитесь обучающими материалами по различным процессам в группе.</div>
+              </div>
+              <div class="col col--image col--bg">
+                <picture>
+                  <source type="image/webp" srcset="/img/pages/tech/department13@1x.webp 1x, /img/pages/tech/department13@2x.webp 2x"/><img src="/img/pages/tech/department13@1x.png" srcset="/img/pages/tech/department13@2x.png 2x" alt="Изображение людей" width="590" loading="lazy"/>
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="box box--sand">
+          <div class="wrapper wrapper--main">
+            <div class="cta cta--md">
+              <div class="form form--cta form--cta-left">
+                <div class="form__wrapper">
+                  <form class="gform" autocomplete="on" id="form-cta" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
+                    <h3 class="form__title">Полезная информация?</h3>
+                    <p class="form__text">Подписывайтесь на рассылку, чтобы узнать больше про использование Dialog  для технической поддержки</p>
+                    <div class="form__row">
+                      <div class="form__input-text-wrap">
+                        <div class="form__field form__field--lilac">
+                          <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
+                          <label for="email-1">Ваша эл.почта</label>
+                        </div>
+                      </div>
+                      <div class="form__data">
+                        <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/tech" hidden="hidden"/>
+                        <input type="text" id="lang-1" name="lang" value="ru" hidden="hidden"/>
+                        <input type="text" id="type-1" name="type" value="tech" hidden="hidden"/>
+                      </div>
+                      <div class="wrap wrap--ac wrap--message">
+                        <button class="button--accent button button--form" type="submit"><span>Подписаться</span></button><img class="submit__icon submit__icon--light submit__icon--absolute" src="/img/loader.gif" alt="Анимирование изображение загрузки"/>
+                        <div class="submit__message submit__message--absolute"><span>Спасибо за заявку</span></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="form form--main">
+            <div class="form__wrapper">
+              <h2 class="form__title">Получить предложение</h2>
+              <div class="form__form">
+                <form class="gform" autocomplete="on" id="form-offer" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
+                  <div class="form__input-text-wrap">
+                    <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
+                      <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
+                      <label for="name-1">Ваше имя</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3">
+                      <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
+                      <label for="email-1">Ваша эл.почта</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2">
+                      <input type="tel" id="phone-1" name="phone" placeholder="Телефон" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" required="required"/>
+                      <label for="phone-1">Телефон</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--s form__form-field--4">
+                      <input type="text" id="company-1" name="company" placeholder="Название компании" required="required"/>
+                      <label for="company-1">Название компании</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--select form__form-field--5">
+                      <select id="quantity-1" name="quantity">
+                        <option value="1-100">1-100</option>
+                        <option value="101-500">101-500</option>
+                        <option value="501-1000">501-1000</option>
+                        <option value="1000+">1000+</option>
+                      </select>
+                      <label for="quantity-1">Количество пользователей</label>
+                    </div>
+                  </div>
+                  <div class="form__checkbox-wrap">
+                    <div class="form__form-field form__form-field--checkbox">
+                      <input class="visually-hidden" type="checkbox" id="terms-1" name="terms" required="required"/>
+                      <label for="terms-1">Я согласен на обработку данных</label>
+                    </div>
+                    <div class="form__form-field form__form-field--checkbox">
+                      <input class="visually-hidden" type="checkbox" id="subscribe-1" name="subscribe"/>
+                      <label for="subscribe-1">Подписаться на новостную рассылку</label>
+                    </div>
+                    <div class="form__data">
+                      <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/tech" hidden="hidden"/>
+                      <input type="text" id="isModal-1" name="isModal" value="page" hidden="hidden"/>
+                      <input type="text" id="lang-1" name="lang" value="ru" hidden="hidden"/>
+                      <input type="text" id="type-1" name="type" value="offer" hidden="hidden"/>
+                    </div>
+                  </div>
+                  <div class="wrap wrap--ac">
+                    <button class="button--accent button button--form" type="submit"><span>Отправить заявку</span></button><img class="submit__icon" src="/img/loader.gif" alt="Анимирование изображение загрузки"/>
+                    <div class="submit__message"><span>Спасибо за заявку</span></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <div class="page__footer">
         <footer class="footer">
           <div class="footer__wrapper">
-            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Логотип мессенджера Диалог" width="139"/></a></div>
+            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Логотип мессенджера Диалог" width="139" loading="lazy"/></a></div>
             <ul class="footer__contacts">
               <li><a class="footer__link" href="tel:+78007758202">+7 (800) 775-82-02</a></li>
               <li><a class="footer__link footer__link--underline" href="mailto:info@dlg.im">info@dlg.im</a></li>
@@ -339,7 +368,7 @@
               <p>© 2016—2020 ООО «Диалог»</p>
               <p>ИНН: 7804568396</p>
             </div>
-            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Надпись: участник Сколково" width="100"/></a></div>
+            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Надпись: участник Сколково" width="100" loading="lazy"/></a></div>
           </div>
         </footer>
       </div>
@@ -389,7 +418,7 @@
                         <label for="subscribe-2">Подписаться на новостную рассылку</label>
                       </div>
                       <div class="form__data">
-                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/ru/about" hidden="hidden"/>
+                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/ru/tech" hidden="hidden"/>
                         <input type="text" id="isModal-2" name="isModal" value="modal" hidden="hidden"/>
                         <input type="text" id="lang-2" name="lang" value="ru" hidden="hidden"/>
                         <input type="text" id="type-2" name="type" value="offer" hidden="hidden"/>

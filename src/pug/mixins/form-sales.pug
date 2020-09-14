@@ -1,0 +1,118 @@
+include ./button
+
+mixin form-sales (isModal, idNumber, formId, pageName, emailName)
+  .form.form--main(class=(isModal ? 'form--modal' : null))
+    .form__wrapper(class=(isModal ? 'form__wrapper--modal' : null))
+      h2.form__title(class=(isModal ? 'form__title--modal' : null))=t.form.sales_title
+      ul.form__list
+        li
+          p=t.form.sales_li_1
+        li
+          p=t.form.sales_li_2
+        li
+          p=t.form.sales_li_3
+      .form__form
+        form(
+          class="gform"
+          autocomplete="on"
+          id!=formId
+          action='https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec'
+          method='POST'
+        )
+          .form__input-text-wrap
+            .form__form-field.form__form-field--text.form__form-field--m.form__form-field--1(class=(isModal ? 'form__form-field--modal' : null))
+              input(
+                type="text"
+                id=`name-${idNumber}`
+                name="name"
+                pattern="([A-Za-zА-ЯЁа-яё-]{2,}\\s?)+"
+                placeholder=t.form.name
+                title="Имя может состоять только из букв, пробелов и дефиса"
+                required
+              )
+              label(for=`name-${idNumber}`)=t.form.name
+            .form__form-field.form__form-field--text.form__form-field--m.form__form-field--3(class=(isModal ? 'form__form-field--modal' : null))
+              input(
+                type="email"
+                id=`email-${idNumber}`
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+                placeholder=t.form.email
+                title="Email адрес должен быть типа: user@mail.com"
+                required
+              )
+              label(for=`email-${idNumber}`)=t.form.email
+            .form__form-field.form__form-field--text.form__form-field--s.form__form-field--2(class=(isModal ? 'form__form-field--modal' : null))
+              input(
+                type="tel"
+                id=`phone-${idNumber}`
+                name="phone"
+                placeholder=t.form.phone
+                title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр"
+                pattern="\\+7[0-9]{10}"
+                required
+              )
+              label(for=`phone-${idNumber}`)=t.form.phone
+            .form__form-field.form__form-field--text.form__form-field--s.form__form-field--4(class=(isModal ? 'form__form-field--modal' : null))
+              input(
+                type="text"
+                id=`company-${idNumber}`
+                name="company"
+                placeholder=t.form.company
+                required
+              )
+              label(for=`company-${idNumber}`)=t.form.company
+          .form__checkbox-wrap
+            .form__form-field.form__form-field--checkbox(class=(isModal ? 'form__form-field--modal' : null))
+              input.visually-hidden(
+                type="checkbox"
+                id=`terms-${idNumber}`
+                name="terms"
+                required
+              )
+              label(for=`terms-${idNumber}`)=t.form.agree
+            .form__form-field.form__form-field--checkbox(class=(isModal ? 'form__form-field--modal' : null))
+              input.visually-hidden(
+                type="checkbox"
+                id=`subscribe-${idNumber}`
+                name="subscribe"
+              )
+              label(for=`subscribe-${idNumber}`)=t.form.news
+            .form__data
+              input(
+                type="text"
+                id=`domain-${idNumber}`
+                name="domain"
+                value=(`https://dlg.im/${lang}/${pageName}`)
+                hidden
+              )
+              input(
+                type="text"
+                id=`isModal-${idNumber}`
+                name='isModal'
+                value=(isModal ? 'modal' : 'page')
+                hidden
+              )
+              input(
+                type="text"
+                id=`lang-${idNumber}`
+                name="lang"
+                value=lang
+                hidden
+              )
+              input(
+                type="text"
+                id=`type-${idNumber}`
+                name="type"
+                value=emailName
+                hidden
+              )
+          .wrap.wrap--ac
+            button(
+              class="button--accent button button--form"
+              type="submit"
+            )
+              span= t.button.request
+            img.submit__icon(src="/img/loader.gif" alt=t.alt.loader)
+            .submit__message
+              span=t.form.sent

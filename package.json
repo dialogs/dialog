@@ -56,8 +56,7 @@
     "start": "gulp start",
     "files": "gulp files",
     "minify": "gulp minify",
-    "build": "gulp build",
-    "mail": "gulp mail"
+    "build": "gulp build"
   },
   "browserslist": [
     "last 2 versions",

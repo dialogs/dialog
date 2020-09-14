@@ -290,4 +290,8 @@
 .quote--link .link {
   margin-bottom: 10px;
   display: block;
+  @include mobile-md {
+    padding-left: var(--indent);
+    padding-right: var(--indent);
+  }
 }

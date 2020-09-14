@@ -24,6 +24,10 @@
   }
 }
 
+.advantages--next-bg{
+  padding-bottom: 60px;
+}
+
 .advantages__wrapper {
   @include make-block-wrapper;
   padding-left: calc(var(--indent) - 20px);
@@ -47,7 +51,7 @@
   .pseudo--1 {
     width: 400px;
     height: 400px;
-    background: #847BB9;
+    background: #847bb9;
     border-radius: 50%;
     position: absolute;
     bottom: 0;
@@ -62,7 +66,7 @@
   .pseudo--2 {
     width: 510px;
     height: 510px;
-    background: #8A82BE;
+    background: #8a82be;
     border-radius: 50%;
     position: absolute;
     bottom: 55px;
@@ -115,7 +119,7 @@
     }
 
     &:hover {
-      background: #AEA8D2;
+      background: #aea8d2;
 
       .pseudo--1 {
         transform: translate(60%, 60%);

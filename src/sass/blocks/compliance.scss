@@ -1,7 +1,12 @@
 .compliance {
-  padding-bottom: 75px;
-  &--gov{
+  .wrapper {
     padding-top: 85px;
+    padding-bottom: 85px;
+
+    @include mobile-md {
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
   }
 
   &__list {
@@ -45,7 +50,6 @@
       }
     }
 
-
     h3 {
       @include typography-h5;
       margin-bottom: 14px;
@@ -64,7 +68,8 @@
     p {
       @include typography-txt;
       margin-bottom: 22px;
-      &:nth-child(2){
+
+      &:nth-child(2) {
         margin-bottom: 0;
       }
 

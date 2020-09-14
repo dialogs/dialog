@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="js-route-main" lang="en">
   <script>
+    var fired = false;
+    window.addEventListener('scroll', () => {
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -13,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000)}});
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,13 +26,13 @@
   <link rel="preload" href="/fonts/Euclid-CircularA-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.min.css">
   <link rel="shortcut icon" href="/img/favicon.png">
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <body>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="page">
       <header class="header js-header">
-        <div class="header__wrapper"><a class="header__logo" href="/en"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo"/></a>
+        <div class="header__wrapper"><a class="header__logo" href="/en"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo" loading="lazy"/></a>
           <div class="header__content-box">
-            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo"/></a>
+            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo" loading="lazy"/></a>
               <button class="header__close-button" aria-label="Закрыть меню" type="button"></button>
             </div>
             <nav class="header__nav-container main-nav">
@@ -52,7 +54,7 @@
         </div>
       </header>
       <main class="page__content">
-        <section class="hero hero--main hero--gov">
+        <section class="hero hero--main hero--secondary hero--next-no-bg">
           <div class="hero__wrapper">
             <div class="hero__left">
               <h1 class="hero__title">Want to fulfill your talents?</h1><a class="button button--accent button--hero button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>Submit a request</span>
@@ -69,7 +71,7 @@
             </div>
           </div>
         </section>
-        <section class="advantages box box--white">
+        <section class="advantages advantages--next-bg box box--white">
           <div class="advantages__wrapper">
             <h2 class="visually-hidden">Преимущества приложения Dialog</h2>
             <ul class="advantages__list">
@@ -77,45 +79,45 @@
                 <div class="pseudo--1"></div>
                 <div class="pseudo--2"></div>
                 <div class="pseudo--3"></div>
-                <div class="icon icon--round icon--accent icon--md">
-                  <svg width="47" height="41" aria-hidden="true">
-                    <use xlink:href="/img/sprite.svg#icon-hands"></use>
+                <div class="icon icon--round icon--accent icon--md icon--nofill">
+                  <svg width="43" height="43" aria-hidden="true">
+                    <use xlink:href="/img/sprite.svg#white-shield-circle"></use>
                   </svg>
                 </div>
-                <h2>Efficient teamwork</h2>
-                <p>Find colleagues easily, communicate in group chats, share files and make audio and video calls.</p>
+                <h2>Want to fulfill your talents?</h2>
+                <p>Want to fulfill your talents?</p>
               </li>
               <li>
                 <div class="pseudo--1"></div>
                 <div class="pseudo--2"></div>
                 <div class="pseudo--3"></div>
-                <div class="icon icon--round icon--accent icon--md">
-                  <svg width="38" height="35" aria-hidden="true">
-                    <use xlink:href="/img/sprite.svg#icon-purse"></use>
+                <div class="icon icon--round icon--accent icon--md icon--nofill">
+                  <svg width="43" height="43" aria-hidden="true">
+                    <use xlink:href="/img/sprite.svg#white-sheet-dots"></use>
                   </svg>
                 </div>
-                <h2>Reduce communication costs</h2>
-                <p>Combining various tools in one platform optimizes the cost of software, hardware, maintenance and support.</p>
+                <h2>Want to fulfill your talents?</h2>
+                <p>Want to fulfill your talents?</p>
               </li>
               <li>
                 <div class="pseudo--1"></div>
                 <div class="pseudo--2"></div>
                 <div class="pseudo--3"></div>
-                <div class="icon icon--round icon--accent icon--md">
-                  <svg width="49" height="49" aria-hidden="true">
-                    <use xlink:href="/img/sprite.svg#icon-lock"></use>
+                <div class="icon icon--round icon--accent icon--md icon--nofill">
+                  <svg width="50" height="50" aria-hidden="true">
+                    <use xlink:href="/img/sprite.svg#white-display-gear"></use>
                   </svg>
                 </div>
-                <h2>Secure communication</h2>
-                <p>Hosting on company servers and integration with corporate security systems.</p>
+                <h2>Want to fulfill your talents?</h2>
+                <p>Want to fulfill your talents?</p>
               </li>
             </ul>
           </div>
         </section>
         <section class="safety safety--gov box box--lilac">
           <div class="safety__wrapper">
-            <h2 class="safety__title">Want to fulfill your talents?</h2>
-            <h3 class="safety__title">Want to fulfill your talents?</h3>
+            <h2>Want to fulfill your talents?</h2>
+            <h3>Want to fulfill your talents?</h3>
             <ul class="safety__list">
               <li class="safety__item safety__item--safe">
                 <div class="wrap wrap--ac wrap--icon">
@@ -155,7 +157,7 @@
                       <use xlink:href="/img/sprite.svg#icon-cloud"></use>
                     </svg>
                   </div>
-                  <h3>Data under your control</h3>
+                  <h4>Data under your control</h4>
                 </div>
                 <p>Dialog hosting</p>
                 <ul class="safety__listbox">
@@ -168,7 +170,7 @@
                 </ul>
               </li>
             </ul>
-            <h3 class="safety__title">Want to fulfill your talents?</h3>
+            <h3 class="mt">Want to fulfill your talents?</h3>
             <ul class="safety__list">
               <li class="safety__item safety__item--big">
                 <div class="wrap wrap--ac wrap--icon">
@@ -378,7 +380,7 @@
       <div class="page__footer">
         <footer class="footer">
           <div class="footer__wrapper">
-            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Dialog messenger logo" width="139"/></a></div>
+            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Dialog messenger logo" width="139" loading="lazy"/></a></div>
             <ul class="footer__contacts">
               <li><a class="footer__link" href="tel:+78007758202">+7 (800) 775-82-02</a></li>
               <li><a class="footer__link footer__link--underline" href="mailto:info@dlg.im">info@dlg.im</a></li>
@@ -432,7 +434,7 @@
               <p>© 2016—2020 ООО «Диалог»</p>
               <p>ИНН: 7804568396</p>
             </div>
-            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Text: Skolkovo participant" width="100"/></a></div>
+            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Text: Skolkovo participant" width="100" loading="lazy"/></a></div>
           </div>
         </footer>
       </div>

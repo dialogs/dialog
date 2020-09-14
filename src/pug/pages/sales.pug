@@ -1,0 +1,86 @@
+extends ../global/layout
+include ../mixins/svg
+include ../mixins/button
+include ../mixins/button-play
+include ../mixins/picture
+include ../mixins/form-cta
+include ../mixins/form-career
+include ../mixins/sections
+
+block variables
+  -
+    const title = t.meta.sales_title;
+    const desc = t.meta.main_desc;
+    const routeClass = "js-route-main";
+    const pageName = "sales";
+
+block content
+  section.hero.hero--main.hero--secondary.hero--next-bg
+    .hero__wrapper
+      .hero__left
+        h1.hero__title=t.sales.title
+        +button(
+          t.button.leave,
+          {
+            styleType: 'accent',
+            isLink: true,
+            href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
+            blank: true,
+            additionalClassName: 'hero__button button--link'
+          })
+          +svg('arrow-right', 16, 15)
+      .hero__right
+        .hero__img
+          +picture('/img/pages/sales/hero', 'jpg', t.alt.people, 682)
+
+  section.box.box--gray.cta.cta--nav.cta--sm
+    .wrapper.wrapper--main
+      .wrap.wrap--s
+        h4.title=t.cta.sales_info_title
+      .wrap.wrap--s.wrap--links
+        a.link.link--accent(href='/')=t.cta.sales_info_link_1
+        a.link.link--accent(href='/')=t.cta.sales_info_link_2
+
+  section.department
+    .wrapper.wrapper--main
+      .sub=t.sales.sub_1
+      h2.title=t.sales.title_1
+      .wrap.wrap--gap-md.wrap--row.wrap--sb
+        .col.col--text
+          .links
+            | !{t.sales.links_1}
+          +card-description(t.sales.title_card_1_1,t.sales.count_card_1_1,"white-bag",t.sales.text_1_1, 33, 27, 'w-md')
+          +card-description(t.sales.title_card_1_2,t.sales.count_card_1_2,"white-city",t.sales.text_1_2, 33, 27, 'w-md')
+          +card-description(t.sales.title_card_1_3,t.sales.count_card_1_3,"white-hands",t.sales.text_1_3, 33, 29, 'w-md')
+          +card-description(t.sales.title_card_1_4,t.sales.count_card_1_4,"white-circles",t.sales.text_1_4, 33, 33, 'w-md')
+
+        .col.col--image.col--bg
+          +picture(`/img/pages/sales/department1`, 'png', t.alt.people, 590)
+
+
+
+  section.department
+    .wrapper.wrapper--main
+      .wrap.wrap--w
+        .wrap.wrap--s
+          .sub=t.sales.sub_2
+        .wrap.wrap--s
+          h2.title=t.sales.title_2
+      .wrap.wrap--gap-md.wrap--row.wrap--sb
+        .col.col--image.col--bg
+          +picture(`/img/pages/sales/department2`, 'png', t.alt.people, 590)
+        .col.col--text
+          .links
+            | !{t.sales.links_2}
+          +card-description(t.sales.title_card_2_1,t.sales.count_card_2_1,"white-settings",t.sales.text_2_1, 33, 27, 'w-sm')
+          +card-description(t.sales.title_card_2_2,t.sales.count_card_2_2,"white-shout",t.sales.text_2_2, 24, 24, 'w-sm')
+          +card-description(t.sales.title_card_2_3,t.sales.count_card_2_3,"white-shout",t.sales.text_2_3, 24, 24, 'w-sm')
+
+
+  section.box.box--sand
+    .wrapper.wrapper--main
+      .cta.cta--left.cta--md
+        +form-cta(t.cta.tech_form_info_title,t.cta.tech_form_info_text,1,'form-cta', pageName,pageName,'cta-left')
+
+  section
+    +form-offer(false, 1, 'form-offer', pageName, "offer")

@@ -16,20 +16,35 @@
 
   h4 {
     @include typography-h6;
+    text-align: center;
+    margin-top: 10px;
   }
 
   h2 {
     @include typography-h2;
+
+    @include mobile-md {
+      text-align: center;
+    }
   }
 
   p {
     @include typography-txt;
-    line-height: 1.1;
     text-align: center;
+    max-width: 275px;
   }
 
   .col {
     @include col-3;
     position: relative;
+    @include tablet {
+      @include col-4;
+    }
+    @include mobile-md {
+      @include col-6;
+    }
+    @include mobile-sm {
+      @include col-12;
+    }
   }
 }

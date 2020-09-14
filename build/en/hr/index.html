@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="js-route-main" lang="en">
   <script>
+    var fired = false;
+    window.addEventListener('scroll', () => {
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -13,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000)}});
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,13 +26,13 @@
   <link rel="preload" href="/fonts/Euclid-CircularA-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.min.css">
   <link rel="shortcut icon" href="/img/favicon.png">
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <body>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="page">
       <header class="header js-header">
-        <div class="header__wrapper"><a class="header__logo" href="/en"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo"/></a>
+        <div class="header__wrapper"><a class="header__logo" href="/en"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo" loading="lazy"/></a>
           <div class="header__content-box">
-            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo"/></a>
+            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo" loading="lazy"/></a>
               <button class="header__close-button" aria-label="Закрыть меню" type="button"></button>
             </div>
             <nav class="header__nav-container main-nav">
@@ -43,7 +45,7 @@
               </ul>
               <div class="main-nav__user-actions">
                 <button class="button button--accent button--small main-nav__action-btn js-open-modal" type="button"><span>Get offer</span>
-                </button><a class="main-nav__link main-nav__link--no-padding" href="/ru/about
+                </button><a class="main-nav__link main-nav__link--no-padding" href="/ru/hr
             "><span class="header__lang">ru</span><span>На русском</span></a>
               </div>
             </nav>
@@ -52,11 +54,11 @@
         </div>
       </header>
       <main class="page__content">
-        <section class="hero hero--main hero--career">
+        <section class="hero hero--main hero--secondary hero--next-bg">
           <div class="hero__wrapper">
             <div class="hero__left">
-              <h1 class="hero__title">Want to fulfill your talents?</h1>
-              <p class="hero__text">Join the Dialog Team</p><a class="button button--accent button--hero button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>Open vacancies</span>
+              <h1 class="hero__title">Subscribe for a fresh newsletter!</h1>
+              <p class="hero__text">Subscribe for a fresh newsletter!</p><a class="button button--accent hero__button button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>Submit a request</span>
                 <svg width="16" height="15" aria-hidden="true">
                   <use xlink:href="/img/sprite.svg#arrow-right"></use>
                 </svg></a>
@@ -64,227 +66,328 @@
             <div class="hero__right">
               <div class="hero__img">
                 <picture>
-                  <source type="image/webp" srcset="/img/pages/career/hero@1x.webp 1x, /img/pages/career/hero@2x.webp 2x"/><img src="/img/pages/career/hero@1x.png" srcset="/img/pages/career/hero@2x.png 2x" alt="Image with peoole on it" width="682" loading="lazy"/>
+                  <source type="image/webp" srcset="/img/pages/hr/hero@1x.webp 1x, /img/pages/hr/hero@2x.webp 2x"/><img src="/img/pages/hr/hero@1x.jpg" srcset="/img/pages/hr/hero@2x.jpg 2x" alt="Image with peoole on it" width="682" loading="lazy"/>
                 </picture>
               </div>
             </div>
           </div>
         </section>
-        <section class="mission box box--lilac">
+        <section class="box box--gray cta cta--nav cta--sm">
           <div class="wrapper wrapper--main">
-            <div class="wrap wrap--mission">
-              <div class="mission__left">
-                <h3 class="mission__title">We create Dialog</h3>
-                <p class="mission__description">The company has been developing the Dialog corporate messenger for over 4 years. Dialog unites specialists in the field of IT communications, data security, real-time distributed systems, Big Data and other areas related to messaging.</p>
-                <p class="mission__description">At the moment, Dialog employs more than 120 specialists who at different times were developing products for the largest companies leading in the field of security and data storage systems.</p>
-              </div>
-              <div class="mission__right">
-                <div class="mission__count"><span class="mission__text mission__tick"></span><span class="mission__text mission__text--big">>120</span><span class="mission__text mission__text--small">specialists in a team</span><br><span class="mission__text mission__text--big">2</span><span class="mission__text mission__text--small">cities, offices in Moscow and St. Petersburg</span></div>
-              </div>
+            <div class="wrap wrap--s">
+              <h4 class="title">Subscribe for a fresh newsletter!</h4>
             </div>
+            <div class="wrap wrap--s wrap--links"><a class="link link--accent" href="/">Submit a request</a><a class="link link--accent" href="/">Submit a request</a><a class="link link--accent" href="/">Обучение</a></div>
           </div>
         </section>
-        <section class="gallery box box--lilac">
-          <div class="wrap wrap--images">
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery1@1x.webp 1x, /img/gallery/gallery1@2x.webp 2x"/><img src="/img/gallery/gallery1@1x.png" srcset="/img/gallery/gallery1@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery2@1x.webp 1x, /img/gallery/gallery2@2x.webp 2x"/><img src="/img/gallery/gallery2@1x.png" srcset="/img/gallery/gallery2@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery3@1x.webp 1x, /img/gallery/gallery3@2x.webp 2x"/><img src="/img/gallery/gallery3@1x.png" srcset="/img/gallery/gallery3@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery4@1x.webp 1x, /img/gallery/gallery4@2x.webp 2x"/><img src="/img/gallery/gallery4@1x.png" srcset="/img/gallery/gallery4@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery5@1x.webp 1x, /img/gallery/gallery5@2x.webp 2x"/><img src="/img/gallery/gallery5@1x.png" srcset="/img/gallery/gallery5@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery6@1x.webp 1x, /img/gallery/gallery6@2x.webp 2x"/><img src="/img/gallery/gallery6@1x.png" srcset="/img/gallery/gallery6@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery7@1x.webp 1x, /img/gallery/gallery7@2x.webp 2x"/><img src="/img/gallery/gallery7@1x.png" srcset="/img/gallery/gallery7@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery8@1x.webp 1x, /img/gallery/gallery8@2x.webp 2x"/><img src="/img/gallery/gallery8@1x.png" srcset="/img/gallery/gallery8@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery9@1x.webp 1x, /img/gallery/gallery9@2x.webp 2x"/><img src="/img/gallery/gallery9@1x.png" srcset="/img/gallery/gallery9@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery10@1x.webp 1x, /img/gallery/gallery10@2x.webp 2x"/><img src="/img/gallery/gallery10@1x.png" srcset="/img/gallery/gallery10@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery11@1x.webp 1x, /img/gallery/gallery11@2x.webp 2x"/><img src="/img/gallery/gallery11@1x.png" srcset="/img/gallery/gallery11@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery12@1x.webp 1x, /img/gallery/gallery12@2x.webp 2x"/><img src="/img/gallery/gallery12@1x.png" srcset="/img/gallery/gallery12@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery13@1x.webp 1x, /img/gallery/gallery13@2x.webp 2x"/><img src="/img/gallery/gallery13@1x.png" srcset="/img/gallery/gallery13@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery14@1x.webp 1x, /img/gallery/gallery14@2x.webp 2x"/><img src="/img/gallery/gallery14@1x.png" srcset="/img/gallery/gallery14@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery__img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="/img/gallery/gallery15@1x.webp 1x, /img/gallery/gallery15@2x.webp 2x"/><img src="/img/gallery/gallery15@1x.png" srcset="/img/gallery/gallery15@2x.png 2x" alt="Notebook or mobile phone image" width="333" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="box box--lilac">
+        <section class="department">
           <div class="wrapper wrapper--main">
-            <div class="cta cta--purple">
-              <div class="wrap wrap--c wrap--w">
-                <div class="wrap wrap--c wrap--s">
-                  <h2 class="cta__title">We are hiring</h2>
-                </div>
-                <div class="wrap wrap--c wrap--s">
-                  <p class="cta__sub">Learn more about open vacancies and work in the company.</p>
-                </div>
-              </div>
-              <div class="wrap wrap--c"><a class="button button--accent button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>View all vacant positions</span>
-                  <svg width="16" height="15" aria-hidden="true">
-                    <use xlink:href="/img/sprite.svg#arrow-right"></use>
-                  </svg></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="form form--main form--career box box--white">
-          <div class="form__wrapper">
-            <h2 class="form__title">Submit a resume</h2>
-            <p class="form__sub">If you have not found a vacancy you are interested in, do not despair - fill out the form and submit it to us. We will definitely consider your resume.</p>
-            <div class="form__form">
-              <form class="gform" autocomplete="on" id="form-career" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
-                <div id="data"></div>
-                <div class="form__input-text-wrap">
-                  <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
-                    <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="How to address you" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
-                    <label for="name-1">How to address you</label>
-                  </div>
-                  <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3">
-                    <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Work e-mail" title="Email адрес должен быть типа: user@mail.com" required="required"/>
-                    <label for="email-1">Work e-mail</label>
-                  </div>
-                  <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2">
-                    <input type="tel" id="phone-1" name="phone" placeholder="Phone Number" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" required="required"/>
-                    <label for="phone-1">Phone Number</label>
-                  </div>
-                  <div class="form__form-field form__form-field--select form__form-field--text form__form-field--s form__form-field--4">
-                    <select id="city-1" name="city" required="required">
-                      <option value="undefined" selected="selected">What city would you like to work</option>
-                      <option value="Москва">Moscow</option>
-                      <option value="Санкт-Петербург">St. Petersburg</option>
-                    </select>
-                    <label for="city-1">What city would you like to work</label>
-                  </div>
-                  <div class="form__form-field--5 form__form-field--fw">
-                    <div class="field-textarea">
-                      <label>
-                        <textarea name="message"></textarea><span>About you</span>
-                      </label>
+            <div class="sub">Submit a request</div>
+            <h2 class="title">Submit a request</h2>
+            <div class="wrap wrap--gap-sm wrap--row wrap--sb">
+              <div class="col col--text">
+                <div class="links">Submit a request</div>
+                <div class="card card--icon card--white card--w-lg">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="31" height="31" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-devs"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
                     </div>
                   </div>
                 </div>
-                <div class="form__checkbox-wrap">
-                  <div class="form__form-field--file">
-                    <label for="file">
-                      <div class="icon">
-                        <svg class="close" width="22" height="22" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-reupload"></use>
-                        </svg>
-                        <svg class="upload" width="37" height="37" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-upload"></use>
-                        </svg>
-                      </div>
-                      <input class="visually-hidden" type="file" id="file" name="file" accept=".rtf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/><span class="file-send">Attach resume</span><span class="file-name"></span>
-                    </label>
-                  </div>
-                  <div class="form__form-field form__form-field--checkbox">
-                    <input class="visually-hidden" type="checkbox" id="terms-1" name="terms" required="required"/>
-                    <label for="terms-1">I agree with personal data processing</label>
+                <div class="text">Submit a request</div>
+                <div class="card card--icon card--white card--w-lg">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="29" height="29" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-hire"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
+                    </div>
                   </div>
                 </div>
-                <div class="form__data">
-                  <input type="text" id="domain-1" name="domain" value="https://dlg.im/en/about" hidden="hidden"/>
-                  <input type="text" id="lang-1" name="lang" value="en" hidden="hidden"/>
-                  <input type="text" id="type-1" name="type" value="career" hidden="hidden"/>
+                <div class="text">Submit a request</div>
+                <div class="card card--icon card--white card--w-lg">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="31" height="31" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-motivation"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="wrap wrap--ac">
-                  <button class="button--accent button button--form" type="submit"><span>Send request</span></button><img class="submit__icon" src="/img/loader.gif" alt="Animated loading"/>
-                  <div class="submit__message"><span>Thanks for request</span></div>
+                <div class="text">Submit a request</div>
+              </div>
+              <div class="col col--image col--bg">
+                <div class="image">
+                  <picture>
+                    <source type="image/webp" srcset="/img/pages/hr/department1@1x.webp 1x, /img/pages/hr/department1@2x.webp 2x"/><img src="/img/pages/hr/department1@1x.png" srcset="/img/pages/hr/department1@2x.png 2x" alt="Image with peoole on it" width="590" loading="lazy"/>
+                  </picture>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="department">
+          <div class="wrapper wrapper--main">
+            <div class="wrap wrap--w">
+              <div class="wrap wrap--s">
+                <div class="sub">Submit a request</div>
+              </div>
+              <div class="wrap wrap--s">
+                <h2 class="title">Submit a request</h2>
+              </div>
+            </div>
+            <div class="wrap wrap--gap-sm wrap--row wrap--sb">
+              <div class="col col--image col--bg">
+                <div class="image">
+                  <picture>
+                    <source type="image/webp" srcset="/img/pages/hr/department2@1x.webp 1x, /img/pages/hr/department2@2x.webp 2x"/><img src="/img/pages/hr/department2@1x.png" srcset="/img/pages/hr/department2@2x.png 2x" alt="Image with peoole on it" width="590" loading="lazy"/>
+                  </picture>
+                </div>
+              </div>
+              <div class="col col--text">
+                <div class="links">Submit a request</div>
+                <div class="card card--icon card--white card--w-md">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="39" height="39" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-sheet"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Submit a request</div>
+                <div class="card card--icon card--white card--w-md">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="29" height="29" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-plane"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Submit a request</div>
+                <div class="card card--icon card--white card--w-md">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="31" height="31" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-ask"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Submit a request</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="department">
+          <div class="wrapper wrapper--main wrapper--pb">
+            <div class="sub">Submit a request</div>
+            <h2 class="title">Submit a request</h2>
+            <div class="wrap wrap--gap-sm wrap--row wrap--sb">
+              <div class="col col--text">
+                <div class="links">Submit a request</div>
+                <div class="card card--icon card--white card--w-md">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-shout"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Submit a request</div>
+                <div class="card card--icon card--white card--w-md">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="33" height="27" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-city"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Submit a request</div>
+                <div class="card card--icon card--white card--w-md">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="33" height="33" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-learn"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Submit a request</div>
+                <div class="card card--icon card--white card--w-md">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="33" height="33" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-learn"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Submit a request</div>
+                <div class="card card--icon card--white card--w-md">
+                  <div class="wrap wrap--ac">
+                    <div class="icon icon--accent icon--xs icon--squircle icon--nofill">
+                      <svg width="33" height="33" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#white-learn"></use>
+                      </svg>
+                    </div>
+                    <div class="wrap wrap--w wrap--ac">
+                      <div class="title wrap--s">Submit a request</div>
+                      <div class="count">Submit a request</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">Submit a request</div>
+              </div>
+              <div class="col col--image col--bg">
+                <div class="image">
+                  <picture>
+                    <source type="image/webp" srcset="/img/pages/hr/department3@1x.webp 1x, /img/pages/hr/department3@2x.webp 2x"/><img src="/img/pages/hr/department3@1x.png" srcset="/img/pages/hr/department3@2x.png 2x" alt="Image with peoole on it" width="590" loading="lazy"/>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="box box--sand">
+          <div class="wrapper wrapper--main">
+            <div class="cta cta--left cta--md">
+              <div class="form form--cta form--cta-left">
+                <div class="form__wrapper">
+                  <form class="gform" autocomplete="on" id="form-cta" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
+                    <h3 class="form__title">Submit a request</h3>
+                    <p class="form__text">Submit a request</p>
+                    <div class="form__row">
+                      <div class="form__input-text-wrap">
+                        <div class="form__field form__field--lilac">
+                          <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Work e-mail" title="Email адрес должен быть типа: user@mail.com" required="required"/>
+                          <label for="email-1">Work e-mail</label>
+                        </div>
+                      </div>
+                      <div class="form__data">
+                        <input type="text" id="domain-1" name="domain" value="https://dlg.im/en/hr" hidden="hidden"/>
+                        <input type="text" id="lang-1" name="lang" value="en" hidden="hidden"/>
+                        <input type="text" id="type-1" name="type" value="hr" hidden="hidden"/>
+                      </div>
+                      <div class="wrap wrap--ac wrap--message">
+                        <button class="button--accent button button--form" type="submit"><span>Subscribe</span></button><img class="submit__icon submit__icon--light submit__icon--absolute" src="/img/loader.gif" alt="Animated loading"/>
+                        <div class="submit__message submit__message--absolute"><span>Thanks for request</span></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="form form--main">
+            <div class="form__wrapper">
+              <h2 class="form__title">Get a request</h2>
+              <div class="form__form">
+                <form class="gform" autocomplete="on" id="form-offer" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
+                  <div class="form__input-text-wrap">
+                    <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
+                      <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="How to address you" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
+                      <label for="name-1">How to address you</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3">
+                      <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Work e-mail" title="Email адрес должен быть типа: user@mail.com" required="required"/>
+                      <label for="email-1">Work e-mail</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2">
+                      <input type="tel" id="phone-1" name="phone" placeholder="Phone Number" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" required="required"/>
+                      <label for="phone-1">Phone Number</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--s form__form-field--4">
+                      <input type="text" id="company-1" name="company" placeholder="Company name" required="required"/>
+                      <label for="company-1">Company name</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--select form__form-field--5">
+                      <select id="quantity-1" name="quantity">
+                        <option value="1-100">1-100</option>
+                        <option value="101-500">101-500</option>
+                        <option value="501-1000">501-1000</option>
+                        <option value="1000+">1000+</option>
+                      </select>
+                      <label for="quantity-1">Number of users</label>
+                    </div>
+                  </div>
+                  <div class="form__checkbox-wrap">
+                    <div class="form__form-field form__form-field--checkbox">
+                      <input class="visually-hidden" type="checkbox" id="terms-1" name="terms" required="required"/>
+                      <label for="terms-1">I agree with personal data processing</label>
+                    </div>
+                    <div class="form__form-field form__form-field--checkbox">
+                      <input class="visually-hidden" type="checkbox" id="subscribe-1" name="subscribe"/>
+                      <label for="subscribe-1">Subscribe for news</label>
+                    </div>
+                    <div class="form__data">
+                      <input type="text" id="domain-1" name="domain" value="https://dlg.im/en/hr" hidden="hidden"/>
+                      <input type="text" id="isModal-1" name="isModal" value="page" hidden="hidden"/>
+                      <input type="text" id="lang-1" name="lang" value="en" hidden="hidden"/>
+                      <input type="text" id="type-1" name="type" value="offer" hidden="hidden"/>
+                    </div>
+                  </div>
+                  <div class="wrap wrap--ac">
+                    <button class="button--accent button button--form" type="submit"><span>Send request</span></button><img class="submit__icon" src="/img/loader.gif" alt="Animated loading"/>
+                    <div class="submit__message"><span>Thanks for request</span></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <div class="page__footer">
         <footer class="footer">
           <div class="footer__wrapper">
-            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Dialog messenger logo" width="139"/></a></div>
+            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Dialog messenger logo" width="139" loading="lazy"/></a></div>
             <ul class="footer__contacts">
               <li><a class="footer__link" href="tel:+78007758202">+7 (800) 775-82-02</a></li>
               <li><a class="footer__link footer__link--underline" href="mailto:info@dlg.im">info@dlg.im</a></li>
@@ -338,7 +441,7 @@
               <p>© 2016—2020 ООО «Диалог»</p>
               <p>ИНН: 7804568396</p>
             </div>
-            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Text: Skolkovo participant" width="100"/></a></div>
+            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Text: Skolkovo participant" width="100" loading="lazy"/></a></div>
           </div>
         </footer>
       </div>
@@ -388,7 +491,7 @@
                         <label for="subscribe-2">Subscribe for news</label>
                       </div>
                       <div class="form__data">
-                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/en/about" hidden="hidden"/>
+                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/en/hr" hidden="hidden"/>
                         <input type="text" id="isModal-2" name="isModal" value="modal" hidden="hidden"/>
                         <input type="text" id="lang-2" name="lang" value="en" hidden="hidden"/>
                         <input type="text" id="type-2" name="type" value="offer" hidden="hidden"/>

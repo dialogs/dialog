@@ -1,12 +1,23 @@
 .private-introduction {
   .wrapper {
-    padding-top: 65px;
+    padding-top: 85px;
     padding-bottom: 85px;
+
+    @include mobile-md {
+      padding-top: 45px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .wrap--main {
+    @include tablet {
+      flex-wrap: wrap;
+    }
   }
 
   h2 {
     @include typography-h2;
-    margin-top: 25px;
+    margin-top: 0;
 
     @include mobile-xs {
       font-size: 32px;
@@ -18,14 +29,16 @@
     font-weight: 500;
   }
 
-  p {
-    @include typography-subhead;
-    font-weight: 400;
-    margin-top: 40px;
-  }
-
   .col {
     @include col-4;
+
+    @include tablet {
+      @include col-6;
+    }
+
+    @include mobile-md {
+      @include col-12;
+    }
   }
 
   .number {
@@ -37,6 +50,10 @@
 
   .text {
     margin-top: 10px;
+  }
+
+  .card {
+    height: 100%;
   }
 
 }

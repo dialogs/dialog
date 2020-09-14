@@ -2,7 +2,6 @@
   padding-top: 60px;
   padding-bottom: 30px;
 
-
   .wrap {
     &--main {
       flex-wrap: wrap;
@@ -23,15 +22,24 @@
     @include col-4;
     position: relative;
     min-height: 210px;
+    @include tablet {
+      @include col-6;
+    }
+    @include mobile-md {
+      @include col-12;
+    }
   }
 
   .card {
     box-shadow: 0 2px 20px rgba(152, 136, 196, 0.16);
     padding: 20px 20px 30px;
+    height: 100%;
   }
 
   h2 {
     @include typography-h2;
+
+
   }
 
   h4 {

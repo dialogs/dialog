@@ -117,32 +117,30 @@
             </div>
           </div>
         </section>
-        <section class="box">
+        <section class="cta cta--xl">
           <div class="wrapper wrapper--main">
-            <div class="cta cta--form">
-              <div class="form form--cta">
-                <div class="form__wrapper">
-                  <form class="gform" autocomplete="on" id="form-blog" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
-                    <h3 class="form__title">Подпишитесь на свежие статьи блога!</h3>
-                    <div class="form__row">
-                      <div class="form__input-text-wrap">
-                        <div class="form__field form__field--lilac">
-                          <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
-                          <label for="email-1">Ваша эл.почта</label>
-                        </div>
-                      </div>
-                      <div class="form__data">
-                        <input type="domain" id="domain-1" name="domain" value="https://dlg.im/ru/kak-pravilno-zaprosit-obratnuiu-sviaz-fidbek" hidden="hidden"/>
-                        <input type="lang" id="lang-1" name="lang" value="ru" hidden="hidden"/>
-                        <input type="type" id="type-1" name="type" value="blog" hidden="hidden"/>
-                      </div>
-                      <div class="wrap wrap--ac wrap--message">
-                        <button class="button--accent button button--form" type="submit"><span>Подписаться</span></button><img class="submit__icon submit__icon--light submit__icon--absolute" src="/img/loader.gif" alt="Анимирование изображение загрузки"/>
-                        <div class="submit__message submit__message--absolute"><span>Спасибо за заявку</span></div>
+            <div class="form form--cta form--cta-blog">
+              <div class="form__wrapper">
+                <form class="gform" autocomplete="on" id="form-cta" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
+                  <h3 class="form__title">Подпишитесь на свежие статьи блога!</h3>
+                  <div class="form__row">
+                    <div class="form__input-text-wrap">
+                      <div class="form__field form__field--lilac">
+                        <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
+                        <label for="email-1">Ваша эл.почта</label>
                       </div>
                     </div>
-                  </form>
-                </div>
+                    <div class="form__data">
+                      <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/kak-pravilno-zaprosit-obratnuiu-sviaz-fidbek" hidden="hidden"/>
+                      <input type="text" id="lang-1" name="lang" value="ru" hidden="hidden"/>
+                      <input type="text" id="type-1" name="type" value="blog" hidden="hidden"/>
+                    </div>
+                    <div class="wrap wrap--ac wrap--message">
+                      <button class="button--accent button button--form" type="submit"><span>Подписаться</span></button><img class="submit__icon submit__icon--light submit__icon--absolute" src="/img/loader.gif" alt="Анимирование изображение загрузки"/>
+                      <div class="submit__message submit__message--absolute"><span>Спасибо за заявку</span></div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -155,6 +153,7 @@
             <ul class="footer__contacts">
               <li><a class="footer__link" href="tel:+78007758202">+7 (800) 775-82-02</a></li>
               <li><a class="footer__link footer__link--underline" href="mailto:info@dlg.im">info@dlg.im</a></li>
+              <li><a class="footer__link footer__link--underline" href="mailto:press@dlg.im">press@dlg.im</a></li>
             </ul>
             <div class="footer__navigation-box">
               <section class="footer-nav">
@@ -213,7 +212,7 @@
         <div class="modal__overlay">
           <div class="modal__content">
             <button class="modal__close" type="button" aria-label="Закрыть"></button>
-            <div class="form form--main form--modal box box--white">
+            <div class="form form--main form--modal">
               <div class="form__wrapper form__wrapper--modal">
                 <h2 class="form__title form__title--modal">Получить предложение</h2>
                 <div class="form__form">

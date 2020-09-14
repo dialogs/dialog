@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="js-route-main" lang="ru">
   <script>
+    var fired = false;
+    window.addEventListener('scroll', () => {
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -13,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000)}});
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,13 +26,13 @@
   <link rel="preload" href="/fonts/Euclid-CircularA-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.min.css">
   <link rel="shortcut icon" href="/img/favicon.png">
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <body>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="page">
       <header class="header js-header">
-        <div class="header__wrapper"><a class="header__logo" href="/ru"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог"/></a>
+        <div class="header__wrapper"><a class="header__logo" href="/ru"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог" loading="lazy"/></a>
           <div class="header__content-box">
-            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог"/></a>
+            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог" loading="lazy"/></a>
               <button class="header__close-button" aria-label="Закрыть меню" type="button"></button>
             </div>
             <nav class="header__nav-container main-nav">
@@ -52,7 +54,7 @@
         </div>
       </header>
       <main class="page__content">
-        <section class="hero hero--main hero--career">
+        <section class="hero hero--main hero--secondary hero--next-no-bg">
           <div class="hero__wrapper">
             <div class="hero__left">
               <h1 class="hero__title">Dialog для коммерческих организаций</h1>
@@ -212,10 +214,10 @@
             </div>
           </div>
         </section>
-        <section class="private-functions">
+        <section class="icon-text icon-text--3">
           <div class="wrapper wrapper--main">
             <h2>Корпоративные функции</h2>
-            <div class="wrap wrap--main wrap--gap-md">
+            <div class="wrap wrap--main wrap--gap-sm">
               <div class="col">
                 <div class="card">
                   <div class="icon icon--shadow icon--lg icon--round">
@@ -341,8 +343,8 @@
         </section>
         <section class="private-access box box--lilac">
           <div class="wrapper wrapper--main">
-            <div class="wrap wrap--gap-md">
-              <div class="col col--content">
+            <div class="wrap wrap--gap-md wrap--main">
+              <div class="col col--text">
                 <div class="content">
                   <div class="wrap wrap--ac">
                     <div class="icon icon--accent icon--sm icon--round">
@@ -365,7 +367,7 @@
             </div>
           </div>
         </section>
-        <section class="private-expenses">
+        <section class="private-expanses">
           <div class="wrapper wrapper--main">
             <h2>Сокращение расходов на коммуникацию</h2>
             <p class="sub">Dialog объединяет множество инструментов на одной платформе</p>
@@ -377,7 +379,8 @@
                       <use xlink:href="/img/sprite.svg#icon-phone-simple"></use>
                     </svg>
                   </div>
-                  <h6>Телефония</h6><span class="text">Затраты на стационарные телефоны, сопровождение и поддержку, звонки через АТС на мобильные номера</span>
+                  <h6>Телефония</h6>
+                  <div class="text">Затраты на стационарные телефоны, сопровождение и поддержку, звонки через АТС на мобильные номера</div>
                 </div>
               </div>
               <div class="col">
@@ -387,7 +390,8 @@
                       <use xlink:href="/img/sprite.svg#icon-video"></use>
                     </svg>
                   </div>
-                  <h6>Видеосвязь</h6><span class="text">Лицензионные платежи за программы для видеосвязи</span>
+                  <h6>Видеосвязь</h6>
+                  <div class="text">Лицензионные платежи за программы для видеосвязи</div>
                 </div>
               </div>
               <div class="col">
@@ -397,7 +401,8 @@
                       <use xlink:href="/img/sprite.svg#icon-logout-simple"></use>
                     </svg>
                   </div>
-                  <h6>Виртуальное хранилище</h6><span class="text">Подписки и лицензии на облачное хранилище</span>
+                  <h6>Виртуальное хранилище</h6>
+                  <div class="text">Подписки и лицензии на облачное хранилище</div>
                 </div>
               </div>
             </div>
@@ -408,28 +413,34 @@
             <h2>Готов к масштабному внедрению</h2>
             <div class="wrap wrap--main wrap--gap-sm">
               <div class="col">
-                <div class="card card--white">
-                  <div class="wrap wrap--card"><span class="number">1</span>
+                <div class="card card--white card--md">
+                  <div class="wrap wrap--card">
+                    <div class="number">1</div>
                     <div class="wrap wrap--content wrap--w">
-                      <h6>Быстрое развертывание</h6><span class="text">Встраивается в структуру компании от одного дня</span>
+                      <h6>Быстрое развертывание</h6>
+                      <div class="text">Встраивается в структуру компании от одного дня</div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card--white">
-                  <div class="wrap wrap--card"><span class="number">2</span>
+                <div class="card card--white card--md">
+                  <div class="wrap wrap--card">
+                    <div class="number">2</div>
                     <div class="wrap wrap--content wrap--w">
-                      <h6>Высокая доступность</h6><span class="text">Бесперебойная работа при базе активных пользователей 250+ тысяч в рамках организации</span>
+                      <h6>Высокая доступность</h6>
+                      <div class="text">Бесперебойная работа при базе активных пользователей 250+ тысяч в рамках организации</div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card card--white">
-                  <div class="wrap wrap--card"><span class="number">3</span>
+                <div class="card card--white card--md">
+                  <div class="wrap wrap--card">
+                    <div class="number">3</div>
                     <div class="wrap wrap--content wrap--w">
-                      <h6>Отзывчивый сервис</h6><span class="text">Оперативная поддержка и документация на русском языке</span>
+                      <h6>Отзывчивый сервис</h6>
+                      <div class="text">Оперативная поддержка и документация на русском языке</div>
                     </div>
                   </div>
                 </div>
@@ -524,7 +535,7 @@
       <div class="page__footer">
         <footer class="footer">
           <div class="footer__wrapper">
-            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Логотип мессенджера Диалог" width="139"/></a></div>
+            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Логотип мессенджера Диалог" width="139" loading="lazy"/></a></div>
             <ul class="footer__contacts">
               <li><a class="footer__link" href="tel:+78007758202">+7 (800) 775-82-02</a></li>
               <li><a class="footer__link footer__link--underline" href="mailto:info@dlg.im">info@dlg.im</a></li>
@@ -579,7 +590,7 @@
               <p>© 2016—2020 ООО «Диалог»</p>
               <p>ИНН: 7804568396</p>
             </div>
-            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Надпись: участник Сколково" width="100"/></a></div>
+            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Надпись: участник Сколково" width="100" loading="lazy"/></a></div>
           </div>
         </footer>
       </div>

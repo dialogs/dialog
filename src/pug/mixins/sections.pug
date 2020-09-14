@@ -1,13 +1,31 @@
-mixin section-tripple-images(title, desc, img1, img2, img3)
-  section.tripple-images
+mixin section-image-collage(title, desc, img1, img2, img3, type)
+  section.image-collage(class=`${type ? `image-collage--${type}` : ''}`)
     .wrapper.wrapper--main
       .wrap.wrap--gap-md
         .col.col--images
-          .tripple-images__images
+          .images
             +picture(img3, 'jpg', t.alt.people, 270)
             +picture(img2, 'jpg', t.alt.people, 270)
             +picture(img1, 'jpg', t.alt.people, 270)
         .col.col--content
-          .tripple-images__content
-            h3.tripple-images__title=title
-            p.tripple-images__description=desc
+          h3=title
+          p
+            | !{desc}
+
+mixin card-description(title, count, icon, text, w, h, type)
+  .card.card--icon.card--white(class=`${type ? `card--${type}` : ''}`)
+    .wrap.wrap--ac
+      .icon.icon--accent.icon--xs.icon--squircle.icon--nofill
+        +svg(icon, w, h)
+      .wrap.wrap--w.wrap--ac
+        .title.wrap--s=title
+        .count=count
+  .text=text
+
+mixin card-icon(title, icon, w, h)
+  .card.card--icon-xs.card--white
+    .wrap.wrap--ac
+      .icon.icon--accent.icon--xxs.icon--squircle.icon--nofill
+        +svg(icon, w, h)
+      .wrap.wrap--w.wrap--ac
+        .title.wrap--s=title

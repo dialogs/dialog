@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="js-route-main" lang="en">
   <script>
+    var fired = false;
+    window.addEventListener('scroll', () => {
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -13,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000)}});
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,13 +26,13 @@
   <link rel="preload" href="/fonts/Euclid-CircularA-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.min.css">
   <link rel="shortcut icon" href="/img/favicon.png">
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <body>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="page">
       <header class="header js-header">
-        <div class="header__wrapper"><a class="header__logo" href="/en"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo"/></a>
+        <div class="header__wrapper"><a class="header__logo" href="/en"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo" loading="lazy"/></a>
           <div class="header__content-box">
-            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo"/></a>
+            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Dialog messenger logo" loading="lazy"/></a>
               <button class="header__close-button" aria-label="Закрыть меню" type="button"></button>
             </div>
             <nav class="header__nav-container main-nav">
@@ -52,7 +54,7 @@
         </div>
       </header>
       <main class="page__content">
-        <section class="hero hero--main hero--about">
+        <section class="hero hero--main hero--about hero--secondary hero--next-no-bg">
           <div class="hero__wrapper">
             <div class="hero__left">
               <h1 class="hero__title">Want to fulfill your talents?</h1>
@@ -68,11 +70,11 @@
             </div>
           </div>
         </section>
-        <section class="tripple-images">
+        <section class="image-collage image-collage--about">
           <div class="wrapper wrapper--main">
             <div class="wrap wrap--gap-md">
               <div class="col col--images">
-                <div class="tripple-images__images">
+                <div class="images">
                   <picture>
                     <source type="image/webp" srcset="/img/pages/about/team3@1x.webp 1x, /img/pages/about/team3@2x.webp 2x"/><img src="/img/pages/about/team3@1x.jpg" srcset="/img/pages/about/team3@2x.jpg 2x" alt="Image with peoole on it" width="270" loading="lazy"/>
                   </picture>
@@ -85,10 +87,8 @@
                 </div>
               </div>
               <div class="col col--content">
-                <div class="tripple-images__content">
-                  <h3 class="tripple-images__title">We create Dialog</h3>
-                  <p class="tripple-images__description">We create Dialog</p>
-                </div>
+                <h3>We create Dialog</h3>
+                <p>We create Dialog</p>
               </div>
             </div>
           </div>
@@ -102,15 +102,15 @@
             </div>
           </div>
         </section>
-        <section class="box box--purple">
+        <section class="box box--accent box--squares">
           <div class="wrapper wrapper--main">
-            <div class="cta cta--purple">
+            <div class="cta cta--about cta--center cta--md">
               <div class="wrap wrap--c wrap--w">
                 <div class="wrap wrap--c wrap--s">
-                  <p class="cta__sub">Learn more about open vacancies and work in the company.</p>
+                  <p class="text">Learn more about open vacancies and work in the company.</p>
                 </div>
                 <div class="wrap wrap--c wrap--s">
-                  <h2 class="cta__title">Learn more about open vacancies and work in the company.</h2>
+                  <h2 class="title">Learn more about open vacancies and work in the company.</h2>
                 </div>
               </div>
               <div class="wrap wrap--c"><a class="button button--light button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>Open vacancies</span>
@@ -186,7 +186,7 @@
         <section class="leaders">
           <div class="wrapper wrapper--main">
             <h2 class="leaders__title">We create Dialog</h2>
-            <div class="wrap wrap--main wrap--gap-md">
+            <div class="wrap wrap--main wrap--gap-sm">
               <div class="col">
                 <div class="item">
                   <picture>
@@ -325,7 +325,7 @@
       <div class="page__footer">
         <footer class="footer">
           <div class="footer__wrapper">
-            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Dialog messenger logo" width="139"/></a></div>
+            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Dialog messenger logo" width="139" loading="lazy"/></a></div>
             <ul class="footer__contacts">
               <li><a class="footer__link" href="tel:+78007758202">+7 (800) 775-82-02</a></li>
               <li><a class="footer__link footer__link--underline" href="mailto:info@dlg.im">info@dlg.im</a></li>
@@ -379,7 +379,7 @@
               <p>© 2016—2020 ООО «Диалог»</p>
               <p>ИНН: 7804568396</p>
             </div>
-            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Text: Skolkovo participant" width="100"/></a></div>
+            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Text: Skolkovo participant" width="100" loading="lazy"/></a></div>
           </div>
         </footer>
       </div>

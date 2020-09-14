@@ -89,7 +89,7 @@ block content
     icon: 'purple-cloud',
     iconw: '51',
     iconh: '51',
-    title: t.private.corp_title_1,
+    title: t.private.corp_title_1
     },
     {
     icon: 'purple-human',
@@ -162,7 +162,9 @@ block content
     text: t.private.introduction_text_3,
     }
     ];
-  section.hero.hero--main.hero--career
+
+
+  section.hero.hero--main.hero--secondary.hero--next-no-bg
     .hero__wrapper
       .hero__left
         h1.hero__title=t.private.title
@@ -214,10 +216,10 @@ block content
                 a.link.link--accent.link--icon-accent.link--with-icon(href)=item.link
                   +svg('arrow-right', 12, 12)
 
-  section.private-functions
+  section.icon-text.icon-text--3
     .wrapper.wrapper--main
       h2=t.private.corp_title
-      .wrap.wrap--main.wrap--gap-md
+      .wrap.wrap--main.wrap--gap-sm
         each item,index in corp
           .col
             .card
@@ -271,10 +273,11 @@ block content
       a(class="link link--with-icon link--safety link--icon-accent" href=`${lang === "ru" ? '/ru/security' : '/en/security'}`)=t.link.learn
         +svg('arrow-right', 16, 15)
 
+
   section.private-access.box.box--lilac
     .wrapper.wrapper--main
-      .wrap.wrap--gap-md
-        .col.col--content
+      .wrap.wrap--gap-md.wrap--main
+        .col.col--text
           .content
             .wrap.wrap--ac
               .icon.icon--accent.icon--sm.icon--round
@@ -286,7 +289,8 @@ block content
           .images
             +picture('/img/pages/private/access', 'png', t.alt.pm, 650)
 
-  section.private-expenses
+
+  section.private-expanses
     .wrapper.wrapper--main
       h2=t.private.expenses_title
       p.sub=t.private.expenses_sub
@@ -297,19 +301,21 @@ block content
               .icon.icon--accent.icon--sm.icon--round
                 +svg(item.icon, item.iconw, item.iconh)
               h6=item.title
-              span.text=item.text
+              .text=item.text
+
+
   section.private-introduction.box.box--gray
     .wrapper.wrapper--main
       h2=t.private.introduction_title
       .wrap.wrap--main.wrap--gap-sm
         each item, index in introduction
           .col
-            .card.card--white
+            .card.card--white.card--md
               .wrap.wrap--card
-                span.number=index+1
+                .number=index+1
                 .wrap.wrap--content.wrap--w
                   h6=item.title
-                  span.text=item.text
+                  .text=item.text
 
 
 

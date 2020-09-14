@@ -54,7 +54,7 @@
         </div>
       </header>
       <main class="page__content">
-        <section class="hero hero--main hero--career">
+        <section class="hero hero--main hero--career hero--secondary hero--next-no-bg">
           <div class="hero__wrapper">
             <div class="hero__left">
               <h1 class="hero__title">Want to fulfill your talents?</h1>
@@ -72,22 +72,22 @@
             </div>
           </div>
         </section>
-        <section class="mission box box--lilac">
+        <section class="mission">
           <div class="wrapper wrapper--main">
-            <div class="wrap wrap--mission">
+            <div class="wrap">
               <div class="mission__left">
                 <h3 class="mission__title">We create Dialog</h3>
                 <p class="mission__description">The company has been developing the Dialog corporate messenger for over 4 years. Dialog unites specialists in the field of IT communications, data security, real-time distributed systems, Big Data and other areas related to messaging.</p>
                 <p class="mission__description">At the moment, Dialog employs more than 120 specialists who at different times were developing products for the largest companies leading in the field of security and data storage systems.</p>
               </div>
               <div class="mission__right">
-                <div class="mission__count"><span class="mission__text mission__tick"></span><span class="mission__text mission__text--big">>120</span><span class="mission__text mission__text--small">specialists in a team</span><br><span class="mission__text mission__text--big">2</span><span class="mission__text mission__text--small">cities, offices in Moscow and St. Petersburg</span></div>
+                <div class="mission__count card card--white card--lg"><span class="mission__text mission__text--big">>100</span><span class="mission__text mission__text--small">specialists in a team</span><br><span class="mission__text mission__text--big">2</span><span class="mission__text mission__text--small">cities, offices in Moscow and St. Petersburg</span></div>
               </div>
             </div>
           </div>
         </section>
-        <section class="gallery box box--lilac">
-          <div class="wrap wrap--images">
+        <section class="gallery">
+          <div class="wrap">
             <div class="col">
               <div class="gallery__img-wrapper">
                 <picture>
@@ -195,15 +195,59 @@
             </div>
           </div>
         </section>
-        <section class="box box--lilac">
+        <section class="icon-text icon-text--3">
           <div class="wrapper wrapper--main">
-            <div class="cta cta--purple">
+            <h2>cities, offices in Moscow and St. Petersburg</h2>
+            <div class="wrap wrap--main wrap--gap-sm">
+              <div class="col">
+                <div class="card">
+                  <div class="icon icon--shadow icon--md icon--round">
+                    <svg width="43" height="43" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#purple-watch"></use>
+                    </svg>
+                  </div>
+                  <h6>cities, offices in Moscow and St. Petersburg</h6><span class="text">cities, offices in Moscow and St. Petersburg</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="icon icon--shadow icon--md icon--round">
+                    <svg width="43" height="43" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#purple-rocket"></use>
+                    </svg>
+                  </div>
+                  <h6>cities, offices in Moscow and St. Petersburg</h6><span class="text">cities, offices in Moscow and St. Petersburg</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="icon icon--shadow icon--md icon--round">
+                    <svg width="43" height="43" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#purple-chat"></use>
+                    </svg>
+                  </div>
+                  <h6>cities, offices in Moscow and St. Petersburg</h6><span class="text">cities, offices in Moscow and St. Petersburg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="box box--sand">
+          <div class="wrapper wrapper--main">
+            <div class="cta cta--center cta--lg cta--career">
               <div class="wrap wrap--c wrap--w">
                 <div class="wrap wrap--c wrap--s">
-                  <h2 class="cta__title">We are hiring</h2>
+                  <div class="icon icon--lg icon--round">
+                    <svg width="55" height="55" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#purple-human"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="wrap wrap--c wrap--s">
-                  <p class="cta__sub">Learn more about open vacancies and work in the company.</p>
+                  <h2 class="title">We are hiring</h2>
+                </div>
+                <div class="wrap wrap--c wrap--s">
+                  <p class="text">Learn more about open vacancies and work in the company.</p>
                 </div>
               </div>
               <div class="wrap wrap--c"><a class="button button--accent button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>View all vacant positions</span>
@@ -214,74 +258,99 @@
             </div>
           </div>
         </section>
-        <div class="form form--main form--career box box--white">
-          <div class="form__wrapper">
-            <h2 class="form__title">Submit a resume</h2>
-            <p class="form__sub">If you have not found a vacancy you are interested in, do not despair - fill out the form and submit it to us. We will definitely consider your resume.</p>
-            <div class="form__form">
-              <form class="gform" autocomplete="on" id="form-career" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
-                <div id="data"></div>
-                <div class="form__input-text-wrap">
-                  <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
-                    <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="How to address you" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
-                    <label for="name-1">How to address you</label>
-                  </div>
-                  <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3">
-                    <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Work e-mail" title="Email адрес должен быть типа: user@mail.com" required="required"/>
-                    <label for="email-1">Work e-mail</label>
-                  </div>
-                  <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2">
-                    <input type="tel" id="phone-1" name="phone" placeholder="Phone Number" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" required="required"/>
-                    <label for="phone-1">Phone Number</label>
-                  </div>
-                  <div class="form__form-field form__form-field--select form__form-field--text form__form-field--s form__form-field--4">
-                    <select id="city-1" name="city" required="required">
-                      <option value="undefined" selected="selected">What city would you like to work</option>
-                      <option value="Москва">Moscow</option>
-                      <option value="Санкт-Петербург">St. Petersburg</option>
-                    </select>
-                    <label for="city-1">What city would you like to work</label>
-                  </div>
-                  <div class="form__form-field--5 form__form-field--fw">
-                    <div class="field-textarea">
-                      <label>
-                        <textarea name="message"></textarea><span>About you</span>
-                      </label>
-                    </div>
-                  </div>
+        <section class="image-collage image-collage--career">
+          <div class="wrapper wrapper--main">
+            <div class="wrap wrap--gap-md">
+              <div class="col col--images">
+                <div class="images">
+                  <picture>
+                    <source type="image/webp" srcset="/img/pages/about/team3@1x.webp 1x, /img/pages/about/team3@2x.webp 2x"/><img src="/img/pages/about/team3@1x.jpg" srcset="/img/pages/about/team3@2x.jpg 2x" alt="Image with peoole on it" width="270" loading="lazy"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" srcset="/img/pages/about/team2@1x.webp 1x, /img/pages/about/team2@2x.webp 2x"/><img src="/img/pages/about/team2@1x.jpg" srcset="/img/pages/about/team2@2x.jpg 2x" alt="Image with peoole on it" width="270" loading="lazy"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" srcset="/img/pages/about/team1@1x.webp 1x, /img/pages/about/team1@2x.webp 2x"/><img src="/img/pages/about/team1@1x.jpg" srcset="/img/pages/about/team1@2x.jpg 2x" alt="Image with peoole on it" width="270" loading="lazy"/>
+                  </picture>
                 </div>
-                <div class="form__checkbox-wrap">
-                  <div class="form__form-field--file">
-                    <label for="file">
-                      <div class="icon">
-                        <svg class="close" width="22" height="22" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-reupload"></use>
-                        </svg>
-                        <svg class="upload" width="37" height="37" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-upload"></use>
-                        </svg>
-                      </div>
-                      <input class="visually-hidden" type="file" id="file" name="file" accept=".rtf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/><span class="file-send">Attach resume</span><span class="file-name"></span>
-                    </label>
-                  </div>
-                  <div class="form__form-field form__form-field--checkbox">
-                    <input class="visually-hidden" type="checkbox" id="terms-1" name="terms" required="required"/>
-                    <label for="terms-1">I agree with personal data processing</label>
-                  </div>
-                </div>
-                <div class="form__data">
-                  <input type="text" id="domain-1" name="domain" value="https://dlg.im/en/career" hidden="hidden"/>
-                  <input type="text" id="lang-1" name="lang" value="en" hidden="hidden"/>
-                  <input type="text" id="type-1" name="type" value="career" hidden="hidden"/>
-                </div>
-                <div class="wrap wrap--ac">
-                  <button class="button--accent button button--form" type="submit"><span>Send request</span></button><img class="submit__icon" src="/img/loader.gif" alt="Animated loading"/>
-                  <div class="submit__message"><span>Thanks for request</span></div>
-                </div>
-              </form>
+              </div>
+              <div class="col col--content">
+                <h3>cities, offices in Moscow and St. Petersburg</h3>
+                <p>cities, offices in Moscow and St. Petersburg</p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="box box--lilac">
+          <div class="form form--main form--career">
+            <div class="form__wrapper">
+              <h2 class="form__title">Submit a resume</h2>
+              <p class="form__sub">If you have not found a vacancy you are interested in, do not despair - fill out the form and submit it to us. We will definitely consider your resume.</p>
+              <div class="form__form">
+                <form class="gform" autocomplete="on" id="form-career" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
+                  <div id="data"></div>
+                  <div class="form__input-text-wrap">
+                    <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
+                      <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="How to address you" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
+                      <label for="name-1">How to address you</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3">
+                      <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Work e-mail" title="Email адрес должен быть типа: user@mail.com" required="required"/>
+                      <label for="email-1">Work e-mail</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2">
+                      <input type="tel" id="phone-1" name="phone" placeholder="Phone Number" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" required="required"/>
+                      <label for="phone-1">Phone Number</label>
+                    </div>
+                    <div class="form__form-field form__form-field--select form__form-field--text form__form-field--s form__form-field--4">
+                      <select id="city-1" name="city" required="required">
+                        <option value="undefined" selected="selected">What city would you like to work</option>
+                        <option value="Москва">Moscow</option>
+                        <option value="Санкт-Петербург">St. Petersburg</option>
+                      </select>
+                      <label for="city-1">What city would you like to work</label>
+                    </div>
+                    <div class="form__form-field--5 form__form-field--fw">
+                      <div class="field-textarea">
+                        <label>
+                          <textarea name="message"></textarea><span>About you</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__checkbox-wrap">
+                    <div class="form__form-field--file">
+                      <label for="file">
+                        <div class="icon">
+                          <svg class="close" width="22" height="22" aria-hidden="true">
+                            <use xlink:href="/img/sprite.svg#icon-reupload"></use>
+                          </svg>
+                          <svg class="upload" width="37" height="37" aria-hidden="true">
+                            <use xlink:href="/img/sprite.svg#icon-upload"></use>
+                          </svg>
+                        </div>
+                        <input class="visually-hidden" type="file" id="file" name="file" accept=".rtf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/><span class="file-send">Attach resume</span><span class="file-name"></span>
+                      </label>
+                    </div>
+                    <div class="form__form-field form__form-field--checkbox">
+                      <input class="visually-hidden" type="checkbox" id="terms-1" name="terms" required="required"/>
+                      <label for="terms-1">I agree with personal data processing</label>
+                    </div>
+                  </div>
+                  <div class="form__data">
+                    <input type="text" id="domain-1" name="domain" value="https://dlg.im/en/career" hidden="hidden"/>
+                    <input type="text" id="lang-1" name="lang" value="en" hidden="hidden"/>
+                    <input type="text" id="type-1" name="type" value="career" hidden="hidden"/>
+                  </div>
+                  <div class="wrap wrap--ac">
+                    <button class="button--accent button button--form" type="submit"><span>Send request</span></button><img class="submit__icon" src="/img/loader.gif" alt="Animated loading"/>
+                    <div class="submit__message"><span>Thanks for request</span></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <div class="page__footer">
         <footer class="footer">

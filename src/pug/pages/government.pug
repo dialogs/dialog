@@ -186,7 +186,7 @@ block content
                         img(src=`${it.imgPath}@2x.${it.imgType}` alt=it.imgAlt loading="lazy")
                     .wrap.wrap--link.wrap--ac
                       a(class="link link--icon-accent link--with-icon link--patents" href=`${it.imgPath}@2x.${it.imgType}` download)=it.linkName
-                      +svg('arrow-bottom', 20, 16)
+                        +svg('arrow-bottom', 20, 16)
         li.compliance__list-item.compliance__list-item--cloud
           ul.compliance__listbox
             li
@@ -194,7 +194,7 @@ block content
             li
               p=t.security.norms_li_4
       a(class="compliance__link--more link link--icon-accent link--with-icon link--icon-accent" href=`/${lang === "ru" ? "ru" : "en"}/patents`)=t.link.learn
-      +svg('arrow-right', 16, 15)
+        +svg('arrow-right', 16, 15)
 
 
 

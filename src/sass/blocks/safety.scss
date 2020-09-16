@@ -36,7 +36,7 @@
       margin-bottom: 35px;
     }
 
-    &.mt{
+    &.mt {
       margin-top: 60px;
     }
   }
@@ -51,6 +51,14 @@
     }
   }
 
+  h5 {
+    @include typography-h5;
+    margin-bottom: 0;
+    margin-left: 28px;
+    letter-spacing: -0.005em;
+
+  }
+
   p {
     @include typography-txt;
 
@@ -59,6 +67,10 @@
         margin-bottom: 22px;
       }
     }
+  }
+
+  .text {
+    margin-top: 10px !important;
   }
 
   .safety__wrapper {
@@ -110,6 +122,14 @@
 
     &--big {
       width: calc(100% / 1 - 12px);
+
+      .icon {
+        align-self: flex-start;
+      }
+
+      .safety__listbox li:not(:first-child) {
+        margin-top: 20px;
+      }
     }
 
     @include laptop {
@@ -121,10 +141,12 @@
     }
     @include mobile-md {
       padding: 35px 20px 20px 20px;
-      background: none;
       box-shadow: none;
       width: 100%;
-      padding: 0;
+      &:not(.safety__item--gov) {
+        padding: 0;
+        background: none;
+      }
       &:not(:first-child) {
         margin-top: 20px;
       }

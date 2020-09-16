@@ -15,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000)}});
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000);
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,10 +57,12 @@
         <section class="hero hero--main hero--secondary hero--next-no-bg">
           <div class="hero__wrapper">
             <div class="hero__left">
-              <h1 class="hero__title">Dialog для государственных организаций</h1><a class="button button--accent button--hero button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>Заявка для гос. организаций</span>
+              <h1 class="hero__title">Dialog для государственных организаций</h1>
+              <button class="button button--accent button--hero js-open-modal-hero" type="button"><span>Оставить заявку</span>
                 <svg width="16" height="15" aria-hidden="true">
                   <use xlink:href="/img/sprite.svg#arrow-right"></use>
-                </svg></a>
+                </svg>
+              </button>
             </div>
             <div class="hero__right">
               <div class="hero__img">
@@ -79,9 +81,9 @@
                 <div class="pseudo--1"></div>
                 <div class="pseudo--2"></div>
                 <div class="pseudo--3"></div>
-                <div class="icon icon--round icon--accent icon--md icon--nofill">
+                <div class="icon icon--round icon--accent icon--md">
                   <svg width="43" height="43" aria-hidden="true">
-                    <use xlink:href="/img/sprite.svg#white-shield-circle"></use>
+                    <use xlink:href="/img/sprite.svg#icon-lock"></use>
                   </svg>
                 </div>
                 <h2>Безопасность без ущерба эффективности</h2>
@@ -91,9 +93,9 @@
                 <div class="pseudo--1"></div>
                 <div class="pseudo--2"></div>
                 <div class="pseudo--3"></div>
-                <div class="icon icon--round icon--accent icon--md icon--nofill">
+                <div class="icon icon--round icon--accent icon--md">
                   <svg width="43" height="43" aria-hidden="true">
-                    <use xlink:href="/img/sprite.svg#white-sheet-dots"></use>
+                    <use xlink:href="/img/sprite.svg#sheet-dots"></use>
                   </svg>
                 </div>
                 <h2>Входит в реестр российского ПО</h2>
@@ -103,9 +105,9 @@
                 <div class="pseudo--1"></div>
                 <div class="pseudo--2"></div>
                 <div class="pseudo--3"></div>
-                <div class="icon icon--round icon--accent icon--md icon--nofill">
+                <div class="icon icon--round icon--accent icon--md icon--fix">
                   <svg width="50" height="50" aria-hidden="true">
-                    <use xlink:href="/img/sprite.svg#white-display-gear"></use>
+                    <use xlink:href="/img/sprite.svg#display-gear"></use>
                   </svg>
                 </div>
                 <h2>Интеграции с российским ПО</h2>
@@ -119,7 +121,7 @@
             <h2>Dialog для современных госорганизаций</h2>
             <h3>Сделайте общение безопасным</h3>
             <ul class="safety__list">
-              <li class="safety__item safety__item--safe">
+              <li class="safety__item safety__item--safe safety__item--gov">
                 <div class="wrap wrap--ac wrap--icon">
                   <div class="icon icon--accent icon--lg icon--round">
                     <svg width="52" height="47" aria-hidden="true">
@@ -150,7 +152,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="safety__item safety__item--cloud">
+              <li class="safety__item safety__item--cloud safety__item--gov">
                 <div class="wrap wrap--ac wrap--icon">
                   <div class="icon icon--accent icon--lg icon--round">
                     <svg width="48" height="52" aria-hidden="true">
@@ -172,36 +174,28 @@
             </ul>
             <h3 class="mt">Улучшите качество оказания государственных услуг</h3>
             <ul class="safety__list">
-              <li class="safety__item safety__item--big">
+              <li class="safety__item safety__item--big safety__item--gov">
                 <div class="wrap wrap--ac wrap--icon">
                   <div class="icon icon--accent icon--lg icon--round">
-                    <svg width="52" height="47" aria-hidden="true">
-                      <use xlink:href="/img/sprite.svg#icon-safe"></use>
+                    <svg width="61" height="61" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#white-gov"></use>
                     </svg>
                   </div>
-                  <h4>Высокие стандарты безопасности</h4>
+                  <ul class="safety__listbox">
+                    <li>
+                      <h5>Улучшение коммуникаций между подразделениями</h5>
+                      <p class="text">Работа госслужащих часто завязана на коммуникации между подразделениями. Dialog организует общение в одном приложении, делая совместную работу над документами простой и удобной.</p>
+                    </li>
+                    <li>
+                      <h5>Поддержка принятия управленческих решений</h5>
+                      <p class="text">Единая коммуникационная среда дает доступ к оперативной информации, необходимой для принятия обоснованных и своевременных административных решений.</p>
+                    </li>
+                    <li>
+                      <h5>Повышение производительности труда операционно-учетных подразделений</h5>
+                      <p class="text">Объединение разрозненных информационных систем в одном мессенджере, оптимизация и автоматизация процессов с помощью ботов и чат-ботов.</p>
+                    </li>
+                  </ul>
                 </div>
-                <p>Интеграция с инфраструктурой информационной безопасности</p>
-                <ul class="safety__listbox">
-                  <li>
-                    <p>Интеграция с Active Directory / LDAP</p>
-                  </li>
-                  <li>
-                    <p>DLP — предотвращение утечек</p>
-                  </li>
-                  <li>
-                    <p>Интеграция с Антивирусным ПО</p>
-                  </li>
-                  <li>
-                    <p>SIEM — идентификация угроз</p>
-                  </li>
-                  <li>
-                    <p>Шифрование передачи данных по протоколам TLS, DTLS</p>
-                  </li>
-                  <li>
-                    <p>Независимый аудит безопасности ПО</p>
-                  </li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -246,10 +240,11 @@
                             <source type="image/webp" srcset="/img/patents/license-fsb@2x.webp"><img src="/img/patents/license-fsb@2x.jpg" alt="Изображение лицензии" loading="lazy">
                           </picture>
                         </div>
-                        <div class="wrap wrap--link wrap--ac"><a class="link link--icon-accent link--with-icon link--patents" href="/img/patents/license-fsb@2x.jpg" download>ФСБ
-                            <svg width="20" height="16" aria-hidden="true">
-                              <use xlink:href="/img/sprite.svg#arrow-bottom"></use>
-                            </svg></a></div>
+                        <div class="wrap wrap--link wrap--ac"><a class="link link--icon-accent link--with-icon link--patents" href="/img/patents/license-fsb@2x.jpg" download>ФСБ</a>
+                          <svg width="20" height="16" aria-hidden="true">
+                            <use xlink:href="/img/sprite.svg#arrow-bottom"></use>
+                          </svg>
+                        </div>
                       </div>
                       <div class="col">
                         <div class="wrap wrap--preview">
@@ -257,10 +252,11 @@
                             <source type="image/webp" srcset="/img/patents/fstek-1@2x.webp"><img src="/img/patents/fstek-1@2x.jpg" alt="Изображение сертификата" loading="lazy">
                           </picture>
                         </div>
-                        <div class="wrap wrap--link wrap--ac"><a class="link link--icon-accent link--with-icon link--patents" href="/img/patents/fstek-1@2x.jpg" download>ФСТЭК
-                            <svg width="20" height="16" aria-hidden="true">
-                              <use xlink:href="/img/sprite.svg#arrow-bottom"></use>
-                            </svg></a></div>
+                        <div class="wrap wrap--link wrap--ac"><a class="link link--icon-accent link--with-icon link--patents" href="/img/patents/fstek-1@2x.jpg" download>ФСТЭК</a>
+                          <svg width="20" height="16" aria-hidden="true">
+                            <use xlink:href="/img/sprite.svg#arrow-bottom"></use>
+                          </svg>
+                        </div>
                       </div>
                       <div class="col">
                         <div class="wrap wrap--preview">
@@ -268,10 +264,11 @@
                             <source type="image/webp" srcset="/img/patents/fstek-2@2x.webp"><img src="/img/patents/fstek-2@2x.jpg" alt="Изображение сертификата" loading="lazy">
                           </picture>
                         </div>
-                        <div class="wrap wrap--link wrap--ac"><a class="link link--icon-accent link--with-icon link--patents" href="/img/patents/fstek-2@2x.jpg" download>ФСТЭК
-                            <svg width="20" height="16" aria-hidden="true">
-                              <use xlink:href="/img/sprite.svg#arrow-bottom"></use>
-                            </svg></a></div>
+                        <div class="wrap wrap--link wrap--ac"><a class="link link--icon-accent link--with-icon link--patents" href="/img/patents/fstek-2@2x.jpg" download>ФСТЭК</a>
+                          <svg width="20" height="16" aria-hidden="true">
+                            <use xlink:href="/img/sprite.svg#arrow-bottom"></use>
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </li>
@@ -287,14 +284,14 @@
                   </li>
                 </ul>
               </li>
-            </ul><a class="compliance__link--more link link--icon-accent link--with-icon link--icon-accent" href="/ru/patents">Узнать подробнее
-              <svg width="16" height="15" aria-hidden="true">
-                <use xlink:href="/img/sprite.svg#arrow-right"></use>
-              </svg></a>
+            </ul><a class="compliance__link--more link link--icon-accent link--with-icon link--icon-accent" href="/ru/patents">Узнать подробнее</a>
+            <svg width="16" height="15" aria-hidden="true">
+              <use xlink:href="/img/sprite.svg#arrow-right"></use>
+            </svg>
           </div>
         </section>
         <section class="quote quote--link">
-          <div class="quote__wrapper"><a class="link link--accent" href="/">Пример проекта внедрения</a>
+          <div class="quote__wrapper"><span class="link link--accent">Пример проекта внедрения</span>
             <h2>Dialog в Сбербанке</h2>
             <div class="quote__desc">
               <div class="quote__desc-icon">

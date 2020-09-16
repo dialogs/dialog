@@ -22,11 +22,10 @@ block content
         +button(
           t.button.leave,
           {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
             styleType: 'accent',
-            isLink: true,
-            href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
-            blank: true,
-            additionalClassName: 'hero__button button--link'
           })
           +svg('arrow-right', 16, 15)
       .hero__right
@@ -38,10 +37,10 @@ block content
       .wrap.wrap--s
         h4.title=t.cta.sales_info_title
       .wrap.wrap--s.wrap--links
-        a.link.link--accent(href='/')=t.cta.sales_info_link_1
-        a.link.link--accent(href='/')=t.cta.sales_info_link_2
+        a.link.link--accent(href='#com')=t.cta.sales_info_link_1
+        a.link.link--accent(href='#auto')=t.cta.sales_info_link_2
 
-  section.department
+  section.department#com
     .wrapper.wrapper--main
       .sub=t.sales.sub_1
       h2.title=t.sales.title_1
@@ -58,8 +57,7 @@ block content
           +picture(`/img/pages/sales/department1`, 'png', t.alt.people, 590)
 
 
-
-  section.department
+  section.department#auto
     .wrapper.wrapper--main
       .wrap.wrap--w
         .wrap.wrap--s
@@ -82,5 +80,15 @@ block content
       .cta.cta--left.cta--md
         +form-cta(t.cta.tech_form_info_title,t.cta.tech_form_info_text,1,'form-cta', pageName,pageName,'cta-left')
 
+
+
   section
     +form-offer(false, 1, 'form-offer', pageName, "offer")
+
+  .tooltips
+    .tooltip.tooltip--chat
+      | !{t.pop.chat}
+    .tooltip.tooltip--chanel
+      | !{t.pop.chanel}
+    .tooltip.tooltip--chatbot
+      | !{t.pop.chatbot}

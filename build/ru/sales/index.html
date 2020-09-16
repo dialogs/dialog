@@ -15,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000)}});
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000);
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,10 +57,12 @@
         <section class="hero hero--main hero--secondary hero--next-bg">
           <div class="hero__wrapper">
             <div class="hero__left">
-              <h1 class="hero__title">Dialog для Отдела продаж</h1><a class="button button--accent hero__button button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>Оставить заявку</span>
+              <h1 class="hero__title">Dialog для Отдела продаж</h1>
+              <button class="button button--accent button--hero js-open-modal-hero" type="button"><span>Оставить заявку</span>
                 <svg width="16" height="15" aria-hidden="true">
                   <use xlink:href="/img/sprite.svg#arrow-right"></use>
-                </svg></a>
+                </svg>
+              </button>
             </div>
             <div class="hero__right">
               <div class="hero__img">
@@ -76,10 +78,10 @@
             <div class="wrap wrap--s">
               <h4 class="title">Узнайте, как Коммерческие отделы используют Dialog</h4>
             </div>
-            <div class="wrap wrap--s wrap--links"><a class="link link--accent" href="/">Коммуникация</a><a class="link link--accent" href="/">Автоматизация</a></div>
+            <div class="wrap wrap--s wrap--links"><a class="link link--accent" href="#com">Коммуникация</a><a class="link link--accent" href="#auto">Автоматизация</a></div>
           </div>
         </section>
-        <section class="department">
+        <section class="department" id="com">
           <div class="wrapper wrapper--main">
             <div class="sub">Коммуникация</div>
             <h2 class="title">Эффективная совместная работа над проектами</h2>
@@ -151,7 +153,7 @@
             </div>
           </div>
         </section>
-        <section class="department">
+        <section class="department" id="auto">
           <div class="wrapper wrapper--main">
             <div class="wrap wrap--w">
               <div class="wrap wrap--s">
@@ -304,6 +306,11 @@
             </div>
           </div>
         </section>
+        <div class="tooltips">
+          <div class="tooltip tooltip--chat"><b>Канал</b> – это чат, где только владелец может отправлять сообщения. Анонсируйте события из жизни компании или транслируйте тематические сообщения.</div>
+          <div class="tooltip tooltip--chanel"><b>Канал</b> – это чат, где только владелец может отправлять сообщения. Анонсируйте события из жизни компании или транслируйте тематические сообщения.</div>
+          <div class="tooltip tooltip--chatbot"><b>Канал</b> – это чат, где только владелец может отправлять сообщения. Анонсируйте события из жизни компании или транслируйте тематические сообщения.</div>
+        </div>
       </main>
       <div class="page__footer">
         <footer class="footer">

@@ -22,9 +22,17 @@
       margin-bottom: 15px;
     }
   }
+
+  .icon--fix {
+
+    svg {
+      stroke: #fff;
+      fill: none !important;
+    }
+  }
 }
 
-.advantages--next-bg{
+.advantages--next-bg {
   padding-bottom: 60px;
 }
 
@@ -157,6 +165,12 @@
 
         svg {
           fill: $color-accent;
+        }
+      }
+
+      .icon--fix {
+        svg {
+          stroke: $color-accent;
         }
       }
     }

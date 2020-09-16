@@ -19,22 +19,23 @@
     &--images {
       min-width: 450px;
       width: 450px;
-      height: 370px;
+      height: 320px;
       @include tablet {
         width: 350px;
         min-width: 350px;
-        height: 320px;
+        height: 290px;
       }
       @include mobile-md {
         min-width: 450px;
         width: 450px;
-        height: 370px;
+        height: 320px;
         margin: auto;
+        margin-top: 40px !important;
       }
       @include mobile-sm {
         width: 350px;
         min-width: 350px;
-        height: 320px;
+        height: 290px;
         position: relative;
         left: -20px;
       }
@@ -95,8 +96,8 @@
       padding-bottom: 45px;
     }
 
-    .col--images{
-      @include mobile-md{
+    .col--images {
+      @include mobile-md {
         order: 2;
       }
     }

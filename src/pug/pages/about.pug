@@ -122,7 +122,7 @@ block content
         each item, index in leaders
           .col
             .item
-              +picture(`/img/pages/about/leader${index + 1}`, 'jpg', t.alt.people, 111)
+              +picture(`/img/pages/about/leader${index + 1}`, 'jpg', t.alt.people, 175)
               h4=item.name
               p=item.text
 
@@ -162,13 +162,13 @@ block content
         span.phone +7(800)775-82-02
       .wrap.wrap--main.wrap--gap-sm
         .col
-          .card.card--image-header
+          a.card.card--image-header(href="https://www.google.com/maps/place/Poklonnaya+Ulitsa,+3,+%D1%8D%D1%82%D0%B0%D0%B6+11,+Moskva,+Russia,+121170/data=!4m2!3m1!1s0x46b54bbe67327cb3:0x28e3f4b8be2ccf0e?sa=X&ved=2ahUKEwiNwfqu7-zrAhXCGewKHd9GB8gQ8gEwAHoECAwQAQ" target="_blank")
             +picture('/img/pages/about/address1', 'png', t.alt.license)
             .wrap.wrap--address
               span.city=t.about.contact_address_city_1
               span.address=t.about.contact_address_1
         .col
-          .card.card--image-header
+          a.card.card--image-header(href="https://www.google.com/maps/place/Nevsky+Ave,+19,+Sankt-Peterburg,+Russia,+191186/@59.9357295,30.3193676,17z/data=!3m1!4b1!4m5!3m4!1s0x469631057be74167:0x922a2a292c5f6d51!8m2!3d59.9357268!4d30.3215563" target="_blank")
             +picture('/img/pages/about/address2', 'png', t.alt.license)
             .wrap.wrap--address
               span.city=t.about.contact_address_city_2

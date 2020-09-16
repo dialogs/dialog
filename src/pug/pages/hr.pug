@@ -23,11 +23,10 @@ block content
         +button(
           t.button.leave,
           {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
             styleType: 'accent',
-            isLink: true,
-            href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
-            blank: true,
-            additionalClassName: 'hero__button button--link'
           })
           +svg('arrow-right', 16, 15)
       .hero__right
@@ -42,13 +41,13 @@ block content
       .wrap.wrap--s
         h4.title=t.cta.hr_info_title
       .wrap.wrap--s.wrap--links
-        a.link.link--accent(href='/')=t.cta.hr_info_link_1
-        a.link.link--accent(href='/')=t.cta.hr_info_link_2
-        a.link.link--accent(href='/')=t.cta.hr_info_link_3
+        a.link.link--accent(href='#hire')=t.cta.hr_info_link_1
+        a.link.link--accent(href='#auto')=t.cta.hr_info_link_2
+        a.link.link--accent(href='#involve')=t.cta.hr_info_link_3
 
 
 
-  section.department
+  section.department#hire
     .wrapper.wrapper--main
       .sub=t.hr.sub_1
       h2.title=t.hr.title_1
@@ -65,7 +64,7 @@ block content
 
 
 
-  section.department
+  section.department#auto
     .wrapper.wrapper--main
       .wrap.wrap--w
         .wrap.wrap--s
@@ -85,7 +84,7 @@ block content
 
 
 
-  section.department
+  section.department#involve
     .wrapper.wrapper--main.wrapper--pb
       .sub=t.hr.sub_3
       h2.title=t.hr.title_3
@@ -112,3 +111,11 @@ block content
 
   section
     +form-offer(false, 1, 'form-offer', pageName, "offer")
+
+  .tooltips
+    .tooltip.tooltip--chat
+      | !{t.pop.chat}
+    .tooltip.tooltip--chanel
+      | !{t.pop.chanel}
+    .tooltip.tooltip--chatbot
+      | !{t.pop.chatbot}

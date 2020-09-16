@@ -10,7 +10,7 @@ block variables
     const title = t.meta.private_title;
     const desc = t.meta.main_desc;
     const routeClass = "js-route-main";
-    const pageName = "about";
+    const pageName = "private";
 
 block content
   -
@@ -45,16 +45,8 @@ block content
     title: t.private.grow_card_title_1,
     sub: t.private.grow_card_sub_1,
     text: t.private.grow_card_text_1,
-    link: t.private.grow_card_link_1
-    },
-    {
-    icon: 'purple-it',
-    iconw: '22',
-    iconh: '22',
-    title: t.private.grow_card_title_2,
-    sub: t.private.grow_card_sub_2,
-    text: t.private.grow_card_text_2,
-    link: t.private.grow_card_link_2
+    link: t.private.grow_card_link_1,
+    href: "hr"
     },
     {
     icon: 'purple-sales',
@@ -63,16 +55,8 @@ block content
     title: t.private.grow_card_title_3,
     sub: t.private.grow_card_sub_3,
     text: t.private.grow_card_text_3,
-    link: t.private.grow_card_link_3
-    },
-    {
-    icon: 'purple-marketing',
-    iconw: '15',
-    iconh: '15',
-    title: t.private.grow_card_title_4,
-    sub: t.private.grow_card_sub_4,
-    text: t.private.grow_card_text_4,
-    link: t.private.grow_card_link_4
+    link: t.private.grow_card_link_3,
+    href: "sales"
     },
     {
     icon: 'purple-support',
@@ -81,8 +65,25 @@ block content
     title: t.private.grow_card_title_5,
     sub: t.private.grow_card_sub_5,
     text: t.private.grow_card_text_5,
-    link: t.private.grow_card_link_5
-    }
+    link: t.private.grow_card_link_5,
+    href: "tech",
+    },
+    {
+    icon: 'purple-it',
+    iconw: '22',
+    iconh: '22',
+    title: t.private.grow_card_title_2,
+    sub: t.private.grow_card_sub_2,
+    text: t.private.grow_card_text_2,
+    },
+    {
+    icon: 'purple-marketing',
+    iconw: '15',
+    iconh: '15',
+    title: t.private.grow_card_title_4,
+    sub: t.private.grow_card_sub_4,
+    text: t.private.grow_card_text_4,
+    },
     ];
     const corp = [
     {
@@ -170,13 +171,12 @@ block content
         h1.hero__title=t.private.title
         p.hero__text=t.private.sub
         +button(
-          t.button.private,
+          t.button.leave,
           {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
             styleType: 'accent',
-            isLink: true,
-            href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
-            blank: true,
-            additionalClassName: 'button--hero button--link'
           })
           +svg('arrow-right', 16, 15)
       .hero__right
@@ -213,8 +213,9 @@ block content
                   span.sub=item.sub
                 h6.title=item.title
                 span.text=item.text
-                a.link.link--accent.link--icon-accent.link--with-icon(href)=item.link
-                  +svg('arrow-right', 12, 12)
+                if item.link
+                  a.link.link--accent.link--icon-accent.link--with-icon(href=`/${lang === "ru" ? "ru" : "en"}/${item.href}`)=item.link
+                    +svg('arrow-right', 12, 12)
 
   section.icon-text.icon-text--3
     .wrapper.wrapper--main
@@ -321,7 +322,7 @@ block content
 
   section.quote.quote--link
       .quote__wrapper
-        a.link.link--accent(href="/") Пример проекта внедрения
+        span.link.link--accent Пример проекта внедрения
         h2=t.gov.quote_title
         .quote__desc
           .quote__desc-icon

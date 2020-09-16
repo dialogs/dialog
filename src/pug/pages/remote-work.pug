@@ -104,11 +104,10 @@ block content
         +button(
           t.button.leave,
           {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
             styleType: 'accent',
-            isLink: true,
-            href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
-            blank: true,
-            additionalClassName: 'button--hero button--link'
           })
           +svg('arrow-right', 16, 15)
       .hero__right
@@ -158,7 +157,7 @@ block content
               .col
                 h5=item.title
                 .text=item.text
-      a.link.link--icon-accent.link--with-icon(href)=t.remote.safety_link
+      a.link.link--icon-accent.link--with-icon(href=`/${lang === "ru" ? "ru" : "en"}/security`)=t.remote.safety_link
         +svg('arrow-right', 12, 12)
 
 

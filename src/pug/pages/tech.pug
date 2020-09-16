@@ -22,11 +22,10 @@ block content
         +button(
           t.button.leave,
           {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
             styleType: 'accent',
-            isLink: true,
-            href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
-            blank: true,
-            additionalClassName: 'hero__button button--link'
           })
           +svg('arrow-right', 16, 15)
       .hero__right
@@ -39,20 +38,20 @@ block content
       .wrap.wrap--s
         h4.title=t.cta.tech_info_title
       .wrap.wrap--s.wrap--links
-        a.link.link--accent(href='/')=t.cta.tech_info_link_1
-        a.link.link--accent(href='/')=t.cta.tech_info_link_2
-        a.link.link--accent(href='/')=t.cta.tech_info_link_3
+        a.link.link--accent(href='#together')=t.cta.tech_info_link_1
+        a.link.link--accent(href='#auto')=t.cta.tech_info_link_2
+        a.link.link--accent(href='#learn')=t.cta.tech_info_link_3
 
 
 
-  section.department
+  section.department#together
     .wrapper.wrapper--main
       .sub=t.tech.sub_1
       h2.title=t.tech.title_1
       .wrap.wrap--gap-md.wrap--row.wrap--sb
         .col.col--text
           .links
-            | !{t.tech.links_1}
+            | !{t.pop.text}
           +card-description(t.tech.title_card_1_1,t.tech.count_card_1_1,"white-city",t.tech.text_1_1, 33, 27, 'w-sm')
           +card-description(t.tech.title_card_1_2,t.tech.count_card_1_2,"white-circle",t.tech.text_1_2, 40, 40, 'w-sm')
         .col.col--image.col--bg
@@ -60,34 +59,28 @@ block content
 
 
 
-  section.department
+  section.department#auto
     .wrapper.wrapper--main
-      .wrap.wrap--gap-sm.wrap--sb.wrap--ac.wrap--row-info
-        .col
-          .sub=t.tech.sub_2
-          .wrap.wrap--s
-            h2.title=t.tech.title_2
-        .col.col--info
-          .info.card.card--white.card--xs
-            | !{t.tech.info}
+      .sub=t.tech.sub_2
+      h2.title=t.tech.title_2
       .wrap.wrap--gap-md.wrap--row.wrap--sb
         .col.col--image.col--bg
           +picture(`/img/pages/tech/department12`, 'png', t.alt.people, 590)
         .col.col--text
           .links
-            | !{t.tech.links_2}
+            | !{t.pop.text}
           +card-description(t.tech.title_card_2_1,t.tech.count_card_2_1,"white-settings",t.tech.text_2_1, 33, 27, 'w-sm')
           +card-description(t.tech.title_card_2_2,t.tech.count_card_2_2,"white-shout",t.tech.text_2_2, 24, 24, 'w-sm')
 
 
-  section.department
+  section.department#learn
     .wrapper.wrapper--main.wrapper--pb
       .sub=t.tech.sub_3
       h2.title=t.tech.title_3
       .wrap.wrap--gap-md.wrap--row.wrap--sb
         .col.col--text
           .links
-            | !{t.tech.links_3}
+            | !{t.pop.text}
           +card-description(t.tech.title_card_3_1,t.tech.count_card_3_1,"white-bot",t.tech.text_3_1, 33, 27, 'w-sm')
           +card-description(t.tech.title_card_3_2,t.tech.count_card_3_2,"white-sheet",t.tech.text_3_2, 40, 40, 'w-sm')
         .col.col--image.col--bg
@@ -103,3 +96,11 @@ block content
 
   section
     +form-offer(false, 1, 'form-offer', pageName, "offer")
+
+  .tooltips
+    .tooltip.tooltip--chat
+      | !{t.pop.chat}
+    .tooltip.tooltip--chanel
+      | !{t.pop.chanel}
+    .tooltip.tooltip--chatbot
+      | !{t.pop.chatbot}

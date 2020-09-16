@@ -45,12 +45,16 @@ a {
 }
 
 .tooltip {
-  background-color: #333;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
   font-size: 13px;
+  padding: 20px;
   display: none;
+  max-width: 402.01px;
+  background: #ffffff;
+  box-shadow: 0px 2px 20px rgba(152, 136, 196, 0.16);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
 
   &[data-show] {
     display: block;
@@ -62,12 +66,15 @@ a {
     width: 8px;
     height: 8px;
     z-index: -1;
+    left: 50%;
+    right: 50%;
+    margin: auto;
   }
 
   .arrow::before {
     content: '';
     transform: rotate(45deg);
-    background: #333;
+    background: #fff;
   }
 
   &[data-popper-placement^='top'] > .arrow {

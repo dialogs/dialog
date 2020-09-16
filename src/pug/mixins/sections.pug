@@ -29,3 +29,35 @@ mixin card-icon(title, icon, w, h)
         +svg(icon, w, h)
       .wrap.wrap--w.wrap--ac
         .title.wrap--s=title
+
+mixin tooltips(amount)
+  .tooltips
+    .tooltip.tooltip--chat-1
+      | !{t.pop.chat}
+      .arrow
+    .tooltip.tooltip--chanel-1
+      | !{t.pop.chanel}
+      .arrow
+    .tooltip.tooltip--chatbot-1
+      | !{t.pop.chatbot}
+      .arrow
+    if(amount > 1)
+      .tooltip.tooltip--chat-2
+        | !{t.pop.chat}
+        .arrow
+      .tooltip.tooltip--chanel-2
+        | !{t.pop.chanel}
+        .arrow
+      .tooltip.tooltip--chatbot-2
+        | !{t.pop.chatbot}
+        .arrow
+    if(amount > 2)
+      .tooltip.tooltip--chat-3
+        | !{t.pop.chat}
+        .arrow
+      .tooltip.tooltip--chanel-3
+        | !{t.pop.chanel}
+        .arrow
+      .tooltip.tooltip--chatbot-3
+        | !{t.pop.chatbot}
+        .arrow

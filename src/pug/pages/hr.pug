@@ -54,7 +54,7 @@ block content
       .wrap.wrap--gap-sm.wrap--row.wrap--sb
         .col.col--text
           .links
-            | !{t.hr.links_1}
+            | !{t.pop.text_1}
           +card-description(t.hr.title_card_1_1,t.hr.count_card_1_1,"white-devs",t.hr.text_1_1, 31, 31, 'w-lg')
           +card-description(t.hr.title_card_1_2,t.hr.count_card_1_2,"white-hire",t.hr.text_1_2, 29, 29, 'w-lg')
           +card-description(t.hr.title_card_1_3,t.hr.count_card_1_3,"white-motivation",t.hr.text_1_3, 31, 31, 'w-lg')
@@ -77,7 +77,7 @@ block content
             +picture(`/img/pages/hr/department2`, 'png', t.alt.people, 590)
         .col.col--text
           .links
-            | !{t.hr.links_2}
+            | !{t.pop.text_2}
           +card-description(t.hr.title_card_2_1,t.hr.count_card_2_1,"white-sheet",t.hr.text_2_1, 39, 39, 'w-md')
           +card-description(t.hr.title_card_2_2,t.hr.count_card_2_2,"white-plane",t.hr.text_2_2, 29, 29, 'w-md')
           +card-description(t.hr.title_card_2_3,t.hr.count_card_2_3,"white-ask",t.hr.text_2_3, 31, 31, 'w-md')
@@ -91,7 +91,7 @@ block content
       .wrap.wrap--gap-sm.wrap--row.wrap--sb
         .col.col--text
           .links
-            | !{t.hr.links_3}
+            | !{t.pop.text_3}
           +card-description(t.hr.title_card_3_1,t.hr.count_card_3_1,"white-shout",t.hr.text_3_1, 24, 24, 'w-md')
           +card-description(t.hr.title_card_3_2,t.hr.count_card_3_2,"white-city",t.hr.text_3_2, 33, 27, 'w-md')
           +card-description(t.hr.title_card_3_3,t.hr.count_card_3_3,"white-learn",t.hr.text_3_3, 33, 33, 'w-md')
@@ -112,10 +112,4 @@ block content
   section
     +form-offer(false, 1, 'form-offer', pageName, "offer")
 
-  .tooltips
-    .tooltip.tooltip--chat
-      | !{t.pop.chat}
-    .tooltip.tooltip--chanel
-      | !{t.pop.chanel}
-    .tooltip.tooltip--chatbot
-      | !{t.pop.chatbot}
+  +tooltips(3)

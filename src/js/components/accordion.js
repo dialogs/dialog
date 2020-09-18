@@ -60,7 +60,7 @@ class Accordion {
     this.trigger.setAttribute('aria-expanded', 'false');
     this.details.setAttribute('aria-hidden', 'true');
     this.trigger.classList.remove(this.triggerExpandedClassName);
-    this.details.classList.add( this.detailsHideClassName);
+    this.details.classList.add(this.detailsHideClassName);
 
     this.isExpanded = false;
   }

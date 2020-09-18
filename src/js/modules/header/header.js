@@ -10,7 +10,7 @@ import constants from '../../utils/consts';
 
 const CSS_CUSTOM_PROPS_HEADER_HEIGHT = '--header-height';
 const {
-  breakpoints: { laptopMax },
+  breakpoints: { midMax },
 } = constants;
 
 const getMenuPopupOptions = (header) => {
@@ -93,7 +93,7 @@ const init = () => {
   headerDropdown.init(menuDropdownOptions);
   headerAccordion.init(menuAccordionsOptions);
   offerModal(offerModalProps);
-  breakpointChecker(laptopMax, onNoDesktopViewport, onDesktopViewPort);
+  breakpointChecker(midMax, onNoDesktopViewport, onDesktopViewPort);
 };
 
 export default init;

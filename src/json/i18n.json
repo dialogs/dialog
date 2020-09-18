@@ -2269,20 +2269,20 @@
       "en": "For HR"
     },
     "sales": {
-      "ru": "Для Коммерческого отдела",
-      "en": "For the Commercial Department"
+      "ru": "Для коммерческого отдела",
+      "en": "For commercial department"
     },
     "tech": {
-      "ru": "Для Технической поддержки",
-      "en": "For Technical support"
+      "ru": "Для технической поддержки",
+      "en": "For technical support"
     },
     "gov": {
       "ru": "Для госучреждений",
       "en": "For state institutions"
     },
     "private": {
-      "ru": "Частным организациям",
-      "en": "Private organizations"
+      "ru": "Для частных организаций",
+      "en": "For private organizations"
     },
     "oem": {
       "ru": "ОЕМ",

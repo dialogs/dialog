@@ -2285,8 +2285,8 @@
       "en": "For private organizations"
     },
     "oem": {
-      "ru": "ОЕМ",
-      "en": "OEM"
+      "ru": "CPaaS",
+      "en": "CPaaS"
     },
     "remote": {
       "ru": "Удаленная работа",

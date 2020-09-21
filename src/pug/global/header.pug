@@ -6,26 +6,31 @@ mixin header(pageName, lang)
     const navLinks = [
     {
     link: "security",
-    name: t.nav.security,
+    text: t.nav.security,
     },
     {
     link: "integrations",
-    name: t.nav.integrations,
+    text: t.nav.integrations,
     },
     {
     link: "career",
-    name: t.nav.career,
+    text: t.nav.career,
     },
     {
     link: "support",
-    name: t.nav.support,
+    text: t.nav.support,
     },
     {
     link: "oem",
-    name: t.nav.oem,
+    text: t.nav.oem,
     },
     {
     text: t.nav.solutions,
+    link: null,
+    submenu: [
+    {
+    text: t.nav.departments,
+    link: null,
     submenu: [
     {
     text: t.nav.hr,
@@ -38,6 +43,8 @@ mixin header(pageName, lang)
     {
     text: t.nav.sales,
     link: "sales",
+    },
+    ],
     },
     {
     text: t.nav.private,
@@ -71,7 +78,7 @@ mixin header(pageName, lang)
                 li
                   a(
                     href!=`/${lang === "ru" ? "ru" : "en"}/${topItem.link}`).main-nav__link
-                    | !{topItem.name}
+                    | !{topItem.text}
               else
                 li.main-nav__top-block
                   button(type="button").main-nav__button=topItem.text
@@ -86,7 +93,7 @@ mixin header(pageName, lang)
                             .main-nav__middle-block
                               button(type="button").main-nav__included-button
                                 span=middleItem.text
-                                +svg('tick-right', 7, 11)
+                                  +svg('tick-right', 7, 11)
                               ul.main-nav__middle-dropdown
                                 each lowItem in middleItem.submenu
                                   li.main-nav__included-item

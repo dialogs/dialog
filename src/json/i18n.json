@@ -2266,15 +2266,15 @@
     },
     "hr": {
       "ru": "Для HR",
-      "en": "For HR"
+      "en": "Human Resources"
     },
     "sales": {
       "ru": "Для коммерческого отдела",
-      "en": "For commercial department"
+      "en": "Sales"
     },
     "tech": {
       "ru": "Для технической поддержки",
-      "en": "For technical support"
+      "en": "Tech support"
     },
     "gov": {
       "ru": "Для госучреждений",
@@ -2299,6 +2299,10 @@
     "solutions": {
       "ru": "Решения",
       "en": "Solutions"
+    },
+    "departments": {
+      "ru": "Отделы",
+      "en": "Departments"
     }
   },
 

@@ -39,21 +39,28 @@
   fill: $color-base;
   cursor: pointer;
   transition: color $transition-props, fill $transition-props;
-  padding: 5px 20px 5px 17px;
 
   @include mid {
     display: flex;
     padding: 14px 40px 14px;
+
+    font-size: 16px;
     line-height: 25px;
+
     border-bottom: 1px solid $color-accent-light;
-    padding: 14px var(--indent) 14px;
+  }
+
+  @include mobile-md {
+    padding: 10px 20px 14px;
   }
 
   &:hover,
   &:focus,
   &--expanded {
     outline: none;
+
     color: $color-accent;
+
     fill: $color-accent;
 
     @include mid {
@@ -63,6 +70,8 @@
 }
 
 .main-nav__link {
+  padding-right: 30px;
+
   &--no-padding {
     padding-right: 0;
 
@@ -70,18 +79,24 @@
       border-bottom: none;
     }
 
-    @include mid {
+    @include mobile-md {
       padding: 0;
     }
   }
 
   &--included {
-    width: 100%;
-    padding: 10px 20px !important;
+    width: 235px;
+    margin-bottom: 11px;
+    padding: 5px 20px 5px 17px;
 
     @include mid {
       width: 100%;
-      padding: 14px var(--indent) 14px !important;
+      padding: 14px 40px 14px 65px;
+      margin-bottom: 0;
+    }
+
+    @include mobile-md {
+      padding: 10px 40px 14px 31px;
     }
   }
 
@@ -103,6 +118,7 @@
 .main-nav__button {
   display: inline-flex;
   align-items: center;
+  padding: 0;
 
   svg {
     margin-left: 5px;
@@ -114,8 +130,9 @@
   @include mid {
     display: flex;
     justify-content: space-between;
+
     width: 100%;
-    padding: 14px var(--indent) 14px;
+    padding: 10px 40px 14px;
 
     svg {
       display: none;
@@ -142,6 +159,10 @@
     }
   }
 
+  @include mobile-md {
+    padding: 10px 20px 14px;
+  }
+
   &--expanded {
     @include mid {
       &::after {
@@ -158,8 +179,10 @@
 
 .main-nav__user-actions {
   align-self: flex-start;
+
   display: flex;
   align-items: center;
+
   padding-left: 7px;
 
   @include mid {
@@ -168,7 +191,7 @@
     justify-content: space-between;
   }
 
-  @include mid {
+  @include mobile-md {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -180,18 +203,14 @@
 .main-nav__action-btn {
   margin-right: 20px;
 
-  @include mid {
+  @include mobile-md {
     width: 100%;
     max-width: 400px;
     min-height: 50px;
     margin: 0 0 10px;
+
     font-size: 16px;
     line-height: 20px;
-  }
-
-  @include mobile-xs {
-    width: 100%;
-    max-width: none;
   }
 }
 
@@ -214,7 +233,7 @@
 
   @include mid {
     width: 100%;
-    padding: 11px 46px 14px 65px;
+    padding: 14px 46px 14px 65px;
 
     font-size: 16px;
     line-height: 25px;
@@ -222,7 +241,7 @@
     border-bottom: 1px solid $color-accent-light;
   }
 
-  @include mid {
+  @include mobile-md {
     padding: 11px 25px 14px 31px;
   }
 
@@ -297,24 +316,32 @@
   display: none;
   justify-content: flex-start;
   flex-direction: column;
+
   width: auto;
   min-width: 240px;
   padding-top: 16px;
+
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 9;
+
   transition: min-width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   @include mid {
     position: relative;
+
     display: flex;
     padding: 0;
+
     overflow: hidden;
+
     transition: max-height $transition-props;
 
-    &[aria-hidden="true"] {
+    &.is-hide {
+      /* stylelint-disable */
       max-height: 0 !important;
+      /* stylelint-enable */
     }
   }
 
@@ -341,12 +368,14 @@
     }
 
     .main-nav__link--included {
+      margin-left: auto;
       padding-left: 10px;
     }
 
     .main-nav__middle-dropdown {
       right: auto;
       left: 0;
+
       padding: 19px 10px 11px 10px;
     }
   }
@@ -366,30 +395,39 @@
   --box-height: "auto";
 
   @include no-list;
+
   position: relative;
+
   width: 100%;
   min-height: var(--box-height);
+  padding: 20px 0 10px;
   border-radius: 2px;
-  padding: 10px 0;
+
   background-color: $color-contrast;
   box-shadow: 0 4px 12px rgba(47, 27, 73, 0.18), 0 1px 1px rgba(47, 41, 64, 0.12);
 
   @include mid {
     padding: 0;
+
     background-color: $bg-gray;
   }
 
   &::before {
     content: "";
+
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
+
     z-index: 2;
+
     display: block;
     width: 240px;
     height: 100%;
+
     background-color: $color-contrast;
+
     border-radius: 2px 0 0 2px;
 
     @include mid {
@@ -434,12 +472,16 @@
 
 .main-nav__middle-dropdown {
   @include no-list;
+
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
+
   display: none;
+
   width: 240px;
+
   padding: 19px 10px 11px 10px;
 
   &--expanded {
@@ -449,10 +491,14 @@
   @include mid {
     position: static;
     z-index: auto;
+
     display: block;
     width: 100%;
     padding: 0;
+
     overflow: hidden;
+
+    transition: max-height $transition-props;
 
     &.is-hide {
       /* stylelint-disable */
@@ -464,7 +510,12 @@
   & .main-nav__link--included {
     @include mid {
       padding-left: 85px;
+
       font-weight: 400;
+      color: $color-gray-dark;
+    }
+
+    @include mobile-md {
       padding-left: 47px;
     }
   }

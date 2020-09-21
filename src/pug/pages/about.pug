@@ -56,6 +56,9 @@ block content
     {name: 'Леонид Никулин', text: 'Арт-директор'},
     {name: 'Мария Ивченко', text: 'Директор по персоналу'},
     {name: 'Михаил Шапкин', text: 'Финансовый директор'},
+    {name: 'Георгий Дорский', text: 'Главный юрист'},
+    {name: 'Дмитрий Смирнов', text: 'Директор по стратегии'},
+    {name: 'Максим Зуевский', text: 'Руководитель службы IT'}
     ];
 
   section.hero.hero--main.hero--about.hero--secondary.hero--next-no-bg
@@ -122,7 +125,7 @@ block content
         each item, index in leaders
           .col
             .item
-              +picture(`/img/pages/about/leader${index + 1}`, 'jpg', t.alt.people, 175)
+              +picture(`/img/pages/about/leader${index + 1}`, 'jpg', t.alt.people, 160)
               h4=item.name
               p=item.text
 

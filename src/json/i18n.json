@@ -1916,7 +1916,7 @@
       "en": "Want to fulfill your talents?"
     },
     "adv_sub_1": {
-      "ru": "Набор функций безопасности для комфортного общения в защищенной и контролируемой среде.",
+      "ru": "Размещение на серверах компании и интеграция с корпоративными системами безопасности.",
       "en": "Want to fulfill your talents?"
     },
     "adv_title_2": {
@@ -2265,23 +2265,23 @@
       "en": "Document library:"
     },
     "hr": {
-      "ru": "Для HR",
+      "ru": "HR",
       "en": "Human Resources"
     },
     "sales": {
-      "ru": "Для коммерческого отдела",
+      "ru": "Отдел продаж",
       "en": "Sales"
     },
     "tech": {
-      "ru": "Для технической поддержки",
+      "ru": "Техподдержка",
       "en": "Tech support"
     },
     "gov": {
-      "ru": "Для госучреждений",
+      "ru": "Госорганизациям",
       "en": "For state institutions"
     },
     "private": {
-      "ru": "Для частных организаций",
+      "ru": "Коммерческим организациям",
       "en": "For private organizations"
     },
     "oem": {
@@ -2417,28 +2417,28 @@
       "en": "About | Dialog"
     },
     "private_title": {
-      "ru": "Частным организациям | Dialog",
-      "en": "Private organizations | Dialog"
+      "ru": "Коммерческим организациям | Dialog",
+      "en": "Private companies | Dialog"
     },
     "gov_title": {
-      "ru": "Госучреждениям | Dialog",
-      "en": "State institutions | Dialog"
+      "ru": "Госорганизациям | Dialog",
+      "en": "Government | Dialog"
     },
     "tech_title": {
       "ru": "Dialog для Технической поддержки | Dialog",
-      "en": "Dialog for Technical support | Dialog"
+      "en": "Dialog for Tech support | Dialog"
     },
     "hr_title": {
       "ru": "Dialog для HR | Dialog",
       "en": "Dialog for HR | Dialog"
     },
     "sales_title": {
-      "ru": "Dialog для Коммерческого отдела | Dialog",
+      "ru": "Dialog для Отдела продаж | Dialog",
       "en": "Dialog for the Commercial Department | Dialog"
     },
     "remote_title": {
-      "ru": "Dialog для Финансового отдела | Dialog",
-      "en": "Dialog for the Finance Department | Dialog"
+      "ru": "Удаленная работа | Dialog",
+      "en": "Remote work | Dialog"
     },
     "oem_title": {
       "ru": "OEM | Dialog",

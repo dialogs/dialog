@@ -35,8 +35,12 @@
   }
 
   .col {
-    @include col-3;
-    position: relative;
+    @include col;
+    flex-basis: calc(100% / 5);
+    max-width: calc(100% / 5);
+    @include mid {
+      @include col-3;
+    }
     @include tablet {
       @include col-4;
     }
@@ -47,8 +51,9 @@
       @include col-12;
     }
   }
-  img{
-    @include tablet{
+
+  img {
+    @include tablet {
       width: 120px;
     }
   }

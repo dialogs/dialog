@@ -97,7 +97,7 @@ mixin header(pageName, lang)
                               ul.main-nav__middle-dropdown
                                 each lowItem in middleItem.submenu
                                   li.main-nav__included-item
-                                    a(href!=lowItem.link).main-nav__link.main-nav__link--included=lowItem.text
+                                    a(href!=`/${lang === "ru" ? "ru" : "en"}/${lowItem.link}`).main-nav__link.main-nav__link--included=lowItem.text
           .main-nav__user-actions
             +button(t.button.get,
               {

@@ -15,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000)}});
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000);
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,8 +40,38 @@
                 <li><a class="main-nav__link" href="/ru/security">Безопасность</a></li>
                 <li><a class="main-nav__link" href="/ru/integrations">Интеграции</a></li>
                 <li><a class="main-nav__link" href="/ru/career">Карьера</a></li>
-                <li><a class="main-nav__link" href="/ru/blog">Блог</a></li>
                 <li><a class="main-nav__link" href="/ru/support">Помощь</a></li>
+                <li><a class="main-nav__link" href="/ru/oem">CPaaS</a></li>
+                <li class="main-nav__top-block">
+                  <button class="main-nav__button" type="button">Решения
+                    <svg width="8" height="5" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#tick"></use>
+                    </svg>
+                  </button>
+                  <div class="main-nav__dropdown">
+                    <ul class="main-nav__included-box">
+                      <li class="main-nav__included-item">
+                        <div class="main-nav__middle-block">
+                          <button class="main-nav__included-button" type="button"><span>Отделы
+                              <svg width="7" height="11" aria-hidden="true">
+                                <use xlink:href="/img/sprite.svg#tick-right"></use>
+                              </svg></span></button>
+                          <ul class="main-nav__middle-dropdown">
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="hr">Для HR</a></li>
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="tech">Для технической поддержки</a></li>
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="sales">Для коммерческого отдела</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/private">Для частных организаций</a>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/government">Для госучреждений</a>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/remote-work">Удаленная работа</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
               </ul>
               <div class="main-nav__user-actions">
                 <button class="button button--accent button--small main-nav__action-btn js-open-modal" type="button"><span>Получить предложение</span>
@@ -168,6 +198,7 @@ robot.hear /отлично\??/i, (msg) ->
                       <li><a class="link link--invert" href="/ru/security">Безопасность</a></li>
                       <li><a class="link link--invert" href="/ru/integrations">Интеграции</a></li>
                       <li><a class="link link--invert" href="/ru/support">Помощь</a></li>
+                      <li><a class="link link--invert" href="/ru/about">О нас</a></li>
                     </ul>
                   </div>
                   <div class="footer-nav__content-box">

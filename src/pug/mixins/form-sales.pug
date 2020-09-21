@@ -1,6 +1,6 @@
 include ./button
 
-mixin form-sales (isModal, idNumber, formId, pageName, emailName)
+mixin form-sales (idNumber, formId, pageName, emailName)
   .form.form--main(class=(isModal ? 'form--modal' : null))
     .form__wrapper(class=(isModal ? 'form__wrapper--modal' : null))
       h2.form__title(class=(isModal ? 'form__title--modal' : null))=t.form.sales_title
@@ -84,13 +84,6 @@ mixin form-sales (isModal, idNumber, formId, pageName, emailName)
                 id=`domain-${idNumber}`
                 name="domain"
                 value=(`https://dlg.im/${lang}/${pageName}`)
-                hidden
-              )
-              input(
-                type="text"
-                id=`isModal-${idNumber}`
-                name='isModal'
-                value=(isModal ? 'modal' : 'page')
                 hidden
               )
               input(

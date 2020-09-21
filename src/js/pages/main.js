@@ -77,6 +77,7 @@ const main = () => {
 
       function create() {
         popperInstance = Popper.createPopper(popper, tooltip, {
+          placement: 'top',
           modifiers: [
             {
               name: 'offset',
@@ -116,33 +117,33 @@ const main = () => {
         popper.addEventListener(event, hide);
       });
     };
-    if(popperChat1){
+    if (popperChat1) {
       createInstance(popperChat1, tooltipChat1);
     }
-    if(popperChanel1){
+    if (popperChanel1) {
       createInstance(popperChanel1, tooltipChanel1);
     }
-    if(popperChatbot1){
+    if (popperChatbot1) {
       createInstance(popperChatbot1, tooltipChatbot1);
     }
 
-    if(popperChat2){
+    if (popperChat2) {
       createInstance(popperChat2, tooltipChat2);
     }
-    if(popperChanel2){
+    if (popperChanel2) {
       createInstance(popperChanel2, tooltipChanel2);
     }
-    if(popperChatbot2){
+    if (popperChatbot2) {
       createInstance(popperChatbot2, tooltipChatbot2);
     }
 
-    if(popperChat3){
+    if (popperChat3) {
       createInstance(popperChat3, tooltipChat3);
     }
-    if(popperChanel3){
+    if (popperChanel3) {
       createInstance(popperChanel3, tooltipChanel3);
     }
-    if(popperChatbot3){
+    if (popperChatbot3) {
       createInstance(popperChatbot3, tooltipChatbot3);
     }
 

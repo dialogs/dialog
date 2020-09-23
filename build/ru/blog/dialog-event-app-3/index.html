@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
   <script>
-    setTimeout(function(){
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -14,7 +13,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');}, 5000);
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,9 +28,9 @@
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHX7HL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div class="page">
       <header class="header js-header">
-        <div class="header__wrapper"><a class="header__logo" href="/ru"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог" loading="lazy"/></a>
+        <div class="header__wrapper"><a class="header__logo" href="/ru"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог"/></a>
           <div class="header__content-box">
-            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог" loading="lazy"/></a>
+            <div class="header__top-panel"><a class="header__nav-logo" href="/"><img src="/img/library/logo-dialog.svg" alt="Логотип мессенджера Диалог"/></a>
               <button class="header__close-button" aria-label="Закрыть меню" type="button"></button>
             </div>
             <nav class="header__nav-container main-nav">
@@ -162,7 +161,7 @@
             <div class="cta cta--form">
               <div class="form form--cta">
                 <div class="form__wrapper">
-                  <form class="gform" autocomplete="on" id="form-blog" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
+                  <form class="form__content" autocomplete="on" id="form-blog" onsubmit="event.preventDefault();emailSendBlog('ru','dialog-event-app-3');">
                     <h3 class="form__title">Подпишитесь на свежие статьи блога!</h3>
                     <div class="form__row">
                       <div class="form__input-text-wrap">
@@ -170,11 +169,6 @@
                           <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
                           <label for="email-1">Ваша эл.почта</label>
                         </div>
-                      </div>
-                      <div class="form__data">
-                        <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/dialog-event-app-3" hidden="hidden"/>
-                        <input type="text" id="lang-1" name="lang" value="ru" hidden="hidden"/>
-                        <input type="text" id="type-1" name="type" value="blog" hidden="hidden"/>
                       </div>
                       <div class="wrap wrap--ac wrap--message">
                         <button class="button--accent button button--form" type="submit"><span>Подписаться</span></button><img class="submit__icon submit__icon--light submit__icon--absolute" src="/img/loader.gif" alt="Анимирование изображение загрузки"/>
@@ -191,7 +185,7 @@
       <div class="page__footer">
         <footer class="footer">
           <div class="footer__wrapper">
-            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Логотип мессенджера Диалог" width="139" loading="lazy"/></a></div>
+            <div class="footer__logo"><a class="footer__link" href="/"><img src="/img/library/logo-dialog-white.svg" alt="Логотип мессенджера Диалог" width="139"/></a></div>
             <ul class="footer__contacts">
               <li><a class="footer__link" href="tel:+78007758202">+7 (800) 775-82-02</a></li>
               <li><a class="footer__link footer__link--underline" href="mailto:info@dlg.im">info@dlg.im</a></li>
@@ -245,7 +239,7 @@
               <p>© 2016—2020 ООО «Диалог»</p>
               <p>ИНН: 7804568396</p>
             </div>
-            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Надпись: участник Сколково" width="100" loading="lazy"/></a></div>
+            <div class="footer__promo-link"><a class="footer__link" href="https://sk.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сколково"><img src="/img/footer/sk-logo.svg" alt="Надпись: участник Сколково" width="100"/></a></div>
           </div>
         </footer>
       </div>
@@ -257,7 +251,7 @@
               <div class="form__wrapper form__wrapper--modal">
                 <h2 class="form__title form__title--modal">Получить предложение</h2>
                 <div class="form__form">
-                  <form class="gform" autocomplete="on" id="form-offer-modal" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
+                  <form autocomplete="on" id="form-offer-modal" onsubmit="event.preventDefault();emailSendOffer('ru',true,'post');">
                     <div class="form__input-text-wrap">
                       <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1 form__form-field--modal">
                         <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
@@ -276,7 +270,7 @@
                         <label for="company-2">Название компании</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--select form__form-field--5 form__form-field--modal">
-                        <select id="quantity-2" name="quantity">
+                        <select id="quantity-2" name="quantity-users">
                           <option value="1-100">1-100</option>
                           <option value="101-500">101-500</option>
                           <option value="501-1000">501-1000</option>
@@ -287,18 +281,12 @@
                     </div>
                     <div class="form__checkbox-wrap">
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
-                        <input class="visually-hidden" type="checkbox" id="terms-2" name="terms" required="required"/>
-                        <label for="terms-2">Я согласен на обработку данных</label>
+                        <input class="visually-hidden" type="checkbox" id="accept-2" name="terms" required="required" checked="checked"/>
+                        <label for="accept-2">Я согласен на обработку данных</label>
                       </div>
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
                         <input class="visually-hidden" type="checkbox" id="subscribe-2" name="subscribe"/>
                         <label for="subscribe-2">Подписаться на новостную рассылку</label>
-                      </div>
-                      <div class="form__data">
-                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/ru/post" hidden="hidden"/>
-                        <input type="text" id="isModal-2" name="isModal" value="modal" hidden="hidden"/>
-                        <input type="text" id="lang-2" name="lang" value="ru" hidden="hidden"/>
-                        <input type="text" id="type-2" name="type" value="offer" hidden="hidden"/>
                       </div>
                     </div>
                     <div class="wrap wrap--ac">

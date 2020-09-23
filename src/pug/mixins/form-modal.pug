@@ -4,8 +4,9 @@ include ./form-offer
 -
   const modalID = 'modal-offer';
   const formIDNumber = 2;
+  const isModal = true;
   const formID = 'form-offer-modal'
 
 mixin form-modal(pageName)
   +modal(modalID)
-    +form-offer(true, formIDNumber, formID, pageName, "offer")
+    +form-offer(isModal, formIDNumber, formID, pageName)

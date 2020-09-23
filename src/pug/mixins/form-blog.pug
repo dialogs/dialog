@@ -1,14 +1,13 @@
 include ./button
 
-mixin form-blog (idNumber,formId,pageName,emailName)
+mixin form-blog (idNumber,formId,type)
   .form.form--cta
     .form__wrapper
       form(
-        class="gform"
         autocomplete="on"
         id!=formId
-        action='https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec'
-        method='POST'
+        class="form__content"
+        onsubmit=`event.preventDefault();emailSendBlog('${lang}','${type}');`
       )
         h3.form__title=t.cta.form_title
         .form__row
@@ -24,28 +23,6 @@ mixin form-blog (idNumber,formId,pageName,emailName)
                 required
               )
               label(for=`email-${idNumber}`)=t.form.email
-          .form__data
-            input(
-              type="text"
-              id=`domain-${idNumber}`
-              name="domain"
-              value=(`https://dlg.im/${lang}/${pageName}`)
-              hidden
-            )
-            input(
-              type="text"
-              id=`lang-${idNumber}`
-              name="lang"
-              value=lang
-              hidden
-            )
-            input(
-              type="text"
-              id=`type-${idNumber}`
-              name="type"
-              value=emailName
-              hidden
-            )
           .wrap.wrap--ac.wrap--message
             button(
               class="button--accent button button--form"

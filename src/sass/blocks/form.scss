@@ -63,7 +63,7 @@
     }
   }
 
-  .submit-ended {
+  .submit-over {
     .submit__message {
       display: block;
     }
@@ -528,7 +528,6 @@
       padding-left: 44px;
       cursor: pointer;
       transition: color $transition-props;
-      user-select: none;
 
       @include mobile-md {
         padding-left: 41px;
@@ -796,19 +795,15 @@
 
       &.is-file {
         padding-right: 35px;
-        cursor: not-allowed;
         pointer-events: none;
+        cursor: not-allowed;
 
-        *:not(.close) {
-          pointer-events: none;
-        }
-
-        @include mobile-sm {
+        @include mobile-sm{
           width: 100%;
         }
 
         .upload {
-          fill: $color-contrast;
+          fill: $color-contrast
         }
 
         .icon {

@@ -5,7 +5,8 @@ const constants = {
   breakpoints: {
     mobileMax: 767,
     tabletMax: 1023,
-    laptopMax: 1439
+    midMax: 1199,
+    laptopMax: 1439,
   }
 };
 

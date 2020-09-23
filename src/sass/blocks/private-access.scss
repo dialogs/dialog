@@ -1,0 +1,87 @@
+.private-access {
+  h2 {
+    @include typography-h2;
+    margin-top: 25px;
+    max-width: 400px;
+
+    @include mobile-xs {
+      font-size: 32px;
+    }
+  }
+
+  p {
+    margin-top: 40px;
+  }
+
+  .wrapper {
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+
+  .wrap--main {
+    @include mobile-md {
+      flex-wrap: wrap;
+    }
+  }
+
+  .col {
+    margin-top: 0 !important;
+
+    &--text {
+      display: flex;
+      align-items: center;
+      @include tablet {
+        min-width: 450px;
+        width: 450px;
+      }
+      @include mobile-md {
+        min-width: 100%;
+        width: 100%;
+      }
+    }
+
+    &--images {
+      min-width: 550px;
+      width: 550px;
+
+      @include mobile-md {
+        min-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .link {
+    white-space: nowrap;
+  }
+
+  img {
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+
+    @include tablet {
+      left: 0;
+      transform: translateX(-15%)
+    }
+
+    @include mobile-md {
+      transform: translateX(-50%);
+      left: 50%;
+      width: 120%;
+    }
+  }
+
+  .icon {
+    margin-right: 10px;
+
+    svg {
+      fill: none
+    }
+  }
+
+}

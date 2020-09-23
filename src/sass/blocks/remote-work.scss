@@ -1,0 +1,73 @@
+.remote-work {
+  overflow: hidden;
+
+  .wrapper {
+    padding-top: 35px;
+    padding-bottom: 85px;
+    @include mobile-md {
+      padding-bottom: 35px;
+    }
+    @include mobile-sm {
+      padding-top: 0;
+    }
+  }
+
+  .wrap {
+    &--title {
+      max-width: 850px;
+    }
+
+    &--main {
+      @include tablet {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .col {
+    @include col-6;
+
+    @include tablet {
+      @include col-12;
+    }
+  }
+
+  h2 {
+    @include typography-h2;
+    margin-top: 0;
+
+    @include mobile-sm {
+      font-size: 26px;
+      line-height: 1.2;
+    }
+  }
+
+  h4 {
+    @include typography-h4;
+
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  .sub {
+    @include typography-subhead;
+    margin-top: 40px;
+  }
+
+  .text {
+    margin-top: 10px;
+  }
+
+  .card--icon-xs {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 614px;
+    display: block;
+    margin: auto;
+  }
+}

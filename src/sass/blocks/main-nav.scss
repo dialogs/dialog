@@ -3,7 +3,7 @@
   display: flex;
   justify-content: flex-end;
 
-  @include tablet {
+  @include mid {
     justify-content: flex-start;
     flex-direction: column;
   }
@@ -13,21 +13,16 @@
   @include no-list;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   flex-grow: 1;
   justify-content: center;
 
-  @include tablet {
+  @include mid {
     flex-direction: column;
   }
 
   & > li {
-    @include tablet {
+    @include mid {
       width: 100%;
-    }
-
-    &:last-child .main-nav__link {
-      padding-right: 0;
     }
   }
 }
@@ -45,45 +40,46 @@
   cursor: pointer;
   transition: color $transition-props, fill $transition-props;
 
-  @include tablet {
+  @include mid {
     display: flex;
     padding: 14px 40px 14px;
+
+    font-size: 16px;
     line-height: 25px;
+
     border-bottom: 1px solid $color-accent-light;
   }
 
-  @include tablet {
-    padding: 14px 20px 14px;
+  @include mobile-md {
+    padding: 10px 20px 14px;
   }
 
   &:hover,
   &:focus,
   &--expanded {
     outline: none;
+
     color: $color-accent;
+
     fill: $color-accent;
 
-    @include tablet {
+    @include mid {
       color: $color-base;
     }
   }
 }
 
 .main-nav__link {
-  padding-right: 40px;
-
-  @include tablet {
-    padding: 14px var(--indent) 14px;
-  }
+  padding-right: 30px;
 
   &--no-padding {
     padding-right: 0;
 
-    @include tablet {
+    @include mid {
       border-bottom: none;
     }
 
-    @include tablet {
+    @include mobile-md {
       padding: 0;
     }
   }
@@ -93,19 +89,19 @@
     margin-bottom: 11px;
     padding: 5px 20px 5px 17px;
 
-    @include tablet {
+    @include mid {
       width: 100%;
-      padding: 10px 40px 14px 65px;
+      padding: 14px 40px 14px 65px;
       margin-bottom: 0;
     }
 
-    @include tablet {
+    @include mobile-md {
       padding: 10px 40px 14px 31px;
     }
   }
 
   span:nth-child(1) {
-    @include tablet {
+    @include mid {
       display: none;
     }
   }
@@ -113,7 +109,7 @@
   span:nth-child(2) {
     display: none;
 
-    @include tablet {
+    @include mid {
       display: inline;
     }
   }
@@ -131,7 +127,7 @@
     transition: transform $transition-props;
   }
 
-  @include tablet {
+  @include mid {
     display: flex;
     justify-content: space-between;
 
@@ -163,12 +159,12 @@
     }
   }
 
-  @include tablet {
+  @include mobile-md {
     padding: 10px 20px 14px;
   }
 
   &--expanded {
-    @include tablet {
+    @include mid {
       &::after {
         background-image: url("../img/header/minimize.svg");
         background-size: 15px 16px;
@@ -183,17 +179,19 @@
 
 .main-nav__user-actions {
   align-self: flex-start;
+
   display: flex;
   align-items: center;
+
   padding-left: 7px;
 
-  @include tablet {
+  @include mid {
     width: 100%;
     padding: 20px 43px 30px 39px;
     justify-content: space-between;
   }
 
-  @include tablet {
+  @include mobile-md {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -205,41 +203,31 @@
 .main-nav__action-btn {
   margin-right: 20px;
 
-  @include tablet {
+  @include mobile-md {
     width: 100%;
     max-width: 400px;
     min-height: 50px;
     margin: 0 0 10px;
+
     font-size: 16px;
     line-height: 20px;
-  }
-
-  @include mobile-xs {
-    width: 100%;
-    max-width: none;
   }
 }
 
 .main-nav__included-button {
   @include reset-button;
-
   position: relative;
   z-index: 3;
-
+  font-size: 16px;
   width: 240px;
-
-  font-size: 14px;
-  font-weight: 500;
   line-height: 19px;
   color: $color-base;
-
   fill: $color-accent;
-
   cursor: pointer;
 
-  @include tablet {
+  @include mid {
     width: 100%;
-    padding: 11px 46px 14px 65px;
+    padding: 14px 46px 14px 65px;
 
     font-size: 16px;
     line-height: 25px;
@@ -247,14 +235,14 @@
     border-bottom: 1px solid $color-accent-light;
   }
 
-  @include tablet {
+  @include mobile-md {
     padding: 11px 25px 14px 31px;
   }
 
   &:not(:last-child) {
     padding-bottom: 10px;
 
-    @include tablet {
+    @include mid {
       padding-bottom: 14px;
     }
   }
@@ -277,7 +265,7 @@
 
     transition: background-color $transition-props;
 
-    @include tablet {
+    @include mid {
       padding: 0;
 
       &::after {
@@ -300,7 +288,7 @@
   svg {
     margin-left: 10px;
 
-    @include tablet {
+    @include mid {
       display: none;
     }
   }
@@ -308,7 +296,7 @@
   &--expanded span {
     background-color: $bg-gray;
 
-    @include tablet {
+    @include mid {
       background-color: transparent;
 
       &::after {
@@ -334,7 +322,7 @@
 
   transition: min-width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  @include tablet {
+  @include mid {
     position: relative;
 
     display: flex;
@@ -412,7 +400,7 @@
   background-color: $color-contrast;
   box-shadow: 0 4px 12px rgba(47, 27, 73, 0.18), 0 1px 1px rgba(47, 41, 64, 0.12);
 
-  @include tablet {
+  @include mid {
     padding: 0;
 
     background-color: $bg-gray;
@@ -436,7 +424,7 @@
 
     border-radius: 2px 0 0 2px;
 
-    @include tablet {
+    @include mid {
       display: none;
     }
   }
@@ -456,7 +444,7 @@
 
       background-color: $color-accent-light;
 
-      @include tablet {
+      @include mid {
         display: none;
       }
     }
@@ -471,32 +459,40 @@
   width: 100%;
   display: flex;
 
-  @include tablet {
+  @include mid {
     flex-direction: column;
   }
 }
 
 .main-nav__middle-dropdown {
   @include no-list;
+
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
+
   display: none;
+
   width: 240px;
+
   padding: 19px 10px 11px 10px;
 
   &--expanded {
     display: block;
   }
 
-  @include tablet {
+  @include mid {
     position: static;
     z-index: auto;
+
     display: block;
     width: 100%;
     padding: 0;
+
     overflow: hidden;
+
+    transition: max-height $transition-props;
 
     &.is-hide {
       /* stylelint-disable */
@@ -506,13 +502,14 @@
   }
 
   & .main-nav__link--included {
-    @include tablet {
+    @include mid {
       padding-left: 85px;
+
       font-weight: 400;
       color: $color-gray-dark;
     }
 
-    @include tablet {
+    @include mobile-md {
       padding-left: 47px;
     }
   }

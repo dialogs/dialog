@@ -3,7 +3,7 @@ include ../mixins/page-title
 include ../mixins/svg
 include ../mixins/button
 include ../mixins/picture
-include ../mixins/form-blog
+include ../mixins/form-cta
 include ../mixins/blog
 
 block variables
@@ -12,22 +12,22 @@ block variables
     const desc = post.meta_description ? post.meta_description : t.meta.main_desc;
     const pageName = "post";
     const months = [
-      t.blog.jan,
-      t.blog.feb,
-      t.blog.mar,
-      t.blog.apr,
-      t.blog.may,
-      t.blog.jun,
-      t.blog.jul,
-      t.blog.aug,
-      t.blog.sep,
-      t.blog.oct,
-      t.blog.nov,
-      t.blog.dec
+    t.blog.jan,
+    t.blog.feb,
+    t.blog.mar,
+    t.blog.apr,
+    t.blog.may,
+    t.blog.jun,
+    t.blog.jul,
+    t.blog.aug,
+    t.blog.sep,
+    t.blog.oct,
+    t.blog.nov,
+    t.blog.dec
     ];
     let month = post.published_at.substr(5, 2);
     if (month.charAt(0) == 0){
-      month = month.replace(0, '')
+    month = month.replace(0, '')
     }
 
 block content
@@ -41,7 +41,7 @@ block content
           .wrap.post__time
             span=post.published_at.substr(8, 2)
             span &nbsp;
-            span=months[month-1]
+            span=months[month - 1]
             span ,&nbsp;
             span=post.published_at.substr(0, 4)
       .post__header
@@ -56,7 +56,6 @@ block content
   section.box.box--gray
     +blog(t.blog.recommended)
 
-  section.box
+  section.cta.cta--xl
     .wrapper.wrapper--main
-      .cta.cta--form
-        +form-blog(1,'form-blog', post.slug)
+      +form-cta(t.cta.form_blog_title,'',1,'form-cta', post.slug, 'blog','cta-blog')

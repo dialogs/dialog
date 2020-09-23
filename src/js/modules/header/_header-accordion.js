@@ -17,13 +17,13 @@ let state = {
 let isLaunched = false;
 
 const setAccordions = () => {
-  const { top, middle } = props;
+  const {top, middle} = props;
   state.topLevelAccordions = accordionGroup(top);
   state.middleLevelAccordions = accordionGroup(middle);
 };
 
 const destroy = () => {
-  const { topLevelAccordions, middleLevelAccordions } = state;
+  const {topLevelAccordions, middleLevelAccordions} = state;
 
   if (isLaunched) {
     topLevelAccordions.remove();
@@ -35,6 +35,7 @@ const destroy = () => {
 
 
 const launch = () => {
+
   state = {
     topLevelAccordions: null,
     middleLevelAccordions: null,

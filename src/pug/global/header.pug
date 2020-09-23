@@ -5,24 +5,60 @@ mixin header(pageName, lang)
   -
     const navLinks = [
     {
+    text: t.nav.solutions,
+    link: null,
+    submenu: [
+    {
+    text: t.nav.departments,
+    link: null,
+    submenu: [
+    {
+    text: t.nav.hr,
+    link: "hr",
+    },
+    {
+    text: t.nav.tech,
+    link: "tech",
+    },
+    {
+    text: t.nav.sales,
+    link: "sales",
+    },
+    ],
+    },
+    {
+    text: t.nav.private,
+    link: "private",
+    },
+    {
+    text: t.nav.gov,
+    link: "government",
+    },
+    {
+    text: t.nav.remote,
+    link: "remote-work",
+    }
+    ],
+    },
+    {
+    link: "oem",
+    text: t.nav.oem,
+    },
+    {
     link: "security",
-    name: t.nav.security,
+    text: t.nav.security,
     },
     {
     link: "integrations",
-    name: t.nav.integrations,
+    text: t.nav.integrations,
     },
     {
     link: "career",
-    name: t.nav.career,
-    },
-    {
-    link: "blog",
-    name: t.nav.blog,
+    text: t.nav.career,
     },
     {
     link: "support",
-    name: t.nav.support,
+    text: t.nav.support,
     }
     ];
 
@@ -42,26 +78,26 @@ mixin header(pageName, lang)
                 li
                   a(
                     href!=`/${lang === "ru" ? "ru" : "en"}/${topItem.link}`).main-nav__link
-                    | !{topItem.name}
+                    | !{topItem.text}
               else
                 li.main-nav__top-block
                   button(type="button").main-nav__button=topItem.text
-                  +svg('tick', 8, 5)
+                    +svg('tick', 8, 5)
                   .main-nav__dropdown
                     ul.main-nav__included-box
                       each middleItem in topItem.submenu
                         li.main-nav__included-item
                           if (middleItem.link)
-                            a(href!=middleItem.link).main-nav__link.main-nav__link--included=middleItem.text
+                            a(href!=`/${lang === "ru" ? "ru" : "en"}/${middleItem.link}`).main-nav__link.main-nav__link--included=middleItem.text
                           else
                             .main-nav__middle-block
                               button(type="button").main-nav__included-button
                                 span=middleItem.text
-                                +svg('tick-right', 7, 11)
+                                  +svg('tick-right', 7, 11)
                               ul.main-nav__middle-dropdown
                                 each lowItem in middleItem.submenu
                                   li.main-nav__included-item
-                                    a(href!=lowItem.link).main-nav__link.main-nav__link--included=lowItem.text
+                                    a(href!=`/${lang === "ru" ? "ru" : "en"}/${lowItem.link}`).main-nav__link.main-nav__link--included=lowItem.text
           .main-nav__user-actions
             +button(t.button.get,
               {
@@ -74,3 +110,4 @@ mixin header(pageName, lang)
               span.header__lang=`${lang === "ru" ? "en" : "ru"}`
               span=`${lang === "ru" ? "In English" : "На русском"}`
       button(aria-label='Открыть меню' type="button").header__burger-button
+

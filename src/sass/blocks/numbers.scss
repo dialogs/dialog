@@ -1,0 +1,53 @@
+.numbers {
+  .wrapper {
+    padding: 85px;
+    @include laptop {
+      padding: var(--indent);
+    }
+    @include mobile-md {
+      padding-bottom: 85px;
+      padding-top: 0;
+    }
+  }
+
+  .wrap {
+    justify-content: center;
+    @include mobile-md {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    margin: 0 30px;
+    @include mobile-md {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    display: block;
+    text-align: center;
+
+    &--big {
+      @include typography-h1;
+    }
+
+    &--small {
+      @include typography-txt-sm;
+      margin-top: 5px;
+      font-size: 16px;
+      color: $color-gray-dark;
+      @include mobile-md {
+        max-width: 200px;
+      }
+    }
+  }
+
+}
+

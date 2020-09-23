@@ -1,0 +1,88 @@
+.oem-partner {
+  .wrapper {
+    @include mobile-md {
+      padding-top: 45px;
+    }
+  }
+
+  h2 {
+    @include typography-h2;
+    margin-top: -40px;
+
+    @include mobile-xs {
+      font-size: 32px;
+    }
+  }
+
+  .sub {
+    @include typography-subhead;
+    margin-top: 30px;
+    font-weight: 400;
+  }
+
+  .wrap--main {
+    @include mobile-md {
+      flex-wrap: wrap;
+    }
+  }
+
+  .col {
+    margin-top: 40px !important;
+
+    &--text {
+      @include col-7;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      padding-right: 80px !important;
+
+      @include mobile-md {
+        @include col-12;
+      }
+    }
+
+    &--image {
+      @include col-5;
+      @include pseudo-absolute;
+      position: relative;
+      justify-content: center;
+      align-items: flex-end;
+
+      @include mid {
+        transform: translateX(calc((100vw - 1270px) / 3.25));
+      }
+
+      @include mobile-md {
+        @include col-12;
+        transform: none;
+      }
+
+      &::after {
+        left: 250px;
+        bottom: 0;
+        width: 230px;
+        height: 230px;
+        background-size: 100%;
+        background-image: url("../img/pattern-3-white.svg");
+        z-index: 1;
+        @include mobile-md {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  img {
+    display: block;
+    z-index: 2;
+    position: relative;
+    @include mobile-md {
+      margin: auto;
+    }
+  }
+
+  .button {
+    margin-top: 30px;
+  }
+}

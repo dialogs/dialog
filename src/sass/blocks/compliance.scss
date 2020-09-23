@@ -1,107 +1,11 @@
 .compliance {
-  padding-bottom: 75px;
-
-  &__list {
-    @include no-list;
-
-    display: flex;
-    flex-wrap: wrap;
-
-    @include laptop {
-      margin-bottom: 43px;
-    }
-
-    @include tablet {
-      flex-direction: column;
-    }
+  .wrapper {
+    padding-top: 85px;
+    padding-bottom: 85px;
 
     @include mobile-md {
-      margin-bottom: 0;
-    }
-  }
-
-  &__list-item {
-    position: relative;
-    width: calc(100% / 2 - 22px);
-    margin-top: 35px;
-
-    @include laptop {
-      width: 48%;
-      padding-left: 0;
-    }
-
-    @include tablet {
-      width: 100%;
-    }
-
-    &:nth-child(odd) {
-      margin-right: auto;
-
-      @include tablet {
-        margin-bottom: 25px;
-      }
-    }
-
-
-    h3 {
-      @include typography-h5;
-      margin-bottom: 14px;
-
-      @include laptop {
-        margin-bottom: 17px;
-      }
-
-      @include tablet {
-        margin-bottom: 15px;
-        font-size: 24px;
-        line-height: 31px;
-      }
-    }
-
-    p {
-      @include typography-txt;
-      margin-bottom: 22px;
-      &:nth-child(2){
-        margin-bottom: 0;
-      }
-
-    }
-  }
-
-  &__listbox {
-    @include no-list;
-
-    @include tablet {
-      padding-left: 0;
-    }
-
-    li {
-      @include typography-list-compact;
-
-      &:not(:first-child) {
-        margin-top: 30px;
-      }
-    }
-
-    b {
-      font-weight: 500;
-    }
-  }
-
-  &__sub {
-    @include typography-h4;
-    max-width: 790px;
-    margin-top: 20px;
-  }
-
-  &__title {
-    @include typography-h2;
-    letter-spacing: -0.005em;
-  }
-
-  &__link {
-    &--more {
-      margin-top: 50px;
+      padding-top: 60px;
+      padding-bottom: 50px;
     }
   }
 
@@ -144,6 +48,114 @@
 
     &--link {
       margin: 5px 0 10px;
+    }
+  }
+
+  &__list {
+    @include no-list;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @include laptop {
+      margin-bottom: 43px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    @include mobile-md {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    width: calc(100% / 2 - 22px);
+    margin-top: 35px;
+
+    @include laptop {
+      width: 48%;
+      padding-left: 0;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+
+    &:nth-child(odd) {
+      margin-right: auto;
+
+      @include tablet {
+        margin-bottom: 25px;
+      }
+    }
+
+    h3 {
+      @include typography-h5;
+      margin-bottom: 14px;
+
+      @include laptop {
+        margin-bottom: 17px;
+      }
+
+      @include tablet {
+        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: 31px;
+      }
+    }
+
+    p {
+      @include typography-txt;
+      margin-bottom: 22px;
+
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
+
+    }
+  }
+
+  &__listbox {
+    @include no-list;
+
+    @include tablet {
+      padding-left: 0;
+    }
+
+    li {
+      @include typography-list-compact;
+
+      p {
+        @include typography-txt-big;
+      }
+
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+
+    b {
+      font-weight: 500;
+    }
+  }
+
+  &__sub {
+    @include typography-h4;
+    max-width: 790px;
+    margin-top: 20px;
+  }
+
+  &__title {
+    @include typography-h2;
+    letter-spacing: -0.005em;
+  }
+
+  &__link {
+    &--more {
+      margin-top: 50px;
     }
   }
 }

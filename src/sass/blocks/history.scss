@@ -1,0 +1,72 @@
+.history {
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+  .wrap {
+    &--main {
+      flex-wrap: wrap;
+    }
+
+    &--title {
+      align-items: center;
+      margin-bottom: 18px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+
+  .col {
+    @include col-4;
+    position: relative;
+    min-height: 210px;
+    @include tablet {
+      @include col-6;
+    }
+    @include mobile-md {
+      @include col-12;
+    }
+  }
+
+  .card {
+    box-shadow: 0 2px 20px rgba(152, 136, 196, 0.16);
+    padding: 20px 20px 30px;
+    height: 100%;
+  }
+
+  h2 {
+    @include typography-h2;
+  }
+
+  h4 {
+    position: relative;
+    z-index: 10;
+    font-size: 21px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  p {
+    @include typography-txt;
+    z-index: 10;
+    position: relative;
+
+    @include laptop {
+      font-size: 14px;
+    }
+  }
+
+  i {
+    font-style: normal;
+    margin-right: 5px;
+  }
+
+}
+
+
+

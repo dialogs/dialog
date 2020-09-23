@@ -1,0 +1,68 @@
+.oem-integrations {
+  .wrapper {
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    @include mobile-md {
+      padding-top: 45px;
+      padding-bottom: 50px;
+    }
+  }
+
+  h2 {
+    @include typography-h2;
+    margin-top: 25px;
+
+    @include mobile-xs {
+      font-size: 32px;
+    }
+  }
+
+  h5 {
+    @include typography-h5;
+    font-weight: 500;
+  }
+
+  p {
+    @include typography-subhead;
+    font-weight: 400;
+    margin-top: 40px;
+  }
+
+  .wrap--main {
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  .card {
+    height: 100%;
+  }
+
+  .text {
+    margin-top: 10px;
+  }
+
+  .col {
+    @include col-4;
+    @include tablet {
+      @include col-6;
+    }
+    @include mobile-sm {
+      @include col-12;
+    }
+  }
+
+  .icon {
+    margin-right: 10px;
+
+    svg {
+      fill: none
+    }
+  }
+
+  .link {
+    margin-top: 30px;
+  }
+
+}

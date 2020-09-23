@@ -1,13 +1,15 @@
 include ./button
 include ./field-textarea
 
-mixin form-feedback (isModal, idNumber, formId)
+mixin form-feedback (isModal, idNumber, formId, pageName, emailName)
   .form.form--main.form--feedback.box.box--white(class=(isModal ? 'form--modal' : null))
     .form__wrapper
       form(
+        class="gform"
         autocomplete="on"
         id!=formId
-        onsubmit=`event.preventDefault();emailSendFeedback('${lang}');`
+        action='https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec'
+        method='POST'
       )
         .form__input-text-wrap
           .form__form-field.form__form-field--text.form__form-field--m.form__form-field--1(
@@ -50,6 +52,29 @@ mixin form-feedback (isModal, idNumber, formId)
               required
             )
             label(for=`terms-${idNumber}`)=t.form.agree
+        .form__data
+          input(
+            type="text"
+            id=`domain-${idNumber}`
+            name="domain"
+            value=(`https://dlg.im/${lang}/${pageName}`)
+            hidden
+          )
+          input(
+            type="text"
+            id=`lang-${idNumber}`
+            name="lang"
+            value=lang
+            hidden
+          )
+          input(
+            type="text"
+            id=`type-${idNumber}`
+            name="type"
+            value=emailName
+            hidden
+          )
+
         .wrap.wrap--ac
           button(
             class="button--accent button button--form"

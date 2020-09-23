@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <script>
+    var fired = false;
+    window.addEventListener('scroll', () => {
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -13,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000);
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -327,7 +329,7 @@
                         <input type="text" id="domain-2" name="domain" value="https://dlg.im/ru/post" hidden="hidden"/>
                         <input type="text" id="isModal-2" name="isModal" value="modal" hidden="hidden"/>
                         <input type="text" id="lang-2" name="lang" value="ru" hidden="hidden"/>
-                        <input type="text" id="type-2" name="type" hidden="hidden"/>
+                        <input type="text" id="type-2" name="type" value="offer" hidden="hidden"/>
                       </div>
                     </div>
                     <div class="wrap wrap--ac">

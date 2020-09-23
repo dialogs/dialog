@@ -12,7 +12,7 @@ block variables
     const title = t.meta.hr_title;
     const desc = t.meta.main_desc;
     const routeClass = "js-route-main";
-    const pageName = "hr";
+    const pageName = "human-resources";
 
 block content
   section.hero.hero--main.hero--secondary.hero--next-bg
@@ -47,8 +47,9 @@ block content
 
 
 
-  section.department#hire
+  section.department
     .wrapper.wrapper--main
+      .anchor#hire
       .sub=t.hr.sub_1
       h2.title=t.hr.title_1
       .wrap.wrap--gap-sm.wrap--row.wrap--sb
@@ -63,10 +64,11 @@ block content
             +picture(`/img/pages/hr/department1`, 'png', t.alt.people, 590)
 
 
-  section.department#auto
+  section.department
     .wrapper.wrapper--main
       .wrap.wrap--w
         .wrap.wrap--s
+          .anchor#auto
           .sub=t.hr.sub_2
         .wrap.wrap--s
           h2.title=t.hr.title_2
@@ -82,8 +84,9 @@ block content
           +card-description(t.hr.title_card_2_3,t.hr.count_card_2_3,"white-ask",t.hr.text_2_3, 31, 31, 'w-md')
 
 
-  section.department#involve
+  section.department
     .wrapper.wrapper--main.wrapper--pb
+      .anchor#involve
       .sub=t.hr.sub_3
       h2.title=t.hr.title_3
       .wrap.wrap--gap-sm.wrap--row.wrap--sb

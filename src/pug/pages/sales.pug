@@ -40,7 +40,8 @@ block content
         a.link.link--accent(href='#com')=t.cta.sales_info_link_1
         a.link.link--accent(href='#auto')=t.cta.sales_info_link_2
 
-  section.department#com
+  section.department
+    .anchor#com
     .wrapper.wrapper--main
       .sub=t.sales.sub_1
       h2.title=t.sales.title_1
@@ -57,7 +58,8 @@ block content
           +picture(`/img/pages/sales/department1`, 'png', t.alt.people, 590)
 
 
-  section.department#auto
+  section.department
+    .anchor#auto
     .wrapper.wrapper--main
       .wrap.wrap--w
         .wrap.wrap--s

@@ -1,6 +1,6 @@
 'use strict';
 const gulp = require('gulp');
-
+const gls = require('gulp-live-server');
 
 // SERVICES
 const sourcemaps = require('gulp-sourcemaps');
@@ -536,37 +536,9 @@ gulp.task('css', function () {
     .pipe(server.stream());
 });
 
-gulp.task('server', function () {
-  server.init({
-    server: BUILD_PATH,
-    notify: false,
-    open: false,
-    cors: true,
-    ui: false,
-    host: "0.0.0.0",
-    ghostMode: false
-  }, (err, bs) => {
-    bs.addMiddleware("*", (req, res) => {
-      res.write(fs.readFileSync('build/404.html'));
-      res.end();
-    });
-  });
-  gulp.watch(`${SOURCE_PATH}sass/**/*.scss`, gulp.series('css'));
-  gulp.watch([`${SOURCE_PATH}pug/**/*.pug`,`${SOURCE_PATH}json/**/*.json`], gulp.series('main', 'refresh'));
-  gulp.watch(`${SOURCE_PATH}img/**/*.{png,jpg,gif,svg}`, gulp.series('graphic', 'refresh'));
-  gulp.watch([
-    `${SOURCE_PATH}docs/*.*`,
-    `${SOURCE_PATH}video/*.*`,
-    `${SOURCE_PATH}robots.txt`,
-    `${SOURCE_PATH}sitemap.xml`,
-    `${SOURCE_PATH}sw.js`,
-    `${SOURCE_PATH}fonts/**/*.{woff,woff2}`,
-  ], gulp.series('copy', 'refresh'));
-  gulp.watch([
-    `${SOURCE_PATH}pug/pages/blog.pug`,
-    `${SOURCE_PATH}pug/pages/post.pug`
-  ], gulp.series('blog', 'refresh'));
-  gulp.watch(`${SOURCE_PATH}js/**/*.js`, gulp.series('js', 'refresh'));
+gulp.task('server', function() {
+    var server = gls.new('app.js');
+    server.start();
 });
 
 gulp.task('refresh', function (done) {

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="js-route-main" lang="ru">
   <script>
-    setTimeout(function(){
+    var fired = false;
+    window.addEventListener('scroll', () => {
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -14,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');}, 5000);
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000);
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,10 +37,40 @@
             </div>
             <nav class="header__nav-container main-nav">
               <ul class="main-nav__top-links">
+                <li class="main-nav__top-block">
+                  <button class="main-nav__button" type="button">Решения
+                    <svg width="8" height="5" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#tick"></use>
+                    </svg>
+                  </button>
+                  <div class="main-nav__dropdown">
+                    <ul class="main-nav__included-box">
+                      <li class="main-nav__included-item">
+                        <div class="main-nav__middle-block">
+                          <button class="main-nav__included-button" type="button"><span>Отделы
+                              <svg width="7" height="11" aria-hidden="true">
+                                <use xlink:href="/img/sprite.svg#tick-right"></use>
+                              </svg></span></button>
+                          <ul class="main-nav__middle-dropdown">
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/hr">HR</a></li>
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/tech">Техподдержка</a></li>
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/sales">Отдел продаж</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/private">Коммерческим организациям</a>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/government">Госорганизациям</a>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/remote-work">Удаленная работа</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="main-nav__link" href="/ru/oem">CPaaS</a></li>
                 <li><a class="main-nav__link" href="/ru/security">Безопасность</a></li>
                 <li><a class="main-nav__link" href="/ru/integrations">Интеграции</a></li>
                 <li><a class="main-nav__link" href="/ru/career">Карьера</a></li>
-                <li><a class="main-nav__link" href="/ru/blog">Блог</a></li>
                 <li><a class="main-nav__link" href="/ru/support">Помощь</a></li>
               </ul>
               <div class="main-nav__user-actions">
@@ -53,7 +84,7 @@
         </div>
       </header>
       <main class="page__content">
-        <section class="hero hero--main hero--security">
+        <section class="hero hero--main hero--security hero--secondary hero--next-bg">
           <div class="hero__wrapper">
             <div class="hero__left">
               <h1 class="hero__title">Безопасность и соответствие требованиям в Dialog</h1>
@@ -194,11 +225,11 @@
           </div>
         </section>
         <section>
-          <div class="form form--main box box--white">
+          <div class="form form--main">
             <div class="form__wrapper">
               <h2 class="form__title">Получить предложение</h2>
               <div class="form__form">
-                <form autocomplete="on" id="form-offer" onsubmit="event.preventDefault();emailSendOffer('ru',false,'undefined');">
+                <form class="gform" autocomplete="on" id="form-offer" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
                   <div class="form__input-text-wrap">
                     <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
                       <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
@@ -217,7 +248,7 @@
                       <label for="company-1">Название компании</label>
                     </div>
                     <div class="form__form-field form__form-field--text form__form-field--select form__form-field--5">
-                      <select id="quantity-1" name="quantity-users">
+                      <select id="quantity-1" name="quantity">
                         <option value="1-100">1-100</option>
                         <option value="101-500">101-500</option>
                         <option value="501-1000">501-1000</option>
@@ -228,12 +259,18 @@
                   </div>
                   <div class="form__checkbox-wrap">
                     <div class="form__form-field form__form-field--checkbox">
-                      <input class="visually-hidden" type="checkbox" id="accept-1" name="terms" required="required" checked="checked"/>
-                      <label for="accept-1">Я согласен на обработку данных</label>
+                      <input class="visually-hidden" type="checkbox" id="terms-1" name="terms" required="required"/>
+                      <label for="terms-1">Я согласен на обработку данных</label>
                     </div>
                     <div class="form__form-field form__form-field--checkbox">
                       <input class="visually-hidden" type="checkbox" id="subscribe-1" name="subscribe"/>
                       <label for="subscribe-1">Подписаться на новостную рассылку</label>
+                    </div>
+                    <div class="form__data">
+                      <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/undefined" hidden="hidden"/>
+                      <input type="text" id="isModal-1" name="isModal" value="page" hidden="hidden"/>
+                      <input type="text" id="lang-1" name="lang" value="ru" hidden="hidden"/>
+                      <input type="text" id="type-1" name="type" hidden="hidden"/>
                     </div>
                   </div>
                   <div class="wrap wrap--ac">
@@ -253,6 +290,7 @@
             <ul class="footer__contacts">
               <li><a class="footer__link" href="tel:+78007758202">+7 (800) 775-82-02</a></li>
               <li><a class="footer__link footer__link--underline" href="mailto:info@dlg.im">info@dlg.im</a></li>
+              <li><a class="footer__link footer__link--underline" href="mailto:press@dlg.im">press@dlg.im</a></li>
             </ul>
             <div class="footer__navigation-box">
               <section class="footer-nav">
@@ -264,6 +302,7 @@
                       <li><a class="link link--invert" href="/ru/security">Безопасность</a></li>
                       <li><a class="link link--invert" href="/ru/integrations">Интеграции</a></li>
                       <li><a class="link link--invert" href="/ru/support">Помощь</a></li>
+                      <li><a class="link link--invert" href="/ru/about">О нас</a></li>
                     </ul>
                   </div>
                   <div class="footer-nav__content-box">
@@ -311,11 +350,11 @@
         <div class="modal__overlay">
           <div class="modal__content">
             <button class="modal__close" type="button" aria-label="Закрыть"></button>
-            <div class="form form--main form--modal box box--white">
+            <div class="form form--main form--modal">
               <div class="form__wrapper form__wrapper--modal">
                 <h2 class="form__title form__title--modal">Получить предложение</h2>
                 <div class="form__form">
-                  <form autocomplete="on" id="form-offer-modal" onsubmit="event.preventDefault();emailSendOffer('ru',true,'security');">
+                  <form class="gform" autocomplete="on" id="form-offer-modal" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
                     <div class="form__input-text-wrap">
                       <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1 form__form-field--modal">
                         <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
@@ -334,7 +373,7 @@
                         <label for="company-2">Название компании</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--select form__form-field--5 form__form-field--modal">
-                        <select id="quantity-2" name="quantity-users">
+                        <select id="quantity-2" name="quantity">
                           <option value="1-100">1-100</option>
                           <option value="101-500">101-500</option>
                           <option value="501-1000">501-1000</option>
@@ -345,12 +384,18 @@
                     </div>
                     <div class="form__checkbox-wrap">
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
-                        <input class="visually-hidden" type="checkbox" id="accept-2" name="terms" required="required" checked="checked"/>
-                        <label for="accept-2">Я согласен на обработку данных</label>
+                        <input class="visually-hidden" type="checkbox" id="terms-2" name="terms" required="required"/>
+                        <label for="terms-2">Я согласен на обработку данных</label>
                       </div>
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
                         <input class="visually-hidden" type="checkbox" id="subscribe-2" name="subscribe"/>
                         <label for="subscribe-2">Подписаться на новостную рассылку</label>
+                      </div>
+                      <div class="form__data">
+                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/ru/security" hidden="hidden"/>
+                        <input type="text" id="isModal-2" name="isModal" value="modal" hidden="hidden"/>
+                        <input type="text" id="lang-2" name="lang" value="ru" hidden="hidden"/>
+                        <input type="text" id="type-2" name="type" hidden="hidden"/>
                       </div>
                     </div>
                     <div class="wrap wrap--ac">

@@ -22,7 +22,7 @@ const router = {
   pages: {
     main: main,
     download: download,
-    blog: blog,
+    blog: blog
   },
   global: global,
 };

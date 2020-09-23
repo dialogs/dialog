@@ -1,0 +1,220 @@
+extends ../global/layout
+include ../mixins/svg
+include ../mixins/button
+include ../mixins/button-play
+include ../mixins/picture
+include ../mixins/form-sales
+include ../mixins/sections
+
+block variables
+  -
+    const title = t.meta.remote_title;
+    const desc = t.meta.main_desc;
+    const routeClass = "js-route-main";
+    const pageName = "oem";
+
+block content
+  -
+    const expenses = [
+    {
+    title: t.oem.integration_title_1,
+    text: t.oem.integration_text_1,
+    },
+    {
+    title: t.oem.integration_title_2,
+    text: t.oem.integration_text_2,
+    },
+    {
+    title: t.oem.integration_title_3,
+    text: t.oem.integration_text_3,
+    }
+    ];
+    const functionality = [
+    {
+    icon: 'purple-chat',
+    iconw: '45',
+    iconh: '45',
+    title: t.oem.function_title_1,
+    text: t.oem.function_text_1
+    },
+    {
+    icon: 'purple-phone',
+    iconw: '45',
+    iconh: '45',
+    title: t.oem.function_title_2,
+    text: t.oem.function_text_2
+    },
+    {
+    icon: 'purple-phonechat',
+    iconw: '45',
+    iconh: '45',
+    title: t.oem.function_title_3,
+    text: t.oem.function_text_3,
+    },
+    {
+    icon: 'purple-tel',
+    iconw: '45',
+    iconh: '45',
+    title: t.oem.function_title_4,
+    text: t.oem.function_text_4
+    },
+    {
+    icon: 'purple-computer',
+    iconw: '45',
+    iconh: '45',
+    title: t.oem.function_title_5,
+    text: t.oem.function_text_5
+    },
+    {
+    icon: 'purple-people',
+    iconw: '45',
+    iconh: '45',
+    title: t.oem.function_title_6,
+    text: t.oem.function_text_6
+    },
+    {
+    icon: 'purple-screen',
+    iconw: '45',
+    iconh: '45',
+    title: t.oem.function_title_7,
+    text: t.oem.function_text_7
+    }
+    ];
+    const why = [
+    {
+    icon: 'white-headphone',
+    w: '28',
+    h: '28',
+    title: t.oem.why_title_1,
+    text: t.oem.why_text_1
+    },
+    {
+    icon: 'white-bricks',
+    w: '27',
+    h: '27',
+    title: t.oem.why_title_2,
+    text: t.oem.why_text_2
+    },
+    {
+    icon: 'white-like-hand',
+    w: '27',
+    h: '27',
+    title: t.oem.why_title_3,
+    text: t.oem.why_text_3,
+    },
+    {
+    icon: 'white-speed',
+    w: '27',
+    h: '27',
+    title: t.oem.why_title_4,
+    text: t.oem.why_text_4
+    }
+    ];
+
+
+  section.hero.hero--main.hero--secondary.hero--next-no-bg
+    .hero__wrapper
+      .hero__left
+        h1.hero__title=t.oem.title
+        p.hero__text=t.oem.text
+        +button(
+          t.button.leave,
+          {
+            styleType: 'accent',
+            isLink: true,
+            href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
+            blank: true,
+            additionalClassName: 'button--hero button--link'
+          })
+          +svg('arrow-right', 16, 15)
+      .hero__right
+        .hero__img
+          +picture('/img/pages/oem/hero', 'png', t.alt.people, 682)
+
+  section.icon-text.icon-text--4
+    .wrapper.wrapper--main.wrapper--np
+      h2=t.oem.function_title
+      .sub=t.oem.function_sub
+      .wrap.wrap--main.wrap--gap-sm
+        each item,index in functionality
+          .col
+            .card
+              .icon.icon--shadow.icon--md.icon--round
+                +svg(item.icon, item.iconw, item.iconh)
+              h6=item.title
+              .text=item.text
+
+  section.box.box--lilac.oem-integrations
+    .wrapper.wrapper--main
+      h2=t.oem.integration_title
+      .wrap.wrap--main.wrap--gap-sm
+        each item in expenses
+          .col
+            .card.card--line
+              h5=item.title
+              .text=item.text
+      a.link.link--icon-accent.link--with-icon(href="https://dialogs.github.io/api-schema/" target="_blank")=t.oem.integration_link
+        +svg('arrow-right', 12, 12)
+
+  section.oem-sdk
+    .wrapper.wrapper--main
+      .wrap.wrap--main.wrap--gap-sm
+        .col.col--text
+          h2=t.oem.sdk_title
+          .sub=t.oem.sdk_sub
+          ul.list
+            li
+              p=t.oem.sdk_li_1
+            li
+              p=t.oem.sdk_li_2
+            li
+              p=t.oem.sdk_li_3
+            li
+              p=t.oem.sdk_li_4
+            li
+              p=t.oem.sdk_li_5
+            li
+              p=t.oem.sdk_li_6
+            li
+              p=t.oem.sdk_li_7
+        .col.col--image
+          +picture('/img/pages/oem/sdk', 'png', t.alt.people, 560)
+
+
+  section.box.box--accent.oem-partner
+    .wrapper.wrapper--main
+      .wrap.wrap--main.wrap--gap-lg
+        .col.col--text
+          h2=t.oem.partner_title
+          .sub=t.oem.partner_sub
+          +button(
+            t.button.partner,
+            {
+              styleType: 'light',
+              isLink: true,
+              href: "#form-sales",
+              additionalClassName: 'button--hero button--link button--arrow-accent'
+            })
+            +svg('arrow-right', 16, 15)
+
+        .col.col--image
+          +picture('/img/pages/oem/partner', 'png', t.alt.people, 384)
+
+  section.oem-why
+    .wrapper.wrapper--main
+      h2=t.oem.why_title
+      .wrap.wrap--main.wrap--gap-sm
+        .col.col--cards
+          .wrap.wrap--w.wrap--cards.wrap--gap-sm
+            each item in why
+              .col.col--card
+                .card
+                  .icon.icon--accent.icon--xs.icon--round.icon--nofill
+                    +svg(item.icon, item.w, item.h)
+                  h5=item.title
+                  .text=item.text
+        .col.col--image
+          +picture('/img/pages/oem/why', 'png', t.alt.people, 251)
+
+  section.box.box--lilac
+    +form-sales(1, 'form-sales', pageName, "sales")

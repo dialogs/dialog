@@ -1,0 +1,88 @@
+.about-contacts {
+  h2 {
+    @include typography-h2;
+    margin-top: 0;
+    padding-right: 25%;
+
+    @include mobile-xs {
+      font-size: 32px;
+    }
+  }
+
+  .wrapper {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    @include mobile-md {
+      padding-top: 45px;
+      padding-bottom: 65px;
+    }
+  }
+
+  .wrap {
+    &--main {
+      align-items: center;
+      justify-content: space-between;
+
+      @include mobile-md {
+        flex-wrap: wrap;
+      }
+    }
+
+    &--contact {
+      margin-top: 45px;
+    }
+
+    &--address {
+      flex-wrap: wrap;
+      padding: 20px 25px 25px;
+      background: $color-contrast;
+    }
+  }
+
+  .col {
+    @include col-6;
+
+    @include mobile-md {
+      @include col-12;
+    }
+  }
+
+  .link {
+    @include typography-txt-big;
+    margin-right: 40px;
+    margin-bottom: 0 !important;
+  }
+
+  a.card:visited, a.card {
+    color: #000;
+  }
+
+  .phone {
+    @include typography-txt-big;
+    font-weight: 500;
+  }
+
+  .card {
+    box-shadow: $shadow-card;
+    overflow: hidden;
+    border-radius: 8px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    span {
+      display: block;
+      width: 100%;
+
+      &.city {
+        font-weight: bold;
+      }
+
+      &.address {
+        margin-top: 10px;
+      }
+    }
+  }
+}

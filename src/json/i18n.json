@@ -403,6 +403,22 @@
       "ru": "Получить предложение",
       "en": "Get a request"
     },
+    "sales_title": {
+      "ru": "Свяжитесь с отделом продаж",
+      "en": "Get a request"
+    },
+    "sales_li_1": {
+      "ru": "Найдите подходящее коммуникационное решение",
+      "en": "Get a request"
+    },
+    "sales_li_2": {
+      "ru": "Рассчитайте стоимость",
+      "en": "Get a request"
+    },
+    "sales_li_3": {
+      "ru": "Получите доступ к полезным ресурсам",
+      "en": "Get a request"
+    },
     "career_title": {
       "ru": "Отправить резюме",
       "en": "Submit a resume"
@@ -474,7 +490,7 @@
   },
 
   "cta": {
-    "form_title": {
+    "form_blog_title": {
       "ru": "Подпишитесь на свежие статьи блога!",
       "en": "Subscribe for a fresh newsletter!"
     },
@@ -482,15 +498,825 @@
       "ru": "Появились вопросы?",
       "en": "Submit a request"
     },
+    "tech_form_info_title": {
+      "ru": "Полезная информация?",
+      "en": "Submit a request"
+    },
+    "tech_form_info_text": {
+      "ru": "Подписывайтесь на рассылку, чтобы узнать больше про использование Dialog \u2028для технической поддержки",
+      "en": "Submit a request"
+    },
+    "tech_info_title": {
+      "ru": "Узнайте, как команды технической поддержки используют Dialog",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "tech_info_link_1": {
+      "ru": "Совместная работа",
+      "en": "Submit a request"
+    },
+    "tech_info_link_2": {
+      "ru": "Автоматизация",
+      "en": "Submit a request"
+    },
+    "tech_info_link_3": {
+      "ru": "Обучение",
+      "en": "Обучение"
+    },
+    "hr_form_info_title": {
+      "ru": "Полезная информация?",
+      "en": "Submit a request"
+    },
+    "hr_form_info_text": {
+      "ru": "Подписывайтесь на рассылку, чтобы узнать больше про использование Dialog в HR",
+      "en": "Submit a request"
+    },
+    "hr_info_title": {
+      "ru": "Узнайте, как HR отделы используют Dialog",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "hr_info_link_1": {
+      "ru": "Найм",
+      "en": "Submit a request"
+    },
+    "hr_info_link_2": {
+      "ru": "Автоматизация",
+      "en": "Submit a request"
+    },
+    "hr_info_link_3": {
+      "ru": "Вовлечение",
+      "en": "Обучение"
+    },
+    "sales_info_title": {
+      "ru": "Узнайте, как Коммерческие отделы используют Dialog",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "sales_info_link_1": {
+      "ru": "Коммуникация",
+      "en": "Submit a request"
+    },
+    "sales_info_link_2": {
+      "ru": "Автоматизация",
+      "en": "Submit a request"
+    },
     "vacancy_title": {
       "ru": "В нашу быстрорастущую команду требуется много талантов",
       "en": "We are hiring"
     },
     "vacancy_sub": {
-      "ru": "Узнайте больше об открытых вакансиях и работе в компании",
+      "ru": "Мы приглашаем в команду крутых специалистов, которые хотят вместе с нами работать над созданием лучшего корпоративного мессенджера. Посмотреть список актуальных вакансий можно по ссылке ниже. Если не нашлась вакансия твоего профиля — не беда, заполняй форму обратной связи, прикрепляй резюме и мы обязательно рассмотрим его.",
+      "en": "Learn more about open vacancies and work in the company."
+    },
+    "about_title": {
+      "ru": "Хотите работать в современной и перспективной IT-компании?",
+      "en": "Learn more about open vacancies and work in the company."
+    },
+    "about_slogan": {
+      "ru": "Карьера в Dialog \uD83D\uDE80",
       "en": "Learn more about open vacancies and work in the company."
     }
+  },
 
+  "tech": {
+    "title": {
+      "ru": "Техническая поддержка работает эффективнее в Dialog",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "sub_1": {
+      "ru": "Совместная работа",
+      "en": "Submit a request"
+    },
+    "title_1": {
+      "ru": "Отслеживайте и разрешайте инциденты быстрее",
+      "en": "Submit a request"
+    },
+    "title_card_1_1": {
+      "ru": "Техподдержка-офис",
+      "en": "Submit a request"
+    },
+    "count_card_1_1": {
+      "ru": "26 участников",
+      "en": "Submit a request"
+    },
+    "text_1_1": {
+      "ru": "Часто в поддержке работают разные группы, которые выполняют схожие функции: системное администрирование, поддержка рабочих мест или пользователей. Первый шаг по использованию Dialog — рабочий чат со своим подразделением. В нем вы можете обсуждать задачи и быстро решать проблемы. Группы заменят массивные переписки по email и долгие встречи.",
+      "en": "Submit a request"
+    },
+    "title_card_1_2": {
+      "ru": "Обновления",
+      "en": "Submit a request"
+    },
+    "count_card_1_2": {
+      "ru": "348 участников",
+      "en": "Submit a request"
+    },
+    "text_1_2": {
+      "ru": "В канале для обновлений сотрудники смогут быстро узнать о новых сервисах, изменениях и плановых работах вашей IT-службы. Сотрудники будут понимать, что происходит с инфраструктурой и приложениями, например, во время плановых технических работ, и смогут планировать свою работу.",
+      "en": "Submit a request"
+    },
+    "sub_2": {
+      "ru": "Автоматизация",
+      "en": "Submit a request"
+    },
+    "title_2": {
+      "ru": "Упростите процессы",
+      "en": "Submit a request"
+    },
+    "links_2": {
+      "ru": "Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a>",
+      "en": "Submit a request"
+    },
+    "title_card_2_1": {
+      "ru": "Поддержка–запросы",
+      "en": "Submit a request"
+    },
+    "count_card_2_1": {
+      "ru": "14 участников",
+      "en": "Submit a request"
+    },
+    "text_2_1": {
+      "ru": "Создайте канал и добавьте операторов первой линии поддержки. Настройте уведомления в этот канал из своей ITSM-системы о поступающих обращениях, например, с помощью бота. Даже если у пользователя нет доступа к корпоративному окружению, например, в командировке, он всегда сможет связаться с вашей службой поддержки и решить свою проблему.",
+      "en": "Submit a request"
+    },
+    "title_card_2_2": {
+      "ru": "IT Мониторинг",
+      "en": "Submit a request"
+    },
+    "count_card_2_2": {
+      "ru": "115 участников",
+      "en": "Submit a request"
+    },
+    "text_2_2": {
+      "ru": "Настройте оповещения от систем мониторинга в канале Dialog: вы не пропустите уведомления, снизите число инцидентов и повысите доступность ваших сервисов. Например, если резервная копия не закончена в срок или завершилась ошибкой, вы оперативно узнаете об этом и сможете предотвратить потерю данных.",
+      "en": "Submit a request"
+    },
+    "sub_3": {
+      "ru": "Обучение",
+      "en": "Submit a request"
+    },
+    "title_3": {
+      "ru": "Помогите пользователям находить ответы",
+      "en": "Submit a request"
+    },
+    "links_3": {
+      "ru": "Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a>",
+      "en": "Submit a request"
+    },
+    "title_card_3_1": {
+      "ru": "Support Bot",
+      "en": "Submit a request"
+    },
+    "count_card_3_1": {
+      "ru": "Бот",
+      "en": "Submit a request"
+    },
+    "text_3_1": {
+      "ru": "Обычно, повторяющиеся вопросы и проблемы добавляют в базу знаний. Если у вас такая есть, создайте бота с Dialog Bot SDK, который сможет отвечать на частые вопросы из базы знаний. Ваши пользователи смогут найти ответ самостоятельно вместо заведения тикетов.",
+      "en": "Submit a request"
+    },
+    "title_card_3_2": {
+      "ru": "Инструкции",
+      "en": "Submit a request"
+    },
+    "count_card_3_2": {
+      "ru": "115 участников",
+      "en": "Submit a request"
+    },
+    "text_3_2": {
+      "ru": "Делитесь обучающими материалами по различным процессам в группе.",
+      "en": "Submit a request"
+    }
+  },
+
+  "oem": {
+    "title": {
+      "ru": "Dialog OEM",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "text": {
+      "ru": "Платформа для разработки коммуникационных решений",
+      "en": "Submit a request"
+    },
+    "function_title": {
+      "ru": "Функциональность мессенджера",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "function_sub": {
+      "ru": "Готовые встраиваемые компоненты для создания собственных продуктов.",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "function_title_1": {
+      "ru": "Сообщения",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "function_text_1": {
+      "ru": "Настройте обмен сообщениями под ваши потребности",
+      "en": "Submit a request"
+    },
+    "function_title_2": {
+      "ru": "Видеозвонки",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "function_text_2": {
+      "ru": "HD видеосвязь с SIP / WebRTC",
+      "en": "Submit a request"
+    },
+    "function_title_3": {
+      "ru": "Аудиозвонки",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "function_text_3": {
+      "ru": "Создавайте функции с высококачественной голосовой связью ",
+      "en": "Submit a request"
+    },
+    "function_title_4": {
+      "ru": "SIP Транкинг",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "function_text_4": {
+      "ru": "Совершайте и принимайте звонки с помощью существующей инфраструктуры VoIP",
+      "en": "Submit a request"
+    },
+    "function_title_5": {
+      "ru": "Мультиплатформенность",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "function_text_5": {
+      "ru": "Работает с IP-телефонией, мобильными устройствами и веб- и десктопными приложениями",
+      "en": "Submit a request"
+    },
+    "function_title_6": {
+      "ru": "Аудио- /видеоконференции",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "function_text_6": {
+      "ru": "Подключайте пользователей к многосторонним звонкам",
+      "en": "Submit a request"
+    },
+    "function_title_7": {
+      "ru": "Демонстрация экрана",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "function_text_7": {
+      "ru": "Транслируйте рабочий стол",
+      "en": "Submit a request"
+    },
+    "integration_title": {
+      "ru": "Интеграционные возможности",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "integration_title_1": {
+      "ru": "Доступность для сторонних сервисов ",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "integration_text_1": {
+      "ru": "Чтение/запись данных для сторонних сервисов в Kafka. Внутренние сервисы доступны по API (gRPC/GraphQL).",
+      "en": "Submit a request"
+    },
+    "integration_title_2": {
+      "ru": "Внешняя/отчуждаемая аутентификация",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "integration_text_2": {
+      "ru": "Для аутентификации пользователей в Dialog вы можете подключить LDAP, использовать внешнего SSO-провайдера, RBAC систему или свой коннектор.",
+      "en": "Submit a request"
+    },
+    "integration_title_3": {
+      "ru": "SSO-провайдер",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "integration_text_3": {
+      "ru": "Dialog может выступать как SSO провайдер для внешних сервисов, ботов и мини-приложений.",
+      "en": "Submit a request"
+    },
+    "integration_link": {
+      "ru": "Dialog API",
+      "en": "Submit a request"
+    },
+    "sdk_title": {
+      "ru": "Клиентский SDK",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "sdk_sub": {
+      "ru": "Помимо работы с данными Dialog OEM позволяет кастомизировать приложение для мобильных, веб и десктоп платформ",
+      "en": "Submit a request"
+    },
+    "sdk_li_1": {
+      "ru": "Кастомизация набора экранов",
+      "en": "Submit a request"
+    },
+    "sdk_li_2": {
+      "ru": "Переключатель функций",
+      "en": "Submit a request"
+    },
+    "sdk_li_3": {
+      "ru": "Локализации",
+      "en": "Submit a request"
+    },
+    "sdk_li_4": {
+      "ru": "Звуки",
+      "en": "Submit a request"
+    },
+    "sdk_li_5": {
+      "ru": "Цвета",
+      "en": "Submit a request"
+    },
+    "sdk_li_6": {
+      "ru": "Иконки",
+      "en": "Submit a request"
+    },
+    "sdk_li_7": {
+      "ru": "Шрифты",
+      "en": "Submit a request"
+    },
+    "partner_title": {
+      "ru": "Найдите партнера",
+      "en": "Submit a request"
+    },
+    "partner_sub": {
+      "ru": "Наши технологические партнеры интегрируют или реализуют для вас уникальное коммуникационное решение на базе Dialog OEM",
+      "en": "Submit a request"
+    },
+    "why_title": {
+      "ru": "Причины выбрать Dialog OEM",
+      "en": "Submit a request"
+    },
+    "why_title_1": {
+      "ru": "Экспертная поддержка",
+      "en": "Submit a request"
+    },
+    "why_text_1": {
+      "ru": "Команда поддержки оперативно предоставит всю необходимую документацию и экспертные рекомендации.",
+      "en": "Submit a request"
+    },
+    "why_title_2": {
+      "ru": "Модульность",
+      "en": "Submit a request"
+    },
+    "why_text_2": {
+      "ru": "Готовые компоненты позволяют собрать продукт под широкий спектр задач. поддержки оперативно предоставит всю необходимую документацию и экспертные рекомендации.",
+      "en": "Submit a request"
+    },
+    "why_title_3": {
+      "ru": "Подтвержденное качество",
+      "en": "Submit a request"
+    },
+    "why_text_3": {
+      "ru": "Dialog с 2016 года на рынке коммуникационных решений. Готовая платформа позволяет сократить годы разработки и быстро вывести продукт в промышленную эксплуатацию.",
+      "en": "Submit a request"
+    },
+    "why_title_4": {
+      "ru": "Высокая доступность",
+      "en": "Submit a request"
+    },
+    "why_text_4": {
+      "ru": "Dialog OEM обеспечивает бесперебойную работу приложений при высоких нагрузках.",
+      "en": "Submit a request"
+    }
+  },
+
+  "remote": {
+    "title": {
+      "ru": "Dialog для удаленной работы",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "sub": {
+      "ru": "Единая коммуникационная среда для дистанционной работы",
+      "en": "Submit a request"
+    },
+    "work_title": {
+      "ru": "Работайте дистанционно также эффективно как из офиса",
+      "en": "Submit a request"
+    },
+    "work_sub": {
+      "ru": "Укладывайтесь в сроки, согласовывайте документы, принимайте решения. Когда всё общение в одном приложении вы можете работать откуда угодно.",
+      "en": "Submit a request"
+    },
+    "work_title_1": {
+      "ru": "Создайте виртуальный офис в Dialog",
+      "en": "Submit a request"
+    },
+    "work_text_1_1": {
+      "ru": "Используйте группы и каналы для всего: от обсуждения небольшого проекта до коммуникации с целым департаментом. Не нужно ходить по этажам, чтобы найти нужного сотрудника – просто напишите в чат: ",
+      "en": "Submit a request"
+    },
+    "work_text_1_2": {
+      "ru": "И вы получите ответ быстрее, чем по email.",
+      "en": "Submit a request"
+    },
+    "work_button_1": {
+      "ru": "Бухгалтерия",
+      "en": "Submit a request"
+    },
+    "work_button_2": {
+      "ru": "HR отдел",
+      "en": "Submit a request"
+    },
+    "work_button_3": {
+      "ru": "Корпоративный сайт",
+      "en": "Submit a request"
+    },
+    "work_button_4": {
+      "ru": "Проекты внедрения",
+      "en": "Submit a request"
+    },
+    "work_button_5": {
+      "ru": "Маркетинг",
+      "en": "Submit a request"
+    },
+    "work_button_6": {
+      "ru": "Коммерческий департамент",
+      "en": "Submit a request"
+    },
+    "work_button_7": {
+      "ru": "Офис СПБ",
+      "en": "Submit a request"
+    },
+    "work_button_8": {
+      "ru": "ВКС Еженедельная планерка",
+      "en": "Submit a request"
+    },
+    "work_button_9": {
+      "ru": "Оффтоп",
+      "en": "Submit a request"
+    },
+    "work_title_2": {
+      "ru": "Собирайте конференции, где бы вы не находились",
+      "en": "Submit a request"
+    },
+    "work_text_2": {
+      "ru": "Для быстрого созвона используйте встроенные аудио- /видеозвонки. Если в вашей компании уже есть сервисы для телекоммуникаций, Dialog можно интегрировать с АКС/ВКС, АТС.",
+      "en": "Submit a request"
+    },
+    "work_title_3": {
+      "ru": "Поддерживайте контакт с коллегами",
+      "en": "Submit a request"
+    },
+    "work_text_3": {
+      "ru": "Дистанционная работа не означает, что вы должны жертвовать человеческим взаимодействием. Dialog взял лучшее из уже привычных приложений для общения и перенес в мир рабочей коммуникации: Стикеры, Упоминания, реакции и многое другое.",
+      "en": "Submit a request"
+    },
+    "work_title_4": {
+      "ru": "Используйте привычные инструменты",
+      "en": "Submit a request"
+    },
+    "work_text_4": {
+      "ru": "Dialog предоставляет Bot SDK и API для создания интеграций со сторонними приложениями. Когда ваши инструменты доступны из одного окна, вы тратите меньше времени на переключение между приложениями, и больше времени сосредоточены на своей работе.",
+      "en": "Submit a request"
+    },
+    "safety_title": {
+      "ru": "Выберите защищенное и надежное решение",
+      "en": "Submit a request"
+    },
+    "safety_sub": {
+      "ru": "Делитесь конфиденциальной информацией и обсуждайте идеи \u2028в защищенном контуре",
+      "en": "Submit a request"
+    },
+    "safety_title_1": {
+      "ru": "Высокая доступность при любых нагрузках",
+      "en": "Submit a request"
+    },
+    "safety_text_1": {
+      "ru": "Обстоятельства могут заставить перевести штат на дистанционную работу. В таком случае Dialog масштабируется по мере роста нагрузки и обеспечивает бесперебойную работу даже при сотнях тысяч активных пользователей.",
+      "en": "Submit a request"
+    },
+    "safety_title_2": {
+      "ru": "Безопасный переход от офисной работы к дистанционной",
+      "en": "Submit a request"
+    },
+    "safety_text_2": {
+      "ru": "Dialog разрабатывается в соответствии с высокими стандартами кибербезопасности. Даже если в вашей организации нет частной сети (VPN), Dialog шифрует соединение. Вы также можете интегрировать Dialog со своей инфраструктурой информационной безопасности.",
+      "en": "Submit a request"
+    },
+    "safety_title_3": {
+      "ru": "Данные под вашим контролем",
+      "en": "Submit a request"
+    },
+    "safety_text_3": {
+      "ru": "Разместите  Dialog на серверах вашей компании или на инфраструктуре частного облачного провайдера.",
+      "en": "Submit a request"
+    },
+    "safety_link": {
+      "ru": "Узнайте больше про безопасность в Dialog",
+      "en": "Submit a request"
+    }
+  },
+
+  "sales": {
+    "title": {
+      "ru": "Dialog для Отдела продаж",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "sub_1": {
+      "ru": "Коммуникация",
+      "en": "Submit a request"
+    },
+    "title_1": {
+      "ru": "Эффективная совместная работа над проектами",
+      "en": "Submit a request"
+    },
+    "links_1": {
+      "ru": "Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a>",
+      "en": "Submit a request"
+    },
+    "title_card_1_1": {
+      "ru": "Коммерческий департамент",
+      "en": "Submit a request"
+    },
+    "count_card_1_1": {
+      "ru": "26 участников",
+      "en": "Submit a request"
+    },
+    "text_1_1": {
+      "ru": "Делайте объявления, координируйте действия и обсуждайте ежедневные задачи в чате для всего отдела.",
+      "en": "Submit a request"
+    },
+    "title_card_1_2": {
+      "ru": "Пилот в Stark Industries",
+      "en": "Submit a request"
+    },
+    "count_card_1_2": {
+      "ru": "12 участников",
+      "en": "Submit a request"
+    },
+    "text_1_2": {
+      "ru": "Чат, где вы можете поделиться информацией о заказчике и задать вопрос.",
+      "en": "Submit a request"
+    },
+    "title_card_1_3": {
+      "ru": "Продажи через партнеров",
+      "en": "Submit a request"
+    },
+    "count_card_1_3": {
+      "ru": "12 участников",
+      "en": "Submit a request"
+    },
+    "text_1_3": {
+      "ru": "Создайте чат по взаимодействию с конкретным партнером. Добавьте сотрудников из других отделов и организуйте совместную работу.",
+      "en": "Submit a request"
+    },
+    "title_card_1_4": {
+      "ru": "Цели Q3",
+      "en": "Submit a request"
+    },
+    "count_card_1_4": {
+      "ru": "143 участника",
+      "en": "Submit a request"
+    },
+    "text_1_4": {
+      "ru": "Делитесь целями по продажам и отслеживайте прогресс, чтобы все были мотивированы и согласованы.",
+      "en": "Submit a request"
+    },
+    "sub_2": {
+      "ru": "Автоматизация",
+      "en": "Submit a request"
+    },
+    "title_2": {
+      "ru": "Автоматизируйте рутину — используйте привычные инструменты в Dialog",
+      "en": "Submit a request"
+    },
+    "links_2": {
+      "ru": "Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a>",
+      "en": "Submit a request"
+    },
+    "title_card_2_1": {
+      "ru": "CRM Bot",
+      "en": "Submit a request"
+    },
+    "count_card_2_1": {
+      "ru": "Бот",
+      "en": "Submit a request"
+    },
+    "text_2_1": {
+      "ru": "Тратьте меньше времени на рутинные задачи. Чтобы не переключаться между инструментами сделайте бота, который по командам будет показывать данные о сделках, компаниях или контактах из вашей CRM.",
+      "en": "Submit a request"
+    },
+    "title_card_2_2": {
+      "ru": "Лиды с сайта",
+      "en": "Submit a request"
+    },
+    "count_card_2_2": {
+      "ru": "12 участников",
+      "en": "Submit a request"
+    },
+    "text_2_2": {
+      "ru": "Получайте уведомления о новых лидах в отдельный чат. Делитесь важной информацией по новым контактам и стройте эффективную коммуникацию.",
+      "en": "Submit a request"
+    },
+    "title_card_2_3": {
+      "ru": "Обратная связь клиентов",
+      "en": "Submit a request"
+    },
+    "count_card_2_3": {
+      "ru": "115 участников",
+      "en": "Submit a request"
+    },
+    "text_2_3": {
+      "ru": "Интегрируйте ITSM систему с Dialog и автоматически получайте обратную связь от клиентов в отдельный чат.",
+      "en": "Submit a request"
+    },
+    "sub_3": {
+      "ru": "Обучение",
+      "en": "Submit a request"
+    },
+    "title_3": {
+      "ru": "Помогите пользователям находить ответы",
+      "en": "Submit a request"
+    },
+    "links_3": {
+      "ru": "Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a>",
+      "en": "Submit a request"
+    },
+    "title_card_3_1": {
+      "ru": "Support Bot",
+      "en": "Submit a request"
+    },
+    "count_card_3_1": {
+      "ru": "Бот",
+      "en": "Submit a request"
+    },
+    "text_3_1": {
+      "ru": "Обычно, повторяющиеся вопросы и проблемы добавляют в базу знаний. Если у вас такая есть, создайте бота с Dialog Bot SDK, который сможет отвечать на частые вопросы из базы знаний. Ваши пользователи смогут найти ответ самостоятельно вместо заведения тикетов.",
+      "en": "Submit a request"
+    },
+    "title_card_3_2": {
+      "ru": "Инструкции",
+      "en": "Submit a request"
+    },
+    "count_card_3_2": {
+      "ru": "115 участников",
+      "en": "Submit a request"
+    },
+    "text_3_2": {
+      "ru": "Делитесь обучающими материалами по различным процессам в группе.",
+      "en": "Submit a request"
+    }
+  },
+
+  "hr": {
+    "title": {
+      "ru": "Dialog для HR",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "sub": {
+      "ru": "Нанимайте, вовлекайте и стройте корпоративную культуру в Dialog.",
+      "en": "Subscribe for a fresh newsletter!"
+    },
+    "sub_1": {
+      "ru": "Найм",
+      "en": "Submit a request"
+    },
+    "title_1": {
+      "ru": "Оптимизируйте процесс найма",
+      "en": "Submit a request"
+    },
+    "title_card_1_1": {
+      "ru": "Подбор Android разработчиков",
+      "en": "Submit a request"
+    },
+    "count_card_1_1": {
+      "ru": "21 участников",
+      "en": "Submit a request"
+    },
+    "text_1_1": {
+      "ru": "Готовьтесь к собеседованию, оценивайте кандидатов и обсуждайте конфиденциальную информацию в закрытых группах.",
+      "en": "Submit a request"
+    },
+    "title_card_1_2": {
+      "ru": "Подбор и развитие персонала",
+      "en": "Submit a request"
+    },
+    "count_card_1_2": {
+      "ru": "15 участников",
+      "en": "Submit a request"
+    },
+    "text_1_2": {
+      "ru": "Закрытый чат для рекрутеров, где происходит обсуждение найма, адаптации и обучения персонала.",
+      "en": "Submit a request"
+    },
+    "title_card_1_3": {
+      "ru": "Вознаграждение и мотивация",
+      "en": "Submit a request"
+    },
+    "count_card_1_3": {
+      "ru": "16 участников",
+      "en": "Submit a request"
+    },
+    "text_1_3": {
+      "ru": "Закрытый чат для нанимающих менеджеров для обсуждения компенсации будущим и текущим сотрудникам компании.",
+      "en": "Submit a request"
+    },
+    "sub_2": {
+      "ru": "Автоматизация",
+      "en": "Submit a request"
+    },
+    "title_2": {
+      "ru": "Сократите время на рутину",
+      "en": "Submit a request"
+    },
+    "title_card_2_1": {
+      "ru": "Кадровые документы",
+      "en": "Submit a request"
+    },
+    "count_card_2_1": {
+      "ru": "Бот",
+      "en": "Submit a request"
+    },
+    "text_2_1": {
+      "ru": "Упростите работу с документами. В Dialog вы можете создать бота, который опросит сотрудника по ключевым вопросам и автоматически сформирует заявление, справку или другой документ.",
+      "en": "Submit a request"
+    },
+    "title_card_2_2": {
+      "ru": "Онбординг Бот",
+      "en": "Submit a request"
+    },
+    "count_card_2_2": {
+      "ru": "Бот",
+      "en": "Submit a request"
+    },
+    "text_2_2": {
+      "ru": "Во время адаптации новые сотрудники нуждаются в организационной информации. Создайте бота, который будет отвечать на частые вопросы коллег.",
+      "en": "Submit a request"
+    },
+    "title_card_2_3": {
+      "ru": "Опрос: Испытательный Срок",
+      "en": "Submit a request"
+    },
+    "count_card_2_3": {
+      "ru": "Бот",
+      "en": "Submit a request"
+    },
+    "text_2_3": {
+      "ru": "Автоматизируйте сбор обратной связи. Сделайте бота, который сможет автоматически проводить опросы пользователей по вашим сценариям. ",
+      "en": "Submit a request"
+    },
+    "sub_3": {
+      "ru": "Вовлечение",
+      "en": "Submit a request"
+    },
+    "title_3": {
+      "ru": "Создавайте культуру",
+      "en": "Submit a request"
+    },
+    "title_card_3_1": {
+      "ru": "Новости компании",
+      "en": "Submit a request"
+    },
+    "count_card_3_1": {
+      "ru": "434 участника",
+      "en": "Submit a request"
+    },
+    "text_3_1": {
+      "ru": "Создайте официальный канал компании, чтобы рассказывать сотрудникам про стратегию, ценности и просто держать в курсе событий.",
+      "en": "Submit a request"
+    },
+    "title_card_3_2": {
+      "ru": "Офис СПб",
+      "en": "Submit a request"
+    },
+    "count_card_3_2": {
+      "ru": "78 участников",
+      "en": "Submit a request"
+    },
+    "text_3_2": {
+      "ru": "Если в вашей компании есть территориально разрозненные подразделения, создайте чат под каждый офис, чтобы сотрудники могли обсуждать локальные события.",
+      "en": "Submit a request"
+    },
+    "title_card_3_3": {
+      "ru": "Семинары Python",
+      "en": "Submit a request"
+    },
+    "count_card_3_3": {
+      "ru": "34 участника",
+      "en": "Submit a request"
+    },
+    "text_3_3": {
+      "ru": "Помимо решения задач, Dialog помогает строить культуру в компании. Коллеги общаются, организуются в группы по интересам и формируют культуру.",
+      "en": "Submit a request"
+    },
+    "title_card_3_4": {
+      "ru": "HR fm",
+      "en": "Submit a request"
+    },
+    "count_card_3_4": {
+      "ru": "127 участников",
+      "en": "Submit a request"
+    },
+    "text_3_4": {
+      "ru": "Все самое полезное и интересное о возможностях и радостях работы в компании: новые вакансии, развитие, конференции, бонусы, охрана труда, кадровые документы, ЛНА, ответы на популярные вопросы.",
+      "en": "Submit a request"
+    },
+    "title_card_3_5": {
+      "ru": "Наставники",
+      "en": "Submit a request"
+    },
+    "count_card_3_5": {
+      "ru": "34 участника",
+      "en": "Submit a request"
+    },
+    "text_3_5": {
+      "ru": "Чат для желающих стать наставниками новых сотрудников.",
+      "en": "Submit a request"
+    }
   },
 
   "p404": {
@@ -677,11 +1503,11 @@
       "en": "We create Dialog"
     },
     "create_sub_1": {
-      "ru": "Компания занимается разработкой корпоративного мессенджера Dialog более 4 лет. Dialog объединяет специалистов в области IT-коммуникаций, безопасности данных, real-time распределенных систем, Big Data и других смежных с месседжингом областей.",
+      "ru": "Мы с 2016 года занимаемся разработкой корпоративного мессенджера Dialog – инструмент корпоративных коллабораций. Dialog объединяет специалистов в области IT-коммуникаций, безопасности данных, real-time распределенных систем, Big Data и других смежных с месседжингом областей. Мы пользуемся продуктом, который разрабатываем, и ежедневно улучшаем его.",
       "en": "The company has been developing the Dialog corporate messenger for over 4 years. Dialog unites specialists in the field of IT communications, data security, real-time distributed systems, Big Data and other areas related to messaging."
     },
     "create_sub_2": {
-      "ru": "На данный момент в Dialog работает более 120 человек, которые в разное время занимались разработкой продуктов для крупнейших компаний, лидирующих в области систем безопасности и хранения данных.",
+      "ru": "На данный момент в Dialog работает более 120 человек, которые в разное время занимались разработкой продуктов для крупнейших компаний, лидирующих в области систем безопасности и хранения данных. А еще являемся частью Экосистемы Сбербанка, что открывает перед нами огромный мир технологий и возможность тиражировать продукт на аудиторию +250К пользователей.",
       "en": "At the moment, Dialog employs more than 120 specialists who at different times were developing products for the largest companies leading in the field of security and data storage systems."
     },
     "create_text_1": {
@@ -691,6 +1517,476 @@
     "create_text_2": {
       "ru": "города, офис в Москве и Санкт-Петербурге",
       "en": "cities, offices in Moscow and St. Petersburg"
+    },
+    "collage_title": {
+      "ru": "Как мы отдыхаем и развиваемся",
+      "en": "cities, offices in Moscow and St. Petersburg"
+    },
+    "collage_desc": {
+      "ru": "В нашей компании традиционно проводятся следующие мероприятия: Quiz, knowledge sharing «Митапы», изучение английского “Do you speak English”, Клуб Дебатов, Киберспортивные соревнования и Фотоконкурсы.<br><br>Конечно, мы не забываем про праздники: 23 и 8, День рождения компании, Новый год, День программиста, Halloween.",
+      "en": "cities, offices in Moscow and St. Petersburg"
+    },
+    "values_title": {
+      "ru": "Ценности компании",
+      "en": "cities, offices in Moscow and St. Petersburg"
+    },
+    "values_title_1": {
+      "ru": "Любознательность",
+      "en": "cities, offices in Moscow and St. Petersburg"
+    },
+    "values_title_2": {
+      "ru": "Вовлеченность в будущее",
+      "en": "cities, offices in Moscow and St. Petersburg"
+    },
+    "values_title_3": {
+      "ru": "Уверенность в диалоге",
+      "en": "cities, offices in Moscow and St. Petersburg"
+    },
+    "values_text_1": {
+      "ru": "Мы стремимся знать больше, быть лучше: развиваем себя, развиваем друг друга, развиваем партнёров и клиентов. Экспериментируем, применяем полученные знания в рабочих процессах, объективно анализируем результаты наших действий и изменений. Достигаем синергии, применяя опыт и знания друг друга.",
+      "en": "cities, offices in Moscow and St. Petersburg"
+    },
+    "values_text_2": {
+      "ru": "Мы предсказываем и задаем тренды, вовлекаем в использование новых технологий в интересах наших пользователей, когда нет стандартов и готовых процессов, мы их создаём. Мы уверены в себе, в своих решениях, в качестве и востребованности нашего продукта, в коллегах и партнерах.",
+      "en": "cities, offices in Moscow and St. Petersburg"
+    },
+    "values_text_3": {
+      "ru": "Мы создаем технологичный, красивый, удобный продукт и отвечаем за качество на всех этапах. Мы сами активно используем продукт в нашей командной работе. Постоянно его совершенствуем и тем самым делаем жизнь пользователей более комфортной и гармоничной. Мы аккуратны, внимательны к деталям: к тому, как думаем, говорим, пишем.",
+      "en": "cities, offices in Moscow and St. Petersburg"
+    }
+  },
+
+  "about": {
+    "title": {
+      "ru": "О компании",
+      "en": "Want to fulfill your talents?"
+    },
+    "sub_1": {
+      "ru": "ООО Диалог – российский разработчик коммуникационной платформы для совместной работы и организации единого рабочего пространства. ",
+      "en": "Join the Dialog Team"
+    },
+    "sub_2": {
+      "ru": "Основана в 2016 году. Входит в состав группы компании ПАО Сбербанк с 2018 года.",
+      "en": "Join the Dialog Team"
+    },
+    "team_title": {
+      "ru": "Наша команда",
+      "en": "We create Dialog"
+    },
+    "team_sub": {
+      "ru": "Dialog объединяет специалистов в области IT-коммуникаций, безопасности данных, real-time распределенных систем, Big Data и других смежных с месседжингом областей. В офисах компании Диалог», работает более 100 человек.",
+      "en": "We create Dialog"
+    },
+    "number_1": {
+      "ru": "год основания компании",
+      "en": "We create Dialog"
+    },
+    "number_2": {
+      "ru": "количество сотрудников",
+      "en": "We create Dialog"
+    },
+    "number_3": {
+      "ru": "города, офис в Москве и Санкт-Петербурге ",
+      "en": "We create Dialog"
+    },
+    "history_title": {
+      "ru": "История Компании",
+      "en": "We create Dialog"
+    },
+    "history_1": {
+      "ru": "Начало разработки мессенджера. Выпуск совместного решения с «Фактор связи». Состав команды 16 человек.",
+      "en": "We create Dialog"
+    },
+    "history_2": {
+      "ru": "Выпуск совместного решения с «ИнфоТеКС». Интеграция Dialog Enterprise с ViPNet VPN. Состав команды 19 человек.",
+      "en": "We create Dialog"
+    },
+    "history_3": {
+      "ru": "Диалог становится ДЗО Сбербанка. Интеграция с облачными продуктами «МойОфис Частное Облако» и «МойОфис Профессиональный». Состав команды 70 человек.",
+      "en": "We create Dialog"
+    },
+    "history_4": {
+      "ru": "Компанию возглавила Марина Настасенко. Представление концепции digital workplace на базе dialog. Открытие офиса в Санкт-Петербурге. Выпуск второй версии СберЧата. Состав команды 131 человек.",
+      "en": "We create Dialog"
+    },
+    "history_5": {
+      "ru": "Коммерческое и технологическое партнерство с участниками Экосистемы Сбербанка. Развитие функционала видеоконференцсвязи корпоративного уровня. Выпуск продукта Dialog OEM для развития бизнеса наших партнеров и выхода на новые рынки. Дальнейший рост команды.",
+      "en": "We create Dialog"
+    },
+    "leaders_title": {
+      "ru": "Руководство",
+      "en": "We create Dialog"
+    },
+    "license_title": {
+      "ru": "Свидетельства и лицензии",
+      "en": "We create Dialog"
+    },
+    "license_sub": {
+      "ru": "Dialog обеспечивает надежную и безопасную коммуникацию в государственных структурах. Мессенджер включен в Реестр российского ПО и разрабатывается в соответствии с требованиями Импортозамещения. Разработчик продукта имеет лицензии ФСТЭК и ФСБ России.",
+      "en": "We create Dialog"
+    },
+    "it_title": {
+      "ru": "Dialog участвует в развитии ИТ-отрасли в России",
+      "en": "We create Dialog"
+    },
+    "it_li_1": {
+      "ru": "Резидент инновационного центра «Сколково»",
+      "en": "We create Dialog"
+    },
+    "it_li_2": {
+      "ru": "Членство в Ассоциации Разработчиков Программных Продуктов «Отечественный софт»",
+      "en": "We create Dialog"
+    },
+    "contact_title": {
+      "ru": "Контакты",
+      "en": "We create Dialog"
+    },
+    "contact_address_city_1": {
+      "ru": "Москва",
+      "en": "We create Dialog"
+    },
+    "contact_address_1": {
+      "ru": "121170, ул. Поклонная, д. 3, корп. 2, этаж 11",
+      "en": "We create Dialog"
+    },
+    "contact_address_city_2": {
+      "ru": "Санкт-Петербург",
+      "en": "We create Dialog"
+    },
+    "contact_address_2": {
+      "ru": "191186, Невский проспект, д. 19",
+      "en": "We create Dialog"
+    }
+  },
+
+  "private": {
+    "title": {
+      "ru": "Dialog для коммерческих организаций",
+      "en": "Want to fulfill your talents?"
+    },
+    "sub": {
+      "ru": "Единая среда коммуникаций для бизнеса",
+      "en": "Join the Dialog Team"
+    },
+    "adv_title_1": {
+      "ru": "Сокращение расходов на коммуникации ",
+      "en": "We create Dialog"
+    },
+    "adv_sub_1": {
+      "ru": "Dialog объединяет инструменты коммуникации в одной платформе и сокращает расходы на связь.",
+      "en": "We create Dialog"
+    },
+    "adv_title_2": {
+      "ru": "Безопасность без ограничения свободы",
+      "en": "We create Dialog"
+    },
+    "adv_sub_2": {
+      "ru": "Централизуйте управление правами и доступами к информации и обеспечьте прозрачность.",
+      "en": "We create Dialog"
+    },
+    "adv_title_3": {
+      "ru": "Эффективная совместная работа в любом масштабе",
+      "en": "We create Dialog"
+    },
+    "adv_sub_3": {
+      "ru": "Организуйте работу любого количества распределенных команд.",
+      "en": "We create Dialog"
+    },
+    "grow_title": {
+      "ru": "Ускорьте рост бизнес-показателей компании",
+      "en": "We create Dialog"
+    },
+    "grow_desc": {
+      "ru": "Оптимизируйте работу по ключевым направлениям бизнеса – используйте Bot SDK и API для создания интеграций. Боты создают новый интерфейс для работы с информацией, позволяя сотрудникам делать работу быстрее и качественнее.",
+      "en": "We create Dialog"
+    },
+    "grow_sub": {
+      "ru": "Примеры оптимизации процессов",
+      "en": "We create Dialog"
+    },
+    "grow_card_title_1": {
+      "ru": "Выводите новых сотрудников быстрее",
+      "en": "We create Dialog"
+    },
+    "grow_card_sub_1": {
+      "ru": "Найм сотрудников",
+      "en": "We create Dialog"
+    },
+    "grow_card_text_1": {
+      "ru": "Новые сотрудники вовлекаются в работу раньше, когда на их вопросы быстро отвечают чатботы.",
+      "en": "We create Dialog"
+    },
+    "grow_card_link_1": {
+      "ru": "Dialog для HR",
+      "en": "We create Dialog"
+    },
+    "grow_card_title_2": {
+      "ru": "Ускорьте разработку",
+      "en": "We create Dialog"
+    },
+    "grow_card_sub_2": {
+      "ru": "IT и разработка",
+      "en": "We create Dialog"
+    },
+    "grow_card_text_2": {
+      "ru": "Разработчики с помощью интеграций объединяют рабочие сервисы и автоматизируют процессы в чатах (ChatOps).",
+      "en": "We create Dialog"
+    },
+    "grow_card_link_2": {
+      "ru": "Dialog для Разработчиков",
+      "en": "We create Dialog"
+    },
+    "grow_card_title_3": {
+      "ru": "Заключайте больше сделок",
+      "en": "We create Dialog"
+    },
+    "grow_card_sub_3": {
+      "ru": "Продажи",
+      "en": "We create Dialog"
+    },
+    "grow_card_text_3": {
+      "ru": "Организуйте работу с воронкой продаж в Dialog. Смотрите детали сделок из CRM в чатах, увеличьте доступ к информации для сотрудников.",
+      "en": "We create Dialog"
+    },
+    "grow_card_link_3": {
+      "ru": "Dialog для Коммерческого отдела",
+      "en": "We create Dialog"
+    },
+    "grow_card_title_4": {
+      "ru": "Следите за брендом онлайн",
+      "en": "We create Dialog"
+    },
+    "grow_card_sub_4": {
+      "ru": "Маркетинг и PR",
+      "en": "We create Dialog"
+    },
+    "grow_card_text_4": {
+      "ru": "Получайте упоминания вашего бренда в социальных сетях и публикациях онлайн-изданий в мессенджере для оперативной реакции.",
+      "en": "We create Dialog"
+    },
+    "grow_card_link_4": {
+      "ru": "Dialog для Маркетинга",
+      "en": "We create Dialog"
+    },
+    "grow_card_title_5": {
+      "ru": "Сократите время обработки обращений",
+      "en": "We create Dialog"
+    },
+    "grow_card_sub_5": {
+      "ru": "Обслуживание клиентов и поддержка",
+      "en": "We create Dialog"
+    },
+    "grow_card_text_5": {
+      "ru": "Объедините запросы от клиентов в группах Dialog и решайте проблемы быстрее.",
+      "en": "We create Dialog"
+    },
+    "grow_card_link_5": {
+      "ru": "Dialog для Техподдержки",
+      "en": "We create Dialog"
+    },
+    "corp_title": {
+      "ru": "Корпоративные функции",
+      "en": "We create Dialog"
+    },
+    "corp_title_1": {
+      "ru": "Установка на инфраструктуру компании",
+      "en": "We create Dialog"
+    },
+    "corp_title_2": {
+      "ru": "Корпоративные учетные данные",
+      "en": "We create Dialog"
+    },
+    "corp_text_2": {
+      "ru": "Интеграция с адресной книгой и OpenID",
+      "en": "We create Dialog"
+    },
+    "corp_title_3": {
+      "ru": "Аудио- /видеосвязь",
+      "en": "We create Dialog"
+    },
+    "corp_text_3": {
+      "ru": "Интеграция с системами АКС/ВКС, АТС",
+      "en": "We create Dialog"
+    },
+    "corp_title_4": {
+      "ru": "Интеграция с системами безопасности",
+      "en": "We create Dialog"
+    },
+    "corp_title_5": {
+      "ru": "Таргетированное оповещение",
+      "en": "We create Dialog"
+    },
+    "corp_text_5": {
+      "ru": "Рассылки для определенных групп пользователей в каналах",
+      "en": "We create Dialog"
+    },
+    "corp_title_6": {
+      "ru": "Возможность подключения и разработки ботов и чат-ботов",
+      "en": "We create Dialog"
+    },
+    "safety_title": {
+      "ru": "Защита информации",
+      "en": "We create Dialog"
+    },
+    "access_title": {
+      "ru": "Контроль доступа к информации",
+      "en": "We create Dialog"
+    },
+    "access_sub": {
+      "ru": "Панель администратора",
+      "en": "We create Dialog"
+    },
+    "access_text": {
+      "ru": "Со временем в вашей компании могут появляться новые сотрудники, в то время как другие будут уходить. С Панелью администратора вы можете управлять рабочим пространством и осуществлять мониторинг.",
+      "en": "We create Dialog"
+    },
+    "expenses_title": {
+      "ru": "Сокращение расходов на коммуникацию",
+      "en": "We create Dialog"
+    },
+    "expenses_sub": {
+      "ru": "Dialog объединяет множество инструментов на одной платформе",
+      "en": "We create Dialog"
+    },
+    "expenses_title_1": {
+      "ru": "Телефония",
+      "en": "We create Dialog"
+    },
+    "expenses_text_1": {
+      "ru": "Затраты на стационарные телефоны, сопровождение и поддержку, звонки через АТС на мобильные номера",
+      "en": "We create Dialog"
+    },
+    "expenses_title_2": {
+      "ru": "Видеосвязь",
+      "en": "We create Dialog"
+    },
+    "expenses_text_2": {
+      "ru": "Лицензионные платежи за программы для видеосвязи",
+      "en": "We create Dialog"
+    },
+    "expenses_title_3": {
+      "ru": "Виртуальное хранилище",
+      "en": "We create Dialog"
+    },
+    "expenses_text_3": {
+      "ru": "Подписки и лицензии на облачное хранилище",
+      "en": "We create Dialog"
+    },
+    "introduction_title": {
+      "ru": "Готов к масштабному внедрению",
+      "en": "We create Dialog"
+    },
+    "introduction_title_1": {
+      "ru": "Быстрое развертывание",
+      "en": "We create Dialog"
+    },
+    "introduction_text_1": {
+      "ru": "Встраивается в структуру компании от одного дня",
+      "en": "We create Dialog"
+    },
+    "introduction_title_2": {
+      "ru": "Высокая доступность",
+      "en": "We create Dialog"
+    },
+    "introduction_text_2": {
+      "ru": "Бесперебойная работа при базе активных пользователей 250+ тысяч в рамках организации",
+      "en": "We create Dialog"
+    },
+    "introduction_title_3": {
+      "ru": "Отзывчивый сервис",
+      "en": "We create Dialog"
+    },
+    "introduction_text_3": {
+      "ru": "Оперативная поддержка и документация на русском языке",
+      "en": "We create Dialog"
+    }
+  },
+
+  "gov": {
+    "title": {
+      "ru": "Dialog для государственных организаций",
+      "en": "Want to fulfill your talents?"
+    },
+    "license_title": {
+      "ru": "Свидетельства и лицензии",
+      "en": "Want to fulfill your talents?"
+    },
+    "adv_title_1": {
+      "ru": "Безопасность без ущерба эффективности",
+      "en": "Want to fulfill your talents?"
+    },
+    "adv_sub_1": {
+      "ru": "Размещение на серверах компании и интеграция с корпоративными системами безопасности.",
+      "en": "Want to fulfill your talents?"
+    },
+    "adv_title_2": {
+      "ru": "Входит в реестр российского ПО",
+      "en": "Want to fulfill your talents?"
+    },
+    "adv_sub_2": {
+      "ru": "Компания имеет квалификацию, необходимую для соблюдения законодательных норм и стандартов.",
+      "en": "Want to fulfill your talents?"
+    },
+    "adv_title_3": {
+      "ru": "Интеграции с российским ПО",
+      "en": "Want to fulfill your talents?"
+    },
+    "adv_sub_3": {
+      "ru": "Dialog сотрудничает с российскими IT-вендорами для создания комплексных импортонезависимых решений.",
+      "en": "Want to fulfill your talents?"
+    },
+    "quote_title": {
+      "ru": "Dialog в Сбербанке",
+      "en": "Want to fulfill your talents?"
+    },
+    "about_title": {
+      "ru": "О компании",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_title": {
+      "ru": "Dialog для современных госорганизаций",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_sub_1": {
+      "ru": "Сделайте общение безопасным",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_sub_2": {
+      "ru": "Улучшите качество оказания государственных услуг",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_title_1": {
+      "ru": "Улучшение коммуникаций между подразделениями",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_text_1": {
+      "ru": "Работа госслужащих часто завязана на коммуникации между подразделениями. Dialog организует общение в одном приложении, делая совместную работу над документами простой и удобной.",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_title_2": {
+      "ru": "Поддержка принятия управленческих решений",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_text_2": {
+      "ru": "Единая коммуникационная среда дает доступ к оперативной информации, необходимой для принятия обоснованных и своевременных административных решений.",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_title_3": {
+      "ru": "Повышение производительности труда операционно-учетных подразделений",
+      "en": "Want to fulfill your talents?"
+    },
+    "safety_text_3": {
+      "ru": "Объединение разрозненных информационных систем в одном мессенджере, оптимизация и автоматизация процессов с помощью ботов и чат-ботов.",
+      "en": "Want to fulfill your talents?"
+    },
+
+    "about_sub_1": {
+      "ru": "ООО Диалог – российский разработчик коммуникационной платформы для совместной работы и организации единого рабочего пространства.",
+      "en": "Want to fulfill your talents?"
+    },
+    "about_sub_2": {
+      "ru": "Основана в 2016 году. Входит в состав группы компании ПАО Сбербанк с 2018 года.",
+      "en": "Want to fulfill your talents?"
     }
   },
 
@@ -803,8 +2099,16 @@
   },
 
   "button": {
+    "private": {
+      "ru": "Заявка для компании",
+      "en": "Submit a request"
+    },
     "leave": {
       "ru": "Оставить заявку",
+      "en": "Submit a request"
+    },
+    "government": {
+      "ru": "Заявка для гос. организаций",
       "en": "Submit a request"
     },
     "learn": {
@@ -843,6 +2147,10 @@
       "ru": "Открытые вакансии",
       "en": "Open vacancies"
     },
+    "vacancy_know": {
+      "ru": "Узнайте об открытых вакансиях",
+      "en": "Open vacancies"
+    },
     "vacancy_all": {
       "ru": "Смотреть все вакансии",
       "en": "View all vacant positions"
@@ -858,6 +2166,10 @@
     "home": {
       "ru": "Перейти на главную",
       "en": "Go to homepage"
+    },
+    "partner": {
+      "ru": "Найти партнера",
+      "en": "Find partner"
     }
   },
 
@@ -865,6 +2177,33 @@
     "learn": {
       "ru": "Узнать подробнее",
       "en": "Learn more"
+    }
+  },
+
+  "pop": {
+    "chanel": {
+      "ru": "<b>Канал</b> – это чат, где только владелец может отправлять сообщения. Анонсируйте события из жизни компании или транслируйте тематические сообщения.",
+      "en": "Submit a request"
+    },
+    "chat": {
+      "ru": "<b>Чат</b> – это чат, где только владелец может отправлять сообщения. Анонсируйте события из жизни компании или транслируйте тематические сообщения.",
+      "en": "Submit a request"
+    },
+    "chatbot": {
+      "ru": "<b>Чатбот</b> – это чат, где только владелец может отправлять сообщения. Анонсируйте события из жизни компании или транслируйте тематические сообщения.",
+      "en": "Submit a request"
+    },
+    "text_1": {
+      "ru": "Примеры <a class='link link--accent popover--chat-1' href='/'>чатов</a>, <a class='link link--accent popover--chanel-1' href='/'>каналов</a> и <a class='link link--accent popover--chatbot-1' href='/'>чатботов</a>",
+      "en": "Submit a request"
+    },
+    "text_2": {
+      "ru": "Примеры <a class='link link--accent popover--chat-2' href='/'>чатов</a>, <a class='link link--accent popover--chanel-2' href='/'>каналов</a> и <a class='link link--accent popover--chatbot-2' href='/'>чатботов</a>",
+      "en": "Submit a request"
+    },
+    "text_3": {
+      "ru": "Примеры <a class='link link--accent popover--chat-3' href='/'>чатов</a>, <a class='link link--accent popover--chanel-3' href='/'>каналов</a> и <a class='link link--accent popover--chatbot-3' href='/'>чатботов</a>",
+      "en": "Submit a request"
     }
   },
 
@@ -924,6 +2263,46 @@
     "library": {
       "ru": "Библиотека документов:",
       "en": "Document library:"
+    },
+    "hr": {
+      "ru": "HR",
+      "en": "Human Resources"
+    },
+    "sales": {
+      "ru": "Отдел продаж",
+      "en": "Sales"
+    },
+    "tech": {
+      "ru": "Техподдержка",
+      "en": "Tech support"
+    },
+    "gov": {
+      "ru": "Госорганизациям",
+      "en": "For state institutions"
+    },
+    "private": {
+      "ru": "Коммерческим организациям",
+      "en": "For private organizations"
+    },
+    "oem": {
+      "ru": "CPaaS",
+      "en": "CPaaS"
+    },
+    "remote": {
+      "ru": "Удаленная работа",
+      "en": "Remote work"
+    },
+    "about": {
+      "ru": "О нас",
+      "en": "About us"
+    },
+    "solutions": {
+      "ru": "Решения",
+      "en": "Solutions"
+    },
+    "departments": {
+      "ru": "Отделы",
+      "en": "Departments"
     }
   },
 
@@ -1032,6 +2411,38 @@
     "career_title": {
       "ru": "Карьера | Dialog",
       "en": "Career | Dialog"
+    },
+    "about_title": {
+      "ru": "О Нас | Dialog",
+      "en": "About | Dialog"
+    },
+    "private_title": {
+      "ru": "Коммерческим организациям | Dialog",
+      "en": "Private companies | Dialog"
+    },
+    "gov_title": {
+      "ru": "Госорганизациям | Dialog",
+      "en": "Government | Dialog"
+    },
+    "tech_title": {
+      "ru": "Dialog для Технической поддержки | Dialog",
+      "en": "Dialog for Tech support | Dialog"
+    },
+    "hr_title": {
+      "ru": "Dialog для HR | Dialog",
+      "en": "Dialog for HR | Dialog"
+    },
+    "sales_title": {
+      "ru": "Dialog для Отдела продаж | Dialog",
+      "en": "Dialog for the Commercial Department | Dialog"
+    },
+    "remote_title": {
+      "ru": "Удаленная работа | Dialog",
+      "en": "Remote work | Dialog"
+    },
+    "oem_title": {
+      "ru": "OEM | Dialog",
+      "en": "OEM | Dialog"
     },
     "download_title": {
       "ru": "Скачать | Dialog",

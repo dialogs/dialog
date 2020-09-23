@@ -1,0 +1,218 @@
+extends ../global/layout
+include ../mixins/svg
+include ../mixins/button
+include ../mixins/button-play
+include ../mixins/picture
+include ../mixins/form-offer
+
+block variables
+  -
+    const title = t.meta.gov_title;
+    const desc = t.meta.main_desc;
+    const routeClass = "js-route-main";
+    const pageName = "government";
+
+block content
+  -
+    const advantages = [
+    {
+    iconPath: "icon-lock",
+    iconWidth: 43,
+    iconHeight: 43,
+    title: t.gov.adv_title_1,
+    text: t.gov.adv_sub_1
+    },
+    {
+    iconPath: "sheet-dots",
+    iconWidth: 43,
+    iconHeight: 43,
+    title: t.gov.adv_title_2,
+    text: t.gov.adv_sub_2
+    },
+    {
+    iconPath: "display-gear",
+    iconWidth: 50,
+    iconHeight: 50,
+    title: t.gov.adv_title_3,
+    text: t.gov.adv_sub_3
+    }
+    ];
+    const licenseImages = {
+    title: 'Лицензии',
+    images: [
+    {
+    imgPath: '/img/patents/license-fsb',
+    imgType: 'jpg',
+    imgAlt: t.alt.license,
+    imgWidth: 80,
+    linkName: t.abb.doc_1
+    },
+    {
+    imgPath: '/img/patents/fstek-1',
+    imgType: 'jpg',
+    imgAlt: t.alt.cert,
+    imgWidth: 80,
+    linkName: t.abb.doc_2
+    },
+    {
+    imgPath: '/img/patents/fstek-2',
+    imgType: 'jpg',
+    imgAlt: t.alt.cert,
+    imgWidth: 80,
+    linkName: t.abb.doc_3
+    }
+    ]
+    };
+
+
+  section.hero.hero--main.hero--secondary.hero--next-no-bg
+    .hero__wrapper
+      .hero__left
+        h1.hero__title=t.gov.title
+        +button(
+          t.button.leave,
+          {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
+            styleType: 'accent',
+          })
+          +svg('arrow-right', 16, 15)
+      .hero__right
+        .hero__img
+          +picture('/img/pages/government/hero', 'jpg', t.alt.people, 682)
+
+  section.advantages.advantages--next-bg.box.box--white
+    .advantages__wrapper
+      h2.visually-hidden Преимущества приложения Dialog
+      ul.advantages__list
+        each item in advantages
+          li
+            div.pseudo--1
+            div.pseudo--2
+            div.pseudo--3
+            .icon.icon--round.icon--accent.icon--md(class=`${item.iconPath === 'display-gear' ? 'icon--fix' : ''}`)
+              +svg(item.iconPath, item.iconWidth, item.iconHeight)
+            h2= item.title
+            p= item.text
+
+  section.safety.safety--gov.box.box--lilac
+    .safety__wrapper
+      h2=t.gov.safety_title
+      h3=t.gov.safety_sub_1
+      ul.safety__list
+        li.safety__item.safety__item--safe.safety__item--gov
+          .wrap.wrap--ac.wrap--icon
+            .icon.icon--accent.icon--lg.icon--round
+              +svg('icon-safe', 52, 47)
+            h4=t.main.sec_title_1
+          p=t.main.sec_sub_1
+          ul.safety__listbox
+            li
+              p=t.main.sec_li_1_1
+            li
+              p=t.main.sec_li_1_2
+            li
+              p=t.main.sec_li_1_3
+            li
+              p=t.main.sec_li_1_4
+            li
+              p=t.main.sec_li_1_5
+            li
+              p=t.main.sec_li_1_6
+        li.safety__item.safety__item--cloud.safety__item--gov
+          .wrap.wrap--ac.wrap--icon
+            .icon.icon--accent.icon--lg.icon--round
+              +svg('icon-cloud', 48, 52)
+            h4=t.main.sec_title_2
+          p=t.main.sec_sub_2
+          ul.safety__listbox
+            li
+              p
+                b On-premise&nbsp;
+                | !{t.main.sec_li_2_1}
+
+            li
+              p
+                b Private cloud&nbsp;
+                | !{t.main.sec_li_2_2}
+                img(src=`/img/sber-cloud.svg`, width="108" height="22" alt=t.alt.sbercloud)
+
+      h3.mt=t.gov.safety_sub_2
+      ul.safety__list
+        li.safety__item.safety__item--big.safety__item--gov
+          .wrap.wrap--ac.wrap--icon
+            .icon.icon--accent.icon--lg.icon--round
+              +svg('white-gov', 61, 61)
+            ul.safety__listbox
+              li
+                h5=t.gov.safety_title_1
+                p.text=t.gov.safety_text_1
+              li
+                h5=t.gov.safety_title_2
+                p.text=t.gov.safety_text_2
+              li
+                h5=t.gov.safety_title_3
+                p.text=t.gov.safety_text_3
+  section.about-company
+    .wrapper.wrapper--main
+      .wrap.wrap--gap-md
+        .col.col--content
+          .about-company__content
+            h2.about-company__title=t.gov.about_title
+            p.about-company__description=t.gov.about_sub_1
+            p.about-company__description=t.gov.about_sub_2
+        .col.col--images
+          .about-company__images
+            +svg('dialog-logo', 250, 64)
+            +svg('sber-logo-big', 250, 64)
+
+  section.compliance.compliance--gov.box.box--gray
+    .wrapper.wrapper--main
+      h2.compliance__title=t.gov.license_title
+      h3.compliance__sub=t.security.norms_sub
+      ul.compliance__list
+        li.compliance__list-item.compliance__item--safe
+          ul.compliance__listbox
+            li
+              p=t.security.norms_li_1
+              p=t.security.norms_li_2
+              .wrap.wrap--img
+                each it in licenseImages.images
+                  .col
+                    .wrap.wrap--preview
+                      picture
+                        source(type="image/webp" srcset=`${it.imgPath}@2x.webp`)
+                        img(src=`${it.imgPath}@2x.${it.imgType}` alt=it.imgAlt loading="lazy")
+                    .wrap.wrap--link.wrap--ac
+                      a(class="link link--icon-accent link--with-icon link--patents" href=`${it.imgPath}@2x.${it.imgType}` download)=it.linkName
+                        +svg('arrow-bottom', 20, 16)
+        li.compliance__list-item.compliance__list-item--cloud
+          ul.compliance__listbox
+            li
+              p=t.security.norms_li_3
+            li
+              p=t.security.norms_li_4
+      a(class="compliance__link--more link link--icon-accent link--with-icon link--icon-accent" href=`/${lang === "ru" ? "ru" : "en"}/patents`)=t.link.learn
+        +svg('arrow-right', 16, 15)
+
+
+
+  section.quote.quote--link
+    .quote__wrapper
+      span.link.link--accent Пример проекта внедрения
+      h2=t.gov.quote_title
+      .quote__desc
+        .quote__desc-icon
+          +svg('icon-chat-sber', 76, 76)
+        p=t.main.quote_sub
+      .quote__content
+        .quote__content-text
+          p=t.main.quote_text
+        .quote__content-avatar
+          .quote__avatar-img
+            +svg('sber-logo-big', 250, 64)
+
+
+  section.box.box--lilac
+    +form-offer(false, 1, 'form-offer', pageName, "offer")

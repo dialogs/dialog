@@ -2,39 +2,9 @@
   overflow-x: hidden;
 }
 
-.box--purple {
+.box--accent {
   color: $color-contrast;
   background-color: $color-accent;
-}
-
-.box--hero {
-  background-image: url("../img/bg-hero-round-s.svg"),
-  url("../img/bg-hero-round-m.svg"),
-  url("../img/bg-hero-round-l.svg"),
-  url("../img/bg-hero-square.svg");
-  background-repeat: no-repeat;
-  background-position: top 17% left 36.8%,
-  top 52% left 0,
-  top 12% right 0,
-  bottom 18.6% right 52.8%;
-  background-size: 54px auto,
-  90px auto,
-  126px auto,
-  157px auto;
-
-  @include laptop {
-    background-image: url("../img/bg-hero-round-s.svg"),
-    url("../img/bg-hero-square.svg");
-    background-repeat: no-repeat;
-    background-position: top 15.5% left 35.7%,
-    bottom 17.6% right 53.5%;
-    background-size: 54px auto,
-    148px auto;
-  }
-
-  @include tablet {
-    background-image: none;
-  }
 }
 
 .box--white {
@@ -131,5 +101,35 @@
     bottom: 0;
     z-index: -1;
     background-size: 280px;
+  }
+}
+
+.box--squares {
+  @include pseudo-absolute;
+  position: relative;
+
+  &::before {
+    left: 10px;
+    bottom: 0%;
+    width: 230px;
+    height: 230px;
+    background-size: 100%;
+    background-image: url("../img/pattern-3-white.svg");
+  }
+
+  &::after {
+    right: 0%;
+    top: 10px;
+    width: 230px;
+    height: 230px;
+    background-size: 100%;
+    background-image: url("../img/pattern-3-white.svg");
+  }
+
+  &::before,
+  &::after {
+    @include tablet {
+      display: none;
+    }
   }
 }

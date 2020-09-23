@@ -94,7 +94,7 @@ a {
   }
 }
 
-.anchor{
+.anchor {
   position: relative;
-  top: -120px;
+  top: calc((var(--header-height) + 40px) * -1);
 }

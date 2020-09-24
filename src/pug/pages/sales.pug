@@ -40,8 +40,9 @@ block content
         a.link.link--accent(href='#com')=t.cta.sales_info_link_1
         a.link.link--accent(href='#auto')=t.cta.sales_info_link_2
 
-  section.department#com
+  section.department
     .wrapper.wrapper--main
+      .anchor#com
       .sub=t.sales.sub_1
       h2.title=t.sales.title_1
       .wrap.wrap--gap-md.wrap--row.wrap--sb
@@ -57,10 +58,12 @@ block content
           +picture(`/img/pages/sales/department1`, 'png', t.alt.people, 590)
 
 
-  section.department#auto
+  section.department
+
     .wrapper.wrapper--main
       .wrap.wrap--w
         .wrap.wrap--s
+          .anchor#auto
           .sub=t.sales.sub_2
         .wrap.wrap--s
           h2.title=t.sales.title_2

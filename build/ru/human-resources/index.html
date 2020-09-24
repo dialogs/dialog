@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="js-route-main" lang="ru">
   <script>
+    var fired = false;
+    window.addEventListener('scroll', () => {
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -13,7 +15,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6'); }, 1000);
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +53,7 @@
                               </svg></span></button>
                           <ul class="main-nav__middle-dropdown">
                             <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/human-resources">HR</a></li>
-                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/tech">Техподдержка</a></li>
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/techsupport">Техподдержка</a></li>
                             <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/sales">Отдел продаж</a></li>
                           </ul>
                         </div>
@@ -73,7 +75,7 @@
               </ul>
               <div class="main-nav__user-actions">
                 <button class="button button--accent button--small main-nav__action-btn js-open-modal" type="button"><span>Получить предложение</span>
-                </button><a class="main-nav__link main-nav__link--no-padding" href="/en/hr
+                </button><a class="main-nav__link main-nav__link--no-padding" href="/en/human-resources
             "><span class="header__lang">en</span><span>In English</span></a>
               </div>
             </nav>
@@ -110,8 +112,9 @@
             <div class="wrap wrap--s wrap--links"><a class="link link--accent" href="#hire">Найм</a><a class="link link--accent" href="#auto">Автоматизация</a><a class="link link--accent" href="#involve">Вовлечение</a></div>
           </div>
         </section>
-        <section class="department" id="hire">
+        <section class="department">
           <div class="wrapper wrapper--main">
+            <div class="anchor" id="hire"></div>
             <div class="sub">Найм</div>
             <h2 class="title">Оптимизируйте процесс найма</h2>
             <div class="wrap wrap--gap-sm wrap--row wrap--sb">
@@ -170,10 +173,11 @@
             </div>
           </div>
         </section>
-        <section class="department" id="auto">
+        <section class="department">
           <div class="wrapper wrapper--main">
             <div class="wrap wrap--w">
               <div class="wrap wrap--s">
+                <div class="anchor" id="auto"></div>
                 <div class="sub">Автоматизация</div>
               </div>
               <div class="wrap wrap--s">
@@ -236,8 +240,9 @@
             </div>
           </div>
         </section>
-        <section class="department" id="involve">
+        <section class="department">
           <div class="wrapper wrapper--main wrapper--pb">
+            <div class="anchor" id="involve"></div>
             <div class="sub">Вовлечение</div>
             <h2 class="title">Создавайте культуру</h2>
             <div class="wrap wrap--gap-sm wrap--row wrap--sb">
@@ -340,7 +345,7 @@
                         </div>
                       </div>
                       <div class="form__data">
-                        <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/hr" hidden="hidden"/>
+                        <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/human-resources" hidden="hidden"/>
                         <input type="text" id="lang-1" name="lang" value="ru" hidden="hidden"/>
                         <input type="text" id="type-1" name="type" value="department" hidden="hidden"/>
                       </div>
@@ -398,7 +403,7 @@
                       <label for="subscribe-1">Подписаться на новостную рассылку</label>
                     </div>
                     <div class="form__data">
-                      <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/hr" hidden="hidden"/>
+                      <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/human-resources" hidden="hidden"/>
                       <input type="text" id="isModal-1" name="isModal" value="page" hidden="hidden"/>
                       <input type="text" id="lang-1" name="lang" value="ru" hidden="hidden"/>
                       <input type="text" id="type-1" name="type" value="offer" hidden="hidden"/>
@@ -552,7 +557,7 @@
                         <label for="subscribe-2">Подписаться на новостную рассылку</label>
                       </div>
                       <div class="form__data">
-                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/ru/hr" hidden="hidden"/>
+                        <input type="text" id="domain-2" name="domain" value="https://dlg.im/ru/human-resources" hidden="hidden"/>
                         <input type="text" id="isModal-2" name="isModal" value="modal" hidden="hidden"/>
                         <input type="text" id="lang-2" name="lang" value="ru" hidden="hidden"/>
                         <input type="text" id="type-2" name="type" value="offer" hidden="hidden"/>

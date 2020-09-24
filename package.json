@@ -52,7 +52,8 @@
     "start": "gulp start",
     "files": "gulp files",
     "minify": "gulp minify",
-    "build": "gulp build"
+    "build": "gulp build",
+    "devserver": "gulp devserver"
   },
   "browserslist": [
     "last 2 versions",

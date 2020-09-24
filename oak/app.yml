@@ -1,14 +1,6 @@
 services:
     this:
       deploy:
-        readinessProbe:
-          failureThreshold: 1
-          initialDelaySeconds: 20
-          periodSeconds: 3
-          successThreshold: 1
-          httpGet:
-            port: http-api
-          timeoutSeconds: 1
         resources:
           minimal:
             requests:
@@ -24,12 +16,42 @@ services:
             limits:
               cpu: 4
               memory: 512Mi
+        containers:
+          - name: "nginx"
+            resources:
+              requests:
+                cpu: 100m
+                memory: 256Mi
+              limits:
+                cpu: 1
+                memory: 386Mi
+            livenessProbe:
+              failureThreshold: 2
+              initialDelaySeconds: 50
+              periodSeconds: 5
+              timeoutSeconds: 2
+              successThreshold: 1
+              httpGet:
+                port: 3001
+            readinessProbe:
+              failureThreshold: 1
+              initialDelaySeconds: 20
+              periodSeconds: 3
+              timeoutSeconds: 1
+              successThreshold: 1
+              httpGet:
+                port: 3001
+            command:
+              - nginx
       ingress:
-        http-api:
-          port: 3000
+        cached-http:
+          port: 3001
+          container: nginx
           controllers:
             router:
             - path: /
               host: ${project.endpoints.site}
               options:
                 ssl_verify_client: ${project.router.mutual-tls.enabled}
+        http-api:
+          port: 3000

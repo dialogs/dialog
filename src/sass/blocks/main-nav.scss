@@ -51,7 +51,7 @@
   }
 
   @include mobile-md {
-    padding: 10px 20px 14px;
+    padding: 14px 20px 14px;
   }
 
   &:hover,
@@ -96,7 +96,7 @@
     }
 
     @include mobile-md {
-      padding: 10px 40px 14px 31px;
+      padding: 14px 40px 14px 31px;
     }
   }
 
@@ -132,7 +132,7 @@
     justify-content: space-between;
 
     width: 100%;
-    padding: 10px 40px 14px;
+    padding: 14px 40px 14px;
 
     svg {
       display: none;
@@ -140,27 +140,27 @@
 
     &::after {
       content: "";
-
+      position: relative;
+      right: 6px;
       display: block;
-
       width: 25px;
       height: 25px;
       margin-left: 20px;
-
       border-radius: 50%;
-
       background-color: $color-contrast;
       background-image: url("../img/header/plus.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 16px 16px;
-
       box-shadow: 0 2px 4px rgba(47, 27, 73, 0.08), 0 1px 1px rgba(47, 41, 64, 0.1);
+      @include mobile-md {
+        right: 0;
+      }
     }
   }
 
   @include mobile-md {
-    padding: 10px 20px 14px;
+    padding: 14px 20px 14px;
   }
 
   &--expanded {

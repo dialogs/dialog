@@ -2194,16 +2194,16 @@
       "en": "Submit a request"
     },
     "text_1": {
-      "ru": "Примеры <a class='link link--accent popover--chat-1' href='/'>чатов</a>, <a class='link link--accent popover--chanel-1' href='/'>каналов</a> и <a class='link link--accent popover--chatbot-1' href='/'>чатботов</a>",
-      "en": "Submit a request"
+      "ru": "Примеры <span class='link link--accent popover--chat-1' >чатов</span>, <span class='link link--accent popover--chanel-1'>каналов</span> и <span class='link link--accent popover--chatbot-1' >чатботов</span>",
+      "en": "Примеры <span class='link link--accent popover--chat-1' >чатов</span>, <span class='link link--accent popover--chanel-1'>каналов</span> и <span class='link link--accent popover--chatbot-1' >чатботов</span>"
     },
     "text_2": {
-      "ru": "Примеры <a class='link link--accent popover--chat-2' href='/'>чатов</a>, <a class='link link--accent popover--chanel-2' href='/'>каналов</a> и <a class='link link--accent popover--chatbot-2' href='/'>чатботов</a>",
-      "en": "Submit a request"
+      "ru": "Примеры <span class='link link--accent popover--chat-2' >чатов</span>, <span class='link link--accent popover--chanel-2'>каналов</span> и <span class='link link--accent popover--chatbot-2' >чатботов</span>",
+      "en": "Примеры <span class='link link--accent popover--chat-2' >чатов</span>, <span class='link link--accent popover--chanel-2'>каналов</span> и <span class='link link--accent popover--chatbot-2' >чатботов</span>"
     },
     "text_3": {
-      "ru": "Примеры <a class='link link--accent popover--chat-3' href='/'>чатов</a>, <a class='link link--accent popover--chanel-3' href='/'>каналов</a> и <a class='link link--accent popover--chatbot-3' href='/'>чатботов</a>",
-      "en": "Submit a request"
+      "ru": "Примеры <span class='link link--accent popover--chat-3' >чатов</span>, <span class='link link--accent popover--chanel-3'>каналов</span> и <span class='link link--accent popover--chatbot-3' >чатботов</span>",
+      "en": "Примеры <span class='link link--accent popover--chat-3' >чатов</span>, <span class='link link--accent popover--chanel-3'>каналов</span> и <span class='link link--accent popover--chatbot-3' >чатботов</span>"
     }
   },
 

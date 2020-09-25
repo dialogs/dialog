@@ -5,7 +5,7 @@
     @include typography-h2;
     margin-top: 5px;
     letter-spacing: -0.005em;
-    max-width: 1000px;
+    max-width: 850px;
   }
 
   .wrapper {
@@ -57,9 +57,7 @@
   }
 
   .col {
-    @include tablet {
-      margin-top: 0 !important;
-    }
+    margin-top: 0 !important;
 
     &:last-child {
       @include tablet {

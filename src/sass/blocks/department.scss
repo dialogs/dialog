@@ -1,5 +1,6 @@
 .department {
   overflow: hidden;
+
   h2 {
     @include typography-h2;
     margin-top: 5px;
@@ -24,10 +25,7 @@
   }
 
   & + .department .wrapper {
-    padding-top: 45px;
-    @include mobile-md {
-      padding-top: 0;
-    }
+    padding-top: 25px;
   }
 
   .wrap {
@@ -59,7 +57,16 @@
   }
 
   .col {
-    margin-top: 0 !important;
+    @include tablet {
+      margin-top: 0 !important;
+    }
+
+    &:last-child {
+      @include tablet {
+        margin-top: 50px !important;
+      }
+
+    }
 
     &--bg {
       &:last-child {
@@ -85,6 +92,12 @@
           z-index: -1;
         }
       }
+
+      + .col {
+        @include tablet {
+          margin-top: 100px !important;
+        }
+      }
     }
 
     &--info {
@@ -106,11 +119,6 @@
         display: flex;
       }
 
-      &:last-child {
-        @include laptop {
-          margin-top: 50px !important;
-        }
-      }
     }
 
     &--text {
@@ -124,15 +132,7 @@
       @include tablet {
         @include col-12;
       }
-
-      &:last-child {
-        margin-right: auto !important;
-        @include laptop {
-          margin-top: 100px !important;
-        }
-      }
     }
-
   }
 
   .card--icon {

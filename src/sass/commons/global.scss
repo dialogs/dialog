@@ -44,24 +44,30 @@ a {
   }
 }
 
+[class*="popover"] {
+  cursor: pointer;
+}
+
 .tooltip {
-  font-size: 13px;
   padding: 20px;
   display: none;
-  max-width: 402.01px;
+  max-width: 290px;
   background: #ffffff;
-  box-shadow: 0px 2px 20px rgba(152, 136, 196, 0.16);
+  box-shadow: 0 2px 20px rgba(152, 136, 196, 0.16);
   border-radius: 4px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 150%;
 
-  &[data-show] {
-    display: block;
+  @include mobile-md {
+    max-width: 250px;
+    font-size: 13px;
+  }
+  @include mobile-xs {
+    max-width: 100%;
   }
 
-  .arrow,
-  .arrow::before {
+  .arrow, .arrow::before {
     position: absolute;
     width: 8px;
     height: 8px;
@@ -77,7 +83,16 @@ a {
     background: #fff;
   }
 
+  &[data-show] {
+    display: block;
+  }
+
   &[data-popper-placement^='top'] > .arrow {
+    bottom: -4px;
+  }
+
+  &[data-popper-placement^='top-start'] > .arrow {
+    left: -74px;
     bottom: -4px;
   }
 

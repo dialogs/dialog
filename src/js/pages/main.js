@@ -72,12 +72,12 @@ const main = () => {
     const popperChatbot3 = document.querySelector('.popover--chatbot-3');
     const tooltipChatbot3 = document.querySelector('.tooltip--chatbot-3');
 
-    const createInstance = function (popper, tooltip) {
+    const createInstance = function (popper, tooltip, placement) {
       let popperInstance = null;
 
       function create() {
         popperInstance = Popper.createPopper(popper, tooltip, {
-          placement: 'top',
+          placement: placement,
           modifiers: [
             {
               name: 'offset',
@@ -97,12 +97,12 @@ const main = () => {
       }
 
       function show() {
-        tooltip.setAttribute('data-show', '');
+        tooltip.toggleAttribute('data-show');
         create();
       }
 
       function hide() {
-        tooltip.removeAttribute('data-show');
+        tooltip.toggleAttribute('data-show');
         destroy();
       }
 
@@ -118,36 +118,34 @@ const main = () => {
       });
     };
     if (popperChat1) {
-      createInstance(popperChat1, tooltipChat1);
+      createInstance(popperChat1, tooltipChat1, 'top');
     }
     if (popperChanel1) {
-      createInstance(popperChanel1, tooltipChanel1);
+      createInstance(popperChanel1, tooltipChanel1, 'top');
     }
     if (popperChatbot1) {
-      createInstance(popperChatbot1, tooltipChatbot1);
+      createInstance(popperChatbot1, tooltipChatbot1, 'top');
     }
 
     if (popperChat2) {
-      createInstance(popperChat2, tooltipChat2);
+      createInstance(popperChat2, tooltipChat2, 'top');
     }
     if (popperChanel2) {
-      createInstance(popperChanel2, tooltipChanel2);
+      createInstance(popperChanel2, tooltipChanel2, 'top');
     }
     if (popperChatbot2) {
-      createInstance(popperChatbot2, tooltipChatbot2);
+      createInstance(popperChatbot2, tooltipChatbot2, 'top');
     }
 
     if (popperChat3) {
-      createInstance(popperChat3, tooltipChat3);
+      createInstance(popperChat3, tooltipChat3, 'top');
     }
     if (popperChanel3) {
-      createInstance(popperChanel3, tooltipChanel3);
+      createInstance(popperChanel3, tooltipChanel3, 'top');
     }
     if (popperChatbot3) {
-      createInstance(popperChatbot3, tooltipChatbot3);
+      createInstance(popperChatbot3, tooltipChatbot3, 'top');
     }
-
-
   }
   //endregion
 };

@@ -401,7 +401,23 @@
     },
     "request_title": {
       "ru": "Получить предложение",
-      "en": "Get a request"
+      "en": "Submit request"
+    },
+    "sales_title": {
+      "ru": "Свяжитесь с отделом продаж",
+      "en": "Submit request"
+    },
+    "sales_li_1": {
+      "ru": "Найдите подходящее коммуникационное решение",
+      "en": "Find the right solution"
+    },
+    "sales_li_2": {
+      "ru": "Рассчитайте стоимость",
+      "en": "Learn about pricing"
+    },
+    "sales_li_3": {
+      "ru": "Получите доступ к полезным ресурсам",
+      "en": "Access helpful recources"
     },
     "career_title": {
       "ru": "Отправить резюме",
@@ -474,23 +490,833 @@
   },
 
   "cta": {
-    "form_title": {
+    "form_blog_title": {
       "ru": "Подпишитесь на свежие статьи блога!",
       "en": "Subscribe for a fresh newsletter!"
     },
     "connect_title": {
       "ru": "Появились вопросы?",
-      "en": "Submit a request"
+      "en": "Got questions?"
+    },
+    "tech_form_info_title": {
+      "ru": "Полезная информация?",
+      "en": "Useful information?"
+    },
+    "tech_form_info_text": {
+      "ru": "Подписывайтесь на рассылку, чтобы узнать больше про использование Dialog \u2028для технической поддержки",
+      "en": "Subscribe to our newsletter to learn more about Techsupport using Dialog"
+    },
+    "tech_info_title": {
+      "ru": "Узнайте, как команды технической поддержки используют Dialog",
+      "en": "Learn how Techsupport teams use Dialog"
+    },
+    "tech_info_link_1": {
+      "ru": "Совместная работа",
+      "en": "Teamwork"
+    },
+    "tech_info_link_2": {
+      "ru": "Автоматизация",
+      "en": "Automation"
+    },
+    "tech_info_link_3": {
+      "ru": "Обучение",
+      "en": "Обучение"
+    },
+    "hr_form_info_title": {
+      "ru": "Полезная информация?",
+      "en": "Useful information?"
+    },
+    "hr_form_info_text": {
+      "ru": "Подписывайтесь на рассылку, чтобы узнать больше про использование Dialog в HR",
+      "en": "Subscribe to our newsletter to learn more about HR using Dialog"
+    },
+    "hr_info_title": {
+      "ru": "Узнайте, как HR отделы используют Dialog",
+      "en": "Learn how HR teams use Dialog!"
+    },
+    "hr_info_link_1": {
+      "ru": "Найм",
+      "en": "Hire"
+    },
+    "hr_info_link_2": {
+      "ru": "Автоматизация",
+      "en": "Automation"
+    },
+    "hr_info_link_3": {
+      "ru": "Вовлечение",
+      "en": "Обучение"
+    },
+    "sales_info_title": {
+      "ru": "Узнайте, как Коммерческие отделы используют Dialog",
+      "en": "Learn how Sales teams use Dialog"
+    },
+    "sales_info_link_1": {
+      "ru": "Коммуникация",
+      "en": "Communication"
+    },
+    "sales_info_link_2": {
+      "ru": "Автоматизация",
+      "en": "Automation"
     },
     "vacancy_title": {
       "ru": "В нашу быстрорастущую команду требуется много талантов",
-      "en": "We are hiring"
+      "en": "Our fast-growing team needs more talents"
     },
     "vacancy_sub": {
-      "ru": "Узнайте больше об открытых вакансиях и работе в компании",
+      "ru": "Мы приглашаем в команду крутых специалистов, которые хотят вместе с нами работать над созданием лучшего корпоративного мессенджера. Посмотреть список актуальных вакансий можно по ссылке ниже. Если не нашлась вакансия твоего профиля — не беда, заполняй форму обратной связи, прикрепляй резюме и мы обязательно рассмотрим его.",
+      "en": "We invite those who want to work with us to create the best corporate messenger. If there is no vacancy in your profile – fill out the feedback form, attach your resume and we will definitely consider it."
+    },
+    "about_title": {
+      "ru": "Хотите работать в современной и перспективной IT-компании?",
+      "en": "Learn more about open vacancies and work in the company."
+    },
+    "about_slogan": {
+      "ru": "Карьера в Dialog \uD83D\uDE80",
       "en": "Learn more about open vacancies and work in the company."
     }
+  },
 
+  "tech": {
+    "title": {
+      "ru": "Техническая поддержка работает эффективнее в Dialog",
+      "en": "Technical support works more efficient in Dialog"
+    },
+    "sub_1": {
+      "ru": "Совместная работа",
+      "en": "Teamwork"
+    },
+    "title_1": {
+      "ru": "Отслеживайте и разрешайте инциденты быстрее",
+      "en": "Track and resolve incidents faster"
+    },
+    "title_card_1_1": {
+      "ru": "Техподдержка-офис",
+      "en": "Techsupport"
+    },
+    "count_card_1_1": {
+      "ru": "26 участников",
+      "en": "26 members"
+    },
+    "text_1_1": {
+      "ru": "Часто в поддержке работают разные группы, которые выполняют схожие функции: системное администрирование, поддержка рабочих мест или пользователей. Первый шаг по использованию Dialog — рабочий чат со своим подразделением. В нем вы можете обсуждать задачи и быстро решать проблемы. Группы заменят массивные переписки по email и долгие встречи.",
+      "en": "Often, in support works different groups that do similar tasks: system / workplace administration, user support. The first step in using Dialog – is to create chat with your department, so you can discuss tasks and solve problems quickly. Chats will replace massive emails and long meetings."
+    },
+    "title_card_1_2": {
+      "ru": "Обновления",
+      "en": "Updates"
+    },
+    "count_card_1_2": {
+      "ru": "348 участников",
+      "en": "348 members"
+    },
+    "text_1_2": {
+      "ru": "В канале для обновлений сотрудники смогут быстро узнать о новых сервисах, изменениях и плановых работах вашей IT-службы. Сотрудники будут понимать, что происходит с инфраструктурой и приложениями, например, во время плановых технических работ, и смогут планировать свою работу.",
+      "en": "In the Updates channel, employees can quickly find out about new services, changes and planned work of your IT department. Employees need to know what is happening to the infrastructure and applications during planned maintenance to plan their work."
+    },
+    "sub_2": {
+      "ru": "Автоматизация",
+      "en": "Automation"
+    },
+    "title_2": {
+      "ru": "Упростите процессы",
+      "en": "Streamline workflow"
+    },
+    "links_2": {
+      "ru": "Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a>",
+      "en": "Examples of <a class='link link--accent' href='/'>chats</a>, <a class='link link--accent' href='/'>channels</a> и <a class='link link--accent' href='/'>chatbots</a>"
+    },
+    "title_card_2_1": {
+      "ru": "Поддержка–запросы",
+      "en": "Support-inquireies"
+    },
+    "count_card_2_1": {
+      "ru": "14 участников",
+      "en": "14 members"
+    },
+    "text_2_1": {
+      "ru": "Создайте канал и добавьте операторов первой линии поддержки. Настройте уведомления в этот канал из своей ITSM-системы о поступающих обращениях, например, с помощью бота. Даже если у пользователя нет доступа к корпоративному окружению, например, в командировке, он всегда сможет связаться с вашей службой поддержки и решить свою проблему.",
+      "en": "Create a channel and add service operators. Set up notifications to this channel from your ITSM system about incoming requests using a bot. Even if the user does not have access to the corporate environment, for example, on a business trip, he can always contact your support service."
+    },
+    "title_card_2_2": {
+      "ru": "IT Мониторинг",
+      "en": "IT Monitoring"
+    },
+    "count_card_2_2": {
+      "ru": "115 участников",
+      "en": "115 members"
+    },
+    "text_2_2": {
+      "ru": "Настройте оповещения от систем мониторинга в канале Dialog: вы не пропустите уведомления, снизите число инцидентов и повысите доступность ваших сервисов. Например, если резервная копия не закончена в срок или завершилась ошибкой, вы оперативно узнаете об этом и сможете предотвратить потерю данных.",
+      "en": "Set up alerts from monitoring systems in Dialog channel. You won't miss notifications, reduce the number of incidents and increase the availability of your services. For example, if a backup was not completed on time or ended with error, you will quickly find out and will be able to prevent data loss."
+    },
+    "sub_3": {
+      "ru": "Обучение",
+      "en": "Training"
+    },
+    "title_3": {
+      "ru": "Помогите пользователям находить ответы",
+      "en": "Help users find answers"
+    },
+    "links_3": {
+      "ru": "Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a>",
+      "en": "Examples of <a class='link link--accent' href='/'>chats</a>, <a class='link link--accent' href='/'>channels</a> и <a class='link link--accent' href='/'>chatbots</a>"
+    },
+    "title_card_3_1": {
+      "ru": "Support Bot",
+      "en": "Support Bot"
+    },
+    "count_card_3_1": {
+      "ru": "Бот",
+      "en": "Bot"
+    },
+    "text_3_1": {
+      "ru": "Обычно, повторяющиеся вопросы и проблемы добавляют в базу знаний. Если у вас такая есть, создайте бота с Dialog Bot SDK, который сможет отвечать на частые вопросы из базы знаний. Ваши пользователи смогут найти ответ самостоятельно вместо заведения тикетов.",
+      "en": "Usually, duplicate questions are added to the knowledge base. If you have one, create a bot with the Bot SDK that can answer frequently asked questions from the knowledge base. Your users will be able to find the answer on their own instead of going throug tickets."
+    },
+    "title_card_3_2": {
+      "ru": "Инструкции",
+      "en": "Instructions"
+    },
+    "count_card_3_2": {
+      "ru": "115 участников",
+      "en": "115 members"
+    },
+    "text_3_2": {
+      "ru": "Делитесь обучающими материалами по различным процессам в группе.",
+      "en": "Share learning materials on various processes in a dedicated group."
+    }
+  },
+
+  "oem": {
+    "title": {
+      "ru": "Dialog OEM",
+      "en": "Dialog OEM"
+    },
+    "text": {
+      "ru": "Платформа для разработки коммуникационных решений",
+      "en": "Build your own communication solution"
+    },
+    "function_title": {
+      "ru": "Функциональность мессенджера",
+      "en": "Messenger"
+    },
+    "function_sub": {
+      "ru": "Готовые встраиваемые компоненты для создания собственных продуктов.",
+      "en": "Ready-made embedded components for creating your own products."
+    },
+    "function_title_1": {
+      "ru": "Сообщения",
+      "en": "Messaging"
+    },
+    "function_text_1": {
+      "ru": "Настройте обмен сообщениями под ваши потребности",
+      "en": "Customize messaging to suit your needs"
+    },
+    "function_title_2": {
+      "ru": "Видеозвонки",
+      "en": "Video calls"
+    },
+    "function_text_2": {
+      "ru": "HD видеосвязь с SIP / WebRTC",
+      "en": "HD video communication with SIP / WebRTC"
+    },
+    "function_title_3": {
+      "ru": "Аудиозвонки",
+      "en": "Audio calls"
+    },
+    "function_text_3": {
+      "ru": "Создавайте функции с высококачественной голосовой связью ",
+      "en": "Create features with high quality voice communication"
+    },
+    "function_title_4": {
+      "ru": "SIP Транкинг",
+      "en": "SIP Trunking"
+    },
+    "function_text_4": {
+      "ru": "Совершайте и принимайте звонки с помощью существующей инфраструктуры VoIP",
+      "en": "Make and receive calls using your existing VoIP infrastructure"
+    },
+    "function_title_5": {
+      "ru": "Мультиплатформенность",
+      "en": "Multiplatform"
+    },
+    "function_text_5": {
+      "ru": "Работает с IP-телефонией, мобильными устройствами и веб- и десктопными приложениями",
+      "en": "Works with IP telephony, mobile devices, web and desktop applications"
+    },
+    "function_title_6": {
+      "ru": "Аудио- /видеоконференции",
+      "en": "Audio / video conferencing"
+    },
+    "function_text_6": {
+      "ru": "Подключайте пользователей к многосторонним звонкам",
+      "en": "Make and receive calls using your existing VoIP infrastructure"
+    },
+    "function_title_7": {
+      "ru": "Демонстрация экрана",
+      "en": "Screensharing"
+    },
+    "function_text_7": {
+      "ru": "Транслируйте рабочий стол",
+      "en": "Stream your screen"
+    },
+    "integration_title": {
+      "ru": "Интеграционные возможности",
+      "en": "Integration capabilities"
+    },
+    "integration_title_1": {
+      "ru": "Доступность для сторонних сервисов ",
+      "en": "Integrations with 3rd parties"
+    },
+    "integration_text_1": {
+      "ru": "Чтение/запись данных для сторонних сервисов в Kafka. Внутренние сервисы доступны по API (gRPC/GraphQL).",
+      "en": "Reading / writing data in Kafka. Internal services are available via API (gRPC / GraphQL)."
+    },
+    "integration_title_2": {
+      "ru": "Внешняя/отчуждаемая аутентификация",
+      "en": "External authentication"
+    },
+    "integration_text_2": {
+      "ru": "Для аутентификации пользователей в Dialog вы можете подключить LDAP, использовать внешнего SSO-провайдера, RBAC систему или свой коннектор.",
+      "en": "Connect LDAP, use an external SSO provider, RBAC system or your own connector."
+    },
+    "integration_title_3": {
+      "ru": "SSO-провайдер",
+      "en": "SSO provider"
+    },
+    "integration_text_3": {
+      "ru": "Dialog может выступать как SSO провайдер для внешних сервисов, ботов и мини-приложений.",
+      "en": "Dialog can act as an SSO provider for external services, bots and mini apps."
+    },
+    "integration_link": {
+      "ru": "Dialog API",
+      "en": "Dialog API"
+    },
+    "sdk_title": {
+      "ru": "Клиентский SDK",
+      "en": "Client SDK"
+    },
+    "sdk_sub": {
+      "ru": "Помимо работы с данными Dialog OEM позволяет кастомизировать приложение для мобильных, веб и десктоп платформ",
+      "en": "Dialog OEM allows you to customize the application for mobile, web and desktop platforms."
+    },
+    "sdk_li_1": {
+      "ru": "Кастомизация набора экранов",
+      "en": "Screen set customization"
+    },
+    "sdk_li_2": {
+      "ru": "Переключатель функций",
+      "en": "Feature flags"
+    },
+    "sdk_li_3": {
+      "ru": "Локализации",
+      "en": "Localizations"
+    },
+    "sdk_li_4": {
+      "ru": "Звуки",
+      "en": "Sounds"
+    },
+    "sdk_li_5": {
+      "ru": "Цвета",
+      "en": "Colors"
+    },
+    "sdk_li_6": {
+      "ru": "Иконки",
+      "en": "Icons"
+    },
+    "sdk_li_7": {
+      "ru": "Шрифты",
+      "en": "Fonts"
+    },
+    "partner_title": {
+      "ru": "Найдите партнера",
+      "en": "Find partner"
+    },
+    "partner_sub": {
+      "ru": "Наши технологические партнеры интегрируют или реализуют для вас уникальное коммуникационное решение на базе Dialog OEM",
+      "en": "Our technology partners can create a unique communication solution"
+    },
+    "why_title": {
+      "ru": "Причины выбрать Dialog OEM",
+      "en": "Reasons to Choose DIalog OEM"
+    },
+    "why_title_1": {
+      "ru": "Экспертная поддержка",
+      "en": "Expert support"
+    },
+    "why_text_1": {
+      "ru": "Команда поддержки оперативно предоставит всю необходимую документацию и экспертные рекомендации.",
+      "en": "Support team will provide all the necessary documentation and expert advice."
+    },
+    "why_title_2": {
+      "ru": "Модульность",
+      "en": "Building blocks"
+    },
+    "why_text_2": {
+      "ru": "Готовые компоненты позволяют собрать продукт под широкий спектр задач. поддержки оперативно предоставит всю необходимую документацию и экспертные рекомендации.",
+      "en": "Ready-made components allow you to assemble a product for a wide range of tasks."
+    },
+    "why_title_3": {
+      "ru": "Подтвержденное качество",
+      "en": "Proven quality"
+    },
+    "why_text_3": {
+      "ru": "Dialog с 2016 года на рынке коммуникационных решений. Готовая платформа позволяет сократить годы разработки и быстро вывести продукт в промышленную эксплуатацию.",
+      "en": "Dialog has been on the unified communications market since 2016. The ready-made platform allows you to shorten the development and quickly bring the product market."
+    },
+    "why_title_4": {
+      "ru": "Высокая доступность",
+      "en": "High availability"
+    },
+    "why_text_4": {
+      "ru": "Dialog OEM обеспечивает бесперебойную работу приложений при высоких нагрузках.",
+      "en": "Dialog OEM works smoothly under heavy loads."
+    }
+  },
+
+  "remote": {
+    "title": {
+      "ru": "Dialog для удаленной работы",
+      "en": "Dialog for remote work"
+    },
+    "sub": {
+      "ru": "Единая коммуникационная среда для дистанционной работы",
+      "en": "Unified communication environment for remote work"
+    },
+    "work_title": {
+      "ru": "Работайте дистанционно также эффективно как из офиса",
+      "en": "Work remotely as efficiently as from the office"
+    },
+    "work_sub": {
+      "ru": "Укладывайтесь в сроки, согласовывайте документы, принимайте решения. Когда всё общение в одном приложении вы можете работать откуда угодно.",
+      "en": "Meet deadlines, review documents, solve problems. When all communications are in one place, you can work from anywhere."
+    },
+    "work_title_1": {
+      "ru": "Создайте виртуальный офис в Dialog",
+      "en": "Create a virtual office in Dialog"
+    },
+    "work_text_1_1": {
+      "ru": "Используйте группы и каналы для всего: от обсуждения небольшого проекта до коммуникации с целым департаментом. Не нужно ходить по этажам, чтобы найти нужного сотрудника – просто напишите в чат: ",
+      "en": "Use groups and channels for everything: from discussing a small project to talking with an entire department. You don't need to walk by the floors to find the right employee - just write to the dedicated chat:"
+    },
+    "work_text_1_2": {
+      "ru": "И вы получите ответ быстрее, чем по email.",
+      "en": "and you will receive an answer faster than by email."
+    },
+    "work_button_1": {
+      "ru": "Бухгалтерия",
+      "en": "Accounting"
+    },
+    "work_button_2": {
+      "ru": "HR отдел",
+      "en": "HR dept"
+    },
+    "work_button_3": {
+      "ru": "Корпоративный сайт",
+      "en": "Corporate website"
+    },
+    "work_button_4": {
+      "ru": "Проекты внедрения",
+      "en": "Project managers"
+    },
+    "work_button_5": {
+      "ru": "Маркетинг",
+      "en": "Marketing"
+    },
+    "work_button_6": {
+      "ru": "Коммерческий департамент",
+      "en": "Commercial department"
+    },
+    "work_button_7": {
+      "ru": "Офис СПБ",
+      "en": "Office Moscow"
+    },
+    "work_button_8": {
+      "ru": "ВКС Еженедельная планерка",
+      "en": "Daily standup"
+    },
+    "work_button_9": {
+      "ru": "Оффтоп",
+      "en": "Offtop"
+    },
+    "work_title_2": {
+      "ru": "Собирайте конференции, где бы вы не находились",
+      "en": "Participate in conferences wherever you are"
+    },
+    "work_text_2": {
+      "ru": "Для быстрого созвона используйте встроенные аудио- /видеозвонки. Если в вашей компании уже есть сервисы для телекоммуникаций, Dialog можно интегрировать с АКС/ВКС, АТС.",
+      "en": "For quick calls, use the built-in audio / video calls. If your company already has telecommunications services, Dialog can be integrated with Audio / Video conferencing software systems or PBX."
+    },
+    "work_title_3": {
+      "ru": "Поддерживайте контакт с коллегами",
+      "en": "Stay in touch with colleagues"
+    },
+    "work_text_3": {
+      "ru": "Дистанционная работа не означает, что вы должны жертвовать человеческим взаимодействием. Dialog взял лучшее из уже привычных приложений для общения и перенес в мир рабочей коммуникации: Стикеры, Упоминания, реакции и многое другое.",
+      "en": "Remote work doesn't mean you have to sacrifice human interaction. Dialog took the best from familiar communication apps and brought it to the work environment: Stickers, Mentions, Reactions and much more."
+    },
+    "work_title_4": {
+      "ru": "Используйте привычные инструменты",
+      "en": "Use familiar tools"
+    },
+    "work_text_4": {
+      "ru": "Dialog предоставляет Bot SDK и API для создания интеграций со сторонними приложениями. Когда ваши инструменты доступны из одного окна, вы тратите меньше времени на переключение между приложениями, и больше времени сосредоточены на своей работе.",
+      "en": "Dialog provides Bot SDK and API for creating integrations with third party applications. With your tools available from a single window, you spend less time switching between apps and more time focused on your work."
+    },
+    "safety_title": {
+      "ru": "Выберите защищенное и надежное решение",
+      "en": "Choose a secure and reliable solution"
+    },
+    "safety_sub": {
+      "ru": "Делитесь конфиденциальной информацией и обсуждайте идеи \u2028в защищенном контуре",
+      "en": "Share confidential information and discuss ideas in a secure environment"
+    },
+    "safety_title_1": {
+      "ru": "Высокая доступность при любых нагрузках",
+      "en": "High availability"
+    },
+    "safety_text_1": {
+      "ru": "Обстоятельства могут заставить перевести штат на дистанционную работу. В таком случае Dialog масштабируется по мере роста нагрузки и обеспечивает бесперебойную работу даже при сотнях тысяч активных пользователей.",
+      "en": "Circumstances may force shifting to remote work. In this case, Dialog scales as the load grows and ensures smooth work even with hundreds of thousands of active users."
+    },
+    "safety_title_2": {
+      "ru": "Безопасный переход от офисной работы к дистанционной",
+      "en": "Secure remote work"
+    },
+    "safety_text_2": {
+      "ru": "Dialog разрабатывается в соответствии с высокими стандартами кибербезопасности. Даже если в вашей организации нет частной сети (VPN), Dialog шифрует соединение. Вы также можете интегрировать Dialog со своей инфраструктурой информационной безопасности.",
+      "en": "Dialog is designed to meet high cybersecurity standards. Even if your organization does not have a private network (VPN), Dialog encrypts the connection. You can also integrate Dialog with your cybersec infrastructure."
+    },
+    "safety_title_3": {
+      "ru": "Данные под вашим контролем",
+      "en": "Data under your control"
+    },
+    "safety_text_3": {
+      "ru": "Разместите  Dialog на серверах вашей компании или на инфраструктуре частного облачного провайдера.",
+      "en": "Host Dialog on your company's servers or in private cloud from any provider."
+    },
+    "safety_link": {
+      "ru": "Узнайте больше про безопасность в Dialog",
+      "en": "Learn more about security in Dialog"
+    }
+  },
+
+  "sales": {
+    "title": {
+      "ru": "Dialog для Отдела продаж",
+      "en": "Dialog for Sales"
+    },
+    "sub_1": {
+      "ru": "Коммуникация",
+      "en": "Communication"
+    },
+    "title_1": {
+      "ru": "Эффективная совместная работа над проектами",
+      "en": "Efficient collaboration on projects"
+    },
+    "links_1": {
+      "ru": "Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a>",
+      "en": "Examples of <a class='link link--accent' href='/'>chats</a>, <a class='link link--accent' href='/'>channels</a> и <a class='link link--accent' href='/'>chatbots</a>"
+    },
+    "title_card_1_1": {
+      "ru": "Коммерческий департамент",
+      "en": "Commercial department"
+    },
+    "count_card_1_1": {
+      "ru": "26 участников",
+      "en": "26 members"
+    },
+    "text_1_1": {
+      "ru": "Делайте объявления, координируйте действия и обсуждайте ежедневные задачи в чате для всего отдела.",
+      "en": "Make announcements, coordinate and discuss daily tasks in the chat for the entire department."
+    },
+    "title_card_1_2": {
+      "ru": "Пилот в Stark Industries",
+      "en": "Pilot: Stark Industries"
+    },
+    "count_card_1_2": {
+      "ru": "12 участников",
+      "en": "12 members"
+    },
+    "text_1_2": {
+      "ru": "Чат, где вы можете поделиться информацией о заказчике и задать вопрос.",
+      "en": "Chat where you can share information about the customer and ask related questions."
+    },
+    "title_card_1_3": {
+      "ru": "Продажи через партнеров",
+      "en": "Sales partners"
+    },
+    "count_card_1_3": {
+      "ru": "12 участников",
+      "en": "12 members"
+    },
+    "text_1_3": {
+      "ru": "Создайте чат по взаимодействию с конкретным партнером. Добавьте сотрудников из других отделов и организуйте совместную работу.",
+      "en": "Create a chat to interact with a specific partner and organize collaboration."
+    },
+    "title_card_1_4": {
+      "ru": "Цели Q3",
+      "en": "Q3 goals"
+    },
+    "count_card_1_4": {
+      "ru": "143 участника",
+      "en": "143 members"
+    },
+    "text_1_4": {
+      "ru": "Делитесь целями по продажам и отслеживайте прогресс, чтобы все были мотивированы и согласованы.",
+      "en": "Share sales goals and track progress to keep everyone motivated and aligned."
+    },
+    "sub_2": {
+      "ru": "Автоматизация",
+      "en": "Automation"
+    },
+    "title_2": {
+      "ru": "Автоматизируйте рутину — используйте привычные инструменты в Dialog",
+      "en": "Use familiar tools in Dialog and automate routine"
+    },
+    "links_2": {
+      "ru": "Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a>",
+      "en": "Examples of <a class='link link--accent' href='/'>chats</a>, <a class='link link--accent' href='/'>channels</a> и <a class='link link--accent' href='/'>chatbots</a>"
+    },
+    "title_card_2_1": {
+      "ru": "CRM Bot",
+      "en": "CRM Bot"
+    },
+    "count_card_2_1": {
+      "ru": "Бот",
+      "en": "Bot"
+    },
+    "text_2_1": {
+      "ru": "Тратьте меньше времени на рутинные задачи. Чтобы не переключаться между инструментами сделайте бота, который по командам будет показывать данные о сделках, компаниях или контактах из вашей CRM.",
+      "en": "Spend less time on routine tasks – do not switch between your tools. Create a bot that will show data on deals, companies or contacts from your CRM."
+    },
+    "title_card_2_2": {
+      "ru": "Лиды с сайта",
+      "en": "Leads"
+    },
+    "count_card_2_2": {
+      "ru": "12 участников",
+      "en": "12 members"
+    },
+    "text_2_2": {
+      "ru": "Получайте уведомления о новых лидах в отдельный чат. Делитесь важной информацией по новым контактам и стройте эффективную коммуникацию.",
+      "en": "Receive notifications about new leads in dedicated chat. Share important information on new contacts and make effective communication."
+    },
+    "title_card_2_3": {
+      "ru": "Обратная связь клиентов",
+      "en": "Feedback from customers"
+    },
+    "count_card_2_3": {
+      "ru": "115 участников",
+      "en": "115 members"
+    },
+    "text_2_3": {
+      "ru": "Интегрируйте ITSM систему с Dialog и автоматически получайте обратную связь от клиентов в отдельный чат.",
+      "en": "Integrate ITSM system with Dialog and automatically receive customer feedback."
+    },
+    "sub_3": {
+      "ru": "Обучение",
+      "en": "Learning"
+    },
+    "title_3": {
+      "ru": "Помогите пользователям находить ответы",
+      "en": "Help users find answers"
+    },
+    "links_3": {
+      "ru": "Примеры <a class='link link--accent' href='/'>чатов</a>, <a class='link link--accent' href='/'>каналов</a> и <a class='link link--accent' href='/'>чатботов</a>",
+      "en": "Examples of <a class='link link--accent' href='/'>chats</a>, <a class='link link--accent' href='/'>channels</a> и <a class='link link--accent' href='/'>chatbots</a>"
+    },
+    "title_card_3_1": {
+      "ru": "Support Bot",
+      "en": "Support Bot"
+    },
+    "count_card_3_1": {
+      "ru": "Бот",
+      "en": "Bot"
+    },
+    "text_3_1": {
+      "ru": "Обычно, повторяющиеся вопросы и проблемы добавляют в базу знаний. Если у вас такая есть, создайте бота с Dialog Bot SDK, который сможет отвечать на частые вопросы из базы знаний. Ваши пользователи смогут найти ответ самостоятельно вместо заведения тикетов.",
+      "en": "Usually, frequent questions are added to the knowledge base. If you have one, create a Bot with the Bot SDK that can answer FAQ from the knowledge base. Your users will be able to find the answer on their own instead of going throug tickets."
+    },
+    "title_card_3_2": {
+      "ru": "Инструкции",
+      "en": "Instructions"
+    },
+    "count_card_3_2": {
+      "ru": "115 участников",
+      "en": "115 members"
+    },
+    "text_3_2": {
+      "ru": "Делитесь обучающими материалами по различным процессам в группе.",
+      "en": "Share learning materials on various processes in a dedicated group."
+    }
+  },
+
+  "hr": {
+    "title": {
+      "ru": "Dialog для HR",
+      "en": "Dialog for HR"
+    },
+    "sub": {
+      "ru": "Нанимайте, вовлекайте и стройте корпоративную культуру в Dialog.",
+      "en": "Hire, engage and build a corporate culture with Dialog"
+    },
+    "sub_1": {
+      "ru": "Найм",
+      "en": "Hire"
+    },
+    "title_1": {
+      "ru": "Оптимизируйте процесс найма",
+      "en": "Streamline the hiring workflow"
+    },
+    "title_card_1_1": {
+      "ru": "Подбор Android разработчиков",
+      "en": "Hiring Android Engineers"
+    },
+    "count_card_1_1": {
+      "ru": "21 участников",
+      "en": "21 members"
+    },
+    "text_1_1": {
+      "ru": "Готовьтесь к собеседованию, оценивайте кандидатов и обсуждайте конфиденциальную информацию в закрытых группах.",
+      "en": "Prepare for an interview, evaluate candidates and discuss confidential information in closed groups."
+    },
+    "title_card_1_2": {
+      "ru": "Подбор и развитие персонала",
+      "en": "Employee development"
+    },
+    "count_card_1_2": {
+      "ru": "15 участников",
+      "en": "15 members"
+    },
+    "text_1_2": {
+      "ru": "Закрытый чат для рекрутеров, где происходит обсуждение найма, адаптации и обучения персонала.",
+      "en": "Private chat for recruiters for discussion of onboarding and training staff."
+    },
+    "title_card_1_3": {
+      "ru": "Вознаграждение и мотивация",
+      "en": "Compensation and motivation"
+    },
+    "count_card_1_3": {
+      "ru": "16 участников",
+      "en": "16 members"
+    },
+    "text_1_3": {
+      "ru": "Закрытый чат для нанимающих менеджеров для обсуждения компенсации будущим и текущим сотрудникам компании.",
+      "en": "Private chat for hiring managers to discuss compensation for future and current employees of the company."
+    },
+    "sub_2": {
+      "ru": "Автоматизация",
+      "en": "Automation"
+    },
+    "title_2": {
+      "ru": "Сократите время на рутину",
+      "en": "Reduce routine"
+    },
+    "title_card_2_1": {
+      "ru": "Кадровые документы",
+      "en": "HR Documents"
+    },
+    "count_card_2_1": {
+      "ru": "Бот",
+      "en": "Bot"
+    },
+    "text_2_1": {
+      "ru": "Упростите работу с документами. В Dialog вы можете создать бота, который опросит сотрудника по ключевым вопросам и автоматически сформирует заявление, справку или другой документ.",
+      "en": "Simplify your work with documents. In Dialog, you can create a bot that will interview an employee on key questions and automatically generate a document."
+    },
+    "title_card_2_2": {
+      "ru": "Онбординг Бот",
+      "en": "Onboarding bot"
+    },
+    "count_card_2_2": {
+      "ru": "Бот",
+      "en": "Bot"
+    },
+    "text_2_2": {
+      "ru": "Во время адаптации новые сотрудники нуждаются в организационной информации. Создайте бота, который будет отвечать на частые вопросы коллег.",
+      "en": "New employees need organizational information during onboarding. Create a bot that will answer frequently asked questions from colleagues."
+    },
+    "title_card_2_3": {
+      "ru": "Опрос: Испытательный Срок",
+      "en": "Poll: Trial Period"
+    },
+    "count_card_2_3": {
+      "ru": "Бот",
+      "en": "Bot"
+    },
+    "text_2_3": {
+      "ru": "Автоматизируйте сбор обратной связи. Сделайте бота, который сможет автоматически проводить опросы пользователей по вашим сценариям. ",
+      "en": "Automate feedback collection. Make a bot that can automatically conduct user surveys according to your scenarios."
+    },
+    "sub_3": {
+      "ru": "Вовлечение",
+      "en": "Engagement"
+    },
+    "title_3": {
+      "ru": "Создавайте культуру",
+      "en": "Create culture"
+    },
+    "title_card_3_1": {
+      "ru": "Новости компании",
+      "en": "News"
+    },
+    "count_card_3_1": {
+      "ru": "434 участника",
+      "en": "434 members"
+    },
+    "text_3_1": {
+      "ru": "Создайте официальный канал компании, чтобы рассказывать сотрудникам про стратегию, ценности и просто держать в курсе событий.",
+      "en": "Create an official company channel to tell employees about strategy, values, and just keep up to date."
+    },
+    "title_card_3_2": {
+      "ru": "Офис СПб",
+      "en": "Office Moscow"
+    },
+    "count_card_3_2": {
+      "ru": "78 участников",
+      "en": "78 members"
+    },
+    "text_3_2": {
+      "ru": "Если в вашей компании есть территориально разрозненные подразделения, создайте чат под каждый офис, чтобы сотрудники могли обсуждать локальные события.",
+      "en": "If your company has locally distributed divisions, create a chat for each office so that employees can discuss local events."
+    },
+    "title_card_3_3": {
+      "ru": "Семинары Python",
+      "en": "Python seminars"
+    },
+    "count_card_3_3": {
+      "ru": "34 участника",
+      "en": "34 members"
+    },
+    "text_3_3": {
+      "ru": "Помимо решения задач, Dialog помогает строить культуру в компании. Коллеги общаются, организуются в группы по интересам и формируют культуру.",
+      "en": "In addition to solving problems, Dialog helps build a culture in the company. Colleagues communicate, organize themselves into groups by interest and shape the culture."
+    },
+    "title_card_3_4": {
+      "ru": "HR fm",
+      "en": "HR fm"
+    },
+    "count_card_3_4": {
+      "ru": "127 участников",
+      "en": "127 members"
+    },
+    "text_3_4": {
+      "ru": "Все самое полезное и интересное о возможностях и радостях работы в компании: новые вакансии, развитие, конференции, бонусы, охрана труда, кадровые документы, ЛНА, ответы на популярные вопросы.",
+      "en": "Most useful and interesting about work in company: new vacancies, development, conferences, bonuses, documents, LNA, answers to frequently asked questions."
+    },
+    "title_card_3_5": {
+      "ru": "Наставники",
+      "en": "Mentors"
+    },
+    "count_card_3_5": {
+      "ru": "34 участника",
+      "en": "34 members"
+    },
+    "text_3_5": {
+      "ru": "Чат для желающих стать наставниками новых сотрудников.",
+      "en": "Chat for those who wish to become a mentor of new employee"
+    }
   },
 
   "p404": {
@@ -549,7 +1375,7 @@
     },
     "card_text_3": {
       "ru": "Сотрудничество с ведущими экспертами по безопасности для проведения регулярных аудитов своих продуктов.",
-      "en": "Support for integration with antiviruses via ICAP. The messenger blocks malicious files when sending."
+      "en": "Collaboration with cybersecutiry experts."
     },
     "card_title_4": {
       "ru": "DLP",
@@ -677,11 +1503,11 @@
       "en": "We create Dialog"
     },
     "create_sub_1": {
-      "ru": "Компания занимается разработкой корпоративного мессенджера Dialog более 4 лет. Dialog объединяет специалистов в области IT-коммуникаций, безопасности данных, real-time распределенных систем, Big Data и других смежных с месседжингом областей.",
+      "ru": "Мы с 2016 года занимаемся разработкой корпоративного мессенджера Dialog – инструмент корпоративных коллабораций. Dialog объединяет специалистов в области IT-коммуникаций, безопасности данных, real-time распределенных систем, Big Data и других смежных с месседжингом областей. Мы пользуемся продуктом, который разрабатываем, и ежедневно улучшаем его.",
       "en": "The company has been developing the Dialog corporate messenger for over 4 years. Dialog unites specialists in the field of IT communications, data security, real-time distributed systems, Big Data and other areas related to messaging."
     },
     "create_sub_2": {
-      "ru": "На данный момент в Dialog работает более 120 человек, которые в разное время занимались разработкой продуктов для крупнейших компаний, лидирующих в области систем безопасности и хранения данных.",
+      "ru": "На данный момент в Dialog работает более 120 человек, которые в разное время занимались разработкой продуктов для крупнейших компаний, лидирующих в области систем безопасности и хранения данных. А еще являемся частью Экосистемы Сбербанка, что открывает перед нами огромный мир технологий и возможность тиражировать продукт на аудиторию +250К пользователей.",
       "en": "At the moment, Dialog employs more than 120 specialists who at different times were developing products for the largest companies leading in the field of security and data storage systems."
     },
     "create_text_1": {
@@ -691,6 +1517,576 @@
     "create_text_2": {
       "ru": "города, офис в Москве и Санкт-Петербурге",
       "en": "cities, offices in Moscow and St. Petersburg"
+    },
+    "collage_title": {
+      "ru": "Как мы отдыхаем и развиваемся",
+      "en": "We have fun"
+    },
+    "collage_desc": {
+      "ru": "В нашей компании традиционно проводятся следующие мероприятия: Quiz, knowledge sharing «Митапы», изучение английского “Do you speak English”, Клуб Дебатов, Киберспортивные соревнования и Фотоконкурсы.<br><br>Конечно, мы не забываем про праздники: 23 и 8, День рождения компании, Новый год, День программиста, Halloween.",
+      "en": "The following events are traditionally held in company: Quiz, knowledge sharing “Meetups”, learning English “Do you speak English”, Debate Club, Cybersport competitions and Photo contests.<br><br>Of course, we don't forget about the holidays: 23rd of february and 8th of march, the company's birthday, New Year, Programmer's Day, Halloween."
+    },
+    "values_title": {
+      "ru": "Ценности компании",
+      "en": "Company values"
+    },
+    "values_title_1": {
+      "ru": "Любознательность",
+      "en": "Curiosity"
+    },
+    "values_title_2": {
+      "ru": "Вовлеченность в будущее",
+      "en": "Involvement in the future"
+    },
+    "values_title_3": {
+      "ru": "Уверенность в диалоге",
+      "en": "Confidence"
+    },
+    "values_text_1": {
+      "ru": "Мы стремимся знать больше, быть лучше: развиваем себя, развиваем друг друга, развиваем партнёров и клиентов. Экспериментируем, применяем полученные знания в рабочих процессах, объективно анализируем результаты наших действий и изменений. Достигаем синергии, применяя опыт и знания друг друга.",
+      "en": "We strive to know more: we educate ourselves, partners, clients. We experiment and achieve synergy by applying each other's experience and knowledge."
+    },
+    "values_text_2": {
+      "ru": "Мы предсказываем и задаем тренды, вовлекаем в использование новых технологий в интересах наших пользователей, когда нет стандартов и готовых процессов, мы их создаём. Мы уверены в себе, в своих решениях, в качестве и востребованности нашего продукта, в коллегах и партнерах.",
+      "en": "We predict and set trends. When there are no standards and ready-made processes, we create them."
+    },
+    "values_text_3": {
+      "ru": "Мы создаем технологичный, красивый, удобный продукт и отвечаем за качество на всех этапах. Мы сами активно используем продукт в нашей командной работе. Постоянно его совершенствуем и тем самым делаем жизнь пользователей более комфортной и гармоничной. Мы аккуратны, внимательны к деталям: к тому, как думаем, говорим, пишем.",
+      "en": "We are responsible for the quality of our products and use them ourselves. We are constantly improving it and thereby making the life of users better."
+    }
+  },
+
+  "about": {
+    "title": {
+      "ru": "О компании",
+      "en": "About company"
+    },
+    "sub_1": {
+      "ru": "ООО Диалог – российский разработчик коммуникационной платформы для совместной работы и организации единого рабочего пространства.",
+      "en": "Dialog LLC is a Russian developer of a corporate communication platform."
+    },
+    "sub_2": {
+      "ru": "Основана в 2016 году. Входит в состав группы компании ПАО Сбербанк с 2018 года.",
+      "en": "Founded in 2016. Sberbank subsidiary since 2018."
+    },
+    "team_title": {
+      "ru": "Наша команда",
+      "en": "Team"
+    },
+    "team_sub": {
+      "ru": "Dialog объединяет специалистов в области IT-коммуникаций, безопасности данных, real-time распределенных систем, Big Data и других смежных с месседжингом областей. В офисах компании Диалог», работает более 100 человек.",
+      "en": "Dialog brings together specialists in the field of IT communications, data security, distributed systems, Big Data and other areas related to messaging. More than 100 people work in the offices of the Dialog."
+    },
+    "number_1": {
+      "ru": "год основания компании",
+      "en": "established"
+    },
+    "number_2": {
+      "ru": "количество сотрудников",
+      "en": "employees"
+    },
+    "number_3": {
+      "ru": "города, офис в Москве и Санкт-Петербурге ",
+      "en": "offices, Moscow and St. Petersburg"
+    },
+    "history_title": {
+      "ru": "История Компании",
+      "en": "Company history"
+    },
+    "history_1": {
+      "ru": "Начало разработки мессенджера. Выпуск совместного решения с «Фактор связи». Состав команды 16 человек.",
+      "en": "Release of a messaging solution with «Factor Svyazi». The team is 16 people."
+    },
+    "history_2": {
+      "ru": "Выпуск совместного решения с «ИнфоТеКС». Интеграция Dialog Enterprise с ViPNet VPN. Состав команды 19 человек.",
+      "en": "Release of a messaging solution with «Infoteks». Dialog Enterprise integrates with ViPNet VPN. The team is 19 people."
+    },
+    "history_3": {
+      "ru": "Диалог становится ДЗО Сбербанка. Интеграция с облачными продуктами «МойОфис Частное Облако» и «МойОфис Профессиональный». Состав команды 70 человек.",
+      "en": "Dialogue becomes a subsidiary of Sberbank. Integrations with «MyOffice Private Cloud» and  «MyOffice Professional». The team is 70 people."
+    },
+    "history_4": {
+      "ru": "Компанию возглавила Марина Настасенко. Представление концепции digital workplace на базе dialog. Открытие офиса в Санкт-Петербурге. Выпуск второй версии СберЧата. Состав команды 131 человек.",
+      "en": "Marina Nastasenko is a new CEO. Office opening in St. Petersburg. SberChat 2.0 release. The team is 131 people."
+    },
+    "history_5": {
+      "ru": "Коммерческое и технологическое партнерство с участниками Экосистемы Сбербанка. Развитие функционала видеоконференцсвязи корпоративного уровня. Выпуск продукта Dialog OEM для развития бизнеса наших партнеров и выхода на новые рынки. Дальнейший рост команды.",
+      "en": "Commercial and technological partnership with Sberbank Ecosystem companies. Development of enterprise grade video conferencing. Launch of Dialog OEM. Further growth of team."
+    },
+    "leaders_title": {
+      "ru": "Руководство",
+      "en": "Management team"
+    },
+    "license_title": {
+      "ru": "Свидетельства и лицензии",
+      "en": "Certificates and licenses"
+    },
+    "license_sub": {
+      "ru": "Dialog обеспечивает надежную и безопасную коммуникацию в государственных структурах. Мессенджер включен в Реестр российского ПО и разрабатывается в соответствии с требованиями Импортозамещения. Разработчик продукта имеет лицензии ФСТЭК и ФСБ России.",
+      "en": "Dialog provides reliable and secure communication in government organizations. The company complies with Russial legal norms and standards."
+    },
+    "it_title": {
+      "ru": "Dialog участвует в развитии ИТ-отрасли в России",
+      "en": "DIalog develops IT industry in Russia"
+    },
+    "it_li_1": {
+      "ru": "Резидент инновационного центра «Сколково»",
+      "en": "Resident of the Skolkovo innovation center."
+    },
+    "it_li_2": {
+      "ru": "Членство в Ассоциации Разработчиков Программных Продуктов «Отечественный софт»",
+      "en": "Membership in the Association of Software Developers «Domestic Software»"
+    },
+    "contact_title": {
+      "ru": "Контакты",
+      "en": "Contacts"
+    },
+    "contact_address_city_1": {
+      "ru": "Москва",
+      "en": "Moscow"
+    },
+    "contact_address_1": {
+      "ru": "121170, ул. Поклонная, д. 3, корп. 2, этаж 11",
+      "en": "121170, st. Poklonnaya, 3/2, floor 11"
+    },
+    "contact_address_city_2": {
+      "ru": "Санкт-Петербург",
+      "en": "St. Petersburg"
+    },
+    "contact_address_2": {
+      "ru": "191186, Невский проспект, д. 19",
+      "en": "St. Petersburg, Nevsky prospect, 19"
+    },
+    "leader_name_1": {
+      "ru": "Марина",
+      "en": "Марина"
+    },
+    "leader_name_1": {
+      "ru": "Марина Настасенко",
+      "en": "Marina Nastasenko"
+    },
+    "leader_text_1": {
+      "ru": "Генеральный Директор",
+      "en": "Chief Executive Officer"
+    },
+    "leader_name_2": {
+      "ru": "Антон Аксентюк",
+      "en": "Anton Aksentyuk"
+    },
+    "leader_text_2": {
+      "ru": "Исполнительный продуктовый директор",
+      "en": "Executive Product Director"
+    },
+    "leader_name_3": {
+      "ru": "Дмитрий Максимов",
+      "en": "Dmitry Maximov"
+    },
+    "leader_text_3": {
+      "ru": "Технический директор",
+      "en": "Chief Technical Officer"
+    },
+    "leader_name_4": {
+      "ru": "Владислав Буянов",
+      "en": "Vladislav Buyanov"
+    },
+    "leader_text_4": {
+      "ru": "Коммерческий директор",
+      "en": "Commercial Director"
+    },
+    "leader_name_5": {
+      "ru": "Леонид Никулин",
+      "en": "Leonid Nikulin"
+    },
+    "leader_text_5": {
+      "ru": "Арт директор",
+      "en": "Art Director"
+    },
+    "leader_name_6": {
+      "ru": "Мария Ивченко",
+      "en": "Maria Ivchenko"
+    },
+    "leader_text_6": {
+      "ru": "Директор по персоналу",
+      "en": "HR Director"
+    },
+    "leader_name_7": {
+      "ru": "Михаил Шапкин",
+      "en": "Mikhail Shapkin"
+    },
+    "leader_text_7": {
+      "ru": "Финансовый директор",
+      "en": "Finacial Director"
+    },
+    "leader_name_8": {
+      "ru": "Георгий Дорский",
+      "en": "Georgy Dorsky"
+    },
+    "leader_text_8": {
+      "ru": "Главный юрист",
+      "en": "Chief Lawyer"
+    },
+    "leader_name_9": {
+      "ru": "Дмитрий Смирнов",
+      "en": "Dmitriy Smirnov"
+    },
+    "leader_text_9": {
+      "ru": "Директор по стратегии",
+      "en": "Strategy Director"
+    },
+    "leader_name_10": {
+      "ru": "Максим Зуевский",
+      "en": "Maksim Zuevskiy"
+    },
+    "leader_text_10": {
+      "ru": "Руководитель службы IT",
+      "en": "IT Director"
+    },
+    "leader_name_11": {
+      "ru": "Евгений Кузнецов",
+      "en": "Evgeniy Kuznetsov"
+    },
+    "leader_text_11": {
+      "ru": "Руководитель службы внедрения и тех. поддержки",
+      "en": "Head of Tech service"
+    },
+    "leader_name_12": {
+      "ru": "Игорь Жушман",
+      "en": "Igor Zhushman"
+    },
+    "leader_text_12": {
+      "ru": "Руководитель службы управления проектами",
+      "en": "Project Management Officer"
+    }
+  },
+
+  "private": {
+    "title": {
+      "ru": "Dialog для коммерческих организаций",
+      "en": "Dialog for Private companies"
+    },
+    "sub": {
+      "ru": "Единая среда коммуникаций для бизнеса",
+      "en": "Digital transformation of corporate communications"
+    },
+    "adv_title_1": {
+      "ru": "Сокращение расходов на коммуникации ",
+      "en": "Reduce communication costs"
+    },
+    "adv_sub_1": {
+      "ru": "Dialog объединяет инструменты коммуникации в одной платформе и сокращает расходы на связь.",
+      "en": "Combining various tools at a single platform optimizes software, hardware, maintenance and support costs."
+    },
+    "adv_title_2": {
+      "ru": "Безопасность без ограничения свободы",
+      "en": "Security without restriction of freedom"
+    },
+    "adv_sub_2": {
+      "ru": "Централизуйте управление правами и доступами к информации и обеспечьте прозрачность.",
+      "en": "Concentrate the management of rights and access to information and ensure transparency."
+    },
+    "adv_title_3": {
+      "ru": "Эффективная совместная работа в любом масштабе",
+      "en": "Effective teamwork on any scale"
+    },
+    "adv_sub_3": {
+      "ru": "Организуйте работу любого количества распределенных команд.",
+      "en": "Organize the work of any number of distributed teams"
+    },
+    "grow_title": {
+      "ru": "Ускорьте рост бизнес-показателей компании",
+      "en": "Accelerate company performance"
+    },
+    "grow_desc": {
+      "ru": "Оптимизируйте работу по ключевым направлениям бизнеса – используйте Bot SDK и API для создания интеграций. Боты создают новый интерфейс для работы с информацией, позволяя сотрудникам делать работу быстрее и качественнее.",
+      "en": "Use Dialog Bot SDK and API to create integrations and streamline workflows. Bots allows employees to do their work faster and better."
+    },
+    "grow_sub": {
+      "ru": "Примеры оптимизации процессов",
+      "en": "Examples"
+    },
+    "grow_card_title_1": {
+      "ru": "Выводите новых сотрудников быстрее",
+      "en": "Onboard new employees faster"
+    },
+    "grow_card_sub_1": {
+      "ru": "Найм сотрудников",
+      "en": "Hiring"
+    },
+    "grow_card_text_1": {
+      "ru": "Новые сотрудники вовлекаются в работу раньше, когда на их вопросы быстро отвечают чатботы.",
+      "en": "New employees get involved in work faster when chatbots quickly answer their questions."
+    },
+    "grow_card_link_1": {
+      "ru": "Dialog для HR",
+      "en": "Dialog for HR"
+    },
+    "grow_card_title_2": {
+      "ru": "Ускорьте разработку",
+      "en": "Speed ​​up development"
+    },
+    "grow_card_sub_2": {
+      "ru": "IT и разработка",
+      "en": "IT and engineering"
+    },
+    "grow_card_text_2": {
+      "ru": "Разработчики с помощью интеграций объединяют рабочие сервисы и автоматизируют процессы в чатах (ChatOps).",
+      "en": "With help of integrations developers combine work services and automate workflows. Less context switches and more tasks completed."
+    },
+    "grow_card_link_2": {
+      "ru": "Dialog для Разработчиков",
+      "en": "Dialog for Developers"
+    },
+    "grow_card_title_3": {
+      "ru": "Заключайте больше сделок",
+      "en": "Make more sales"
+    },
+    "grow_card_sub_3": {
+      "ru": "Продажи",
+      "en": "Sales"
+    },
+    "grow_card_text_3": {
+      "ru": "Организуйте работу с воронкой продаж в Dialog. Смотрите детали сделок из CRM в чатах, увеличьте доступ к информации для сотрудников.",
+      "en": "Organize work with a sales funnel in Dialog. See the details of deals from CRM in chat rooms, increase access to information for employees."
+    },
+    "grow_card_link_3": {
+      "ru": "Dialog для Коммерческого отдела",
+      "en": "Dialog for Sales"
+    },
+    "grow_card_title_4": {
+      "ru": "Следите за брендом онлайн",
+      "en": "Monitor the brand online"
+    },
+    "grow_card_sub_4": {
+      "ru": "Маркетинг и PR",
+      "en": "Marketing and PR"
+    },
+    "grow_card_text_4": {
+      "ru": "Получайте упоминания вашего бренда в социальных сетях и публикациях онлайн-изданий в мессенджере для оперативной реакции.",
+      "en": "Get mentions of your brand in social networks and online publications in the messenger."
+    },
+    "grow_card_link_4": {
+      "ru": "Dialog для Маркетинга",
+      "en": "Dialog for Marketing"
+    },
+    "grow_card_title_5": {
+      "ru": "Сократите время обработки обращений",
+      "en": "Accelerate response time"
+    },
+    "grow_card_sub_5": {
+      "ru": "Обслуживание клиентов и поддержка",
+      "en": "Customer service and Support"
+    },
+    "grow_card_text_5": {
+      "ru": "Объедините запросы от клиентов в группах Dialog и решайте проблемы быстрее.",
+      "en": "Combine customer requests in Dialog groups and solve problems faster."
+    },
+    "grow_card_link_5": {
+      "ru": "Dialog для Техподдержки",
+      "en": "Dialog for Support"
+    },
+    "corp_title": {
+      "ru": "Корпоративные функции",
+      "en": "Corporate features"
+    },
+    "corp_title_1": {
+      "ru": "Установка на инфраструктуру компании",
+      "en": "Installation on company infrastructure"
+    },
+    "corp_title_2": {
+      "ru": "Корпоративные учетные данные",
+      "en": "Corporate credentials"
+    },
+    "corp_text_2": {
+      "ru": "Интеграция с адресной книгой и OpenID",
+      "en": "Integration with Address book and OpenID"
+    },
+    "corp_title_3": {
+      "ru": "Аудио- /видеосвязь",
+      "en": "Audio / video communication"
+    },
+    "corp_text_3": {
+      "ru": "Интеграция с системами АКС/ВКС, АТС",
+      "en": "Integration with Audio/Video Conferencing systems, PBX"
+    },
+    "corp_title_4": {
+      "ru": "Интеграция с системами безопасности",
+      "en": "Integration with security systems"
+    },
+    "corp_title_5": {
+      "ru": "Таргетированное оповещение",
+      "en": "Targeted messaging"
+    },
+    "corp_text_5": {
+      "ru": "Рассылки для определенных групп пользователей в каналах",
+      "en": "Messaging for specific groups of users in channels"
+    },
+    "corp_title_6": {
+      "ru": "Возможность подключения и разработки ботов и чат-ботов",
+      "en": "Bot SDK for bot development"
+    },
+    "safety_title": {
+      "ru": "Защита информации",
+      "en": "Information security"
+    },
+    "access_title": {
+      "ru": "Контроль доступа к информации",
+      "en": "User management"
+    },
+    "access_sub": {
+      "ru": "Панель администратора",
+      "en": "Admin Panel"
+    },
+    "access_text": {
+      "ru": "Со временем в вашей компании могут появляться новые сотрудники, в то время как другие будут уходить. С Панелью администратора вы можете управлять рабочим пространством и осуществлять мониторинг.",
+      "en": "Over time, new employees will enter your company, while others will leave. With the Admin Panel, you can easily activate / deactivate users in your workspace and manage accesses."
+    },
+    "expenses_title": {
+      "ru": "Сокращение расходов на коммуникацию",
+      "en": "Reduced communication costs"
+    },
+    "expenses_sub": {
+      "ru": "Dialog объединяет множество инструментов на одной платформе",
+      "en": "Dialog allows you to optimize costs by combining multiple tools over one platform"
+    },
+    "expenses_title_1": {
+      "ru": "Телефония",
+      "en": "Telecommunications"
+    },
+    "expenses_text_1": {
+      "ru": "Затраты на стационарные телефоны, сопровождение и поддержку, звонки через АТС на мобильные номера",
+      "en": "Costs for stationary lines, maintenance and support, calls through PBX to mobile numbers."
+    },
+    "expenses_title_2": {
+      "ru": "Видеосвязь",
+      "en": "Video conferencing"
+    },
+    "expenses_text_2": {
+      "ru": "Лицензионные платежи за программы для видеосвязи",
+      "en": "License fees for video conferencing software"
+    },
+    "expenses_title_3": {
+      "ru": "Виртуальное хранилище",
+      "en": "Cloud storage"
+    },
+    "expenses_text_3": {
+      "ru": "Подписки и лицензии на облачное хранилище",
+      "en": "Licenses and support"
+    },
+    "introduction_title": {
+      "ru": "Готов к масштабному внедрению",
+      "en": "Ready for large-scale implementation"
+    },
+    "introduction_title_1": {
+      "ru": "Быстрое развертывание",
+      "en": "Rapid deployment"
+    },
+    "introduction_text_1": {
+      "ru": "Встраивается в структуру компании от одного дня",
+      "en": "Integration in company’s IT infrastructure from 1 day"
+    },
+    "introduction_title_2": {
+      "ru": "Высокая доступность",
+      "en": "High availability"
+    },
+    "introduction_text_2": {
+      "ru": "Бесперебойная работа при базе активных пользователей 250+ тысяч в рамках организации",
+      "en": "Smooth work with a base of active users of 250+ thousand within the organization"
+    },
+    "introduction_title_3": {
+      "ru": "Отзывчивый сервис",
+      "en": "Responsive service"
+    },
+    "introduction_text_3": {
+      "ru": "Оперативная поддержка и документация на русском языке",
+      "en": "Operational support and documentation in Russian"
+    }
+  },
+
+  "gov": {
+    "title": {
+      "ru": "Dialog для государственных организаций",
+      "en": "Dialog for Government organizations"
+    },
+    "license_title": {
+      "ru": "Свидетельства и лицензии",
+      "en": "Certificates and licenses"
+    },
+    "adv_title_1": {
+      "ru": "Безопасность без ущерба эффективности",
+      "en": "Safety without sacrificing efficiency"
+    },
+    "adv_sub_1": {
+      "ru": "Размещение на серверах компании и интеграция с корпоративными системами безопасности.",
+      "en": "Hosting on company servers and integration with security systems."
+    },
+    "adv_title_2": {
+      "ru": "Входит в реестр российского ПО",
+      "en": "Legislation Compliance"
+    },
+    "adv_sub_2": {
+      "ru": "Компания имеет квалификацию, необходимую для соблюдения законодательных норм и стандартов.",
+      "en": "The company has the qualifications required to comply with legal norms and standards."
+    },
+    "adv_title_3": {
+      "ru": "Интеграции с российским ПО",
+      "en": "Integrations with Russian software"
+    },
+    "adv_sub_3": {
+      "ru": "Dialog сотрудничает с российскими IT-вендорами для создания комплексных импортонезависимых решений.",
+      "en": "Dialog cooperates with Russian IT vendors to create advanced solutions"
+    },
+    "quote_title": {
+      "ru": "Dialog в Сбербанке",
+      "en": "Dialog in Sberbank"
+    },
+    "about_title": {
+      "ru": "О компании",
+      "en": "About company"
+    },
+    "safety_title": {
+      "ru": "Dialog для современных госорганизаций",
+      "en": "Dialog for Digital Government"
+    },
+    "safety_sub_1": {
+      "ru": "Сделайте общение безопасным",
+      "en": "Secure communication"
+    },
+    "safety_sub_2": {
+      "ru": "Улучшите качество оказания государственных услуг",
+      "en": "Improve quality of public service"
+    },
+    "safety_title_1": {
+      "ru": "Улучшение коммуникаций между подразделениями",
+      "en": "Improving communication between departments"
+    },
+    "safety_text_1": {
+      "ru": "Работа госслужащих часто завязана на коммуникации между подразделениями. Dialog организует общение в одном приложении, делая совместную работу над документами простой и удобной.",
+      "en": "The work of civil servants is often tied to communication between departments. Dialog organizes communication in one place, allowing people to collamaking collaboration on documents."
+    },
+    "safety_title_2": {
+      "ru": "Поддержка принятия управленческих решений",
+      "en": "Decision-making support"
+    },
+    "safety_text_2": {
+      "ru": "Единая коммуникационная среда дает доступ к оперативной информации, необходимой для принятия обоснованных и своевременных административных решений.",
+      "en": "A single communications environment gives you access to the intelligence needed to make informed and timely administrative decisions."
+    },
+    "safety_title_3": {
+      "ru": "Повышение производительности труда операционно-учетных подразделений",
+      "en": "Increasement in labor productivity of operational and accounting units"
+    },
+    "safety_text_3": {
+      "ru": "Объединение разрозненных информационных систем в одном мессенджере, оптимизация и автоматизация процессов с помощью ботов и чат-ботов.",
+      "en": "Dialog combines various information systems into one messenger, optimizes and automates processes using bots and chatbots."
+    },
+
+    "about_sub_1": {
+      "ru": "ООО Диалог – российский разработчик коммуникационной платформы для совместной работы и организации единого рабочего пространства.",
+      "en": "Dialog LLC is a Russian developer of a corporate communication platform."
+    },
+    "about_sub_2": {
+      "ru": "Основана в 2016 году. Входит в состав группы компании ПАО Сбербанк с 2018 года.",
+      "en": "Founded in 2016. Sberbank subsidiary since 2018."
     }
   },
 
@@ -803,13 +2199,21 @@
   },
 
   "button": {
+    "private": {
+      "ru": "Заявка для компании",
+      "en": "Get offer"
+    },
     "leave": {
       "ru": "Оставить заявку",
-      "en": "Submit a request"
+      "en": "Submit request"
+    },
+    "government": {
+      "ru": "Заявка для гос. организаций",
+      "en": "Get offer"
     },
     "learn": {
       "ru": "Оставить заявку",
-      "en": "Submit a request"
+      "en": "Submit request"
     },
     "tech": {
       "ru": "Технологические партнеры",
@@ -843,9 +2247,13 @@
       "ru": "Открытые вакансии",
       "en": "Open vacancies"
     },
+    "vacancy_know": {
+      "ru": "Узнайте об открытых вакансиях",
+      "en": "Open vacancies"
+    },
     "vacancy_all": {
       "ru": "Смотреть все вакансии",
-      "en": "View all vacant positions"
+      "en": "View all openings"
     },
     "open": {
       "ru": "Открыть",
@@ -858,6 +2266,10 @@
     "home": {
       "ru": "Перейти на главную",
       "en": "Go to homepage"
+    },
+    "partner": {
+      "ru": "Найти партнера",
+      "en": "Find partner"
     }
   },
 
@@ -865,6 +2277,33 @@
     "learn": {
       "ru": "Узнать подробнее",
       "en": "Learn more"
+    }
+  },
+
+  "pop": {
+    "chanel": {
+      "ru": "<b>Канал</b> – это чат, где только владелец может отправлять сообщения. Анонсируйте события из жизни компании или транслируйте тематические сообщения.",
+      "en": "<b>Channel</b> is a chat where only the owner can send messages. Channels are used to announce company events or broadcast specific topics."
+    },
+    "chat": {
+      "ru": "<b>Чат</b> – это чат, где только владелец может отправлять сообщения. Анонсируйте события из жизни компании или транслируйте тематические сообщения.",
+      "en": "<b>Chat</b> is a space for exchanging messages and files between two or more users."
+    },
+    "chatbot": {
+      "ru": "<b>Чатбот</b> – это программа, которая имитирует диалог с человеком. Чат-боты позволяют автоматизировать повторяющиеся задачи, не привлекая человека.",
+      "en": "<b>Chatbot</b> is a program that simulates a dialoge with person. Chatbots allow you to automate repetitive tasks without involving a human."
+    },
+    "text_1": {
+      "ru": "Примеры <span class='link link--accent popover--chat-1' >чатов</span>, <span class='link link--accent popover--chanel-1'>каналов</span> и <span class='link link--accent popover--chatbot-1' >чатботов</span>",
+      "en": "Examples of <a class='link link--accent' href='/'>chats</a>, <a class='link link--accent' href='/'>channels</a> и <a class='link link--accent' href='/'>chatbots</a>"
+    },
+    "text_2": {
+      "ru": "Примеры <span class='link link--accent popover--chat-2' >чатов</span>, <span class='link link--accent popover--chanel-2'>каналов</span> и <span class='link link--accent popover--chatbot-2' >чатботов</span>",
+      "en": "Examples of <a class='link link--accent' href='/'>chats</a>, <a class='link link--accent' href='/'>channels</a> и <a class='link link--accent' href='/'>chatbots</a>"
+    },
+    "text_3": {
+      "ru": "Примеры <span class='link link--accent popover--chat-3' >чатов</span>, <span class='link link--accent popover--chanel-3'>каналов</span> и <span class='link link--accent popover--chatbot-3' >чатботов</span>",
+      "en": "Examples of <a class='link link--accent' href='/'>chats</a>, <a class='link link--accent' href='/'>channels</a> и <a class='link link--accent' href='/'>chatbots</a>"
     }
   },
 
@@ -924,6 +2363,46 @@
     "library": {
       "ru": "Библиотека документов:",
       "en": "Document library:"
+    },
+    "hr": {
+      "ru": "HR",
+      "en": "Human Resources"
+    },
+    "sales": {
+      "ru": "Отдел продаж",
+      "en": "Sales"
+    },
+    "tech": {
+      "ru": "Техподдержка",
+      "en": "Techsupport"
+    },
+    "gov": {
+      "ru": "Госорганизациям",
+      "en": "For Government"
+    },
+    "private": {
+      "ru": "Коммерческим организациям",
+      "en": "For Private companies"
+    },
+    "oem": {
+      "ru": "CPaaS",
+      "en": "CPaaS"
+    },
+    "remote": {
+      "ru": "Удаленная работа",
+      "en": "Remote work"
+    },
+    "about": {
+      "ru": "О нас",
+      "en": "About us"
+    },
+    "solutions": {
+      "ru": "Решения",
+      "en": "Solutions"
+    },
+    "departments": {
+      "ru": "Отделы",
+      "en": "Departments"
     }
   },
 
@@ -1032,6 +2511,38 @@
     "career_title": {
       "ru": "Карьера | Dialog",
       "en": "Career | Dialog"
+    },
+    "about_title": {
+      "ru": "О Нас | Dialog",
+      "en": "About | Dialog"
+    },
+    "private_title": {
+      "ru": "Коммерческим организациям | Dialog",
+      "en": "Private companies | Dialog"
+    },
+    "gov_title": {
+      "ru": "Госорганизациям | Dialog",
+      "en": "Government | Dialog"
+    },
+    "tech_title": {
+      "ru": "Dialog для Технической поддержки | Dialog",
+      "en": "Dialog for Tech support | Dialog"
+    },
+    "hr_title": {
+      "ru": "Dialog для HR | Dialog",
+      "en": "Dialog for HR | Dialog"
+    },
+    "sales_title": {
+      "ru": "Dialog для Отдела продаж | Dialog",
+      "en": "Dialog for the Commercial Department | Dialog"
+    },
+    "remote_title": {
+      "ru": "Удаленная работа | Dialog",
+      "en": "Remote work | Dialog"
+    },
+    "oem_title": {
+      "ru": "OEM | Dialog",
+      "en": "OEM | Dialog"
     },
     "download_title": {
       "ru": "Скачать | Dialog",

@@ -1,0 +1,116 @@
+extends ../global/layout
+include ../mixins/svg
+include ../mixins/button
+include ../mixins/button-play
+include ../mixins/picture
+include ../mixins/form-cta
+include ../mixins/form-career
+include ../mixins/sections
+
+block variables
+  -
+    const title = t.meta.hr_title;
+    const desc = t.meta.main_desc;
+    const routeClass = "js-route-main";
+    const pageName = "human-resources";
+
+block content
+  section.hero.hero--main.hero--secondary.hero--next-bg
+    .hero__wrapper
+      .hero__left
+        h1.hero__title=t.hr.title
+        p.hero__text=t.hr.sub
+        +button(
+          t.button.leave,
+          {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
+            styleType: 'accent',
+          })
+          +svg('arrow-right', 16, 15)
+      .hero__right
+        .hero__img
+          +picture('/img/pages/hr/hero', 'jpg', t.alt.people, 682)
+
+
+
+
+  section.box.box--gray.cta.cta--nav.cta--sm
+    .wrapper.wrapper--main
+      .wrap.wrap--s
+        h4.title=t.cta.hr_info_title
+      .wrap.wrap--s.wrap--links
+        a.link.link--accent(href='#hire')=t.cta.hr_info_link_1
+        a.link.link--accent(href='#auto')=t.cta.hr_info_link_2
+        a.link.link--accent(href='#involve')=t.cta.hr_info_link_3
+
+
+
+  section.department
+    .wrapper.wrapper--main
+      .anchor#hire
+      .sub=t.hr.sub_1
+      h2.title=t.hr.title_1
+      .wrap.wrap--gap-sm.wrap--row.wrap--sb
+        .col.col--text
+          .links
+            | !{t.pop.text_1}
+          +card-description(t.hr.title_card_1_1,t.hr.count_card_1_1,"white-devs",t.hr.text_1_1, 31, 31, 'w-lg')
+          +card-description(t.hr.title_card_1_2,t.hr.count_card_1_2,"white-hire",t.hr.text_1_2, 29, 29, 'w-lg')
+          +card-description(t.hr.title_card_1_3,t.hr.count_card_1_3,"white-motivation",t.hr.text_1_3, 31, 31, 'w-lg')
+        .col.col--image.col--bg
+          .image
+            +picture(`/img/pages/hr/department1`, 'png', t.alt.people, 590)
+
+
+  section.department
+    .wrapper.wrapper--main
+      .wrap.wrap--w
+        .wrap.wrap--s
+          .anchor#auto
+          .sub=t.hr.sub_2
+        .wrap.wrap--s
+          h2.title=t.hr.title_2
+      .wrap.wrap--gap-sm.wrap--row.wrap--sb
+        .col.col--image.col--bg
+          .image
+            +picture(`/img/pages/hr/department2`, 'png', t.alt.people, 590)
+        .col.col--text
+          .links
+            | !{t.pop.text_2}
+          +card-description(t.hr.title_card_2_1,t.hr.count_card_2_1,"white-sheet",t.hr.text_2_1, 39, 39, 'w-md')
+          +card-description(t.hr.title_card_2_2,t.hr.count_card_2_2,"white-plane",t.hr.text_2_2, 29, 29, 'w-md')
+          +card-description(t.hr.title_card_2_3,t.hr.count_card_2_3,"white-ask",t.hr.text_2_3, 31, 31, 'w-md')
+
+
+  section.department
+    .wrapper.wrapper--main.wrapper--pb
+      .anchor#involve
+      .sub=t.hr.sub_3
+      h2.title=t.hr.title_3
+      .wrap.wrap--gap-sm.wrap--row.wrap--sb
+        .col.col--text
+          .links
+            | !{t.pop.text_3}
+          +card-description(t.hr.title_card_3_1,t.hr.count_card_3_1,"white-shout",t.hr.text_3_1, 24, 24, 'w-md')
+          +card-description(t.hr.title_card_3_2,t.hr.count_card_3_2,"white-city",t.hr.text_3_2, 33, 27, 'w-md')
+          +card-description(t.hr.title_card_3_3,t.hr.count_card_3_3,"white-learn",t.hr.text_3_3, 33, 33, 'w-md')
+          +card-description(t.hr.title_card_3_4,t.hr.count_card_3_4,"white-learn",t.hr.text_3_4, 33, 33, 'w-md')
+          +card-description(t.hr.title_card_3_5,t.hr.count_card_3_5,"white-learn",t.hr.text_3_5, 33, 33, 'w-md')
+        .col.col--image.col--bg
+          .image
+            +picture(`/img/pages/hr/department3`, 'png', t.alt.people, 590)
+
+
+
+
+  section.box.box--sand
+    .wrapper.wrapper--main
+      .cta.cta--left.cta--md
+        +form-cta(t.cta.hr_form_info_title,t.cta.hr_form_info_text,1,'form-cta', pageName,'department','cta-left')
+
+  section
+    +form-offer(false, 1, 'form-offer', pageName, "offer")
+
+  +tooltips(3)

@@ -1,0 +1,182 @@
+extends ../global/layout
+include ../mixins/svg
+include ../mixins/button
+include ../mixins/button-play
+include ../mixins/picture
+include ../mixins/form-offer
+include ../mixins/sections
+
+block variables
+  -
+    const title = t.meta.remote_title;
+    const desc = t.meta.main_desc;
+    const routeClass = "js-route-main";
+    const pageName = "remote-work";
+
+block content
+  -
+    const remote = [
+    {
+    iconPath: "white-mini-calc",
+    iconWidth: 17,
+    iconHeight: 17,
+    text: t.remote.work_button_1
+    },
+    {
+    iconPath: "white-mini-human",
+    iconWidth: 15,
+    iconHeight: 15,
+    text: t.remote.work_button_2
+    },
+    {
+    iconPath: "white-mini-display",
+    iconWidth: 15,
+    iconHeight: 15,
+    text: t.remote.work_button_3
+    },
+    {
+    iconPath: "white-mini-paper",
+    iconWidth: 17,
+    iconHeight: 17,
+    text: t.remote.work_button_4
+    },
+    {
+    iconPath: "white-mini-star",
+    iconWidth: 17,
+    iconHeight: 17,
+    text: t.remote.work_button_5
+    },
+    {
+    iconPath: "white-mini-chart",
+    iconWidth: 17,
+    iconHeight: 17,
+    text: t.remote.work_button_6
+    },
+    {
+    iconPath: "white-mini-city",
+    iconWidth: 17,
+    iconHeight: 17,
+    text: t.remote.work_button_7
+    },
+    {
+    iconPath: "white-mini-paper",
+    iconWidth: 17,
+    iconHeight: 17,
+    text: t.remote.work_button_8
+    },
+    {
+    iconPath: "white-mini-chat",
+    iconWidth: 17,
+    iconHeight: 17,
+    text: t.remote.work_button_9
+    },
+    ];
+    const safety = [
+    {
+    iconPath: "white-measure",
+    iconWidth: 51,
+    iconHeight: 51,
+    title: t.remote.safety_title_1,
+    text: t.remote.safety_text_1
+    },
+    {
+    iconPath: "white-lock",
+    iconWidth: 43,
+    iconHeight: 43,
+    title: t.remote.safety_title_2,
+    text: t.remote.safety_text_2
+    },
+    {
+    iconPath: "white-cloud",
+    iconWidth: 43,
+    iconHeight: 43,
+    title: t.remote.safety_title_3,
+    text: t.remote.safety_text_3
+    }
+    ];
+
+
+  section.hero.hero--main.hero--secondary.hero--next-no-bg
+    .hero__wrapper
+      .hero__left
+        h1.hero__title=t.remote.title
+        p.hero__text=t.remote.text
+        +button(
+          t.button.leave,
+          {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
+            styleType: 'accent',
+          })
+          +svg('arrow-right', 16, 15)
+      .hero__right
+        .hero__img
+          +picture('/img/pages/remote/hero', 'jpg', t.alt.people, 682)
+
+
+  section.remote-work
+    .wrapper.wrapper--main
+      .wrap.wrap--title.wrap--w
+        h2.title=t.remote.work_title
+        .sub=t.remote.work_sub
+      .wrap.wrap--gap-md.wrap--main
+        .col.col--text
+          h4=t.remote.work_title_1
+          .text=t.remote.work_text_1_1
+          .wrap.wrap--w
+            each item in remote
+              +card-icon(item.text, item.iconPath, item.iconWidth, item.iconHeight)
+          .text=t.remote.work_text_1_2
+          h4=t.remote.work_title_2
+          .text=t.remote.work_text_2
+          h4=t.remote.work_title_3
+          .text=t.remote.work_text_3
+          h4=t.remote.work_title_4
+          .text=t.remote.work_text_4
+        .col.col--image.col--bg
+          +picture(`/img/pages/remote/work`, 'png', t.alt.people, 614)
+
+
+
+  section.remote-safety.box.box--gray
+    .wrapper.wrapper--main
+      .wrap.wrap--title.wrap--w
+        h2=t.remote.safety_title
+        .sub=t.remote.safety_sub
+      .wrap.wrap--gap-xs.wrap--row.wrap--sb
+        .col.col--image.col--bg
+          +picture(`/img/pages/remote/safety`, 'png', t.alt.people, 556)
+        .col.col--text
+          each item in safety
+            .wrap.wrap--item.wrap--gap-xs
+              .col
+                .icon.icon--accent.icon--md.icon--round.icon--nofill
+                  +svg(item.iconPath, item.iconWidth, item.iconHeight)
+              .col
+                h5=item.title
+                .text=item.text
+      a.link.link--icon-accent.link--with-icon(href=`/${lang === "ru" ? "ru" : "en"}/security`)=t.remote.safety_link
+        +svg('arrow-right', 12, 12)
+
+
+
+
+  section.quote.box.box--white
+    .quote__wrapper
+      h2=t.main.quote_title
+      .quote__desc
+        .quote__desc-icon
+          +svg('icon-chat-sber', 76, 76)
+        p=t.main.quote_sub
+      .quote__content
+        .quote__content-text
+          p=t.main.quote_text
+        .quote__content-avatar
+          .quote__avatar-img
+            +svg('sber-logo-big', 250, 64)
+
+
+
+  section.box.box--lilac
+    +form-offer(false, 1, 'form-offer', pageName, "offer")

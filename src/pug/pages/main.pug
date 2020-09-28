@@ -168,7 +168,7 @@ block content
           .wrap.wrap--ac.wrap--icon
             .icon.icon--accent.icon--lg.icon--round
               +svg('icon-safe', 52, 47)
-            h3=t.main.sec_title_1
+            h4=t.main.sec_title_1
           p=t.main.sec_sub_1
           ul.safety__listbox
             li
@@ -187,7 +187,7 @@ block content
           .wrap.wrap--ac.wrap--icon
             .icon.icon--accent.icon--lg.icon--round
               +svg('icon-cloud', 48, 52)
-            h3=t.main.sec_title_2
+            h4=t.main.sec_title_2
           p=t.main.sec_sub_2
           ul.safety__listbox
             li
@@ -338,4 +338,5 @@ block content
 
   section.box.box--gray
     +blog(t.blog.cards)
-  +form-offer(false, 1, 'form-offer', pageName, "offer")
+  section
+    +form-offer(false, 1, 'form-offer', pageName, "offer")

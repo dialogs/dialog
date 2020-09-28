@@ -1,0 +1,163 @@
+.department {
+  overflow: hidden;
+
+  h2 {
+    @include typography-h2;
+    margin-top: 5px;
+    letter-spacing: -0.005em;
+    max-width: 850px;
+  }
+
+  .wrapper {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    @include mobile-md {
+      padding-top: 45px;
+      padding-bottom: 50px;
+    }
+
+    &--pb {
+      @include mobile-md {
+        padding-bottom: 100px;
+      }
+    }
+  }
+
+  & + .department .wrapper {
+    padding-top: 25px;
+  }
+
+  .wrap {
+    &--row {
+      margin-top: 45px;
+      align-items: flex-start;
+      @include laptop {
+        flex-wrap: wrap;
+      }
+    }
+
+    &--row-info {
+      @include mobile-md {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .sub {
+    @include typography-h6;
+    font-weight: 500;
+  }
+
+  .text {
+    @include typography-txt-big;
+    margin-top: 12px;
+    font-weight: 400;
+    line-height: 148%;
+  }
+
+  .col {
+    margin-top: 0 !important;
+
+    &:last-child {
+      @include tablet {
+        margin-top: 50px !important;
+      }
+
+    }
+
+    &--bg {
+      &:last-child {
+
+        &::after {
+          width: 225px;
+          height: 225px;
+          bottom: -60px;
+          right: -37px;
+          background-image: url("../img/pattern-3.svg");
+          z-index: -1;
+        }
+      }
+
+      &:first-child {
+
+        &::after {
+          width: 225px;
+          height: 225px;
+          bottom: -60px;
+          left: -37px;
+          background-image: url("../img/pattern-3.svg");
+          z-index: -1;
+        }
+      }
+
+      + .col {
+        @include tablet {
+          margin-top: 100px !important;
+        }
+      }
+    }
+
+    &--info {
+      @include col-6;
+      @include mobile-md {
+        @include col-12;
+      }
+    }
+
+    &--image {
+      @include pseudo-absolute;
+      @include col-6;
+      display: flex;
+      position: relative;
+
+      @include tablet {
+        @include col-12;
+        justify-content: center;
+        display: flex;
+      }
+
+    }
+
+    &--text {
+      @include col-6;
+      max-width: 590px;
+
+      @include mid {
+        max-width: 100%;
+      }
+
+      @include tablet {
+        @include col-12;
+      }
+    }
+  }
+
+  .card--icon {
+    margin-top: 30px;
+  }
+
+  .info {
+    max-width: 400px;
+    @include laptop {
+      margin-left: auto;
+    }
+    @include mobile-md {
+      margin-top: 30px;
+      margin-left: 0;
+    }
+    @include mobile-sm {
+      max-width: 100%;
+    }
+  }
+
+  .links,
+  .links > .link {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

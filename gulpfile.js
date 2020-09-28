@@ -1,6 +1,6 @@
 'use strict';
 const gulp = require('gulp');
-
+const gls = require('gulp-live-server');
 
 // SERVICES
 const sourcemaps = require('gulp-sourcemaps');
@@ -536,14 +536,19 @@ gulp.task('css', function () {
     .pipe(server.stream());
 });
 
-gulp.task('server', function () {
+gulp.task('server', function() {
+    var server = gls.new('app.js');
+    server.start();
+});
+
+gulp.task('serverbs', function () {
   server.init({
     server: BUILD_PATH,
     notify: false,
     open: false,
     cors: true,
     ui: false,
-    host: "0.0.0.0",
+    // host: "0.0.0.0",
     ghostMode: false
   }, (err, bs) => {
     bs.addMiddleware("*", (req, res) => {
@@ -609,4 +614,5 @@ gulp.task('minify', gulp.series('images:minify'));
 gulp.task('files', gulp.series('graphic', 'copy'));
 gulp.task('main', gulp.series('index', 'html', 'home'));
 gulp.task('start', gulp.series('server'));
+gulp.task('devserver', gulp.series('serverbs'));
 gulp.task('build', gulp.series('clean', 'blog', 'files', 'minify', 'css', 'js', 'main'));

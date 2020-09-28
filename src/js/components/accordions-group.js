@@ -19,6 +19,7 @@ class AccordionGroup {
   }
 
   setStartState() {
+
     this.accordionBlocks.forEach((accordionBlock, index) => {
       const accordionInstance = accordion(accordionBlock, {
         onExpand: this.onExpand,
@@ -31,6 +32,7 @@ class AccordionGroup {
   }
 
   onExpand(expandedAccordion) {
+
     this.accordions.forEach((accordionInstance) => {
       if (
         accordionInstance !== expandedAccordion &&

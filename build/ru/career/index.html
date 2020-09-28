@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html class="js-route-main" lang="ru">
   <script>
-    setTimeout(function(){
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -14,7 +13,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');}, 5000);
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,10 +35,40 @@
             </div>
             <nav class="header__nav-container main-nav">
               <ul class="main-nav__top-links">
+                <li class="main-nav__top-block">
+                  <button class="main-nav__button" type="button">Решения
+                    <svg width="8" height="5" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#tick"></use>
+                    </svg>
+                  </button>
+                  <div class="main-nav__dropdown">
+                    <ul class="main-nav__included-box">
+                      <li class="main-nav__included-item">
+                        <div class="main-nav__middle-block">
+                          <button class="main-nav__included-button" type="button"><span>Отделы
+                              <svg width="7" height="11" aria-hidden="true">
+                                <use xlink:href="/img/sprite.svg#tick-right"></use>
+                              </svg></span></button>
+                          <ul class="main-nav__middle-dropdown">
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/human-resources">HR</a></li>
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/techsupport">Техподдержка</a></li>
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/sales">Отдел продаж</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/private">Коммерческим организациям</a>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/government">Госорганизациям</a>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/remote-work">Удаленная работа</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="main-nav__link" href="/ru/oem">CPaaS</a></li>
                 <li><a class="main-nav__link" href="/ru/security">Безопасность</a></li>
                 <li><a class="main-nav__link" href="/ru/integrations">Интеграции</a></li>
                 <li><a class="main-nav__link" href="/ru/career">Карьера</a></li>
-                <li><a class="main-nav__link" href="/ru/blog">Блог</a></li>
                 <li><a class="main-nav__link" href="/ru/support">Помощь</a></li>
               </ul>
               <div class="main-nav__user-actions">
@@ -53,7 +82,7 @@
         </div>
       </header>
       <main class="page__content">
-        <section class="hero hero--main hero--career">
+        <section class="hero hero--main hero--career hero--secondary hero--next-no-bg">
           <div class="hero__wrapper">
             <div class="hero__left">
               <h1 class="hero__title">Хочешь реализовать свои таланты?</h1>
@@ -71,22 +100,22 @@
             </div>
           </div>
         </section>
-        <section class="mission box box--lilac">
+        <section class="mission">
           <div class="wrapper wrapper--main">
-            <div class="wrap wrap--mission">
+            <div class="wrap">
               <div class="mission__left">
                 <h3 class="mission__title">Мы создаем Dialog</h3>
-                <p class="mission__description">Компания занимается разработкой корпоративного мессенджера Dialog более 4 лет. Dialog объединяет специалистов в области IT-коммуникаций, безопасности данных, real-time распределенных систем, Big Data и других смежных с месседжингом областей.</p>
-                <p class="mission__description">На данный момент в Dialog работает более 120 человек, которые в разное время занимались разработкой продуктов для крупнейших компаний, лидирующих в области систем безопасности и хранения данных.</p>
+                <p class="mission__description">Мы с 2016 года занимаемся разработкой корпоративного мессенджера Dialog – инструмент корпоративных коллабораций. Dialog объединяет специалистов в области IT-коммуникаций, безопасности данных, real-time распределенных систем, Big Data и других смежных с месседжингом областей. Мы пользуемся продуктом, который разрабатываем, и ежедневно улучшаем его.</p>
+                <p class="mission__description">На данный момент в Dialog работает более 120 человек, которые в разное время занимались разработкой продуктов для крупнейших компаний, лидирующих в области систем безопасности и хранения данных. А еще являемся частью Экосистемы Сбербанка, что открывает перед нами огромный мир технологий и возможность тиражировать продукт на аудиторию +250К пользователей.</p>
               </div>
               <div class="mission__right">
-                <div class="mission__count"><span class="mission__text mission__tick"></span><span class="mission__text mission__text--big">>120</span><span class="mission__text mission__text--small">человек в команде</span><br><span class="mission__text mission__text--big">2</span><span class="mission__text mission__text--small">города, офис в Москве и Санкт-Петербурге</span></div>
+                <div class="mission__count card card--white card--lg"><span class="mission__text mission__text--big">>100</span><span class="mission__text mission__text--small">человек в команде</span><br><span class="mission__text mission__text--big">2</span><span class="mission__text mission__text--small">города, офис в Москве и Санкт-Петербурге</span></div>
               </div>
             </div>
           </div>
         </section>
-        <section class="gallery box box--lilac">
-          <div class="wrap wrap--images">
+        <section class="gallery">
+          <div class="wrap">
             <div class="col">
               <div class="gallery__img-wrapper">
                 <picture>
@@ -194,15 +223,59 @@
             </div>
           </div>
         </section>
-        <section class="box box--lilac">
+        <section class="icon-text icon-text--3">
           <div class="wrapper wrapper--main">
-            <div class="cta cta--purple">
+            <h2>Ценности компании</h2>
+            <div class="wrap wrap--main wrap--gap-sm">
+              <div class="col">
+                <div class="card">
+                  <div class="icon icon--shadow icon--md icon--round">
+                    <svg width="43" height="43" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#purple-watch"></use>
+                    </svg>
+                  </div>
+                  <h6>Любознательность</h6><span class="text">Мы стремимся знать больше, быть лучше: развиваем себя, развиваем друг друга, развиваем партнёров и клиентов. Экспериментируем, применяем полученные знания в рабочих процессах, объективно анализируем результаты наших действий и изменений. Достигаем синергии, применяя опыт и знания друг друга.</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="icon icon--shadow icon--md icon--round">
+                    <svg width="43" height="43" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#purple-rocket"></use>
+                    </svg>
+                  </div>
+                  <h6>Вовлеченность в будущее</h6><span class="text">Мы предсказываем и задаем тренды, вовлекаем в использование новых технологий в интересах наших пользователей, когда нет стандартов и готовых процессов, мы их создаём. Мы уверены в себе, в своих решениях, в качестве и востребованности нашего продукта, в коллегах и партнерах.</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="icon icon--shadow icon--md icon--round">
+                    <svg width="43" height="43" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#purple-chat"></use>
+                    </svg>
+                  </div>
+                  <h6>Уверенность в диалоге</h6><span class="text">Мы создаем технологичный, красивый, удобный продукт и отвечаем за качество на всех этапах. Мы сами активно используем продукт в нашей командной работе. Постоянно его совершенствуем и тем самым делаем жизнь пользователей более комфортной и гармоничной. Мы аккуратны, внимательны к деталям: к тому, как думаем, говорим, пишем.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="box box--sand">
+          <div class="wrapper wrapper--main">
+            <div class="cta cta--center cta--lg cta--career">
               <div class="wrap wrap--c wrap--w">
                 <div class="wrap wrap--c wrap--s">
-                  <h2 class="cta__title">В нашу быстрорастущую команду требуется много талантов</h2>
+                  <div class="icon icon--lg icon--round">
+                    <svg width="55" height="55" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#purple-human"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="wrap wrap--c wrap--s">
-                  <p class="cta__sub">Узнайте больше об открытых вакансиях и работе в компании</p>
+                  <h2 class="title">В нашу быстрорастущую команду требуется много талантов</h2>
+                </div>
+                <div class="wrap wrap--c wrap--s">
+                  <p class="text">Мы приглашаем в команду крутых специалистов, которые хотят вместе с нами работать над созданием лучшего корпоративного мессенджера. Посмотреть список актуальных вакансий можно по ссылке ниже. Если не нашлась вакансия твоего профиля — не беда, заполняй форму обратной связи, прикрепляй резюме и мы обязательно рассмотрим его.</p>
                 </div>
               </div>
               <div class="wrap wrap--c"><a class="button button--accent button--link" href="https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053" target="_blank"><span>Смотреть все вакансии</span>
@@ -213,74 +286,99 @@
             </div>
           </div>
         </section>
-        <div class="form form--main form--career box box--white">
-          <div class="form__wrapper">
-            <h2 class="form__title">Отправить резюме</h2>
-            <p class="form__sub">Если вы не нашли интересующую вакансию, не отчаивайтесь — заполните форму и отправьте нам. Мы обязательно рассмотрим ваше резюме.</p>
-            <div class="form__form">
-              <form class="gform" autocomplete="on" id="form-career" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
-                <div id="data"></div>
-                <div class="form__input-text-wrap">
-                  <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
-                    <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
-                    <label for="name-1">Ваше имя</label>
-                  </div>
-                  <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3">
-                    <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
-                    <label for="email-1">Ваша эл.почта</label>
-                  </div>
-                  <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2">
-                    <input type="tel" id="phone-1" name="phone" placeholder="Телефон" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" required="required"/>
-                    <label for="phone-1">Телефон</label>
-                  </div>
-                  <div class="form__form-field form__form-field--select form__form-field--text form__form-field--s form__form-field--4">
-                    <select id="city-1" name="city" required="required">
-                      <option value="undefined" selected="selected">В каком городе хотите работать</option>
-                      <option value="Москва">Москва</option>
-                      <option value="Санкт-Петербург">Санкт-Петербург</option>
-                    </select>
-                    <label for="city-1">В каком городе хотите работать</label>
-                  </div>
-                  <div class="form__form-field--5 form__form-field--fw">
-                    <div class="field-textarea">
-                      <label>
-                        <textarea name="message"></textarea><span>О себе</span>
-                      </label>
-                    </div>
-                  </div>
+        <section class="image-collage image-collage--career">
+          <div class="wrapper wrapper--main">
+            <div class="wrap wrap--gap-md">
+              <div class="col col--images">
+                <div class="images">
+                  <picture>
+                    <source type="image/webp" srcset="/img/pages/about/team3@1x.webp 1x, /img/pages/about/team3@2x.webp 2x"/><img src="/img/pages/about/team3@1x.jpg" srcset="/img/pages/about/team3@2x.jpg 2x" alt="Изображение людей" width="212" loading="lazy"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" srcset="/img/pages/about/team2@1x.webp 1x, /img/pages/about/team2@2x.webp 2x"/><img src="/img/pages/about/team2@1x.jpg" srcset="/img/pages/about/team2@2x.jpg 2x" alt="Изображение людей" width="212" loading="lazy"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" srcset="/img/pages/about/team1@1x.webp 1x, /img/pages/about/team1@2x.webp 2x"/><img src="/img/pages/about/team1@1x.jpg" srcset="/img/pages/about/team1@2x.jpg 2x" alt="Изображение людей" width="212" loading="lazy"/>
+                  </picture>
                 </div>
-                <div class="form__checkbox-wrap">
-                  <div class="form__form-field--file">
-                    <label for="file">
-                      <div class="icon">
-                        <svg class="close" width="22" height="22" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-reupload"></use>
-                        </svg>
-                        <svg class="upload" width="37" height="37" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-upload"></use>
-                        </svg>
-                      </div>
-                      <input class="visually-hidden" type="file" id="file" name="file" accept=".rtf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/><span class="file-send">Прикрепить резюме</span><span class="file-name"></span>
-                    </label>
-                  </div>
-                  <div class="form__form-field form__form-field--checkbox">
-                    <input class="visually-hidden" type="checkbox" id="terms-1" name="terms" required="required"/>
-                    <label for="terms-1">Я согласен на обработку данных</label>
-                  </div>
-                </div>
-                <div class="form__data">
-                  <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/career" hidden="hidden"/>
-                  <input type="text" id="lang-1" name="lang" value="ru" hidden="hidden"/>
-                  <input type="text" id="type-1" name="type" value="career" hidden="hidden"/>
-                </div>
-                <div class="wrap wrap--ac">
-                  <button class="button--accent button button--form" type="submit"><span>Отправить заявку</span></button><img class="submit__icon" src="/img/loader.gif" alt="Анимирование изображение загрузки"/>
-                  <div class="submit__message"><span>Спасибо за заявку</span></div>
-                </div>
-              </form>
+              </div>
+              <div class="col col--content">
+                <h3>Как мы отдыхаем и развиваемся</h3>
+                <p>В нашей компании традиционно проводятся следующие мероприятия: Quiz, knowledge sharing «Митапы», изучение английского “Do you speak English”, Клуб Дебатов, Киберспортивные соревнования и Фотоконкурсы.<br><br>Конечно, мы не забываем про праздники: 23 и 8, День рождения компании, Новый год, День программиста, Halloween.</p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="box box--lilac">
+          <div class="form form--main form--career">
+            <div class="form__wrapper">
+              <h2 class="form__title">Отправить резюме</h2>
+              <p class="form__sub">Если вы не нашли интересующую вакансию, не отчаивайтесь — заполните форму и отправьте нам. Мы обязательно рассмотрим ваше резюме.</p>
+              <div class="form__form">
+                <form class="gform" autocomplete="on" id="form-career" action="https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec" method="POST">
+                  <div id="data"></div>
+                  <div class="form__input-text-wrap">
+                    <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
+                      <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
+                      <label for="name-1">Ваше имя</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3">
+                      <input type="email" id="email-1" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
+                      <label for="email-1">Ваша эл.почта</label>
+                    </div>
+                    <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2">
+                      <input type="tel" id="phone-1" name="phone" placeholder="Телефон" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" required="required"/>
+                      <label for="phone-1">Телефон</label>
+                    </div>
+                    <div class="form__form-field form__form-field--select form__form-field--text form__form-field--s form__form-field--4">
+                      <select id="city-1" name="city" required="required">
+                        <option value="undefined" selected="selected">В каком городе хотите работать</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                      </select>
+                      <label for="city-1">В каком городе хотите работать</label>
+                    </div>
+                    <div class="form__form-field--5 form__form-field--fw">
+                      <div class="field-textarea">
+                        <label>
+                          <textarea name="message"></textarea><span>О себе</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__checkbox-wrap">
+                    <div class="form__form-field--file">
+                      <label for="file">
+                        <div class="icon">
+                          <svg class="close" width="22" height="22" aria-hidden="true">
+                            <use xlink:href="/img/sprite.svg#icon-reupload"></use>
+                          </svg>
+                          <svg class="upload" width="37" height="37" aria-hidden="true">
+                            <use xlink:href="/img/sprite.svg#icon-upload"></use>
+                          </svg>
+                        </div>
+                        <input class="visually-hidden" type="file" id="file" name="file" accept=".rtf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/><span class="file-send">Прикрепить резюме</span><span class="file-name"></span>
+                      </label>
+                    </div>
+                    <div class="form__form-field form__form-field--checkbox">
+                      <input class="visually-hidden" type="checkbox" id="terms-1" name="terms" required="required"/>
+                      <label for="terms-1">Я согласен на обработку данных</label>
+                    </div>
+                  </div>
+                  <div class="form__data">
+                    <input type="text" id="domain-1" name="domain" value="https://dlg.im/ru/career" hidden="hidden"/>
+                    <input type="text" id="lang-1" name="lang" value="ru" hidden="hidden"/>
+                    <input type="text" id="type-1" name="type" value="career" hidden="hidden"/>
+                  </div>
+                  <div class="wrap wrap--ac">
+                    <button class="button--accent button button--form" type="submit"><span>Отправить заявку</span></button><img class="submit__icon" src="/img/loader.gif" alt="Анимирование изображение загрузки"/>
+                    <div class="submit__message"><span>Спасибо за заявку</span></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <div class="page__footer">
         <footer class="footer">
@@ -289,6 +387,7 @@
             <ul class="footer__contacts">
               <li><a class="footer__link" href="tel:+78007758202">+7 (800) 775-82-02</a></li>
               <li><a class="footer__link footer__link--underline" href="mailto:info@dlg.im">info@dlg.im</a></li>
+              <li><a class="footer__link footer__link--underline" href="mailto:press@dlg.im">press@dlg.im</a></li>
             </ul>
             <div class="footer__navigation-box">
               <section class="footer-nav">
@@ -300,6 +399,7 @@
                       <li><a class="link link--invert" href="/ru/security">Безопасность</a></li>
                       <li><a class="link link--invert" href="/ru/integrations">Интеграции</a></li>
                       <li><a class="link link--invert" href="/ru/support">Помощь</a></li>
+                      <li><a class="link link--invert" href="/ru/about">О нас</a></li>
                     </ul>
                   </div>
                   <div class="footer-nav__content-box">
@@ -347,7 +447,7 @@
         <div class="modal__overlay">
           <div class="modal__content">
             <button class="modal__close" type="button" aria-label="Закрыть"></button>
-            <div class="form form--main form--modal box box--white">
+            <div class="form form--main form--modal">
               <div class="form__wrapper form__wrapper--modal">
                 <h2 class="form__title form__title--modal">Получить предложение</h2>
                 <div class="form__form">

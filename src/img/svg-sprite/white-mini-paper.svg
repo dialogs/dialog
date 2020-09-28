@@ -1,0 +1,24 @@
+<svg width="24"
+     height="24"
+     viewBox="4.5 4.5 15 15"
+     fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <rect x="7.17444"
+        y="5.90576"
+        width="9.65104"
+        height="12.1885"
+        rx="1"
+        fill="white"/>
+  <line x1="10.2157"
+        y1="9.07739"
+        x2="13.7712"
+        y2="9.07739"
+        stroke="#9888C4"
+        stroke-linecap="round"/>
+  <line x1="10.2222"
+        y1="11.9719"
+        x2="12.6797"
+        y2="11.9719"
+        stroke="#9888C4"
+        stroke-linecap="round"/>
+</svg>

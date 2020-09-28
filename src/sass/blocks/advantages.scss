@@ -10,6 +10,7 @@
     padding-top: 0;
     padding-bottom: 60px;
   }
+
   @include mobile-sm {
     padding-top: 0;
     padding-bottom: 30px;
@@ -22,6 +23,18 @@
       margin-bottom: 15px;
     }
   }
+
+  .icon--fix {
+
+    svg {
+      stroke: #fff;
+      fill: none !important;
+    }
+  }
+}
+
+.advantages--next-bg {
+  padding-bottom: 60px;
 }
 
 .advantages__wrapper {
@@ -47,7 +60,7 @@
   .pseudo--1 {
     width: 400px;
     height: 400px;
-    background: #847BB9;
+    background: #847bb9;
     border-radius: 50%;
     position: absolute;
     bottom: 0;
@@ -62,7 +75,7 @@
   .pseudo--2 {
     width: 510px;
     height: 510px;
-    background: #8A82BE;
+    background: #8a82be;
     border-radius: 50%;
     position: absolute;
     bottom: 55px;
@@ -115,7 +128,7 @@
     }
 
     &:hover {
-      background: #AEA8D2;
+      background: #aea8d2;
 
       .pseudo--1 {
         transform: translate(60%, 60%);
@@ -155,6 +168,12 @@
           fill: $color-accent;
         }
       }
+
+      .icon--fix {
+        svg {
+          stroke: $color-accent;
+        }
+      }
     }
   }
 
@@ -179,7 +198,7 @@
   }
 
   p {
-    @include typography-txt;
+    @include typography-txt-big;
     z-index: 10;
     position: relative;
 

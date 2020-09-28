@@ -1,0 +1,181 @@
+extends ../global/layout
+include ../mixins/svg
+include ../mixins/button
+include ../mixins/button-play
+include ../mixins/picture
+include ../mixins/sections
+
+block variables
+  -
+    const title = t.meta.about_title;
+    const desc = t.meta.main_desc;
+    const routeClass = "js-route-main";
+    const pageName = "about";
+
+block content
+  -
+    const history = [
+    {
+    year: '2016',
+    i: '🏁',
+    text: t.about.history_1
+    },
+    {
+    iconPath: "icon-dialog",
+    iconWidth: 18,
+    iconHeight: 18,
+    year: '2017',
+    text: t.about.history_2
+    },
+    {
+    iconPath: "icon-sber",
+    iconWidth: 18,
+    iconHeight: 18,
+    year: '2018',
+    text: t.about.history_3
+    },
+    {
+    i: "👩🏼 🏢",
+    iconPath: "icon-dialog-green",
+    iconWidth: 20,
+    iconHeight: 20,
+    year: '2019',
+    text: t.about.history_4
+    },
+    {
+    i: '🤝 📞 👍',
+    year: '2020',
+    text: t.about.history_5
+    }
+    ];
+
+    const leaders = [
+      {name: t.about.leader_name_1, text: t.about.leader_text_1},
+      {name: t.about.leader_name_2, text: t.about.leader_text_2},
+      {name: t.about.leader_name_3, text: t.about.leader_text_3},
+      {name: t.about.leader_name_4, text: t.about.leader_text_4},
+      {name: t.about.leader_name_5, text: t.about.leader_text_5},
+      {name: t.about.leader_name_6, text: t.about.leader_text_6},
+      {name: t.about.leader_name_7, text: t.about.leader_text_7},
+      {name: t.about.leader_name_8, text: t.about.leader_text_8},
+      {name: t.about.leader_name_9, text: t.about.leader_text_9},
+      {name: t.about.leader_name_10, text: t.about.leader_text_10},
+      {name: t.about.leader_name_11, text: t.about.leader_text_11},
+      {name: t.about.leader_name_12, text: t.about.leader_text_12}
+     ];
+
+  section.hero.hero--main.hero--about.hero--secondary.hero--next-no-bg
+    .hero__wrapper
+      .hero__left
+        h1.hero__title=t.about.title
+        p.hero__text=t.about.sub_1
+        p.hero__text=t.about.sub_2
+      .hero__right
+        .hero__img
+          +picture('/img/pages/about/hero', 'jpg', t.alt.people, 682)
+
+  +section-image-collage(t.about.team_title,t.about.team_sub,'/img/pages/about/team1','/img/pages/about/team2','/img/pages/about/team3','about')
+  section.numbers
+    .wrapper.wrapper--main
+      .wrap
+        .numbers__item
+          span.numbers__text.numbers__text--big 2016
+          span.numbers__text.numbers__text--small=t.about.number_1
+        .numbers__item
+          span.numbers__text.numbers__text--big >100
+          span.numbers__text.numbers__text--small=t.about.number_2
+        .numbers__item
+          span.numbers__text.numbers__text--big 2
+          span.numbers__text.numbers__text--small=t.about.number_3
+
+  section.box.box--accent.box--squares
+    .wrapper.wrapper--main
+      .cta.cta--about.cta--center.cta--md
+        .wrap.wrap--c.wrap--w
+          .wrap.wrap--c.wrap--s
+            p.text=t.cta.about_slogan
+          .wrap.wrap--c.wrap--s
+            h2.title=t.cta.about_title
+        .wrap.wrap--c
+          +button(
+            t.button.vacancy_know,
+            {
+              styleType: 'light',
+              isLink: true,
+              href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
+              blank: true,
+              additionalClassName: 'button--link'
+            })
+            +svg('arrow-right', 16, 15)
+
+  section.history
+    .wrapper.wrapper--main
+      h2.history__title=t.about.history_title
+      .wrap.wrap--main.wrap--gap-sm
+        each item in history
+          .col
+            .card
+              .wrap.wrap--title
+                h4=item.year
+                i=item.i
+                +svg(item.iconPath, item.iconWidth, item.iconHeight)
+              p= item.text
+
+  section.leaders
+    .wrapper.wrapper--main
+      h2.leaders__title=t.about.leaders_title
+      .wrap.wrap--main.wrap--gap-sm
+        each item, index in leaders
+          .col
+            .item
+              +picture(`/img/pages/about/leader${index + 1}`, 'png', t.alt.people, 125)
+              h4=item.name
+              p=item.text
+
+  section.about-license.box--lilac
+    .wrapper.wrapper--main
+      .wrap.wrap--gap-md
+        .col.col--content
+          .about-license__content
+            h2.about-license__title=t.about.license_title
+            p.about-license__description=t.about.license_sub
+            a(class="about-license__link link link--with-icon link--icon-accent" href=`/${lang === "ru" ? "ru" : "en"}/patents`)=t.link.learn
+              +svg('arrow-right', 16, 15)
+        .col.col--images
+          .about-license__images
+            +picture('/img/pages/about/license', 'png', t.alt.license, 250)
+
+
+  section.about-it
+    .wrapper.wrapper--main
+      .wrap.wrap--gap-md
+        .col.col--images
+          .about-it__images
+            +picture('/img/pages/about/it', 'png', t.alt.license, 310)
+        .col.col--content
+          .about-it__content
+            h2.about-it__title=t.about.it_title
+            ul.about-it__list
+              li.about-it__list-item=t.about.it_li_1
+              li.about-it__list-item=t.about.it_li_2
+
+
+  section.about-contacts.box.box--lilac
+    .wrapper.wrapper--main
+      h2.about-contacts__title=t.about.contact_title
+      .wrap.wrap--contact
+        a.link.link--accent(href='mailto:info@dlg.im') info@dlg.im
+        span.phone +7(800)775-82-02
+      .wrap.wrap--main.wrap--gap-sm
+        .col
+          a.card.card--image-header(href="https://www.google.com/maps/place/Poklonnaya+Ulitsa,+3,+%D1%8D%D1%82%D0%B0%D0%B6+11,+Moskva,+Russia,+121170/data=!4m2!3m1!1s0x46b54bbe67327cb3:0x28e3f4b8be2ccf0e?sa=X&ved=2ahUKEwiNwfqu7-zrAhXCGewKHd9GB8gQ8gEwAHoECAwQAQ" target="_blank")
+            +picture('/img/pages/about/address1', 'png', t.alt.license)
+            .wrap.wrap--address
+              span.city=t.about.contact_address_city_1
+              span.address=t.about.contact_address_1
+        .col
+          a.card.card--image-header(href="https://www.google.com/maps/place/Nevsky+Ave,+19,+Sankt-Peterburg,+Russia,+191186/@59.9357295,30.3193676,17z/data=!3m1!4b1!4m5!3m4!1s0x469631057be74167:0x922a2a292c5f6d51!8m2!3d59.9357268!4d30.3215563" target="_blank")
+            +picture('/img/pages/about/address2', 'png', t.alt.license)
+            .wrap.wrap--address
+              span.city=t.about.contact_address_city_2
+              span.address=t.about.contact_address_2

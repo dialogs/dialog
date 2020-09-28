@@ -1,0 +1,339 @@
+extends ../global/layout
+include ../mixins/svg
+include ../mixins/button
+include ../mixins/button-play
+include ../mixins/picture
+include ../mixins/form-career
+
+block variables
+  -
+    const title = t.meta.private_title;
+    const desc = t.meta.main_desc;
+    const routeClass = "js-route-main";
+    const pageName = "private";
+
+block content
+  -
+    const advantages = [
+    {
+    iconPath: "icon-purse",
+    iconWidth: 38,
+    iconHeight: 35,
+    title: t.private.adv_title_1,
+    text: t.private.adv_sub_1
+    },
+    {
+    iconPath: "icon-lock",
+    iconWidth: 49,
+    iconHeight: 49,
+    title: t.private.adv_title_2,
+    text: t.private.adv_sub_2
+    },
+    {
+    iconPath: "icon-hands",
+    iconWidth: 47,
+    iconHeight: 41,
+    title: t.private.adv_title_3,
+    text: t.private.adv_sub_3
+    }
+    ];
+    const grow = [
+    {
+    icon: 'purple-search',
+    iconw: '22',
+    iconh: '22',
+    title: t.private.grow_card_title_1,
+    sub: t.private.grow_card_sub_1,
+    text: t.private.grow_card_text_1,
+    link: t.private.grow_card_link_1,
+    href: "hr"
+    },
+    {
+    icon: 'purple-sales',
+    iconw: '18',
+    iconh: '18',
+    title: t.private.grow_card_title_3,
+    sub: t.private.grow_card_sub_3,
+    text: t.private.grow_card_text_3,
+    link: t.private.grow_card_link_3,
+    href: "sales"
+    },
+    {
+    icon: 'purple-support',
+    iconw: '18',
+    iconh: '18',
+    title: t.private.grow_card_title_5,
+    sub: t.private.grow_card_sub_5,
+    text: t.private.grow_card_text_5,
+    link: t.private.grow_card_link_5,
+    href: "techsupport",
+    },
+    {
+    icon: 'purple-it',
+    iconw: '22',
+    iconh: '22',
+    title: t.private.grow_card_title_2,
+    sub: t.private.grow_card_sub_2,
+    text: t.private.grow_card_text_2,
+    },
+    {
+    icon: 'purple-marketing',
+    iconw: '15',
+    iconh: '15',
+    title: t.private.grow_card_title_4,
+    sub: t.private.grow_card_sub_4,
+    text: t.private.grow_card_text_4,
+    },
+    ];
+    const corp = [
+    {
+    icon: 'purple-cloud',
+    iconw: '51',
+    iconh: '51',
+    title: t.private.corp_title_1
+    },
+    {
+    icon: 'purple-human',
+    iconw: '55',
+    iconh: '55',
+    title: t.private.corp_title_2,
+    text: t.private.corp_text_2,
+    },
+    {
+    icon: 'purple-phone',
+    iconw: '55',
+    iconh: '55',
+    title: t.private.corp_title_3,
+    text: t.private.corp_text_3,
+    },
+    {
+    icon: 'purple-comp',
+    iconw: '55',
+    iconh: '55',
+    title: t.private.corp_title_4,
+    },
+    {
+    icon: 'purple-marketing',
+    iconw: '39',
+    iconh: '39',
+    title: t.private.corp_title_5,
+    text: t.private.corp_text_5,
+    },
+    {
+    icon: 'purple-bot',
+    iconw: '66',
+    iconh: '66',
+    title: t.private.corp_title_6
+    }
+    ];
+    const expenses = [
+    {
+    icon: 'icon-phone-simple',
+    iconw: '33',
+    iconh: '33',
+    title: t.private.expenses_title_1,
+    text: t.private.expenses_text_1,
+    },
+    {
+    icon: 'icon-video',
+    iconw: '33',
+    iconh: '55',
+    title: t.private.expenses_title_2,
+    text: t.private.expenses_text_2,
+    },
+    {
+    icon: 'icon-logout-simple',
+    iconw: '33',
+    iconh: '33',
+    title: t.private.expenses_title_3,
+    text: t.private.expenses_text_3,
+    }
+    ];
+    const introduction = [
+    {
+    title: t.private.introduction_title_1,
+    text: t.private.introduction_text_1,
+    },
+    {
+    title: t.private.introduction_title_2,
+    text: t.private.introduction_text_2,
+    },
+    {
+    title: t.private.introduction_title_3,
+    text: t.private.introduction_text_3,
+    }
+    ];
+
+
+  section.hero.hero--main.hero--secondary.hero--next-no-bg
+    .hero__wrapper
+      .hero__left
+        h1.hero__title=t.private.title
+        p.hero__text=t.private.sub
+        +button(
+          t.button.leave,
+          {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
+            styleType: 'accent',
+          })
+          +svg('arrow-right', 16, 15)
+      .hero__right
+        .hero__img
+          +picture('/img/pages/private/hero', 'jpg', t.alt.people, 682)
+
+  section.advantages.box.box--white
+    .advantages__wrapper
+      h2.visually-hidden Преимущества приложения Dialog
+      ul.advantages__list
+        each item in advantages
+          li
+            div.pseudo--1
+            div.pseudo--2
+            div.pseudo--3
+            .icon.icon--round.icon--accent.icon--md
+              +svg(item.iconPath, item.iconWidth, item.iconHeight)
+            h2= item.title
+            p= item.text
+
+  section.growth.box.box--sand
+    .wrapper.wrapper--main
+      h2=t.private.grow_title
+      p.description=t.private.grow_desc
+      h4=t.private.grow_sub
+      .wrap.wrap--main.wrap--gap-sm
+        each item,index in grow
+          .col
+            .card
+              +picture(`/img/pages/private/grow${index + 1}`, 'jpg', t.alt.people)
+              .wrap.wrap--content
+                .wrap.wrap--sub
+                  +svg(item.icon, item.iconw, item.iconh)
+                  span.sub=item.sub
+                h6.title=item.title
+                span.text=item.text
+                if item.link
+                  a.link.link--accent.link--icon-accent.link--with-icon(href=`/${lang === "ru" ? "ru" : "en"}/${item.href}`)=item.link
+                    +svg('arrow-right', 12, 12)
+
+  section.icon-text.icon-text--3
+    .wrapper.wrapper--main
+      h2=t.private.corp_title
+      .wrap.wrap--main.wrap--gap-sm
+        each item,index in corp
+          .col
+            .card
+              .icon.icon--shadow.icon--lg.icon--round
+                +svg(item.icon, item.iconw, item.iconh)
+              h6=item.title
+              span.text=item.text
+
+
+  section.safety
+    .safety__wrapper
+      h2.safety__title=t.private.safety_title
+      ul.safety__list
+        li.safety__item.safety__item--cloud
+          .wrap.wrap--ac.wrap--icon
+            .icon.icon--accent.icon--lg.icon--round
+              +svg('icon-cloud', 48, 52)
+            h4=t.main.sec_title_2
+          p=t.main.sec_sub_2
+          ul.safety__listbox
+            li
+              p
+                b On-premise&nbsp;
+                | !{t.main.sec_li_2_1}
+
+            li
+              p
+                b Private cloud&nbsp;
+                | !{t.main.sec_li_2_2}
+                img(src=`/img/sber-cloud.svg`, width="108" height="22" alt=t.alt.sbercloud)
+        li.safety__item.safety__item--safe
+          .wrap.wrap--ac.wrap--icon
+            .icon.icon--accent.icon--lg.icon--round
+              +svg('icon-safe', 52, 47)
+            h4=t.main.sec_title_1
+          p=t.main.sec_sub_1
+          ul.safety__listbox
+            li
+              p=t.main.sec_li_1_1
+            li
+              p=t.main.sec_li_1_2
+            li
+              p=t.main.sec_li_1_3
+            li
+              p=t.main.sec_li_1_4
+            li
+              p=t.main.sec_li_1_5
+            li
+              p=t.main.sec_li_1_6
+
+      a(class="link link--with-icon link--safety link--icon-accent" href=`${lang === "ru" ? '/ru/security' : '/en/security'}`)=t.link.learn
+        +svg('arrow-right', 16, 15)
+
+
+  section.private-access.box.box--lilac
+    .wrapper.wrapper--main
+      .wrap.wrap--gap-md.wrap--main
+        .col.col--text
+          .content
+            .wrap.wrap--ac
+              .icon.icon--accent.icon--sm.icon--round
+                +svg('icon-stats', 25, 25)
+              span.link.link--accent=t.private.access_sub
+            h2=t.private.access_title
+            p=t.private.access_text
+        .col.col--images
+          .images
+            +picture('/img/pages/private/access', 'png', t.alt.pm, 650)
+
+
+  section.private-expanses
+    .wrapper.wrapper--main
+      h2=t.private.expenses_title
+      p.sub=t.private.expenses_sub
+      .wrap.wrap--main.wrap--gap-sm
+        each item in expenses
+          .col
+            .card.card--line
+              .icon.icon--accent.icon--sm.icon--round
+                +svg(item.icon, item.iconw, item.iconh)
+              h6=item.title
+              .text=item.text
+
+
+  section.private-introduction.box.box--gray
+    .wrapper.wrapper--main
+      h2=t.private.introduction_title
+      .wrap.wrap--main.wrap--gap-sm
+        each item, index in introduction
+          .col
+            .card.card--white.card--md
+              .wrap.wrap--card
+                .number=index+1
+                .wrap.wrap--content.wrap--w
+                  h6=item.title
+                  .text=item.text
+
+
+
+  section.quote.quote--link
+      .quote__wrapper
+        span.link.link--accent Пример проекта внедрения
+        h2=t.gov.quote_title
+        .quote__desc
+          .quote__desc-icon
+            +svg('icon-chat-sber', 76, 76)
+          p=t.main.quote_sub
+        .quote__content
+          .quote__content-text
+            p=t.main.quote_text
+          .quote__content-avatar
+            .quote__avatar-img
+              +svg('sber-logo-big', 250, 64)
+
+  section.box.box--lilac
+    +form-offer(false, 1, 'form-offer', pageName, "offer")

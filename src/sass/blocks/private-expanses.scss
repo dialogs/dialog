@@ -1,0 +1,72 @@
+.private-expanses {
+  .wrapper {
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    @include mobile-md {
+      padding-top: 45px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .wrap--main {
+    @include mobile-md {
+      flex-wrap: wrap;
+    }
+  }
+
+  h2 {
+    @include typography-h2;
+    margin-top: 25px;
+
+    @include mobile-xs {
+      font-size: 32px;
+    }
+  }
+
+  h6 {
+    @include typography-h6;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+
+  .sub {
+    @include typography-subhead;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .text{
+    margin-top: 10px;
+  }
+
+  .col {
+    @include col-4;
+
+    @include mobile-md {
+      @include col-6;
+    }
+
+    @include mobile-sm {
+      @include col-12;
+    }
+  }
+
+  .card {
+    height: 100%;
+  }
+
+  .icon {
+    margin-right: 10px;
+
+    svg {
+      fill: none
+    }
+  }
+
+  .link {
+    margin-top: 30px;
+  }
+
+}

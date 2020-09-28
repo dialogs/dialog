@@ -253,6 +253,16 @@
   }
 }
 
+@mixin gap-xsm {
+  margin: 0 -13px;
+  width: calc(100% + 26px);
+
+  & > [class*="col"] {
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-top: 26px;
+  }
+}
 @mixin gap-sm {
   margin: 0 -15px;
   width: calc(100% + 30px);

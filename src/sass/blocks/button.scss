@@ -23,6 +23,7 @@
   svg {
     margin-left: auto;
     margin-right: 17px;
+    fill: currentColor;
   }
 
   &:focus {
@@ -32,7 +33,6 @@
 
 .button--light {
   color: $color-base;
-
   background-color: #ffffff;
 
   &:hover,
@@ -107,16 +107,22 @@
   }
 }
 
-.button--link{
+.button--link {
   display: inline-flex;
 }
 
-.button--form{
-  @include mobile-sm{
+.button--form {
+  @include mobile-sm {
     width: 100%;
   }
 }
 
-.button--md{
+.button--md {
   min-width: 280px;
+}
+
+.button--arrow-accent {
+  svg {
+    fill: $color-accent
+  }
 }

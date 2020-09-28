@@ -1,0 +1,99 @@
+extends ../global/layout
+include ../mixins/svg
+include ../mixins/button
+include ../mixins/button-play
+include ../mixins/picture
+include ../mixins/form-cta
+include ../mixins/form-career
+include ../mixins/sections
+
+block variables
+  -
+    const title = t.meta.tech_title;
+    const desc = t.meta.main_desc;
+    const routeClass = "js-route-main";
+    const pageName = "techsupport";
+
+block content
+  section.hero.hero--main.hero--secondary.hero--next-bg.hero--tech
+    .hero__wrapper
+      .hero__left
+        h1.hero__title=t.tech.title
+        +button(
+          t.button.leave,
+          {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
+            styleType: 'accent',
+          })
+          +svg('arrow-right', 16, 15)
+      .hero__right
+        .hero__img
+          +picture('/img/pages/tech/hero', 'jpg', t.alt.people, 682)
+
+
+  section.box.box--gray.cta.cta--nav.cta--sm
+    .wrapper.wrapper--main
+      .wrap.wrap--s
+        h4.title=t.cta.tech_info_title
+      .wrap.wrap--s.wrap--links
+        a.link.link--accent(href='#together')=t.cta.tech_info_link_1
+        a.link.link--accent(href='#auto')=t.cta.tech_info_link_2
+        a.link.link--accent(href='#learn')=t.cta.tech_info_link_3
+
+
+  section.department
+    .wrapper.wrapper--main
+      .anchor#together
+      .sub=t.tech.sub_1
+      h2.title=t.tech.title_1
+      .wrap.wrap--gap-md.wrap--row.wrap--sb
+        .col.col--text
+          .links
+            | !{t.pop.text_1}
+          +card-description(t.tech.title_card_1_1,t.tech.count_card_1_1,"white-city",t.tech.text_1_1, 33, 27, 'w-sm')
+          +card-description(t.tech.title_card_1_2,t.tech.count_card_1_2,"white-circle",t.tech.text_1_2, 40, 40, 'w-sm')
+        .col.col--image.col--bg
+          +picture(`/img/pages/tech/department1`, 'png', t.alt.people, 590)
+
+
+  section.department
+    .wrapper.wrapper--main
+      .anchor#auto
+      .sub=t.tech.sub_2
+      h2.title=t.tech.title_2
+      .wrap.wrap--gap-md.wrap--row.wrap--sb
+        .col.col--image.col--bg
+          +picture(`/img/pages/tech/department2`, 'png', t.alt.people, 590)
+        .col.col--text
+          .links
+            | !{t.pop.text_2}
+          +card-description(t.tech.title_card_2_1,t.tech.count_card_2_1,"white-settings",t.tech.text_2_1, 33, 27, 'w-sm')
+          +card-description(t.tech.title_card_2_2,t.tech.count_card_2_2,"white-shout",t.tech.text_2_2, 24, 24, 'w-sm')
+
+
+  section.department
+    .wrapper.wrapper--main.wrapper--pb
+      .anchor#learn
+      .sub=t.tech.sub_3
+      h2.title=t.tech.title_3
+      .wrap.wrap--gap-md.wrap--row.wrap--sb
+        .col.col--text
+          .links
+            | !{t.pop.text_3}
+          +card-description(t.tech.title_card_3_1,t.tech.count_card_3_1,"white-bot",t.tech.text_3_1, 33, 27, 'w-sm')
+          +card-description(t.tech.title_card_3_2,t.tech.count_card_3_2,"white-sheet",t.tech.text_3_2, 40, 40, 'w-sm')
+        .col.col--image.col--bg
+          +picture(`/img/pages/tech/department3`, 'png', t.alt.people, 590)
+
+
+  section.box.box--sand
+    .wrapper.wrapper--main
+      .cta.cta--md
+        +form-cta(t.cta.tech_form_info_title,t.cta.tech_form_info_text,1,'form-cta', pageName,'department','cta-left')
+
+  section
+    +form-offer(false, 1, 'form-offer', pageName, "offer")
+
+  +tooltips(3)

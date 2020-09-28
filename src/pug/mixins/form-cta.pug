@@ -1,0 +1,59 @@
+include ./button
+
+mixin form-cta (title,text,idNumber,formId,pageName,emailName,type)
+  .form.form--cta(class=`${type ? `form--${type}` : ''}`)
+    .form__wrapper
+      form(
+        class="gform"
+        autocomplete="on"
+        id!=formId
+        action='https://script.google.com/macros/s/AKfycbyX_HnEXjLYclHwz6OCNTRWCGt06rorOJjEn8Z4CeJYBGW9c6c3/exec'
+        method='POST'
+      )
+        h3.form__title=title
+        if text
+          p.form__text=text
+        .form__row
+          .form__input-text-wrap
+            .form__field.form__field--lilac
+              input(
+                type="email"
+                id=`email-${idNumber}`
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+                placeholder=t.form.email
+                title="Email адрес должен быть типа: user@mail.com"
+                required
+              )
+              label(for=`email-${idNumber}`)=t.form.email
+          .form__data
+            input(
+              type="text"
+              id=`domain-${idNumber}`
+              name="domain"
+              value=(`https://dlg.im/${lang}/${pageName}`)
+              hidden
+            )
+            input(
+              type="text"
+              id=`lang-${idNumber}`
+              name="lang"
+              value=lang
+              hidden
+            )
+            input(
+              type="text"
+              id=`type-${idNumber}`
+              name="type"
+              value=emailName
+              hidden
+            )
+          .wrap.wrap--ac.wrap--message
+            button(
+              class="button--accent button button--form"
+              type="submit"
+            )
+              span=t.button.subscribe
+            img.submit__icon.submit__icon--light.submit__icon--absolute(src="/img/loader.gif" alt=t.alt.loader)
+            .submit__message.submit__message--absolute
+              span=t.form.sent

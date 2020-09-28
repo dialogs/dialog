@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html class="js-route-download" lang="ru">
   <script>
-    setTimeout(function(){
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -14,7 +13,7 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');}, 5000);
+    })(window, document, 'script', 'dataLayer', 'GTM-MHX7HL6');
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,10 +35,40 @@
             </div>
             <nav class="header__nav-container main-nav">
               <ul class="main-nav__top-links">
+                <li class="main-nav__top-block">
+                  <button class="main-nav__button" type="button">Решения
+                    <svg width="8" height="5" aria-hidden="true">
+                      <use xlink:href="/img/sprite.svg#tick"></use>
+                    </svg>
+                  </button>
+                  <div class="main-nav__dropdown">
+                    <ul class="main-nav__included-box">
+                      <li class="main-nav__included-item">
+                        <div class="main-nav__middle-block">
+                          <button class="main-nav__included-button" type="button"><span>Отделы
+                              <svg width="7" height="11" aria-hidden="true">
+                                <use xlink:href="/img/sprite.svg#tick-right"></use>
+                              </svg></span></button>
+                          <ul class="main-nav__middle-dropdown">
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/human-resources">HR</a></li>
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/techsupport">Техподдержка</a></li>
+                            <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/sales">Отдел продаж</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/private">Коммерческим организациям</a>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/government">Госорганизациям</a>
+                      </li>
+                      <li class="main-nav__included-item"><a class="main-nav__link main-nav__link--included" href="/ru/remote-work">Удаленная работа</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="main-nav__link" href="/ru/oem">CPaaS</a></li>
                 <li><a class="main-nav__link" href="/ru/security">Безопасность</a></li>
                 <li><a class="main-nav__link" href="/ru/integrations">Интеграции</a></li>
                 <li><a class="main-nav__link" href="/ru/career">Карьера</a></li>
-                <li><a class="main-nav__link" href="/ru/blog">Блог</a></li>
                 <li><a class="main-nav__link" href="/ru/support">Помощь</a></li>
               </ul>
               <div class="main-nav__user-actions">
@@ -57,8 +86,8 @@
           <div id="macos-hero">
             <div class="hero__wrapper">
               <div class="hero__left">
-                <h1 class="hero__title"><span>Dialog для&nbsp;</span><span>macOS</span></h1><a class="button button--dark hero__button" href="https://dialog-enterprise-x-desktop.s3.amazonaws.com/dialog-ee-x-2.3.3.168.dmg"><span>Скачать</span></a>
-                <p class="hero__text">Работает на macOS 10.10 (Yosemite) и выше</p>
+                <h1 class="hero__title"><span>Dialog для&nbsp;</span><span>macOS</span></h1><a class="button button--dark hero__button" href="https://s3.dlg.im/desktop/dialog-ee-x-2.4.0.317.dmg"><span>Скачать</span></a>
+                <p class="hero__text">Работает на macOS 11 и выше</p>
               </div>
               <div class="hero__right">
                 <div class="hero__img">
@@ -72,7 +101,7 @@
           <div id="windows-hero">
             <div class="hero__wrapper">
               <div class="hero__left">
-                <h1 class="hero__title"><span>Dialog для&nbsp;</span><span>Windows</span></h1><a class="button button--dark hero__button" href="https://dialog-enterprise-x-desktop.s3.amazonaws.com/dialog-ee-x-setup-2.3.3.155.exe"><span>Скачать</span></a>
+                <h1 class="hero__title"><span>Dialog для&nbsp;</span><span>Windows</span></h1><a class="button button--dark hero__button" href="https://s3.dlg.im/desktop/dialog-ee-x-setup-2.4.0.304.exe"><span>Скачать</span></a>
                 <p class="hero__text">Работает на Windows 8 и выше</p>
               </div>
               <div class="hero__right">
@@ -88,7 +117,7 @@
             <div class="hero__wrapper">
               <div class="hero__left">
                 <h1 class="hero__title"><span>Dialog для&nbsp;</span><span>Linux</span></h1><a class="button button--dark hero__button" href="https://dialog-enterprise-x-desktop.s3.eu-west-2.amazonaws.com/dialog_ee_x_2.3.2_amd64.deb"><span>Скачать</span></a>
-                <p class="hero__text">Работает на Linux 4.6.x и выше</p>
+                <p class="hero__text">Работает на Ubuntu 16.04 (x64/x32) и выше</p>
               </div>
               <div class="hero__right">
                 <div class="hero__img">
@@ -106,7 +135,7 @@
                   <svg width="15" height="15" aria-hidden="true">
                     <use xlink:href="/img/sprite.svg#icon-apple"></use>
                   </svg><span>Скачать из App Store</span></a>
-                <p class="hero__text">Работает на iOS 8.1 и выше</p>
+                <p class="hero__text">Работает на iOS 11 и выше</p>
               </div>
               <div class="hero__right">
                 <div class="hero__img">
@@ -124,7 +153,7 @@
                   <svg width="15" height="15" aria-hidden="true">
                     <use xlink:href="/img/sprite.svg#icon-google-play"></use>
                   </svg><span>Скачать из Google Play</span></a>
-                <p class="hero__text">Работает на Android 8.1 и выше</p>
+                <p class="hero__text">Работает на Android 5.0 и выше</p>
               </div>
               <div class="hero__right">
                 <div class="hero__img">
@@ -146,7 +175,7 @@
                     <svg width="70" height="70" aria-hidden="true">
                       <use xlink:href="/img/sprite.svg#icon-windows"></use>
                     </svg>
-                  </div><a class="button button--dark card__button" href="https://dialog-enterprise-x-desktop.s3.amazonaws.com/dialog-ee-x-setup-2.3.3.155.exe" target="_self"><span>Скачать</span></a>
+                  </div><a class="button button--dark card__button" href="https://s3.dlg.im/desktop/dialog-ee-x-setup-2.4.0.304.exe" target="_self"><span>Скачать</span></a>
                 </div>
               </div>
               <div class="col is-visible" id="macos-col">
@@ -156,7 +185,7 @@
                     <svg width="70" height="70" aria-hidden="true">
                       <use xlink:href="/img/sprite.svg#icon-macos"></use>
                     </svg>
-                  </div><a class="button button--dark card__button" href="https://dialog-enterprise-x-desktop.s3.amazonaws.com/dialog-ee-x-2.3.3.168.dmg" target="_self"><span>Скачать</span></a>
+                  </div><a class="button button--dark card__button" href="https://s3.dlg.im/desktop/dialog-ee-x-2.4.0.317.dmg" target="_self"><span>Скачать</span></a>
                 </div>
               </div>
               <div class="col is-visible" id="linux-col">
@@ -225,6 +254,7 @@
             <ul class="footer__contacts">
               <li><a class="footer__link" href="tel:+78007758202">+7 (800) 775-82-02</a></li>
               <li><a class="footer__link footer__link--underline" href="mailto:info@dlg.im">info@dlg.im</a></li>
+              <li><a class="footer__link footer__link--underline" href="mailto:press@dlg.im">press@dlg.im</a></li>
             </ul>
             <div class="footer__navigation-box">
               <section class="footer-nav">
@@ -236,6 +266,7 @@
                       <li><a class="link link--invert" href="/ru/security">Безопасность</a></li>
                       <li><a class="link link--invert" href="/ru/integrations">Интеграции</a></li>
                       <li><a class="link link--invert" href="/ru/support">Помощь</a></li>
+                      <li><a class="link link--invert" href="/ru/about">О нас</a></li>
                     </ul>
                   </div>
                   <div class="footer-nav__content-box">
@@ -283,7 +314,7 @@
         <div class="modal__overlay">
           <div class="modal__content">
             <button class="modal__close" type="button" aria-label="Закрыть"></button>
-            <div class="form form--main form--modal box box--white">
+            <div class="form form--main form--modal">
               <div class="form__wrapper form__wrapper--modal">
                 <h2 class="form__title form__title--modal">Получить предложение</h2>
                 <div class="form__form">

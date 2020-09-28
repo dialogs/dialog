@@ -1,0 +1,63 @@
+mixin section-image-collage(title, desc, img1, img2, img3, type)
+  section.image-collage(class=`${type ? `image-collage--${type}` : ''}`)
+    .wrapper.wrapper--main
+      .wrap.wrap--gap-md
+        .col.col--images
+          .images
+            +picture(img3, 'jpg', t.alt.people, 212)
+            +picture(img2, 'jpg', t.alt.people, 212)
+            +picture(img1, 'jpg', t.alt.people, 212)
+        .col.col--content
+          h3=title
+          p
+            | !{desc}
+
+mixin card-description(title, count, icon, text, w, h, type)
+  .card.card--icon.card--white(class=`${type ? `card--${type}` : ''}`)
+    .wrap.wrap--ac
+      .icon.icon--accent.icon--xs.icon--squircle.icon--nofill
+        +svg(icon, w, h)
+      .wrap.wrap--w.wrap--ac
+        .title.wrap--s=title
+        .count=count
+  .text=text
+
+mixin card-icon(title, icon, w, h)
+  .card.card--icon-xs.card--white
+    .wrap.wrap--ac
+      .icon.icon--accent.icon--xxs.icon--squircle.icon--nofill
+        +svg(icon, w, h)
+      .wrap.wrap--w.wrap--ac
+        .title.wrap--s=title
+
+mixin tooltips(amount)
+  .tooltips
+    .tooltip.tooltip--chat-1
+      | !{t.pop.chat}
+      .arrow
+    .tooltip.tooltip--chanel-1
+      | !{t.pop.chanel}
+      .arrow
+    .tooltip.tooltip--chatbot-1
+      | !{t.pop.chatbot}
+      .arrow
+    if(amount > 1)
+      .tooltip.tooltip--chat-2
+        | !{t.pop.chat}
+        .arrow
+      .tooltip.tooltip--chanel-2
+        | !{t.pop.chanel}
+        .arrow
+      .tooltip.tooltip--chatbot-2
+        | !{t.pop.chatbot}
+        .arrow
+    if(amount > 2)
+      .tooltip.tooltip--chat-3
+        | !{t.pop.chat}
+        .arrow
+      .tooltip.tooltip--chanel-3
+        | !{t.pop.chanel}
+        .arrow
+      .tooltip.tooltip--chatbot-3
+        | !{t.pop.chatbot}
+        .arrow

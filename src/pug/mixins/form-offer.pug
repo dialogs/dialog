@@ -1,7 +1,7 @@
 include ./button
 
 mixin form-offer (isModal, idNumber, formId, pageName, emailName)
-  .form.form--main(class=(isModal ? 'form--modal' : null)).box.box--white
+  .form.form--main(class=(isModal ? 'form--modal' : null))
     .form__wrapper(class=(isModal ? 'form__wrapper--modal' : null))
       h2.form__title(class=(isModal ? 'form__title--modal' : null))=t.form.request_title
       .form__form

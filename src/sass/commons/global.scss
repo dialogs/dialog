@@ -43,3 +43,73 @@ a {
     /* stylelint-enable */
   }
 }
+
+[class*="popover"] {
+  cursor: pointer;
+}
+
+.tooltip {
+  padding: 20px;
+  display: none;
+  max-width: 290px;
+  background: #ffffff;
+  box-shadow: 0 2px 20px rgba(152, 136, 196, 0.16);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+
+  @include mobile-md {
+    max-width: 250px;
+    font-size: 13px;
+  }
+  @include mobile-xs {
+    max-width: 100%;
+  }
+
+  .arrow, .arrow::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+  }
+
+  .arrow::before {
+    content: '';
+    transform: rotate(45deg);
+    background: #fff;
+  }
+
+  &[data-show] {
+    display: block;
+  }
+
+  &[data-popper-placement^='top'] > .arrow {
+    bottom: -4px;
+  }
+
+  &[data-popper-placement^='top-start'] > .arrow {
+    left: -74px;
+    bottom: -4px;
+  }
+
+  &[data-popper-placement^='bottom'] > .arrow {
+    top: -4px;
+  }
+
+  &[data-popper-placement^='left'] > .arrow {
+    right: -4px;
+  }
+
+  &[data-popper-placement^='right'] > .arrow {
+    left: -4px;
+  }
+}
+
+.anchor {
+  position: relative;
+  top: calc((var(--header-height) + 40px) * -1);
+}

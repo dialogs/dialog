@@ -120,16 +120,15 @@ block content
         +button(
           t.button.leave,
           {
+            type: 'button',
+            isLink: false,
+            additionalClassName: 'button--hero js-open-modal-hero',
             styleType: 'accent',
-            isLink: true,
-            href: "https://hh.ru/search/vacancy?st=searchVacancy&from=employerPage&employer_id=2487053",
-            blank: true,
-            additionalClassName: 'button--hero button--link'
           })
           +svg('arrow-right', 16, 15)
       .hero__right
         .hero__img
-          +picture('/img/pages/oem/hero', 'png', t.alt.people, 682)
+          +picture('/img/pages/oem/hero', 'jpg', t.alt.people, 682)
 
   section.icon-text.icon-text--4
     .wrapper.wrapper--main.wrapper--np
@@ -192,7 +191,7 @@ block content
             {
               styleType: 'light',
               isLink: true,
-              href: "#form-sales",
+              href: "#anchor-sales",
               additionalClassName: 'button--hero button--link button--arrow-accent'
             })
             +svg('arrow-right', 16, 15)

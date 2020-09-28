@@ -333,9 +333,7 @@
     transition: max-height $transition-props;
 
     &.is-hide {
-      /* stylelint-disable */
       max-height: 0 !important;
-      /* stylelint-enable */
     }
   }
 
@@ -495,9 +493,7 @@
     transition: max-height $transition-props;
 
     &.is-hide {
-      /* stylelint-disable */
       max-height: 0 !important;
-      /* stylelint-enable */
     }
   }
 

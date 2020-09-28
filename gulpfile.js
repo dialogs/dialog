@@ -574,7 +574,6 @@ gulp.task('serverbs', function () {
   gulp.watch(`${SOURCE_PATH}js/**/*.js`, gulp.series('js', 'refresh'));
 });
 
-
 gulp.task('refresh', function (done) {
   server.reload();
   done();

@@ -53,7 +53,8 @@
     "files": "gulp files",
     "minify": "gulp minify",
     "build": "gulp build",
-    "devserver": "gulp devserver"
+    "devserver": "gulp devserver",
+    "graphic": "gulp graphic"
   },
   "browserslist": [
     "last 2 versions",

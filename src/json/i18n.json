@@ -2290,7 +2290,7 @@
       "en": "<b>Chat</b> is a space for exchanging messages and files between two or more users."
     },
     "chatbot": {
-      "ru": "<b>Чатбот</b> – это чат, где только владелец может отправлять сообщения. Анонсируйте события из жизни компании или транслируйте тематические сообщения.",
+      "ru": "<b>Чатбот</b> – это программа, которая имитирует диалог с человеком. Чат-боты позволяют автоматизировать повторяющиеся задачи, не привлекая человека.",
       "en": "<b>Chatbot</b> is a program that simulates a dialoge with person. Chatbots allow you to automate repetitive tasks without involving a human."
     },
     "text_1": {
@@ -2374,15 +2374,15 @@
     },
     "tech": {
       "ru": "Техподдержка",
-      "en": "Tech support"
+      "en": "Techsupport"
     },
     "gov": {
       "ru": "Госорганизациям",
-      "en": "For state institutions"
+      "en": "For Government"
     },
     "private": {
       "ru": "Коммерческим организациям",
-      "en": "For private organizations"
+      "en": "For Private companies"
     },
     "oem": {
       "ru": "CPaaS",
